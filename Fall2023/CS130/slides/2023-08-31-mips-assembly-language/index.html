@@ -1,0 +1,436 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>reveal.js</title>
+
+        <link rel="stylesheet" href="../dist/reset.css">
+        <link rel="stylesheet" href="../dist/reveal.css">
+        <link rel="stylesheet" href="../dist/theme/white.css" id="theme">
+
+        <!-- Theme used for syntax highlighted code -->
+        <link rel="stylesheet" href="../plugin/highlight/monokai.css" id="highlight-theme">
+
+        <style>
+            .twocolumn {
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           grid-gap: 10px;
+           text-align: left;
+        }
+        </style>
+
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section data-markdown
+                         data-separator="<!--==*-->"
+                         data-separator-vertical="<!----*-->">
+                    <textarea data-template>
+## Introduction to
+# MIPS
+---
+
+
+CS 130 // 2023-08-31
+
+<!--=====================================================================-->
+
+# Course Themes
+<!-- .slide: data-background="#004477" -->
+
+<!--=====================================================================-->
+
+## Overarching Theme
+- Learning how a high-level program is actually executed on your computer's processor
+
+<!---------------------------------->
+
+![Compiler-Assembler Diagram](/Fall2023/CS130/assets/images/COD/compiler-assembler.png)
+
+<!---------------------------------->
+
+## Trajectory of the Course
+1. **Assembly language programming**
+2. Digital logic
+3. Processor architecture
+4. The C Programming Language
+
+<!--=====================================================================-->
+
+# Assembly Languages
+<!-- .slide: data-background="#004477" -->
+
+<!--=====================================================================-->
+
+## Assembly Languages
+- Every CPU architecture implements an **instruction set** which are the operations it natively supports
+- <!-- .element: class="fragment"-->
+ The most common CPU architectures are:
+    + x86 (Intel/AMD)
+    + <!-- .element: class="fragment"-->
+ ARM (Mobile phones, tablets, Apple's M1 chip, ...)
+
+- <!-- .element: class="fragment"-->
+ Instructions are extremely simple like
+```
+add a, b, c
+```
+
+
+<!--=====================================================================-->
+## Revisiting the Exercise from last time
+
+A complicated line of high-level code like this
+```python
+pay = (salary + bonus) - (health_premium + taxes)
+```
+
+Gets translated by the *compiler* into assembly code like
+```bash
+add basepay, salary, bonus
+add deductions, health_premium, taxes
+sub pay, basepay, deductions
+```
+
+
+
+<!--=====================================================================-->
+
+## RISC vs. CISC
+- CPU architectures are usually categorized as either "RISC" or "CISC"
+- <!-- .element: class="fragment"-->
+ RISC (Reduced Instruction Set Computing)
+    + Simplified instructions which "do less"
+    + ...but each instruction is highly optimized
+
+<!---------------------------------->
+
+## RISC vs. CISC
+- CISC (Complicated Instruction Set Computing)
+    + Larger instruction set each of which "does more"
+    + Optimized so that a program can be implemented with few instructions---even though those instructions may take longer to execute
+
+<!--=====================================================================-->
+
+# MIPS
+<!-- .slide: data-background="#004477" -->
+
+<!--=====================================================================-->
+
+## MIPS Architecture
+- In this course, we will be learning the MIPS instruction set
+    + "Microprocessor without Interlocked Pipelined Stages"
+- MIPS is a RISC processor with a minimalistic number of instructions
+- Is very similar to ARM
+
+
+<!--=====================================================================-->
+
+## Discussion Question
+
+<br>
+
+- what exactly are `salary` or `taxes` 
+in this example?
+
+<br>
+
+```python
+pay = (salary + bonus) - (health_premium + taxes)
+```
+
+
+<!--=====================================================================-->
+
+## Pointers
+
+- In assembly programs, labels like `salary` or `taxes` are *pointers*
+
+- <!-- .element: class="fragment"-->
+ **pointer**: a stand-in for a _memory address_
+
+- <!-- .element: class="fragment"-->
+ Even this is too complicated for RISC
+```bash
+add basepay, salary, bonus
+```
+
+- <!-- .element: class="fragment"-->
+ You might first have to grab the data at the address indicated by the pointer _before_ you can do any operations on it.
+
+<!--=====================================================================-->
+
+## Grabbing data from memory
+
+- When we grab data from memory, where do we put it?
+
+- <!-- .element: class="fragment"-->
+ **Registers**: a holding place for data right inside the CPU
+  - data has to be in a register before you can perform operations
+
+<!---------------------------------->
+
+![Processor component diagram](/Fall2023/CS130/assets/images/COD/control.png)
+
+<!--=====================================================================-->
+
+## MIPS Architecture
+- Has 32 registers, each of which are 32-bits
+- <!-- .element: class="fragment"-->
+ Why not include more registers?
+    + <!-- .element: class="fragment"-->
+ Cost; registers are more expensive than RAM
+    + <!-- .element: class="fragment"-->
+ Performance; more registers means slower clock
+    + <!-- .element: class="fragment"-->
+ Instruction size; more registers means each instruction needs more bits to identify registers
+
+
+<!--=====================================================================-->
+
+#### A MIPS program in MARS
+
+![Processor component diagram](/Fall2023/CS130/assets/images/first_program.png) <!-- .element width="700px" -->
+
+<!---------------------------------->
+
+#### Things to notice in MARS
+
+- Registers have names like `$t0`, `$s2`, etc.
+- You can refer to a register by its name or number. 
+  - `$t0` is also `$8`
+- MARS can be wonky
+  - MARS didn't play nice with OneDrive for me - you may need to create a folder for your `.asm` files in your home directory
+- `lw` means _load word_
+  - a **word** is a 32 bit value
+
+```mips
+#loads a value from memory location a into register $t0
+lw $t0, a  
+```
+
+
+
+
+
+<!---------------------------------->
+
+#### Exploration Exercise
+
+1. Write the above program in MARS
+2. What values are stored in each of the registers initially?
+3. Find and press the **Assemble** button
+4. What memory addresses did your *program* get stored in?
+5. What memory addresses did your *data* get stored in?
+6. Find and press the **Run** button
+7. What values ended up in `$t0`, `$t1`, and `$t2`? Is that what you expected?
+
+<!---------------------------------->
+
+8. Change `a`'s initial value to 9 and rerun. What is in `$t2` now? What do you think is going on here?
+9. Add the following to your data section
+```mips
+result: 0
+```
+10. Add the following to the end of your text section
+```mips
+sw $t2, result
+```
+11. Rerun. Look in memory - is there a new value there?
+12. What do you think `sw` means?
+13. Try the **Run one step at a time** button and step through the program slowly. Watch the values change in the registers.
+
+
+<!--=====================================================================-->
+
+## MIPS Register Conventions
+
+<div class="twocolumn">
+<div>
+<table style="font-size: 60%">
+  <tbody>
+    <tr> <th>Name</th> <th>Reg #</th> <th>Usage</th></tr>
+    <tr><td>$zero</td> <td>0</td> <td>Constant 0</td></tr>
+    <tr><td>$v0,...</td><td>2-3</td> <td>Values</td></tr>
+    <tr><td>$a0,...</td><td>4-7</td> <td>Arguments</td></tr>
+    <tr><td>$t0,...</td><td>8-15</td> <td>Temporaries</td></tr>
+    <tr><td>$s0,...</td><td>16-23</td> <td>Saved (variables)</td></tr>
+    <tr><td>$t8,...</td><td>24-25</td> <td>More temporaries</td></tr>
+    <tr><td>$gp</td><td>28</td> <td>global pointer</td></tr>
+    <tr><td>$sp</td><td>29</td> <td>stack pointer</td></tr>
+    <tr><td>$fp</td><td>30</td> <td>frame pointer</td></tr>
+    <tr><td>$ra</td><td>31</td> <td>return address</td></tr>
+  </tbody>
+</table>
+</div>
+<div>
+<ul>
+    <li class="fragment"> Register 1 is reserved for the assembler
+    <li class="fragment"> Registers 26-27 are reserved for the OS
+    <li class="fragment"> Only 8 $s registers (0..7)
+    <li class="fragment"> Only 10 $t registers (0..9)
+</ul>
+</div>
+</div>
+
+
+<!--=====================================================================-->
+
+## Exercise
+
+- Write a MIPS program that does the equivalent of this high-level line of code
+```python
+pay = (salary + bonus) - (health_premium + taxes)
+```
+
+<!--=====================================================================-->
+
+## Immediate values
+
+- A literal value like 3 in the example below is called an **immediate value**
+- `li` means _load immedate_
+
+```mips
+.data
+
+x: 5
+
+.text
+
+lw $t0, x
+li $t1, 3 #load 3 directly into $t1
+add $t0, $t1, $t0
+```
+
+<!--=====================================================================-->
+
+## I-type instructions
+
+- There's also a variation of `add` where the second operand is replaced with an immediate value
+- `addi` means *add immediate* 
+  - it's an **I-type instruction**
+
+```mips
+.data
+
+x: 5
+
+.text
+
+lw $t0, x
+addi $t0, $t0, 3
+```
+
+
+<!---------------------------------->
+
+## R-Type instructions
+
+- The add instruction that uses only registers is an **R-type instruction**
+
+```mips
+add $t0, $t1, $t0
+```
+
+
+<!--=====================================================================-->
+
+## System Calls
+
+- We can make **system calls** to have the system perform things like input and output
+- Put the system call code in `$v0`
+- Put argument in `$a0` (and maybe `$a1` if needed)
+
+<!---------------------------------->
+
+#### Output Exercise
+
+- Run this in MARS and discuss what happens with your neighbors
+- What do you think `.asciiz` does?
+
+```mips
+.data
+
+message: .asciiz "Hello!"
+
+.text
+
+li $v0, 4 #4 is the code for printing a string
+la $a0, message #the argument for the syscall
+syscall
+```
+
+<!---------------------------------->
+
+#### Input Exercise
+
+- Run this in MARS and discuss what happens with your neighbors
+- Which register does the user's input go into?
+
+```mips
+.data
+
+prompt: .asciiz "Enter an integer:"
+
+.text
+
+li $v0, 4 #4 is the code for printing a string
+la $a0, prompt #the argument for the syscall
+syscall
+
+li $v0, 5 #5 is the code for reading an integer
+syscall
+```
+<!---------------------------------->
+
+#### Interactive Program Exercise
+
+- [Assignment 1](../../assignments/assignment-1/): Write a program that interacts with the user and performs some kind of computation based on their input
+- Find other syscall codes on page B-44 of the textbook
+
+
+                    </textarea>
+                </section>
+            </div>
+        </div>
+
+        <script src="../dist/reveal.js"></script>
+        <script src="../plugin/notes/notes.js"></script>
+        <script src="../plugin/markdown/markdown.js"></script>
+        <script src="../plugin/highlight/highlight.js"></script>
+        <script src="../plugin/chalkboard/plugin.js"></script>
+        <script src="../plugin/math/math.js"></script>
+        <script src="../plugin/menu/menu.js"></script>
+        <!--  -->
+        <script>
+            // More info about initialization & config:
+            // - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
+            Reveal.initialize({
+                hash: true,
+                pdfSeparateFragments: false,
+
+                chalkboard: {
+                    chalkWidth: 4,
+                    chalkEffect: 0.5,
+                    toggleChalkboardButton: false,
+                    toggleNotesButton: false,
+                },
+
+                menu: {
+                    hideMissingTitles: true,
+                    themes: true,
+                    themesPath: '../dist/theme/',
+                },
+
+                // Learn about plugins: https://revealjs.com/plugins/
+                plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, 
+                    RevealChalkboard, RevealMath, RevealMenu ]
+            });
+        </script>
+    </body>
+</html>
