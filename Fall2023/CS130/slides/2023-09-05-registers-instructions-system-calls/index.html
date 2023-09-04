@@ -1,0 +1,299 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>reveal.js</title>
+
+        <link rel="stylesheet" href="../dist/reset.css">
+        <link rel="stylesheet" href="../dist/reveal.css">
+        <link rel="stylesheet" href="../dist/theme/white.css" id="theme">
+
+        <!-- Theme used for syntax highlighted code -->
+        <link rel="stylesheet" href="../plugin/highlight/monokai.css" id="highlight-theme">
+
+        <style>
+            .twocolumn {
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           grid-gap: 10px;
+           text-align: left;
+        }
+        </style>
+
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section data-markdown
+                         data-separator="<!--==*-->"
+                         data-separator-vertical="<!----*-->">
+                    <textarea data-template>
+# Registers, Instructions, and System Calls
+
+---
+
+<!-- 
+
+  Note to self: talk about binary
+  introduce arrays and have them investigate what they look like in memory
+  practice loading items from different places in the array
+
+
+-->
+
+CS 130 // 2023-09-05
+
+<!--=====================================================================-->
+
+# Review
+
+<!-- .slide: data-background="#004477" -->
+
+<!--=====================================================================-->
+
+## Recap of last week
+
+- MIPS: RISC architecture
+  + 32, 32-bit registers
+- We wrote some a simple MIPS program in Mars
+  + watched data change in registers and memory
+- Data and instructions get turned into binary and placed in memory 
+
+<!---------------------------------->
+
+- Covered `add`, `lw`, `sw`
+
+```mips
+.data
+
+a: 9
+b: 3
+result: 0
+
+
+.text
+
+lw $t0, a
+lw $t1, b
+add $t2, $t0, $t1
+sw $t2, result
+```
+
+<!--=====================================================================-->
+
+# More on Registers and Instructions
+<!-- .slide: data-background="#004477" -->
+
+
+<!--=====================================================================-->
+
+## MIPS Register Conventions
+
+<div class="twocolumn">
+<div>
+<table style="font-size: 60%">
+  <tbody>
+    <tr> <th>Name</th> <th>Reg #</th> <th>Usage</th></tr>
+    <tr><td>$zero</td> <td>0</td> <td>Constant 0</td></tr>
+    <tr><td>$v0,...</td><td>2-3</td> <td>Values</td></tr>
+    <tr><td>$a0,...</td><td>4-7</td> <td>Arguments</td></tr>
+    <tr><td>$t0,...</td><td>8-15</td> <td>Temporaries</td></tr>
+    <tr><td>$s0,...</td><td>16-23</td> <td>Saved (variables)</td></tr>
+    <tr><td>$t8,...</td><td>24-25</td> <td>More temporaries</td></tr>
+    <tr><td>$gp</td><td>28</td> <td>global pointer</td></tr>
+    <tr><td>$sp</td><td>29</td> <td>stack pointer</td></tr>
+    <tr><td>$fp</td><td>30</td> <td>frame pointer</td></tr>
+    <tr><td>$ra</td><td>31</td> <td>return address</td></tr>
+  </tbody>
+</table>
+</div>
+<div>
+<ul>
+    <li class="fragment"> Register 1 is reserved for the assembler
+    <li class="fragment"> Registers 26-27 are reserved for the OS
+    <li class="fragment"> Only 8 $s registers (0..7)
+    <li class="fragment"> Only 10 $t registers (0..9)
+</ul>
+</div>
+</div>
+
+
+<!--=====================================================================-->
+
+## Exercise
+
+- Write a MIPS program that does the equivalent of this high-level line of code
+```python
+pay = (salary + bonus) - (health_premium + taxes)
+```
+
+<!--=====================================================================-->
+
+## Immediate values
+
+- A literal value like 3 in the example below is called an **immediate value**
+- `li` means _load immedate_
+
+```mips
+.data
+
+x: 5
+
+.text
+
+lw $t0, x
+li $t1, 3 #load 3 directly into $t1
+add $t0, $t1, $t0
+```
+
+<!--=====================================================================-->
+
+## I-type instructions
+
+- There's also a variation of `add` where the second operand is replaced with an immediate value
+- `addi` means *add immediate* 
+  - it's an **I-type instruction**
+
+```mips
+.data
+
+x: 5
+
+.text
+
+lw $t0, x
+addi $t0, $t0, 3
+```
+
+
+<!---------------------------------->
+
+## R-Type instructions
+
+- The add instruction that uses only registers is an **R-type instruction**
+
+```mips
+add $t0, $t1, $t0
+```
+
+
+<!--=====================================================================-->
+
+## System Calls
+
+- We can make **system calls** to have the system perform things like input and output
+- Put the system call code in `$v0`
+- Put argument in `$a0` (and maybe `$a1` if needed)
+
+<!---------------------------------->
+
+#### Output Exercise
+
+- Run this in MARS and discuss what happens with your neighbors
+- What do you think `.asciiz` does?
+
+```mips
+.data
+
+message: .asciiz "Hello!"
+
+.text
+
+li $v0, 4 #4 is the code for printing a string
+la $a0, message #the argument for the syscall
+syscall
+```
+
+<!---------------------------------->
+
+#### Input Exercise
+
+- Run this in MARS and discuss what happens with your neighbors
+- Which register does the user's input go into?
+
+```mips
+.data
+
+prompt: .asciiz "Enter an integer:"
+
+.text
+
+li $v0, 4 #4 is the code for printing a string
+la $a0, prompt #the argument for the syscall
+syscall
+
+li $v0, 5 #5 is the code for reading an integer
+syscall
+```
+<!---------------------------------->
+
+#### Assignment: Interactive Program
+
+You now know enough to do the first assignment
+
+- [Assignment 1](../../assignments/assignment-1/): Write a program that interacts with the user and performs some kind of computation based on their input
+- Find other syscall codes on page B-44 of the textbook
+
+
+
+
+<!--=====================================================================-->
+
+# Binary Numbers
+<!-- .slide: data-background="#004477" -->
+
+<!--=====================================================================-->
+
+## Let's talk about how counting works
+
+![Odometer rollover](/Fall2023/CS130/assets/images/Odometer_rollover.jpg) <!-- .element width="300px" -->
+
+<!--
+  image credit: https://en.wikipedia.org/wiki/Odometer#/media/File:Odometer_rollover.jpg
+-->
+
+How do you count if you only have two digits?
+
+                    </textarea>
+                </section>
+            </div>
+        </div>
+
+        <script src="../dist/reveal.js"></script>
+        <script src="../plugin/notes/notes.js"></script>
+        <script src="../plugin/markdown/markdown.js"></script>
+        <script src="../plugin/highlight/highlight.js"></script>
+        <script src="../plugin/chalkboard/plugin.js"></script>
+        <script src="../plugin/math/math.js"></script>
+        <script src="../plugin/menu/menu.js"></script>
+        <!--  -->
+        <script>
+            // More info about initialization & config:
+            // - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
+            Reveal.initialize({
+                hash: true,
+                pdfSeparateFragments: false,
+
+                chalkboard: {
+                    chalkWidth: 4,
+                    chalkEffect: 0.5,
+                    toggleChalkboardButton: false,
+                    toggleNotesButton: false,
+                },
+
+                menu: {
+                    hideMissingTitles: true,
+                    themes: true,
+                    themesPath: '../dist/theme/',
+                },
+
+                // Learn about plugins: https://revealjs.com/plugins/
+                plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, 
+                    RevealChalkboard, RevealMath, RevealMenu ]
+            });
+        </script>
+    </body>
+</html>
