@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Exam 2 - CS 130: Computer Organization</title>
+<!-- begin _includes/seo.html --><title>Assignment 9 - CS 130: Computer Organization</title>
 <meta name="description" content="">
 
 
@@ -22,8 +22,8 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="CS 130: Computer Organization">
-<meta property="og:title" content="Exam 2">
-<meta property="og:url" content="https://ericmanley.github.io/Fall2023/CS130/assignments/exam-2/">
+<meta property="og:title" content="Assignment 9">
+<meta property="og:url" content="https://ericmanley.github.io/Fall2023/CS130/assignments/assignment-9/">
 
 
   <meta property="og:description" content="">
@@ -41,7 +41,7 @@
 
 
 
-<link rel="canonical" href="https://ericmanley.github.io/Fall2023/CS130/assignments/exam-2/">
+<link rel="canonical" href="https://ericmanley.github.io/Fall2023/CS130/assignments/assignment-9/">
 
 
 
@@ -290,7 +290,7 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Exam 2">
+    <meta itemprop="headline" content="Assignment 9">
     <meta itemprop="description" content="">
     <meta itemprop="datePublished" content="2023-11-29T11:51:43-06:00">
     
@@ -298,7 +298,7 @@
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Exam 2
+          <h1 id="page-title" class="page__title" itemprop="headline">Assignment 9
 </h1>
           
 
@@ -314,7 +314,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          less than 1 minute read
+          1 minute read
         
       </span>
     
@@ -326,6 +326,14 @@
 
       <section class="page__content" itemprop="text">
         
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#assignment-requirements">Assignment Requirements</a></li><li><a href="#testing-your-function">Testing your function</a></li><li><a href="#grading">Grading</a></li><li><a href="#what-to-turn-in">What to turn in</a></li><li><a href="#where-to-turn-it-in">Where to turn it in</a></li></ul>
+
+            </nav>
+          </aside>
+        
         <!--
 
 <strong>Type:</strong>
@@ -336,17 +344,54 @@ Assignment
 <br>
 -->
 
-<strong>Due:</strong> by the end of the calendar day on Tuesday, October 24, 2023
+<strong>Due:</strong> by the end of the calendar day on Thursday, December 7, 2023
 
 
 
-<p>Complete the test marked <strong>Exam 2</strong> on Blackboard.</p>
+<h2 id="assignment-requirements">Assignment Requirements</h2>
 
-<p>This exam is to be completed individually. You may use the book, course slides, your notes, or any other reference material to formulate your own answers. You <em>may not</em> search for solutions to these questions. You <em>may not</em> look at the work of other students, whether they are in the class now, have taken it in the past, or have taken a similar course at another school. Make sure to also review the course <a href="https://ericmanley.github.io/Fall2023/CS130/syllabus/#ai-assistance-policy">AI Assistance Policy</a></p>
+<p>Write a C program which includes a function called <code class="language-plaintext highlighter-rouge">join</code> that takes an array of strings as an argument (along with the array’s size, <code class="language-plaintext highlighter-rouge">n</code>). The function should return a new string (allocated on the heap with <code class="language-plaintext highlighter-rouge">malloc</code>) which is the concatenation of all the strings from the array. The function should have the following prototype:</p>
 
-<p>This exam is not timed. You may save your progress and return to finish later, though you may only submit it once.</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Takes an array of n strings and returns</span>
+<span class="c1">// a new string allocated on the heap</span>
+<span class="kt">char</span> <span class="o">*</span><span class="n">join</span><span class="p">(</span><span class="kt">char</span> <span class="o">**</span><span class="n">arr</span><span class="p">,</span> <span class="kt">int</span> <span class="n">n</span><span class="p">)</span>
+</code></pre></div></div>
 
-<p>The purpose of the free-response questions is for you to demonstrate that you can explain these concepts from your own understanding. A response that has good ideas and is written in your own voice will be valued much more than technically precise sentences copied from the book or some other source.</p>
+<h2 id="testing-your-function">Testing your function</h2>
+
+<p>You should write a main function which calls your function with <strong>several</strong> test cases. Here’s something you could start with:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="kt">char</span> <span class="o">*</span><span class="n">my_strings</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s">"The"</span><span class="p">,</span> <span class="s">"quick"</span><span class="p">,</span> <span class="s">"brown"</span><span class="p">,</span> <span class="s">"fox"</span><span class="p">};</span>
+    <span class="kt">char</span> <span class="o">*</span><span class="n">joined</span> <span class="o">=</span> <span class="n">join</span><span class="p">(</span><span class="n">my_strings</span><span class="p">,</span><span class="mi">4</span><span class="p">);</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">"Here is the joined string: %s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="n">joined</span><span class="p">);</span>
+
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>For this example, the expected output would be</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Here is the joined string: The quick brown fox
+</code></pre></div></div>
+
+<h2 id="grading">Grading</h2>
+
+<p>This is a 4-point assignment. See the <a href="../../syllabus//#assignments">rubric</a> from the syllabus.</p>
+
+<h2 id="what-to-turn-in">What to turn in</h2>
+
+<p>Turn in the following items</p>
+
+<ol>
+  <li>Your <code class="language-plaintext highlighter-rouge">.c</code> file which contains your C program</li>
+  <li>A <code class="language-plaintext highlighter-rouge">.txt</code> file (you can use Notepad, TextEdit, or even Visual Studio Code) where you paste in a sample run of your program that shows how it worked when you ran it</li>
+</ol>
+
+<h2 id="where-to-turn-it-in">Where to turn it in</h2>
+
+<p>Submit your files to the <strong>Assignment 9</strong> hand-in form on Blackboard.</p>
 
         
       </section>

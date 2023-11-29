@@ -130,4 +130,10 @@ var store = [{
         "tags": [],
         "url": "/Fall2023/CS130/slides/2023-11-28-pointers/",
         "teaser": null
+      },{
+        "title": "Dynamic Memory Allocation",
+        "excerpt":"# Dynamic Memory Allocation  ---  CS 130 // 2023-11-30    # Review     ## Exercise from last time  - write a function that computes the average of a bunch of `double` values - get data for 10 doubles from user and call the average function  - make it work for any number of inputs    ## Double function   ```c  #include \"stdio.h\"   double average(double arr[], int n) {     double total = 0.0;     double average;      for(int i = 0; i   int * duplicate(int *arr, int n)  {     int new_arr[n];     for (int i = 0; i  #include   int * duplicate(int *arr, int n)  {     int *new_arr = malloc(n * sizeof(int));     for (int i = 0; i >> \" \".join([\"The\", \"quick\", \"brown\", \"fox\"]) \"The quick brown fox\" ``` -   What would the function prototype have to be?     ```c     // Takes an array of n strings and returns     // a new string allocated on the heap     char *join(char **arr, int n)     ```       -   Finish implementing this  ","categories": [],
+        "tags": [],
+        "url": "/Fall2023/CS130/slides/2023-11-30-dynamic-memory-allocation/",
+        "teaser": null
       }]
