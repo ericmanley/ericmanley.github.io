@@ -1,0 +1,458 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Compiling a C Program - CS 130: Computer Organization</title>
+<meta name="description" content="Computer organization and architecture;  internal representation of programs and data;  assembly language programming;  addressing techniques;  macros; assemblers;  linking; input/output concepts.">
+
+
+  <meta name="author" content="Instructor">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="CS 130: Computer Organization">
+<meta property="og:title" content="Compiling a C Program">
+<meta property="og:url" content="https://ericmanley.github.io/Fall2024/CS130/resources/compiling-a-c-program">
+
+
+  <meta property="og:description" content="Computer organization and architecture;  internal representation of programs and data;  assembly language programming;  addressing techniques;  macros; assemblers;  linking; input/output concepts.">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="canonical" href="https://ericmanley.github.io/Fall2024/CS130/resources/compiling-a-c-program">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Eric Manley",
+      "url": "https://ericmanley.github.io/Fall2024/CS130/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/Fall2024/CS130/feed.xml" type="application/atom+xml" rel="alternate" title="CS 130: Computer Organization Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/Fall2024/CS130/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/Fall2024/CS130/">
+          CS 130: Computer Organization
+          <span class="site-subtitle">Drake University, Fall 2024</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/Fall2024/CS130/syllabus/">Syllabus</a>
+            </li><li class="masthead__menu-item">
+              <a href="/Fall2024/CS130/content/">Content</a>
+            </li><li class="masthead__menu-item">
+              <a href="/Fall2024/CS130/resources/">Resources</a>
+            </li><li class="masthead__menu-item">
+              <a href="/Fall2024/CS130/assignments/">Assignments</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/Fall2024/CS130/assets/images/bio-photo.jpg" alt="Instructor" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Instructor</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>Eric Manley<br />Associate Professor<br />Drake University</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Contact</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+  <li><i class="fas fa-fw fa-building" aria-hidden="true"></i> Collier-Scripps 327</li>
+
+
+
+  <li><i class="fas fa-fw fa-phone" aria-hidden="true"></i> (515) 271-2177</li>
+
+
+
+  <li>
+    <a href="mailto:eric.manley@drake.edu">
+      <meta itemprop="email" content="eric.manley@drake.edu" />
+      <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> eric.manley@drake.edu
+    </a>
+  </li>
+
+
+
+  <li>
+    <a href="http://manley.wp.drake.edu/">
+      <i class="fas fa-fw fa-link" aria-hidden="true"></i> http://manley.wp.drake.edu/
+    </a>
+  </li>
+
+
+
+  <li>
+    <a href="https://teams.microsoft.com/l/chat/0/0?users=eric.manley@drake.edu">
+      <i class="fas fa-fw fa-comments" aria-hidden="true"></i> Message me on Teams
+    </a>
+  </li>
+
+
+
+  <li>
+    <a href="https://calendly.com/eric-manley/">
+      <i class="fas fa-fw fa-calendar" aria-hidden="true"></i> Schedule an Appointment
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</div>
+
+  
+    
+      
+      <h3>Office Hours</h3>
+      <p>Schedule in Calendly the day before or drop in<br />M 9:30am-12:30pm<br />Th 2:00pm-4:00pm</p>
+
+      
+    
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Compiling a C Program">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Compiling a C Program
+</h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p>Let’s explore creating and compiling a C program. Before you begin, open Visual Studio Code either on the CS Desktop or natively on your computer.</p>
+
+<p class="notice--warning"><strong>NOTE:</strong> Be sure to <a href="accessing-the-cs-desktop-vdi#setting-up-visual-studio-code">set up Visual Studio Code</a> before you continue.</p>
+
+<p>Create a file named <code class="language-plaintext highlighter-rouge">hello.c</code> by navigating to <code class="language-plaintext highlighter-rouge">File -&gt; New File</code> and type the following code into it:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">"Hello, World!</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>You will need access to a <strong>Terminal</strong> in order to compile and run your code. To open one in Visual Studio Code, click <code class="language-plaintext highlighter-rouge">Terminal -&gt; New Terminal</code>. You should be presented with a shell that allows you to type in textual commands.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">$</span>
+</code></pre></div></div>
+
+<p>Try typing <code class="language-plaintext highlighter-rouge">gcc --version</code> to verify that the <code class="language-plaintext highlighter-rouge">gcc</code> compiler is available. You should see something like the following:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gcc <span class="nt">--version</span>
+gcc <span class="o">(</span>Ubuntu 9.3.0-10ubuntu2<span class="o">)</span> 9.3.0
+Copyright <span class="o">(</span>C<span class="o">)</span> 2019 Free Software Foundation, Inc.
+</code></pre></div></div>
+
+<p>Then you can try to <strong>compile</strong> your <code class="language-plaintext highlighter-rouge">hello.c</code> file by typing:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gcc hello.c
+</code></pre></div></div>
+
+<p>This command executes the <code class="language-plaintext highlighter-rouge">gcc</code> compiler on the <code class="language-plaintext highlighter-rouge">hello.c</code> file which ought to produce an executable file named <code class="language-plaintext highlighter-rouge">a.out</code> (<code class="language-plaintext highlighter-rouge">a.exe</code> if you are on Windows). To execute your program, type:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>./a.out
+Hello, world!
+</code></pre></div></div>
+
+<p>If this worked, you’re all set! You should be able to write C programs by creating files with a <code class="language-plaintext highlighter-rouge">.c</code> extension, and then compiling them using <code class="language-plaintext highlighter-rouge">gcc</code> like we did above.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-copyright">
+    &copy; 2024 Eric Manley licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+        <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
+    </a>
+    <br>
+    Select materials are &copy; Titus Klinge, Marge Coahran, Charlie Curtsinger, Janet Davis, and Jerod Weinman and distributed under the same license.
+    <br>
+    This site was generated using 
+    <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; 
+    <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.
+</div>
+      </footer>
+    </div>
+
+    
+  <script src="/Fall2024/CS130/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/Fall2024/CS130/assets/js/lunr/lunr.min.js"></script>
+<script src="/Fall2024/CS130/assets/js/lunr/lunr-store.js"></script>
+<script src="/Fall2024/CS130/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+   MathJax.Hub.Config({
+     extensions: ["tex2jax.js"],
+     jax: ["input/TeX", "output/HTML-CSS"],
+     tex2jax: {
+       inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+       displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+       processEscapes: true
+     },
+     "HTML-CSS": { availableFonts: ["TeX"] }
+   });
+</script>
+
+  </body>
+</html>
