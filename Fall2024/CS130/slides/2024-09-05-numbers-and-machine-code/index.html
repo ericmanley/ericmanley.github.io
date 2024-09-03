@@ -1,0 +1,534 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>reveal.js</title>
+
+        <link rel="stylesheet" href="../dist/reset.css">
+        <link rel="stylesheet" href="../dist/reveal.css">
+        <link rel="stylesheet" href="../dist/theme/white.css" id="theme">
+
+        <!-- Theme used for syntax highlighted code -->
+        <link rel="stylesheet" href="../plugin/highlight/monokai.css" id="highlight-theme">
+
+        <style>
+            .twocolumn {
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           grid-gap: 10px;
+           text-align: left;
+        }
+        </style>
+
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section data-markdown
+                         data-separator="<!--==*-->"
+                         data-separator-vertical="<!----*-->">
+                    <textarea data-template>
+# Numbers and Machine Code
+
+---
+
+<!-- 
+
+  Note to self: talk about binary
+  introduce arrays and have them investigate what they look like in memory
+  practice loading items from different places in the array
+
+
+-->
+
+CS 130 // 2024-09-05
+
+<!--=====================================================================-->
+
+# Announcements
+<!-- .slide: data-background="#004477" -->
+
+<!--=====================================================================-->
+
+
+## Tutoring Lab is Open
+
+ - Cowles Library 201
+ - A tutor who can cover CS 130 will usually be there Sundays, Tuesdays, and Wednesdays from 7:30-9pm
+ - Please be understanding if they're not always able to help with CS 130
+
+<!-- 
+
+- Book an appointment on Starfish [(instructions)](https://docs.google.com/document/d/1sB0YBdHBPUNXCMM1czJjxiGcQ2EGd7d0/) 
+- [Schedule and course coverage](https://docs.google.com/spreadsheets/d/1Ohjo8hIbgxouz_y8qpK0tCYCnoWU9q9GeO34-7Xs_oM/)
+
+
+
+
+![Technology career fair](/Fall2024/CS130/assets/images/tech_career_fair.png) 
+
+-->
+
+<!--=====================================================================-->
+
+## Student Research Groups
+
+Friday, September 6th at 1:00pm in C-S 301
+
+No experience required
+
+Come to learn more about possible research groups in mathematics, computer science, math education, data science, cyber security, and more!
+
+<!--=====================================================================-->
+
+## Vermeer-Drake Digital Bulldogs program
+ 
+Application deadline is **October 15th**
+- 1-credit mentorship experience in spring
+
+https://www.drake.edu/cs/internships/vermeerdigitalbulldogs/
+
+<!--=====================================================================-->
+
+# Review
+<!-- .slide: data-background="#004477" -->
+
+<!--=====================================================================-->
+
+## System Calls
+
+- We can make **system calls** to have the system perform things like input and output
+- Put the system call code in `$v0`
+- Put argument in `$a0` (and maybe `$a1` if needed)
+
+<!---------------------------------->
+
+#### Output a string
+
+- a 4 in `$v0` means *print a string* 
+- **address** of the string should be in `$a0`
+- `la` means *load address* 
+  - contrast with `lw` - use when you want the data *at the address* not the address itself, so use `lw` if you want to print an int
+
+```mips
+.data
+
+message: .asciiz "Hello!"
+
+.text
+
+li $v0, 4 #4 is the code for printing a string
+la $a0, message #the argument for the syscall
+syscall
+```
+
+<!---------------------------------->
+
+#### User Input
+
+- a 5 in `$v0` means *read an integer* 
+- whatever the user types gets put into `$v0` during the syscall
+
+```mips
+.data
+
+prompt: .asciiz "Enter an integer:"
+
+.text
+
+li $v0, 4 #4 is the code for printing a string
+la $a0, prompt #the argument for the syscall
+syscall
+
+li $v0, 5 #5 is the code for reading an integer
+syscall
+```
+<!---------------------------------->
+
+#### Assignment: Interactive Program
+
+You now know enough to do the first assignment
+
+- [Assignment 1](../../assignments/assignment-1/): Write a program that interacts with the user and performs some kind of computation based on their input
+- Find other syscall codes on page B-44 of the textbook
+
+
+
+
+
+<!--=====================================================================-->
+
+# Binary Numbers
+<!-- .slide: data-background="#004477" -->
+
+<!--=====================================================================-->
+
+# CS Jokes
+
+![Only 10 types of people shirt](/Fall2024/CS130/assets/images/shirt10typesOfPeople.jpg) <!-- .element width="300px" -->
+
+Source: https://www.amazon.com/Types-People-understand-Binary-T-Shirt/dp/B07PSPLSC9
+
+<!--=====================================================================-->
+
+## Let's talk about how counting works
+
+![Odometer rollover](/Fall2024/CS130/assets/images/Odometer_rollover.jpg) <!-- .element width="300px" -->
+
+<!--
+  image credit: https://en.wikipedia.org/wiki/Odometer#/media/File:Odometer_rollover.jpg
+-->
+
+How do you count if you only have two digits?
+
+
+<!--=====================================================================-->
+
+## Counting in Binary
+- CPUs compute in **binary** using the contrast of low/high voltages to mean 0 and 1 - the two _binary digits_ or **bits**
+- So how do we encode **numbers** in binary?
+
+
+<!--=====================================================================-->
+
+## Base 10 (AKA Decimal)
+
+- When we write 437 we usually mean base 10 - the number system with 10 digits
+
+- Can also write it as $437_\text{ten}$ 
+
+- $437_\text{ten}$ means 
+
+`$$(4\cdot 100)+(3\cdot 10)+(7\cdot 1)$$`
+
+or
+
+`$$(4\cdot 10^2)+(3\cdot 10^1)+(7\cdot 10^0)$$`
+
+<!--=====================================================================-->
+
+## Base 2 (AKA Binary)
+
+ $1101_\text{two}$ means 
+
+`$$(1\cdot 8)+(1\cdot 4)+(0\cdot 2)+(1\cdot 1)$$`
+
+or
+
+`$$(1\cdot 2^3)+(1\cdot 2^2)+(0\cdot 2^1)+(1\cdot 2^0)$$`
+
+
+<!--=====================================================================-->
+
+### Demo: Let's convert numbers to different bases
+
+
+- $110110101_\text{two}$
+
+- $437_\text{ten}$
+
+<!--=====================================================================-->
+
+### Exercise: Practice with Binary
+- Convert the following number into decimal:
+    + $1011010_\text{two}$
+- Convert the following decimal number into binary:
+    + $277_\text{ten}$
+
+
+<!--=====================================================================-->
+
+
+### Base 16 (AKA Hexadecimal)
+
+- Hexadecimal is base 16
+- digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F
+- 5C means
+
+`$$(5\cdot 16)+(12\cdot 1)$$`
+
+- Easy to convert back and forth from binary
+
+<!--=====================================================================-->
+
+### Counting in Binary/Hexadecimal
+
+<div class="twocolumn" style="font-size: 75%">
+<div>
+
+<table>
+  <tbody>
+    <tr> <th>Decimal</th> <th>Binary</th><th>Hex</th></tr>
+    <tr> <td>0</td> <td>0</td> <td>0</td></tr>
+    <tr> <td>1</td> <td>1</td> <td>1</td></tr> 
+    <tr> <td>2</td> <td>10</td><td>2</td></tr>
+    <tr> <td>3</td> <td>11</td> <td>3</td></tr>
+    <tr> <td>4</td> <td>100</td><td>4</td></tr>
+    <tr> <td>5</td> <td>101</td><td>5</td></tr>
+    <tr> <td>6</td> <td>110</td><td>6</td></tr>
+    <tr> <td>7</td> <td>111</td><td>7</td></tr>
+    <tr> <td>8</td> <td>1000</td> <td>8</td></tr>
+  </tbody>
+</table>
+
+</div>
+<div>
+
+<table>
+  <tbody>
+    <tr> <th>Decimal</th> <th>Binary</th><th>Hex</th></tr>
+    <tr> <td>9</td> <td>1001</td> <td>9</td></tr>
+    <tr> <td>10</td> <td>1010</td><td>A</td></tr>
+    <tr> <td>11</td> <td>1011</td> <td>B</td></tr>
+    <tr> <td>12</td> <td>1100</td><td>C</td></tr>
+    <tr> <td>13</td> <td>1101</td><td>D</td></tr>
+    <tr> <td>14</td> <td>1110</td><td>E</td></tr>
+    <tr> <td>15</td> <td>1111</td><td>F</td></tr>
+    <tr> <td>16</td> <td>10000</td><td>10</td></tr>
+    <tr> <td>17</td> <td>10001</td><td>11</td></tr>
+  </tbody>
+</table>
+
+</div>
+</div>
+
+
+<!--=====================================================================-->
+
+### Exercise: Exploring in Mars
+  
+- Open up Mars and create a `.asm` file 
+- Put the number 302 in your data section
+- How does Mars display that in Hex?
+- What is the Binary equivalent?
+
+<!--=====================================================================-->
+
+### Exercise: Convert back and forth
+  
+- Convert the following binary number into hex
+  - $\text{1111 1010 0001 1011 0100 1110 0010 0011}_\text{two}$
+- Convert the following hexadecimal number into binary
+  - $\text{00FF33AA}_\text{hex}$
+
+<!--=====================================================================-->
+
+# Negative Numbers
+<!-- .slide: data-background="#004477" -->
+
+<!--=====================================================================-->
+
+## Negative Numbers in Binary
+- We usually represent negative numbers by including a "minus sign" at the beginning of a number: $-437$
+- <!-- .element: class="fragment"-->
+ However, when representing numbers for logic circuits, we can **ONLY** use $0$s and $1$s.
+- <!-- .element: class="fragment"-->
+ So what do we do?
+
+<!---------------------------------->
+
+## Idea 1: Using a Sign Bit
+- We could treat the first bit of a number as the "sign" bit where $0$ means positive and $1$ means negative
+    + $10010$ is the same as $-0010$
+    + $01010$ is the same as $+1010$
+- <!-- .element: class="fragment"-->
+ Drawbacks
+    + Multiple representations for $0$
+    + <!-- .element: class="fragment"-->
+ Addition/subtraction is not as convenient
+    + <!-- .element: class="fragment"-->
+ Confusion over where the sign bit should be
+ 
+
+<!---------------------------------->
+
+## Idea 2: Wrap Around
+
+![Odometer rollover](/Fall2024/CS130/assets/images/Odometer_rollover.jpg) <!-- .element width="200px" -->
+
+- Numbers "wrap around" from the **largest** number $999999$ to the **smallest** $000000$
+- <!-- .element: class="fragment"-->
+ We can do the same thing in binary!
+    + <!-- .element: class="fragment"-->
+ If you add one to the largest number, it "wraps around" to the smallest negative number
+
+    
+
+<!--=====================================================================-->
+
+# Two's Complement
+<!-- .slide: data-background="#004477" -->
+
+<!--=====================================================================-->
+
+## Two's Complement
+- Most computers use **two's complement** to encode signed integer values
+- What is it exactly?
+    + <!-- .element: class="fragment"-->
+ Non-negative numbers are represented as usual<br>$0000$, $0011$, $0110$
+    + <!-- .element: class="fragment"-->
+ To negate a number, you do the following:
+        1. Flip all the bits: $0\rightarrow 1$ and $1\rightarrow 0$
+        2. Add 1 to the result
+    + <!-- .element: class="fragment"-->
+ $0000$, $1101$, $1010$
+
+<!---------------------------------->
+
+<!-- .slide: data-background-image="/Fall2024/CS130/assets/images/COD/twos-complement.png" data-background-size="contain"-->
+
+<!---------------------------------->
+
+## Two's Complement
+- Most processors are 32-bit or 64-bit, which means values sent to the processor are encoded in 32 or 64 bits, respectively
+- <!-- .element: class="fragment"-->
+ In this class, we are using the MIPS 32-bit architecture
+- <!-- .element: class="fragment"-->
+ Another way to think about two's complement is:
+
+    $1000\\;1001\\;1100\\;1010\\;0110\\;0110\\;0001\\;1110$
+
+    $(x_{31}\cdot -2^{31}) + (x_{30}\cdot 2^{30}) + \cdots + (x_{1}\cdot 2^{1}) + (x_{0}\cdot 2^{0})$
+
+<!---------------------------------->
+
+## Exercise
+### Two's Complement Practice
+- Convert each of the following numbers to decimal:
+
+---
+
+- $1111\\;1111\\;1111\\;1111\\;1111\\;1111\\;1111\\;1111$
+- $1111\\;1111\\;1111\\;1111\\;1111\\;1111\\;1110\\;0101$
+- $0000\\;0000\\;0000\\;0000\\;0000\\;0000\\;0000\\;0101$
+
+
+<!--====================================================================-->
+
+## Assignment is up
+
+- [Assignment 2](../../assignments/assignment-2/)
+  - pen-and-paper 
+  - convert some numbers between decimal, hexadecimal, and binary
+
+<!--====================================================================-->
+
+# MIPS Machine Code
+<!-- .slide: data-background="#004477" -->
+
+<!--====================================================================-->
+
+## MIPS Machine Code
+- Each MIPS instruction is encoded in 32-bits
+    + <!-- .element: class="fragment"-->
+ `add` `$t0`, `$s1`, `$s2`
+    + <!-- .element: class="fragment"-->
+ 000000 10001 10010 01000 00000 100000
+
+---
+
+![R-Type Instruction](/Fall2024/CS130/assets/images/COD/r-type-instruction.png)<!-- .element: class="fragment"-->
+
+
+<!---------------------------------->
+
+## R-Type Instructions
+![R-Type Instruction](/Fall2024/CS130/assets/images/COD/r-type-instruction.png)
+
+---
+
+1. <!-- .element: class="fragment"-->
+ `op` (6 bits): Opcode
+2. <!-- .element: class="fragment"-->
+ `rs` (5 bits): First operand register
+3. <!-- .element: class="fragment"-->
+ `rt` (5 bits): Second operand register
+4. <!-- .element: class="fragment"-->
+ `rd` (5 bits): Destination register (result)
+5. <!-- .element: class="fragment"-->
+ `shamt` (5 bits): Shift amount
+6. <!-- .element: class="fragment"-->
+ `funct` (6 bits): Function code
+
+<!---------------------------------->
+
+## I-Type Instructions
+![I-Type Instruction](/Fall2024/CS130/assets/images/COD/i-type-instruction.png)
+
+---
+
+1. `op` (6 bits): Opcode
+2. `rs` (5 bits): First operand register
+3. `rt` (5 bits): Second operand register
+4. <!-- .element: class="fragment"-->
+ `data` (16 bits): Constant or address
+
+<!---------------------------------->
+
+## R-Type VS I-Type
+- Which type are each of the following instructions?
+    + <!-- .element: class="fragment"-->
+ add
+    + <!-- .element: class="fragment"-->
+ addi
+    + <!-- .element: class="fragment"-->
+ sub
+    + <!-- .element: class="fragment"-->
+ lw
+    + <!-- .element: class="fragment"-->
+ sw
+
+<!---------------------------------->
+
+## R-Type VS I-Type
+- Why do we need the I-type? Why not just implement `addi`, `lw`, and `sw` using the R-type format?
+    + <!-- .element: class="fragment"-->
+ Allows us to specify larger addresses and constants
+    + <!-- .element: class="fragment"-->
+ $2^5 = 32$ and $2^{16} = 65536$
+
+
+
+                    </textarea>
+                </section>
+            </div>
+        </div>
+
+        <script src="../dist/reveal.js"></script>
+        <script src="../plugin/notes/notes.js"></script>
+        <script src="../plugin/markdown/markdown.js"></script>
+        <script src="../plugin/highlight/highlight.js"></script>
+        <script src="../plugin/chalkboard/plugin.js"></script>
+        <script src="../plugin/math/math.js"></script>
+        <script src="../plugin/menu/menu.js"></script>
+        <!--  -->
+        <script>
+            // More info about initialization & config:
+            // - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
+            Reveal.initialize({
+                hash: true,
+                pdfSeparateFragments: false,
+
+                chalkboard: {
+                    chalkWidth: 4,
+                    chalkEffect: 0.5,
+                    toggleChalkboardButton: false,
+                    toggleNotesButton: false,
+                },
+
+                menu: {
+                    hideMissingTitles: true,
+                    themes: true,
+                    themesPath: '../dist/theme/',
+                },
+
+                // Learn about plugins: https://revealjs.com/plugins/
+                plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, 
+                    RevealChalkboard, RevealMath, RevealMenu ]
+            });
+        </script>
+    </body>
+</html>
