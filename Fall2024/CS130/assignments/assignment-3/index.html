@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Assignment 2 - CS 130: Computer Organization</title>
+<!-- begin _includes/seo.html --><title>Assignment 3 - CS 130: Computer Organization</title>
 <meta name="description" content="">
 
 
@@ -22,8 +22,8 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="CS 130: Computer Organization">
-<meta property="og:title" content="Assignment 2">
-<meta property="og:url" content="https://ericmanley.github.io/Fall2024/CS130/assignments/assignment-2/">
+<meta property="og:title" content="Assignment 3">
+<meta property="og:url" content="https://ericmanley.github.io/Fall2024/CS130/assignments/assignment-3/">
 
 
   <meta property="og:description" content="">
@@ -41,7 +41,7 @@
 
 
 
-<link rel="canonical" href="https://ericmanley.github.io/Fall2024/CS130/assignments/assignment-2/">
+<link rel="canonical" href="https://ericmanley.github.io/Fall2024/CS130/assignments/assignment-3/">
 
 
 
@@ -290,7 +290,7 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Assignment 2">
+    <meta itemprop="headline" content="Assignment 3">
     <meta itemprop="description" content="">
     <meta itemprop="datePublished" content="2024-09-11T13:48:31-05:00">
     
@@ -298,7 +298,7 @@
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Assignment 2
+          <h1 id="page-title" class="page__title" itemprop="headline">Assignment 3
 </h1>
           
 
@@ -314,7 +314,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          less than 1 minute read
+          1 minute read
         
       </span>
     
@@ -329,7 +329,7 @@
           <aside class="sidebar__right ">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
-              <ul class="toc__menu"><li><a href="#instructions">Instructions</a></li><li><a href="#exercises">Exercises</a></li><li><a href="#grading">Grading</a></li><li><a href="#what-to-turn-in">What to turn in</a></li></ul>
+              <ul class="toc__menu"><li><a href="#a-python-program-to-translate">A Python program to translate</a></li><li><a href="#assignment">Assignment</a></li><li><a href="#purpose">Purpose</a></li><li><a href="#grading">Grading</a></li><li><a href="#what-to-turn-in">What to turn in</a></li><li><a href="#where-to-turn-it-in">Where to turn it in</a></li></ul>
 
             </nav>
           </aside>
@@ -344,37 +344,68 @@ Assignment
 <br>
 -->
 
-<strong>Due:</strong> by the end of the calendar day on Tuesday, September 17, 2024
+<strong>Due:</strong> by the end of the calendar day on Thursday, September 19, 2024
 
 
 
-<h2 id="instructions">Instructions</h2>
+<h2 id="a-python-program-to-translate">A Python program to translate</h2>
 
-<p>This is a pen-and-paper assignment. Write down each exercise and show the work that leads to your solution (or, if not “showing” your work, explain <em>why</em> your solution is correct). Assume all binary numbers are in 16-bit two’s complement notation.</p>
+<p>The following Python program allows the user to continuously enter integers. Positive numbers are added to one accumulator, and negative numbers are added to another. In the end, both the positive and negative totals are displayed.</p>
 
-<h2 id="exercises">Exercises</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">positive_total</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">negative_total</span> <span class="o">=</span> <span class="mi">0</span>
 
-<ol>
-  <li>Convert $139_\text{ten}$ into binary (your answer should be shown with 16 bits).</li>
-  <li>Convert $-139_\text{ten}$ into binary (your answer should be shown with 16 bits).</li>
-  <li>Convert $0000 ~0010 ~0110 ~1011_\text{two}$ into decimal (note: this is a single 16-bit number, the spaces are there to make it more readable).</li>
-  <li>Convert $1111 ~1111 ~1101 ~0111_\text{two}$ into decimal.</li>
-  <li>Convert $0000 ~0101 ~1010 ~1110_\text{two}$ into hexadecimal.</li>
-  <li>Convert $1111 ~1111 ~1101 ~0111_\text{two}$ into hexadecimal.</li>
-  <li>Convert $\texttt{0x0F1A}$ into binary.</li>
-</ol>
+<span class="n">user_input</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1">#force the loop to run at least once
+</span>
+<span class="k">while</span> <span class="n">user_input</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+
+    <span class="n">user_input</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Enter an integer (0 to quit):"</span><span class="p">))</span>
+
+    <span class="k">if</span> <span class="n">user_input</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">positive_total</span> <span class="o">+=</span> <span class="n">user_input</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">negative_total</span> <span class="o">+=</span> <span class="n">user_input</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s">"Positive total:"</span><span class="p">,</span><span class="n">positive_total</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"Negative total:"</span><span class="p">,</span><span class="n">negative_total</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Here’s an example of a sample run in the console:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Enter an integer (0 to quit): 3
+Enter an integer (0 to quit): -5
+Enter an integer (0 to quit): 9
+Enter an integer (0 to quit): 1
+Enter an integer (0 to quit): -2
+Enter an integer (0 to quit): 0
+Positive total: 13
+Negative total: -7
+</code></pre></div></div>
+
+<h2 id="assignment">Assignment</h2>
+
+<p>Translate the above Python program into MIPS. When you run the program, the user interaction in the console should look like it does when you run the Python program.</p>
+
+<h2 id="purpose">Purpose</h2>
+
+<p>The purpose of this assignment is to get practice with branching. You don’t need to worry about having a copy of each variable in the <code class="language-plaintext highlighter-rouge">.data</code> section - if you keep track of a variable exclusively in a register, that is ok.</p>
 
 <h2 id="grading">Grading</h2>
 
-<p>This is a 4-point assignment. See the <a href="../../syllabus//#assignments">rubric</a> from the syllabus. Since there are many problems, half point increments may be awarded if different portions of the assignment would fit into different rubric categories.</p>
+<p>This is a 4-point assignment. See the <a href="../../syllabus//#assignments">rubric</a> from the syllabus.</p>
 
 <h2 id="what-to-turn-in">What to turn in</h2>
 
-<p>Turn in one of the following:</p>
+<p>Turn in the following items</p>
+
 <ol>
-  <li>a physical, hand-written piece of paper with your solutions and work (bringing it to class)</li>
-  <li>a photo/scan (or other suitable electronic format) of your solutions and work, uploaded to the <strong>Assignment 2</strong> hand-in form on Blackboard</li>
+  <li>Your <code class="language-plaintext highlighter-rouge">.asm</code> file which contains your MIPS program</li>
+  <li>A <code class="language-plaintext highlighter-rouge">.txt</code> file (you can use Notepad, TextEdit, or even Visual Studio Code) where you paste in a sample run of your program that shows how it worked when you ran it in MARS</li>
 </ol>
+
+<h2 id="where-to-turn-it-in">Where to turn it in</h2>
+
+<p>Submit your files to the <strong>Assignment 3</strong> hand-in form on Blackboard.</p>
 
 
         
