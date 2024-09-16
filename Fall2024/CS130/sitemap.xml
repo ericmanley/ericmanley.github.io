@@ -2,15 +2,15 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://ericmanley.github.io/Fall2024/CS130/assignments/assignment-1/</loc>
-<lastmod>2024-09-11T13:48:31-05:00</lastmod>
+<lastmod>2024-09-16T12:56:28-05:00</lastmod>
 </url>
 <url>
 <loc>https://ericmanley.github.io/Fall2024/CS130/assignments/assignment-2/</loc>
-<lastmod>2024-09-11T13:48:31-05:00</lastmod>
+<lastmod>2024-09-16T12:56:28-05:00</lastmod>
 </url>
 <url>
 <loc>https://ericmanley.github.io/Fall2024/CS130/assignments/assignment-3/</loc>
-<lastmod>2024-09-11T13:48:31-05:00</lastmod>
+<lastmod>2024-09-16T12:56:28-05:00</lastmod>
 </url>
 <url>
 <loc>https://ericmanley.github.io/Fall2024/CS130/slides/2024-08-27-introduction-to-computer-organization/</loc>
@@ -33,8 +33,12 @@
 <lastmod>2024-09-10T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>https://ericmanley.github.io/Fall2024/CS130/slides/2024-09-12-branching-and-arrays/</loc>
+<loc>https://ericmanley.github.io/Fall2024/CS130/slides/2024-09-12-logic-and-branching/</loc>
 <lastmod>2024-09-12T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://ericmanley.github.io/Fall2024/CS130/slides/2024-09-17-arrays-and-procedures/</loc>
+<lastmod>2024-09-17T00:00:00-05:00</lastmod>
 </url>
 <url>
 <loc>https://ericmanley.github.io/Fall2024/CS130/404/</loc>
