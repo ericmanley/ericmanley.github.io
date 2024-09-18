@@ -67,3 +67,21 @@
 .reveal .justify-start { justify-content: flex-start; }
 .reveal .justify-center { justify-content: center; }
 .reveal .justify-end { justify-content: flex-end; }
+
+.reveal .slides section[data-state="list-aligned-slide"] ol {
+    list-style-position: inside;
+    text-align: left;
+    margin-left: 0;
+}
+
+.reveal .slides section[data-state="list-aligned-slide"] ol li {
+	margin-bottom: 0.5em;
+}
+
+.reveal .slides section[data-state="list-aligned-slide"] ol li ul {
+	margin-left: 1.5em;
+}
+
+.reveal .slides section[data-state="list-aligned-slide"] ol li ul li {
+	margin-bottom: 0.3em;
+}

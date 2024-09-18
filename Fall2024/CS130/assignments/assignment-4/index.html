@@ -1,0 +1,628 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Assignment 4 - CS 130: Computer Organization</title>
+<meta name="description" content="">
+
+
+  <meta name="author" content="Instructor">
+  
+  <meta property="article:author" content="Instructor">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="CS 130: Computer Organization">
+<meta property="og:title" content="Assignment 4">
+<meta property="og:url" content="https://ericmanley.github.io/Fall2024/CS130/assignments/assignment-4/">
+
+
+  <meta property="og:description" content="">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2024-09-18T13:09:18-05:00">
+
+
+
+
+
+
+<link rel="canonical" href="https://ericmanley.github.io/Fall2024/CS130/assignments/assignment-4/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Eric Manley",
+      "url": "https://ericmanley.github.io/Fall2024/CS130/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/Fall2024/CS130/feed.xml" type="application/atom+xml" rel="alternate" title="CS 130: Computer Organization Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/Fall2024/CS130/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--assignment">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/Fall2024/CS130/">
+          CS 130: Computer Organization
+          <span class="site-subtitle">Drake University, Fall 2024</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/Fall2024/CS130/syllabus/">Syllabus</a>
+            </li><li class="masthead__menu-item">
+              <a href="/Fall2024/CS130/content/">Content</a>
+            </li><li class="masthead__menu-item">
+              <a href="/Fall2024/CS130/resources/">Resources</a>
+            </li><li class="masthead__menu-item">
+              <a href="/Fall2024/CS130/assignments/">Assignments</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/Fall2024/CS130/assets/images/bio-photo.jpg" alt="Instructor" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Instructor</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>Eric Manley<br />Associate Professor<br />Drake University</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Contact</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+  <li><i class="fas fa-fw fa-building" aria-hidden="true"></i> Collier-Scripps 327</li>
+
+
+
+  <li><i class="fas fa-fw fa-phone" aria-hidden="true"></i> (515) 271-2177</li>
+
+
+
+  <li>
+    <a href="mailto:eric.manley@drake.edu">
+      <meta itemprop="email" content="eric.manley@drake.edu" />
+      <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> eric.manley@drake.edu
+    </a>
+  </li>
+
+
+
+  <li>
+    <a href="http://manley.wp.drake.edu/">
+      <i class="fas fa-fw fa-link" aria-hidden="true"></i> http://manley.wp.drake.edu/
+    </a>
+  </li>
+
+
+
+  <li>
+    <a href="https://teams.microsoft.com/l/chat/0/0?users=eric.manley@drake.edu">
+      <i class="fas fa-fw fa-comments" aria-hidden="true"></i> Message me on Teams
+    </a>
+  </li>
+
+
+
+  <li>
+    <a href="https://calendly.com/eric-manley/">
+      <i class="fas fa-fw fa-calendar" aria-hidden="true"></i> Schedule an Appointment
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</div>
+
+  
+    
+      
+      <h3>Office Hours</h3>
+      <p>Schedule in Calendly the day before or drop in<br />M 9:30am-12:30pm<br />Th 2:00pm-4:00pm</p>
+
+      
+    
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Assignment 4">
+    <meta itemprop="description" content="">
+    <meta itemprop="datePublished" content="2024-09-18T13:09:18-05:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Assignment 4
+</h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#a-python-program-with-functions-and-arrays">A Python program with functions and arrays</a></li><li><a href="#a-start-to-translating-the-python-program-into-mips">A start to translating the Python program into MIPS</a></li><li><a href="#assignment">Assignment</a></li><li><a href="#grading">Grading</a></li><li><a href="#what-to-turn-in">What to turn in</a></li><li><a href="#where-to-turn-it-in">Where to turn it in</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <!--
+
+<strong>Type:</strong>
+
+  Individual
+
+Assignment
+<br>
+-->
+
+<strong>Due:</strong> by the end of the calendar day on Tuesday, October 1, 2024
+
+
+
+<h2 id="a-python-program-with-functions-and-arrays">A Python program with functions and arrays</h2>
+
+<p>The following Python program utlizes a function that doubles every item in a list. It is spread across four different functions.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#test out double_items on two different lists
+</span><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">54</span><span class="p">,</span><span class="mi">26</span><span class="p">,</span><span class="mi">93</span><span class="p">,</span><span class="mi">17</span><span class="p">,</span><span class="mi">77</span><span class="p">,</span><span class="mi">31</span><span class="p">,</span><span class="mi">44</span><span class="p">,</span><span class="mi">55</span><span class="p">,</span><span class="mi">20</span><span class="p">]</span>
+    <span class="n">length1</span> <span class="o">=</span> <span class="mi">9</span>
+    <span class="n">list2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">9</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">length2</span> <span class="o">=</span> <span class="mi">5</span>
+    <span class="n">double_items</span><span class="p">(</span><span class="n">list1</span><span class="p">,</span><span class="n">length1</span><span class="p">)</span>
+    <span class="n">double_items</span><span class="p">(</span><span class="n">list2</span><span class="p">,</span><span class="n">length2</span><span class="p">)</span>
+    <span class="n">print_list</span><span class="p">(</span><span class="n">list1</span><span class="p">,</span><span class="n">length1</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">()</span>
+    <span class="n">print_list</span><span class="p">(</span><span class="n">list2</span><span class="p">,</span><span class="n">length2</span><span class="p">)</span>
+    <span class="k">return</span>
+
+<span class="c1">#double a single value
+</span><span class="k">def</span> <span class="nf">double_value</span><span class="p">(</span><span class="n">val</span><span class="p">):</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">val</span><span class="o">+</span><span class="n">val</span>
+    <span class="k">return</span> <span class="n">result</span>
+
+<span class="c1">#double all items in a list
+</span><span class="k">def</span> <span class="nf">double_items</span><span class="p">(</span><span class="n">a_list</span><span class="p">,</span> <span class="n">list_length</span><span class="p">):</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">list_length</span><span class="p">:</span>
+        <span class="n">a_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">double_value</span><span class="p">(</span><span class="n">a_list</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+        <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">return</span>
+
+<span class="c1">#print a list with one item per line
+</span><span class="k">def</span> <span class="nf">print_list</span><span class="p">(</span><span class="n">a_list</span><span class="p">,</span><span class="n">list_length</span><span class="p">):</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">list_length</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">a_list</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+        <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">return</span>
+
+<span class="n">main</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>Here’s the output you get when you run it in the console:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>108
+52
+186
+34
+154
+62
+88
+110
+40
+
+18
+16
+14
+12
+10
+</code></pre></div></div>
+
+<h2 id="a-start-to-translating-the-python-program-into-mips">A start to translating the Python program into MIPS</h2>
+
+<p>Here’s an attempt to translate the program into MIPS. The <code class="language-plaintext highlighter-rouge">main</code>, <code class="language-plaintext highlighter-rouge">double_value</code>, and <code class="language-plaintext highlighter-rouge">print_list</code> procedures are finished, but you will need to finish implementing the <code class="language-plaintext highlighter-rouge">double_items</code> procedure.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.data
+
+   list1: 54,26,93,17,77,31,44,55,20
+   length1: 9
+   list2: 9,8,7,6,5
+   length2: 5
+
+   newline: .asciiz "\n"
+
+.text
+
+###############BEGIN main###############
+main:
+   la $a0, list1
+   lw $a1, length1
+   jal double_items
+   
+   la $a0, list2
+   lw $a1, length2
+   jal double_items
+   
+   la $a0, list1
+   lw $a1, length1
+   jal print_list
+   
+   li $v0, 4 #code for printing a string
+   la $a0, newline
+   syscall
+   
+   la $a0, list2
+   lw $a1, length2
+   jal print_list
+   
+   j exit_program
+###############END main###############   
+
+   
+###############BEGIN double_value###############   
+double_value:
+   add $v0, $a0, $a0
+   jr $ra
+###############END double_value###############
+
+
+###############BEGIN double_items###############
+#this doesn't do anything yet, it just
+#jumps back to the calling procedure
+#you must implement this function to work
+#like the double_items function in the
+#Python program
+double_items:
+   jr $ra
+###############END double_items###############
+
+
+###############BEGIN print_list###############
+print_list:
+   move $t0, $a0 #$a0 is the list address
+   move $t1, $a1 #$a1 is the list length
+   li $t2, 0 #loop counter i
+
+print_list_loop:   
+   bge $t2, $t1, print_list_end #exit loop if i &gt;= list length
+   
+   sll $t4, $t2, 2 #multiply loop counter by 4 to get memory offset
+   add $t3, $t0, $t4 #add base address of list and memory offset
+   
+   lw $a0, 0($t3) #load a_list[i]
+   li $v0, 1 #code for printing an integer
+   syscall
+   
+   li $v0, 4 #code for printing a string
+   la $a0, newline
+   syscall
+   
+   addi $t2, $t2, 1 #increment loop counter
+   
+   b print_list_loop
+   
+   
+print_list_end:
+   jr $ra
+###############END print_list###############
+   
+exit_program:   
+</code></pre></div></div>
+
+<h2 id="assignment">Assignment</h2>
+
+<p>Finish translating the <code class="language-plaintext highlighter-rouge">double_items</code> function into a MIPS procedure.</p>
+
+<p>The translation should do the following (in order of priority):</p>
+<ol>
+  <li>allow the function to behave just the same way as the Python program</li>
+  <li>call the <code class="language-plaintext highlighter-rouge">double_value</code> procedure from inside the <code class="language-plaintext highlighter-rouge">double_items</code> procedure</li>
+  <li>inside <code class="language-plaintext highlighter-rouge">double_items</code>, use the stack (with <code class="language-plaintext highlighter-rouge">$sp</code>) to save <code class="language-plaintext highlighter-rouge">$ra</code> and to make sure you restore any <code class="language-plaintext highlighter-rouge">$s</code> registers that you use to their values that they had before the procedure started</li>
+</ol>
+
+<h2 id="grading">Grading</h2>
+
+<p>This is an 8-point assignment. See the <a href="../../syllabus//#assignments">rubric</a> from the syllabus, with the following exception:</p>
+
+<p>The full 8 points will be for correct behavior with proper use of the stack and a call to <code class="language-plaintext highlighter-rouge">double_value</code> from within <code class="language-plaintext highlighter-rouge">double_items</code>. You can get 7 points if it behaves correctly and you have utilized at least one of <code class="language-plaintext highlighter-rouge">double_value</code> and the stack. You can get 6 points for something that behaves correctly even if it uses neither of <code class="language-plaintext highlighter-rouge">double_value</code> nor the stack. You will get 5 points for significant progress towards the solution, even if it produces incorrect results.</p>
+
+<h2 id="what-to-turn-in">What to turn in</h2>
+
+<p>Turn in the following items</p>
+
+<ol>
+  <li>Your <code class="language-plaintext highlighter-rouge">.asm</code> file which contains your MIPS program</li>
+  <li>A <code class="language-plaintext highlighter-rouge">.txt</code> file (you can use Notepad, TextEdit, or even Visual Studio Code) where you paste in a sample run of your program that shows how it worked when you ran it in MARS</li>
+</ol>
+
+<h2 id="where-to-turn-it-in">Where to turn it in</h2>
+
+<p>Submit your files to the <strong>Assignment 4</strong> hand-in form on Blackboard.</p>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2024-09-18T13:09:18-05:00">September 18, 2024</time></p>
+
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-copyright">
+    &copy; 2024 Eric Manley licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+        <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
+    </a>
+    <br>
+    Select materials are &copy; Titus Klinge, Marge Coahran, Charlie Curtsinger, Janet Davis, and Jerod Weinman and distributed under the same license.
+    <br>
+    This site was generated using 
+    <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; 
+    <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.
+</div>
+      </footer>
+    </div>
+
+    
+  <script src="/Fall2024/CS130/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/Fall2024/CS130/assets/js/lunr/lunr.min.js"></script>
+<script src="/Fall2024/CS130/assets/js/lunr/lunr-store.js"></script>
+<script src="/Fall2024/CS130/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+   MathJax.Hub.Config({
+     extensions: ["tex2jax.js"],
+     jax: ["input/TeX", "output/HTML-CSS"],
+     tex2jax: {
+       inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+       displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+       processEscapes: true
+     },
+     "HTML-CSS": { availableFonts: ["TeX"] }
+   });
+</script>
+
+  </body>
+</html>
