@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Assignment 3 - CS 130: Computer Organization</title>
+<!-- begin _includes/seo.html --><title>Assignment 6 - CS 130: Computer Organization</title>
 <meta name="description" content="">
 
 
@@ -22,8 +22,8 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="CS 130: Computer Organization">
-<meta property="og:title" content="Assignment 3">
-<meta property="og:url" content="https://ericmanley.github.io/Fall2024/CS130/assignments/assignment-3/">
+<meta property="og:title" content="Assignment 6">
+<meta property="og:url" content="https://ericmanley.github.io/Fall2024/CS130/assignments/assignment-6/">
 
 
   <meta property="og:description" content="">
@@ -41,7 +41,7 @@
 
 
 
-<link rel="canonical" href="https://ericmanley.github.io/Fall2024/CS130/assignments/assignment-3/">
+<link rel="canonical" href="https://ericmanley.github.io/Fall2024/CS130/assignments/assignment-6/">
 
 
 
@@ -290,7 +290,7 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Assignment 3">
+    <meta itemprop="headline" content="Assignment 6">
     <meta itemprop="description" content="">
     <meta itemprop="datePublished" content="2024-10-07T12:54:58-05:00">
     
@@ -298,7 +298,7 @@
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Assignment 3
+          <h1 id="page-title" class="page__title" itemprop="headline">Assignment 6
 </h1>
           
 
@@ -329,7 +329,7 @@
           <aside class="sidebar__right ">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
-              <ul class="toc__menu"><li><a href="#a-python-program-to-translate">A Python program to translate</a></li><li><a href="#assignment">Assignment</a></li><li><a href="#purpose">Purpose</a></li><li><a href="#grading">Grading</a></li><li><a href="#what-to-turn-in">What to turn in</a></li><li><a href="#where-to-turn-it-in">Where to turn it in</a></li></ul>
+              <ul class="toc__menu"><li><a href="#assignment">Assignment</a></li><li><a href="#grading">Grading</a></li><li><a href="#what-to-turn-in">What to turn in</a></li><li><a href="#where-to-turn-it-in">Where to turn it in</a></li></ul>
 
             </nav>
           </aside>
@@ -344,68 +344,40 @@ Assignment
 <br>
 -->
 
-<strong>Due:</strong> by the end of the calendar day on Tuesday, September 24, 2024
+<strong>Due:</strong> by the end of the calendar day on Thursday, October 17, 2024
 
 
-
-<h2 id="a-python-program-to-translate">A Python program to translate</h2>
-
-<p>The following Python program allows the user to continuously enter integers. Positive numbers are added to one accumulator, and negative numbers are added to another. In the end, both the positive and negative totals are displayed.</p>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">positive_total</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">negative_total</span> <span class="o">=</span> <span class="mi">0</span>
-
-<span class="n">user_input</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1">#force the loop to run at least once
-</span>
-<span class="k">while</span> <span class="n">user_input</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
-
-    <span class="n">user_input</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Enter an integer (0 to quit):"</span><span class="p">))</span>
-
-    <span class="k">if</span> <span class="n">user_input</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="n">positive_total</span> <span class="o">+=</span> <span class="n">user_input</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">negative_total</span> <span class="o">+=</span> <span class="n">user_input</span>
-
-<span class="k">print</span><span class="p">(</span><span class="s">"Positive total:"</span><span class="p">,</span><span class="n">positive_total</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s">"Negative total:"</span><span class="p">,</span><span class="n">negative_total</span><span class="p">)</span>
-</code></pre></div></div>
-
-<p>Here’s an example of a sample run in the console:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Enter an integer (0 to quit): 3
-Enter an integer (0 to quit): -5
-Enter an integer (0 to quit): 9
-Enter an integer (0 to quit): 1
-Enter an integer (0 to quit): -2
-Enter an integer (0 to quit): 0
-Positive total: 13
-Negative total: -7
-</code></pre></div></div>
 
 <h2 id="assignment">Assignment</h2>
 
-<p>Translate the above Python program into MIPS. When you run the program, the user interaction in the console should look like it does when you run the Python program.</p>
-
-<h2 id="purpose">Purpose</h2>
-
-<p>The purpose of this assignment is to get practice with branching. You don’t need to worry about having a copy of each variable in the <code class="language-plaintext highlighter-rouge">.data</code> section - if you keep track of a variable exclusively in a register, that is ok.</p>
+<p>Create a 32-bit ALU that allows for adding, subtracting, <code class="language-plaintext highlighter-rouge">and</code>, <code class="language-plaintext highlighter-rouge">or</code>, <code class="language-plaintext highlighter-rouge">not</code>, <code class="language-plaintext highlighter-rouge">xor</code>, and <code class="language-plaintext highlighter-rouge">slt</code> (and any other operations you’d like to support). You are welcome to use any of the components that Logisim has built in (like multiplexers - but also the Adder, Subtractor, and Comparator).</p>
 
 <h2 id="grading">Grading</h2>
 
-<p>This is a 4-point assignment. See the <a href="../../syllabus//#assignments">rubric</a> from the syllabus.</p>
+<p>This is an 8-point assignment. See the <a href="../../syllabus//#assignments">rubric</a> from the syllabus.  For this assignment, you can get up to 5 points for turning in a working version of the 4-bit ALU we worked on in class that included <code class="language-plaintext highlighter-rouge">add</code>, <code class="language-plaintext highlighter-rouge">and</code>, <code class="language-plaintext highlighter-rouge">or</code>, <code class="language-plaintext highlighter-rouge">not</code>, and <code class="language-plaintext highlighter-rouge">xor</code>. You can get 1 more point for each of the following:</p>
+
+<ul>
+  <li>Make it 32 bits</li>
+  <li>Get subtraction working using the same circuitry as addition (it can be either the adder you made or the built in Adder - just make it work for both addition and subtraction rather than using the Subtractor or a second copy of the Adder)</li>
+  <li>Get <code class="language-plaintext highlighter-rouge">slt</code> working using the same circuitry as addition/subtraction (not just the Comparator)</li>
+</ul>
 
 <h2 id="what-to-turn-in">What to turn in</h2>
 
-<p>Turn in the following items</p>
+<p>Turn in screenshots of the following things and submit them to the Blackboard form for the assignment:</p>
+<ul>
+  <li>Logisim Diagram(s) of your adder, subtractor, and or slt circuit (depending on how you did it, this may be 1, 2, or 3 different images)</li>
+  <li>Logisim Diagram of your ALU</li>
+  <li>A test vector that you made which includes comments indicating what they are testing for your specific ALU (this should include several different tests of each operation which are different than in my example, and your op values might be different!)</li>
+  <li>Logisim test vector results screen showing which tests it passed and failed</li>
+</ul>
 
-<ol>
-  <li>Your <code class="language-plaintext highlighter-rouge">.asm</code> file which contains your MIPS program</li>
-  <li>A <code class="language-plaintext highlighter-rouge">.txt</code> file (you can use Notepad, TextEdit, or even Visual Studio Code) where you paste in a sample run of your program that shows how it worked when you ran it in MARS</li>
-</ol>
+<p>The test vector and results screenshots might look like this (again, your ALU might use different codes for <code class="language-plaintext highlighter-rouge">Op</code>, so include comments that help me understad your results)
+<img src="/Fall2024/CS130/assets/images/alu_test_vector.png" alt="Example submission screenshot" /></p>
 
 <h2 id="where-to-turn-it-in">Where to turn it in</h2>
 
-<p>Submit your files to the <strong>Assignment 3</strong> hand-in form on Blackboard.</p>
+<p>Submit your document of images to the <strong>Assignment 6</strong> hand-in form on Blackboard.</p>
 
 
         
