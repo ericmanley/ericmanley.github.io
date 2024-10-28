@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Exam 2 - CS 130: Computer Organization</title>
+<!-- begin _includes/seo.html --><title>Assignment 7 - CS 130: Computer Organization</title>
 <meta name="description" content="">
 
 
@@ -22,8 +22,8 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="CS 130: Computer Organization">
-<meta property="og:title" content="Exam 2">
-<meta property="og:url" content="https://ericmanley.github.io/Fall2024/CS130/assignments/exam-2/">
+<meta property="og:title" content="Assignment 7">
+<meta property="og:url" content="https://ericmanley.github.io/Fall2024/CS130/assignments/assignment-7/">
 
 
   <meta property="og:description" content="">
@@ -41,7 +41,7 @@
 
 
 
-<link rel="canonical" href="https://ericmanley.github.io/Fall2024/CS130/assignments/exam-2/">
+<link rel="canonical" href="https://ericmanley.github.io/Fall2024/CS130/assignments/assignment-7/">
 
 
 
@@ -290,7 +290,7 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Exam 2">
+    <meta itemprop="headline" content="Assignment 7">
     <meta itemprop="description" content="">
     <meta itemprop="datePublished" content="2024-10-28T12:01:07-05:00">
     
@@ -298,7 +298,7 @@
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Exam 2
+          <h1 id="page-title" class="page__title" itemprop="headline">Assignment 7
 </h1>
           
 
@@ -314,7 +314,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          less than 1 minute read
+          2 minute read
         
       </span>
     
@@ -326,6 +326,14 @@
 
       <section class="page__content" itemprop="text">
         
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#our-mips-cpu-design-in-logisim">Our MIPS CPU Design in Logisim</a></li><li><a href="#assignment">Assignment</a></li><li><a href="#grading">Grading</a></li><li><a href="#bonus-points">Bonus Points</a></li><li><a href="#what-to-turn-in">What to turn in</a></li><li><a href="#where-to-turn-it-in">Where to turn it in</a></li></ul>
+
+            </nav>
+          </aside>
+        
         <!--
 
 <strong>Type:</strong>
@@ -336,17 +344,56 @@ Assignment
 <br>
 -->
 
-<strong>Due:</strong> by the end of the calendar day on Tuesday, October 22, 2024
+<strong>Due:</strong> by the end of the calendar day on Tuesday, November 5, 2024
 
 
 
-<p>Complete the test marked <strong>Exam 2</strong> on Blackboard.</p>
+<h2 id="our-mips-cpu-design-in-logisim">Our MIPS CPU Design in Logisim</h2>
 
-<p>This exam is to be completed individually. You may use the book, course slides, or your notes as reference material. You may not use any reference outside of the course materials (including Internet searches and Generative AI). You may not look at the work of other students, whether they are in the class now, have taken it in the past, or have taken a similar course at another school.</p>
+<p>So far in class, we’ve designed a partial MIPS CPU.</p>
 
-<p>This exam is not timed. You may save your progress and return to finish later, though you may only submit it once.</p>
+<p><img src="../../assets/images/logisim_cpu_simulated.png" alt="Datapath with Control in Logisim" /></p>
 
-<p>The purpose of the free-response questions is for you to demonstrate that you can explain these concepts from your own understanding. A response that has good ideas and is written in your own voice will be valued much more than technically precise sentences copied from the book or some other source.</p>
+<p>If you haven’t already, add on to your datapath so that it looks like this one.</p>
+
+<h2 id="assignment">Assignment</h2>
+
+<p>Update your control unit to support <code class="language-plaintext highlighter-rouge">add</code>, <code class="language-plaintext highlighter-rouge">addi</code>, <code class="language-plaintext highlighter-rouge">sub</code>, <code class="language-plaintext highlighter-rouge">and</code>, <code class="language-plaintext highlighter-rouge">or</code>, <code class="language-plaintext highlighter-rouge">xor</code>, <code class="language-plaintext highlighter-rouge">andi</code>, <code class="language-plaintext highlighter-rouge">ori</code>, <code class="language-plaintext highlighter-rouge">xori</code>, <code class="language-plaintext highlighter-rouge">slt</code>, and <code class="language-plaintext highlighter-rouge">slti</code>.</p>
+
+<p>Write a MIPS program in MARS with these instructions and look at the bit-pattern in the <em>code</em> column of the Text Segment after it has been assembled. Copy this by hand into your CPU’s <em>instruction memory</em>.</p>
+
+<p><img src="../../assets/images/mips-for-logisim-mars.png" alt="MIPS program in MARS" /></p>
+
+<p><img src="../../assets/images/mips-for-logisim-rom.png" alt="MIPS program in Logisim" /></p>
+
+<p>Simulate it. Use the <strong>viewRegisterNum</strong> and <strong>RegisterContents</strong> pins on the register file to view the contents of different registers as it executes, and convince yourself that everything is working correctly.</p>
+
+<p>Submit the following</p>
+<ul>
+  <li>A screenshot of the Text Segment on the <em>Execute</em> tab from MARS which shows the MIPS program that you used to test your CPU. This MIPS program doesn’t have to do anything special, but it should have some registers with non-zero values that depend on multiple instructions executing successfully. For example, in the program above, the value in <code class="language-plaintext highlighter-rouge">$12</code> depends on the first 5 instructions working correctly (and <code class="language-plaintext highlighter-rouge">$13</code> depends on all 6 - but is harder to verify since it has a 0/1 value).</li>
+  <li>A screenshot of your control unit truth table that you used to generate your Control unit</li>
+  <li>A screenshot of the circuit Logisim generated for your control unit</li>
+  <li>A screenshot of your CPU with a value displayed on the <strong>RegisterContents</strong> pin. You should pick a register whose value depends on several instructions computing successfully (and more than just <code class="language-plaintext highlighter-rouge">add</code> and <code class="language-plaintext highlighter-rouge">addi</code> which we did in class) just the ones we did in class.</li>
+  <li>A short explanation describing why the displayed value on <strong>RegisterContents</strong> is correct.</li>
+</ul>
+
+<p><strong>Do not zip up your files when you submit them</strong></p>
+
+<h2 id="grading">Grading</h2>
+
+<p>This is an 8-point assignment. See the <a href="../../syllabus//#assignments">rubric</a> from the syllabus.</p>
+
+<h2 id="bonus-points">Bonus Points</h2>
+
+<p>You can earn up to 4 points of extra credit by implementing <code class="language-plaintext highlighter-rouge">lw</code>, <code class="language-plaintext highlighter-rouge">sw</code>, <code class="language-plaintext highlighter-rouge">beq</code>, and <code class="language-plaintext highlighter-rouge">bne</code> in your CPU (1 point each). I’ll also entertain points for other kinds of instructions like shifting or jumping instructions. If you do this, make sure to describe what you did for extra credit, and show that you verified it works in a similar way to how you showed the other instructions work.</p>
+
+<h2 id="what-to-turn-in">What to turn in</h2>
+
+<p>Turn in the documentation described in the Assignment section.</p>
+
+<h2 id="where-to-turn-it-in">Where to turn it in</h2>
+
+<p>Submit your document of images to the <strong>Assignment 7</strong> hand-in form on Blackboard.</p>
 
 
         
