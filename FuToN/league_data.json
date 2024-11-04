@@ -16841,11 +16841,511 @@
       }
     }
   ],
+  "ranks": [
+    [
+      {
+        "name": "The Cincinnati Kid",
+        "logo_image": "https://s.yimg.com/ep/cx/blendr/v2/image-letterman-jacket-png_1721175092760.png",
+        "points": 154.05
+      },
+      {
+        "name": "Orange Crush",
+        "logo_image": "https://s.yimg.com/cv/apiv2/default/nfl/nfl_1.png",
+        "points": 137.87
+      },
+      {
+        "name": "Redheaded Rampage (UNM)",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/8f8b5768834973181f6ef35c6eaf3762c52d192e1f5269131de3abb94356c6f2.jpg",
+        "points": 116.5
+      },
+      {
+        "name": "More than a Thielen",
+        "logo_image": "https://s.yimg.com/cv/apiv2/default/nfl/nfl_4_b.png",
+        "points": 111.4
+      },
+      {
+        "name": "Battle Unicorns",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/c5617d4a014c684f3bca794d3429f9c48546467b0725997f3c4eeb9e2be00703.jpg",
+        "points": 109.44
+      },
+      {
+        "name": "Deterministic Parrots",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/ad601215e5658cf7fec9d1742f20e65e1934fc1d521ab31d649cbcfbe8b8f9a7.png",
+        "points": 104.64
+      },
+      {
+        "name": "Trump Train",
+        "logo_image": "https://s.yimg.com/cv/apiv2/default/nfl/nfl_4.png",
+        "points": 102.97
+      },
+      {
+        "name": "Burrowhead Stadium",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/85176392ed36f44924201cf2518de4d4755d2c565fe26b1357aa6338a3e3d00e.jpg",
+        "points": 101.61
+      },
+      {
+        "name": "Metallicats",
+        "logo_image": "https://s.yimg.com/cv/apiv2/default/nfl/nfl_6.png",
+        "points": 89.61
+      },
+      {
+        "name": "Buffalo Thurmanators",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/71ef0ec5793e733eb08337a8adad223a64845459de283401287afa1ad8834a57.jpg",
+        "points": 88.4
+      },
+      {
+        "name": "Tecmo Trailblazers",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/25300526886_ec584552cf.jpg",
+        "points": 86.9
+      },
+      {
+        "name": "MajikalHerbs",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/0f83e7f42579cf9eae0d776a874ca7114f07b6c1ef8e62fdad7a74f0a0b4a5b6.jpg",
+        "points": 65.31
+      }
+    ],
+    [
+      {
+        "name": "Tecmo Trailblazers",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/25300526886_ec584552cf.jpg",
+        "points": 175.92
+      },
+      {
+        "name": "More than a Thielen",
+        "logo_image": "https://s.yimg.com/cv/apiv2/default/nfl/nfl_4_b.png",
+        "points": 120.88
+      },
+      {
+        "name": "Orange Crush",
+        "logo_image": "https://s.yimg.com/cv/apiv2/default/nfl/nfl_1.png",
+        "points": 118.18
+      },
+      {
+        "name": "Trump Train",
+        "logo_image": "https://s.yimg.com/cv/apiv2/default/nfl/nfl_4.png",
+        "points": 114.42
+      },
+      {
+        "name": "Deterministic Parrots",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/ad601215e5658cf7fec9d1742f20e65e1934fc1d521ab31d649cbcfbe8b8f9a7.png",
+        "points": 109.71
+      },
+      {
+        "name": "Redheaded Rampage (UNM)",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/8f8b5768834973181f6ef35c6eaf3762c52d192e1f5269131de3abb94356c6f2.jpg",
+        "points": 108.82
+      },
+      {
+        "name": "MajikalHerbs",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/0f83e7f42579cf9eae0d776a874ca7114f07b6c1ef8e62fdad7a74f0a0b4a5b6.jpg",
+        "points": 104.77
+      },
+      {
+        "name": "Buffalo Thurmanators",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/71ef0ec5793e733eb08337a8adad223a64845459de283401287afa1ad8834a57.jpg",
+        "points": 95.65
+      },
+      {
+        "name": "Battle Unicorns",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/c5617d4a014c684f3bca794d3429f9c48546467b0725997f3c4eeb9e2be00703.jpg",
+        "points": 93.95
+      },
+      {
+        "name": "Metallicats",
+        "logo_image": "https://s.yimg.com/cv/apiv2/default/nfl/nfl_6.png",
+        "points": 82.22
+      },
+      {
+        "name": "The Cincinnati Kid",
+        "logo_image": "https://s.yimg.com/ep/cx/blendr/v2/image-letterman-jacket-png_1721175092760.png",
+        "points": 79.9
+      },
+      {
+        "name": "Burrowhead Stadium",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/85176392ed36f44924201cf2518de4d4755d2c565fe26b1357aa6338a3e3d00e.jpg",
+        "points": 78.77
+      }
+    ],
+    [
+      {
+        "name": "Orange Crush",
+        "logo_image": "https://s.yimg.com/cv/apiv2/default/nfl/nfl_1.png",
+        "points": 175.2
+      },
+      {
+        "name": "Tecmo Trailblazers",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/25300526886_ec584552cf.jpg",
+        "points": 126.07
+      },
+      {
+        "name": "Burrowhead Stadium",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/85176392ed36f44924201cf2518de4d4755d2c565fe26b1357aa6338a3e3d00e.jpg",
+        "points": 124.46
+      },
+      {
+        "name": "More than a Thielen",
+        "logo_image": "https://s.yimg.com/cv/apiv2/default/nfl/nfl_4_b.png",
+        "points": 116.5
+      },
+      {
+        "name": "Trump Train",
+        "logo_image": "https://s.yimg.com/cv/apiv2/default/nfl/nfl_4.png",
+        "points": 103.27
+      },
+      {
+        "name": "Battle Unicorns",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/c5617d4a014c684f3bca794d3429f9c48546467b0725997f3c4eeb9e2be00703.jpg",
+        "points": 96.19
+      },
+      {
+        "name": "Buffalo Thurmanators",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/71ef0ec5793e733eb08337a8adad223a64845459de283401287afa1ad8834a57.jpg",
+        "points": 93.12
+      },
+      {
+        "name": "Deterministic Parrots",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/ad601215e5658cf7fec9d1742f20e65e1934fc1d521ab31d649cbcfbe8b8f9a7.png",
+        "points": 91.32
+      },
+      {
+        "name": "Redheaded Rampage (UNM)",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/8f8b5768834973181f6ef35c6eaf3762c52d192e1f5269131de3abb94356c6f2.jpg",
+        "points": 77.11
+      },
+      {
+        "name": "MajikalHerbs",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/0f83e7f42579cf9eae0d776a874ca7114f07b6c1ef8e62fdad7a74f0a0b4a5b6.jpg",
+        "points": 76.31
+      },
+      {
+        "name": "The Cincinnati Kid",
+        "logo_image": "https://s.yimg.com/ep/cx/blendr/v2/image-letterman-jacket-png_1721175092760.png",
+        "points": 70.51
+      },
+      {
+        "name": "Metallicats",
+        "logo_image": "https://s.yimg.com/cv/apiv2/default/nfl/nfl_6.png",
+        "points": 61.46
+      }
+    ],
+    [
+      {
+        "name": "The Cincinnati Kid",
+        "logo_image": "https://s.yimg.com/ep/cx/blendr/v2/image-letterman-jacket-png_1721175092760.png",
+        "points": 143.69
+      },
+      {
+        "name": "Tecmo Trailblazers",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/25300526886_ec584552cf.jpg",
+        "points": 126.25
+      },
+      {
+        "name": "Battle Unicorns",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/c5617d4a014c684f3bca794d3429f9c48546467b0725997f3c4eeb9e2be00703.jpg",
+        "points": 125.86
+      },
+      {
+        "name": "Orange Crush",
+        "logo_image": "https://s.yimg.com/cv/apiv2/default/nfl/nfl_1.png",
+        "points": 124.84
+      },
+      {
+        "name": "Buffalo Thurmanators",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/71ef0ec5793e733eb08337a8adad223a64845459de283401287afa1ad8834a57.jpg",
+        "points": 119.92
+      },
+      {
+        "name": "Metallicats",
+        "logo_image": "https://s.yimg.com/cv/apiv2/default/nfl/nfl_6.png",
+        "points": 104.08
+      },
+      {
+        "name": "Redheaded Rampage (UNM)",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/8f8b5768834973181f6ef35c6eaf3762c52d192e1f5269131de3abb94356c6f2.jpg",
+        "points": 97.45
+      },
+      {
+        "name": "MajikalHerbs",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/0f83e7f42579cf9eae0d776a874ca7114f07b6c1ef8e62fdad7a74f0a0b4a5b6.jpg",
+        "points": 96.16
+      },
+      {
+        "name": "Burrowhead Stadium",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/85176392ed36f44924201cf2518de4d4755d2c565fe26b1357aa6338a3e3d00e.jpg",
+        "points": 88.44
+      },
+      {
+        "name": "Deterministic Parrots",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/ad601215e5658cf7fec9d1742f20e65e1934fc1d521ab31d649cbcfbe8b8f9a7.png",
+        "points": 82.04
+      },
+      {
+        "name": "More than a Thielen",
+        "logo_image": "https://s.yimg.com/cv/apiv2/default/nfl/nfl_4_b.png",
+        "points": 81.52
+      },
+      {
+        "name": "Trump Train",
+        "logo_image": "https://s.yimg.com/cv/apiv2/default/nfl/nfl_4.png",
+        "points": 77.56
+      }
+    ],
+    [
+      {
+        "name": "Metallicats",
+        "logo_image": "https://s.yimg.com/cv/apiv2/default/nfl/nfl_6.png",
+        "points": 144.98
+      },
+      {
+        "name": "Trump Train",
+        "logo_image": "https://s.yimg.com/cv/apiv2/default/nfl/nfl_4.png",
+        "points": 136.56
+      },
+      {
+        "name": "MajikalHerbs",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/0f83e7f42579cf9eae0d776a874ca7114f07b6c1ef8e62fdad7a74f0a0b4a5b6.jpg",
+        "points": 134.27
+      },
+      {
+        "name": "Burrowhead Stadium",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/85176392ed36f44924201cf2518de4d4755d2c565fe26b1357aa6338a3e3d00e.jpg",
+        "points": 132.94
+      },
+      {
+        "name": "The Cincinnati Kid",
+        "logo_image": "https://s.yimg.com/ep/cx/blendr/v2/image-letterman-jacket-png_1721175092760.png",
+        "points": 122.32
+      },
+      {
+        "name": "Battle Unicorns",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/c5617d4a014c684f3bca794d3429f9c48546467b0725997f3c4eeb9e2be00703.jpg",
+        "points": 112.19
+      },
+      {
+        "name": "Orange Crush",
+        "logo_image": "https://s.yimg.com/cv/apiv2/default/nfl/nfl_1.png",
+        "points": 106.23
+      },
+      {
+        "name": "Deterministic Parrots",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/ad601215e5658cf7fec9d1742f20e65e1934fc1d521ab31d649cbcfbe8b8f9a7.png",
+        "points": 94.2
+      },
+      {
+        "name": "Tecmo Trailblazers",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/25300526886_ec584552cf.jpg",
+        "points": 92.43
+      },
+      {
+        "name": "Buffalo Thurmanators",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/71ef0ec5793e733eb08337a8adad223a64845459de283401287afa1ad8834a57.jpg",
+        "points": 89.9
+      },
+      {
+        "name": "More than a Thielen",
+        "logo_image": "https://s.yimg.com/cv/apiv2/default/nfl/nfl_4_b.png",
+        "points": 83.79
+      },
+      {
+        "name": "Redheaded Rampage (UNM)",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/8f8b5768834973181f6ef35c6eaf3762c52d192e1f5269131de3abb94356c6f2.jpg",
+        "points": 77.67
+      }
+    ],
+    [
+      {
+        "name": "More than a Thielen",
+        "logo_image": "https://s.yimg.com/cv/apiv2/default/nfl/nfl_4_b.png",
+        "points": 142.63
+      },
+      {
+        "name": "Redheaded Rampage (UNM)",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/8f8b5768834973181f6ef35c6eaf3762c52d192e1f5269131de3abb94356c6f2.jpg",
+        "points": 121.88
+      },
+      {
+        "name": "Trump Train",
+        "logo_image": "https://s.yimg.com/cv/apiv2/default/nfl/nfl_4.png",
+        "points": 120.42
+      },
+      {
+        "name": "Deterministic Parrots",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/ad601215e5658cf7fec9d1742f20e65e1934fc1d521ab31d649cbcfbe8b8f9a7.png",
+        "points": 119.55
+      },
+      {
+        "name": "Battle Unicorns",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/c5617d4a014c684f3bca794d3429f9c48546467b0725997f3c4eeb9e2be00703.jpg",
+        "points": 109.71
+      },
+      {
+        "name": "Burrowhead Stadium",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/85176392ed36f44924201cf2518de4d4755d2c565fe26b1357aa6338a3e3d00e.jpg",
+        "points": 107.14
+      },
+      {
+        "name": "The Cincinnati Kid",
+        "logo_image": "https://s.yimg.com/ep/cx/blendr/v2/image-letterman-jacket-png_1721175092760.png",
+        "points": 106.05
+      },
+      {
+        "name": "Buffalo Thurmanators",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/71ef0ec5793e733eb08337a8adad223a64845459de283401287afa1ad8834a57.jpg",
+        "points": 100.82
+      },
+      {
+        "name": "Metallicats",
+        "logo_image": "https://s.yimg.com/cv/apiv2/default/nfl/nfl_6.png",
+        "points": 99.99
+      },
+      {
+        "name": "MajikalHerbs",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/0f83e7f42579cf9eae0d776a874ca7114f07b6c1ef8e62fdad7a74f0a0b4a5b6.jpg",
+        "points": 91.29
+      },
+      {
+        "name": "Orange Crush",
+        "logo_image": "https://s.yimg.com/cv/apiv2/default/nfl/nfl_1.png",
+        "points": 89.12
+      },
+      {
+        "name": "Tecmo Trailblazers",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/25300526886_ec584552cf.jpg",
+        "points": 76.9
+      }
+    ],
+    [
+      {
+        "name": "The Cincinnati Kid",
+        "logo_image": "https://s.yimg.com/ep/cx/blendr/v2/image-letterman-jacket-png_1721175092760.png",
+        "points": 117.89
+      },
+      {
+        "name": "Redheaded Rampage (UNM)",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/8f8b5768834973181f6ef35c6eaf3762c52d192e1f5269131de3abb94356c6f2.jpg",
+        "points": 116.79
+      },
+      {
+        "name": "Metallicats",
+        "logo_image": "https://s.yimg.com/cv/apiv2/default/nfl/nfl_6.png",
+        "points": 114.15
+      },
+      {
+        "name": "Orange Crush",
+        "logo_image": "https://s.yimg.com/cv/apiv2/default/nfl/nfl_1.png",
+        "points": 112.86
+      },
+      {
+        "name": "Battle Unicorns",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/c5617d4a014c684f3bca794d3429f9c48546467b0725997f3c4eeb9e2be00703.jpg",
+        "points": 110.68
+      },
+      {
+        "name": "Tecmo Trailblazers",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/25300526886_ec584552cf.jpg",
+        "points": 110.36
+      },
+      {
+        "name": "Buffalo Thurmanators",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/71ef0ec5793e733eb08337a8adad223a64845459de283401287afa1ad8834a57.jpg",
+        "points": 104.93
+      },
+      {
+        "name": "Burrowhead Stadium",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/85176392ed36f44924201cf2518de4d4755d2c565fe26b1357aa6338a3e3d00e.jpg",
+        "points": 101.89
+      },
+      {
+        "name": "Trump Train",
+        "logo_image": "https://s.yimg.com/cv/apiv2/default/nfl/nfl_4.png",
+        "points": 94.38
+      },
+      {
+        "name": "MajikalHerbs",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/0f83e7f42579cf9eae0d776a874ca7114f07b6c1ef8e62fdad7a74f0a0b4a5b6.jpg",
+        "points": 82.83
+      },
+      {
+        "name": "More than a Thielen",
+        "logo_image": "https://s.yimg.com/cv/apiv2/default/nfl/nfl_4_b.png",
+        "points": 81.11
+      },
+      {
+        "name": "Deterministic Parrots",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/ad601215e5658cf7fec9d1742f20e65e1934fc1d521ab31d649cbcfbe8b8f9a7.png",
+        "points": 77.53
+      }
+    ],
+    [
+      {
+        "name": "Deterministic Parrots",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/ad601215e5658cf7fec9d1742f20e65e1934fc1d521ab31d649cbcfbe8b8f9a7.png",
+        "points": 153.19
+      },
+      {
+        "name": "Trump Train",
+        "logo_image": "https://s.yimg.com/cv/apiv2/default/nfl/nfl_4.png",
+        "points": 145.93
+      },
+      {
+        "name": "Tecmo Trailblazers",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/25300526886_ec584552cf.jpg",
+        "points": 141.52
+      },
+      {
+        "name": "Buffalo Thurmanators",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/71ef0ec5793e733eb08337a8adad223a64845459de283401287afa1ad8834a57.jpg",
+        "points": 141.1
+      },
+      {
+        "name": "Redheaded Rampage (UNM)",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/8f8b5768834973181f6ef35c6eaf3762c52d192e1f5269131de3abb94356c6f2.jpg",
+        "points": 128.25
+      },
+      {
+        "name": "More than a Thielen",
+        "logo_image": "https://s.yimg.com/cv/apiv2/default/nfl/nfl_4_b.png",
+        "points": 119.51
+      },
+      {
+        "name": "Burrowhead Stadium",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/85176392ed36f44924201cf2518de4d4755d2c565fe26b1357aa6338a3e3d00e.jpg",
+        "points": 110.43
+      },
+      {
+        "name": "The Cincinnati Kid",
+        "logo_image": "https://s.yimg.com/ep/cx/blendr/v2/image-letterman-jacket-png_1721175092760.png",
+        "points": 107.28
+      },
+      {
+        "name": "Battle Unicorns",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/c5617d4a014c684f3bca794d3429f9c48546467b0725997f3c4eeb9e2be00703.jpg",
+        "points": 100.25
+      },
+      {
+        "name": "Metallicats",
+        "logo_image": "https://s.yimg.com/cv/apiv2/default/nfl/nfl_6.png",
+        "points": 98.85
+      },
+      {
+        "name": "Orange Crush",
+        "logo_image": "https://s.yimg.com/cv/apiv2/default/nfl/nfl_1.png",
+        "points": 95.89
+      },
+      {
+        "name": "MajikalHerbs",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/0f83e7f42579cf9eae0d776a874ca7114f07b6c1ef8e62fdad7a74f0a0b4a5b6.jpg",
+        "points": 87.84
+      }
+    ]
+  ],
   "teams": {
     "Buffalo Thurmanators": {
       "wins": 5,
       "losses": 3,
       "ties": 0,
+      "rolling_wins": 37,
+      "rolling_losses": 51,
       "optimal_wins": 4,
       "optimal_losses": 4,
       "optimal_ties": 0,
@@ -16859,6 +17359,8 @@
       "wins": 5,
       "losses": 3,
       "ties": 0,
+      "rolling_wins": 46,
+      "rolling_losses": 42,
       "optimal_wins": 4,
       "optimal_losses": 4,
       "optimal_ties": 0,
@@ -16872,6 +17374,8 @@
       "wins": 2,
       "losses": 6,
       "ties": 0,
+      "rolling_wins": 48,
+      "rolling_losses": 40,
       "optimal_wins": 2,
       "optimal_losses": 6,
       "optimal_ties": 0,
@@ -16885,6 +17389,8 @@
       "wins": 3,
       "losses": 5,
       "ties": 0,
+      "rolling_wins": 53,
+      "rolling_losses": 35,
       "optimal_wins": 3,
       "optimal_losses": 5,
       "optimal_ties": 0,
@@ -16898,6 +17404,8 @@
       "wins": 2,
       "losses": 6,
       "ties": 0,
+      "rolling_wins": 24,
+      "rolling_losses": 64,
       "optimal_wins": 2,
       "optimal_losses": 6,
       "optimal_ties": 0,
@@ -16911,6 +17419,8 @@
       "wins": 5,
       "losses": 3,
       "ties": 0,
+      "rolling_wins": 50,
+      "rolling_losses": 38,
       "optimal_wins": 6,
       "optimal_losses": 2,
       "optimal_ties": 0,
@@ -16924,6 +17434,8 @@
       "wins": 3,
       "losses": 5,
       "ties": 0,
+      "rolling_wins": 36,
+      "rolling_losses": 52,
       "optimal_wins": 5,
       "optimal_losses": 3,
       "optimal_ties": 0,
@@ -16937,6 +17449,8 @@
       "wins": 4,
       "losses": 4,
       "ties": 0,
+      "rolling_wins": 39,
+      "rolling_losses": 49,
       "optimal_wins": 3,
       "optimal_losses": 5,
       "optimal_ties": 0,
@@ -16950,6 +17464,8 @@
       "wins": 6,
       "losses": 2,
       "ties": 0,
+      "rolling_wins": 42,
+      "rolling_losses": 46,
       "optimal_wins": 6,
       "optimal_losses": 2,
       "optimal_ties": 0,
@@ -16963,6 +17479,8 @@
       "wins": 4,
       "losses": 4,
       "ties": 0,
+      "rolling_wins": 50,
+      "rolling_losses": 38,
       "optimal_wins": 5,
       "optimal_losses": 3,
       "optimal_ties": 0,
@@ -16976,6 +17494,8 @@
       "wins": 5,
       "losses": 3,
       "ties": 0,
+      "rolling_wins": 51,
+      "rolling_losses": 37,
       "optimal_wins": 4,
       "optimal_losses": 4,
       "optimal_ties": 0,
@@ -16989,6 +17509,8 @@
       "wins": 4,
       "losses": 4,
       "ties": 0,
+      "rolling_wins": 52,
+      "rolling_losses": 36,
       "optimal_wins": 4,
       "optimal_losses": 4,
       "optimal_ties": 0,
