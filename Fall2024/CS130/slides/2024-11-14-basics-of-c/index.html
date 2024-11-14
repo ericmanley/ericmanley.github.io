@@ -1,0 +1,465 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>reveal.js</title>
+
+        <link rel="stylesheet" href="../dist/reset.css">
+        <link rel="stylesheet" href="../dist/reveal.css">
+        <link rel="stylesheet" href="../dist/theme/white.css" id="theme">
+
+        <!-- Theme used for syntax highlighted code -->
+        <link rel="stylesheet" href="../plugin/highlight/monokai.css" id="highlight-theme">
+
+        <style>
+            .twocolumn {
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           grid-gap: 10px;
+           text-align: left;
+        }
+        </style>
+
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section data-markdown
+                         data-separator="<!--==*-->"
+                         data-separator-vertical="<!----*-->">
+                    <textarea data-template>
+# The Basics of C
+
+---
+
+CS 130 // 2024-11-14
+
+<!--=====================================================================-->
+
+# Overview of C
+<!-- .slide: data-background="#004477" -->
+
+<!--=====================================================================-->
+
+## Why learn C?
+
+- C is one of the most commonly used programming language in the world
+
+<!---------------------------------->
+
+
+<!-- .slide: data-background-iframe="https://www.tiobe.com/tiobe-index/"
+             data-background-interactive -->
+
+<!---------------------------------->
+
+## Why learn C?
+- C is one of the most commonly used programming language in the world
+- Applications are still written in C
+    + Linux kernel, Windows, drivers, video games, credit-card processing...
+
+<!--=====================================================================-->
+
+## C Design Background
+- C was originally designed in the 1970s
+    + At the time, computers were not very powerful and had limited memory
+- <!-- .element: class="fragment"-->
+ C was designed to be **efficient**
+    + But still ridiculously convenient in comparison to programming in assembly
+- <!-- .element: class="fragment"-->
+ "The programmer is always right"
+    + There is very little error checking
+    + <!-- .element: class="fragment"-->
+ Error messages are usually no help at all
+
+<!--=====================================================================-->
+
+## Interpreted VS Compiled
+- Python is an **interpreted** language
+    + A `program.py` is fed into an **interpreter** which executes it directly
+- <!-- .element: class="fragment"-->
+ C is a **compiled** language
+    + `program.c` is fed into a **compiler** which produces an executable file
+    + <!-- .element: class="fragment"-->
+ This executable is custom to your OS and CPU
+- <!-- .element: class="fragment"-->
+ For Java, `program.java` is compiled into "Java bytecode" which is then interpreted by the Java Virtual Machine (JVM)
+
+<!---------------------------------->
+
+## Random Trivia
+- What language is the Python interpeter written in?
+    + <!-- .element: class="fragment"-->
+ C
+- <!-- .element: class="fragment"-->
+ What language is the JVM written in?
+    + <!-- .element: class="fragment"-->
+ C
+- <!-- .element: class="fragment"-->
+ What language is the C compiler written in?
+    + <!-- .element: class="fragment"-->
+ C
+
+<!--=====================================================================-->
+
+## Compiler Diagram
+
+<div class="twocolumn">
+
+<div style="font-size: 80%">
+
+- **Compiler**: Converts C into assembly language
+- **Assembler**: Converts assembly into machine code
+- **Linker**: Combines machine code files into an executable
+- **Loader**: Loads an executable into memory and executes it
+
+</div>
+
+<div>
+
+![C Program Compiler Process](/Fall2024/CS130/assets/images/COD/compiler-diagram.png)
+
+</div>
+</div>
+
+<!--=====================================================================-->
+
+# C Progams
+<!-- .slide: data-background="#004477" -->
+
+<!--=====================================================================-->
+
+## An Example
+
+```c
+#include  "stdio.h"
+int main()
+{
+    char name[20];
+    int age;
+    printf("Hi! What is your name?\n");
+    scanf("%s", name);
+    printf("Hello, %s, it is nice to meet you!\n", name);
+    printf("What is your age?\n");
+    scanf("%d", &age);
+    printf("Wow, %d is pretty old!\n", age);
+    return 0;
+}
+```
+
+```py
+# Python equivalent
+name = input("Hi! What is your name?\n")
+print("Hello,", name, "it is nice to meet you!")
+age = int(input("What is your age?\n"))
+print("Wow,", age, "is pretty old!")
+```
+
+
+<!--=====================================================================-->
+
+## First things to notice
+
+- **Python:** tab indicates code block 
+- **C:** `{ }` indicates code block 
+ - white space doesn't matter - tabs are just for readability
+
+- **C:** all code needs to be in a function, `main` is executed first 
+- **C:** most statements end with a semicolon `;`
+
+
+
+
+<!--=====================================================================-->
+
+## Variables and Types
+- In C, the **type** of a variable must be declared before it is first used
+    ```c
+    int x = 3 + 4;   // Must give a type the first time
+    ...
+    x = x + 1;
+    ```
+
+<!---------------------------------->
+
+## Variables and Types
+
+Integers
+
+```c
+int x = 5;            // usually 32-bits
+long y = -13;         // usually 64-bits
+short z = 7;          // usually 16-bits
+unsigned int u = 7;   // makes number interpreted as positive
+```
+
+<!-- .element: class="fragment"-->
+ Floating point
+
+```c
+float f = 3.14;       // usually 32-bits
+double d = -7.123;    // usually 64-bits
+```
+<!-- .element: class="fragment"-->
+
+
+<!---------------------------------->
+
+## Variables and Types
+
+Character
+
+```c
+char c = 'a';       // usually 8-bits
+```
+
+
+No Boolean type---uses `int` instead
+* `0` means false
+* Any other `int` is true
+
+
+
+<!--=====================================================================-->
+
+## Comments
+- Uses `/* ... */` for multi-line comments
+- Uses `// ...` for single-line comments
+
+```c
+/* This is a comment that spans
+   multiple lines. Everything
+   in-between is ignored */
+
+int x = 10;  // This is a single line comment.
+x = x + 5;   // Everything after it is ignored.
+```
+
+<!--=====================================================================-->
+
+## Operators
+- C uses symbols `||`, `&&`, and `!` for Boolean expressions instead of `and`, `or`, and `not`
+
+```py
+# Python code
+result = ((a > 0 or b > 0) and (c > 0)) == False
+```
+
+```c
+// c code
+int result = ((a > 0 || b > 0) && c > 0) == 0;
+```
+
+<!---------------------------------->
+
+## Operators
+- `a / b` behaves differently in C
+    + Does **integer division** if both are integral
+    + Does **floating point division** if one or both are floating point
+
+<!--=====================================================================-->
+
+## For Loops
+- In C, the `for` loop means something else entirely
+- The following two code blocks are equivalent
+
+```c
+for (init; test; update) 
+{
+    body
+}
+```
+
+```c
+init
+while (test) 
+{
+    body
+    update
+}
+```
+
+<!---------------------------------->
+
+## For Loops
+- A common use is to iterate through an array
+
+```c
+int arr[5] = {7, 3, 1, 2, 10};
+for (int i = 0; i < 5; i++) 
+{
+    printf("The next value is: %d\n", arr[i]);
+}
+```
+
+```py
+#Python code
+arr = [7, 3, 1, 2, 10]
+for i in range(10):
+    print("The next value is:", arr[i])
+```
+
+<!--=====================================================================-->
+
+## Arrays
+- Fixed size---they cannot be made smaller or larger
+- Calculating its size after creation is cumbersome
+- No index out of bounds checks
+
+```c
+int arr[50];           // creates an array with 50 spots
+int val = arr[60];     // will happily try to do this
+printf("%d", val);
+```
+
+
+**Exercise:** put this in a file (and main function) and run 
+- your compiler *may* give you a warning 
+- you will still be able to run it
+
+
+<!--=====================================================================-->
+
+## Functions
+```c
+#include  "stdio.h"
+
+void swap(int v[], int k)
+{
+    int temp = v[k];
+    v[k] = v[k+1];
+    v[k+1] = temp;
+}
+
+void sort (int v[], int n)
+{
+    for (int i = 0; i < n; i++) 
+    {
+        for (int j = i - 1; j >= 0 && v[j] > v[j + 1]; j--) 
+        {
+            swap(v, j); 
+        }
+    } 
+}
+
+int main()
+{
+    int arr[5] = {7, 3, 1, 2, 10};
+    sort(arr,5);
+    for (int i = 0; i < 5; i++) 
+    {
+        printf("The next value is: %d\n", arr[i]);
+    }
+}
+```
+
+<!--=====================================================================-->
+
+# Exercises
+<!-- .slide: data-background="#004477" -->
+
+<!--=====================================================================-->
+
+
+## Exercise 1
+- Write a program that asks the users to type in four numbers and prints the average of those four numbers
+
+<!---------------------------------->
+
+## Exercise 2
+- Create a function `void reverse(int arr[], int n)` that takes an array with `n` elements and reverses the order of the elements
+- Test it out in a `main` function such as:
+
+```c
+int main()
+{
+    int arr[5] = {1, 2, 3, 4, 5};
+    reverse(arr, 5);
+    for (int i = 0; i < 5; i++) 
+    {
+        printf("The next value is: %d\n", arr[i]);
+    }
+    return 0;
+}
+```
+<!--=====================================================================-->
+
+
+## `printf`
+
+https://www.cplusplus.com/reference/cstdio/printf/
+
+<!---------------------------------->
+
+
+<!-- .slide: data-background-iframe="https://www.cplusplus.com/reference/cstdio/printf/"
+             data-background-interactive -->
+
+<!--=====================================================================-->
+
+## `scanf`
+
+https://www.cplusplus.com/reference/cstdio/scanf/
+
+<!---------------------------------->
+
+
+<!-- .slide: data-background-iframe="https://www.cplusplus.com/reference/cstdio/scanf/"
+             data-background-interactive -->
+
+<!--=====================================================================-->
+
+## Assignment 8
+
+- [Assignment 8](../../assignments/assignment-8/): write a C program that includes
+ 1. An array
+ 2. A function other than `main`
+ 3. A call to `scanf` to get user input
+ 4. A call to `printf` which includes displaying the value from a variable
+ 5. A `for` loop
+- Due next Tuesday
+
+
+                    </textarea>
+                </section>
+            </div>
+        </div>
+
+        <script src="../dist/reveal.js"></script>
+        <script src="../plugin/notes/notes.js"></script>
+        <script src="../plugin/markdown/markdown.js"></script>
+        <script src="../plugin/highlight/highlight.js"></script>
+        <script src="../plugin/chalkboard/plugin.js"></script>
+        <script src="../plugin/math/math.js"></script>
+        <script src="../plugin/menu/menu.js"></script>
+        <!--  -->
+        <script>
+            // More info about initialization & config:
+            // - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
+            Reveal.initialize({
+                hash: true,
+                pdfSeparateFragments: false,
+
+                chalkboard: {
+                    chalkWidth: 4,
+                    chalkEffect: 0.5,
+                    toggleChalkboardButton: false,
+                    toggleNotesButton: false,
+                },
+
+                menu: {
+                    hideMissingTitles: true,
+                    themes: true,
+                    themesPath: '../dist/theme/',
+                },
+
+                // Learn about plugins: https://revealjs.com/plugins/
+                plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, 
+                    RevealChalkboard, RevealMath, RevealMenu ]
+            });
+        </script>
+    </body>
+</html>
