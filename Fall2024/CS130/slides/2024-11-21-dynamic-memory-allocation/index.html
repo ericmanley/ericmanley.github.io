@@ -1,0 +1,435 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>reveal.js</title>
+
+        <link rel="stylesheet" href="../dist/reset.css">
+        <link rel="stylesheet" href="../dist/reveal.css">
+        <link rel="stylesheet" href="../dist/theme/white.css" id="theme">
+
+        <!-- Theme used for syntax highlighted code -->
+        <link rel="stylesheet" href="../plugin/highlight/monokai.css" id="highlight-theme">
+
+        <style>
+            .twocolumn {
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           grid-gap: 10px;
+           text-align: left;
+        }
+        </style>
+
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section data-markdown
+                         data-separator="<!--==*-->"
+                         data-separator-vertical="<!----*-->">
+                    <textarea data-template>
+# Dynamic Memory Allocation
+
+---
+
+CS 130 // 2024-11-21
+
+<!--=====================================================================-->
+
+# Review
+<!-- .slide: data-background="#004477" -->
+
+<!--=====================================================================-->
+
+## Exercise from last time
+
+- write a function that computes the average of a bunch of `double` values
+- get data for 10 doubles from user and call the average function 
+- make it work for any number of inputs
+
+<!---------------------------------->
+
+## Double function 
+
+```c 
+#include "stdio.h"
+
+
+double average(double arr[], int n)
+{
+    double total = 0.0;
+    double average;
+
+    for(int i = 0; i < n; i++)
+    {
+        total += arr[i];
+    }
+
+    average = total/n;
+    return average;
+}
+
+int main()
+{
+    double my_array[5] = {1.1,2.2,3.3,4.4,5.5};
+    double result;
+
+    result = average(my_array,5);
+    printf("The average is %f\n",result);
+
+    return 0;
+}
+```
+
+<!---------------------------------->
+
+## Getting 10 values from the user 
+
+```c 
+int main()
+{
+    int array_length = 10;
+    double my_array[array_length];
+    double result;
+
+    for(int i = 0; i < array_length; i++)
+    {
+        printf("Enter a double: ");
+        scanf("%lf",&my_array[i]); // %lf is "long float" for a double
+    }
+
+    result = average(my_array,array_length);
+    printf("The average is %lf\n",result);
+
+    return 0;
+}
+```
+
+- What do we need to change to make it work for any number?
+
+<!--=====================================================================--> 
+
+# Working with unknown array sizes
+<!-- .slide: data-background="#004477" -->
+
+<!--=====================================================================-->
+
+## Discussion
+
+What do you have to change so that it works like this?
+
+```console
+Enter a double: 1.5
+Do you want to enter another value (y/n)? y
+Enter a double: 2.0
+Do you want to enter another value (y/n)? y
+Enter a double: 7.1
+Do you want to enter another value (y/n)? y
+Enter a double: 2.1
+Do you want to enter another value (y/n)? y
+Enter a double: 42.3
+Do you want to enter another value (y/n)? y
+Enter a double: 0.1
+Do you want to enter another value (y/n)? y
+Enter a double: -4.1
+Do you want to enter another value (y/n)? y
+Enter a double: 0.9
+Do you want to enter another value (y/n)? n
+The average is 5.190000
+```
+
+<!--=====================================================================-->
+
+
+# C and The Computer's Memory
+<!-- .slide: data-background="#004477" -->
+
+<!--=====================================================================-->
+
+
+
+## A Problem
+- Suppose I want to create a function called `duplicate` that takes an array of integers as input, creates an identical copy of it, and returns it
+- What are some issues we have to think about when implementing this?
+
+<!---------------------------------->
+
+## A First Attempt
+
+```c
+int * duplicate(int *arr, int n) 
+{
+    int new_arr[n];
+    for (int i = 0; i < n; i++) 
+    {
+        new_arr[i] = arr[i];
+    }
+
+    return new_arr;
+}
+```
+- <!-- .element: class="fragment"-->
+ This is incorrect!
+- <!-- .element: class="fragment"-->
+ The array `new_arr` is **locally scoped** and its memory is freed once the function returns!
+
+<!---------------------------------->
+
+## Try it yourself and see what happens 
+
+```c
+#include  <stdio.h>
+
+int * duplicate(int *arr, int n) 
+{
+    int new_arr[n];
+    for (int i = 0; i < n; i++) 
+    {
+        new_arr[i] = arr[i];
+    }
+
+    return new_arr;
+}
+
+int main()
+{
+    int myarr[5] = {1,2,3,4,5};
+    int *myarr_copy = duplicate(myarr,5);
+
+    for(int i=0; i< 5; i++)
+    {
+        printf("%d\n",myarr_copy[i]);
+    }
+    return 0;
+}
+```
+
+<!--=====================================================================-->
+
+# Stack / Heap Memory
+<!-- .slide: data-background="#004477" -->
+
+<!--=====================================================================-->
+
+## Review: Memory Structure
+![MIPS memory structure](/Fall2024/CS130/assets/images/COD/mips-memory.png)
+
+<!--====================================================================-->
+
+## Review: Stack Frames
+![Procedure frame](/Fall2024/CS130/assets/images/COD/stack-frame.png)
+
+<!--====================================================================-->
+
+## Stack Memory
+- **Stack memory** is the space where local variables, function calls, etc., are allocated
+- <!-- .element: class="fragment"-->
+ Locally scoped variables are freed when the code block they were defined in finishes
+
+<!---------------------------------->
+
+## A First Attempt
+
+```c
+int * duplicate(int *arr, int n) 
+{
+    int new_arr[n]; //memory created like this is put on the stack!
+    for (int i = 0; i < n; i++) 
+    {
+        new_arr[i] = arr[i];
+    }
+
+    return new_arr;
+}
+```
+
+<!--=====================================================================-->
+
+## Heap Memory
+
+- **Heap memory** persists between function calls
+    + <!-- .element: class="fragment"-->
+ In C, we must manually create and destroy heap memory
+
+<!---------------------------------->
+
+## Heap Memory
+- `malloc(n)`  creates `n` bytes of heap memory
+    ```c
+    // Creates an array on the heap with enough
+    // space to hold 10 ints
+    int *arr = malloc(10*sizeof(int));
+    ```
+- <!-- .element: class="fragment"-->
+ `sizeof(int)` is the number of bytes of one `int`
+- <!-- .element: class="fragment"-->
+ `free(...)` is destroys heap memory
+    ```c
+    free(arr);  // releases the memory
+    ```
+- <!-- .element: class="fragment"-->
+ Must call `free` on the pointer returned by `malloc`
+- <!-- .element: class="fragment"-->
+ These functions are in the `stdlib.h` library
+
+<!---------------------------------->
+
+## A Second Attempt
+```c
+int * duplicate(int *arr, int n) 
+{
+    int *new_arr = malloc(n * sizeof(int));
+    for (int i = 0; i < n; i++) 
+    {
+        new_arr[i] = arr[i];
+    }
+
+    return new_arr;
+}
+```
+
+<!---------------------------------->
+
+## Visualize it and then run it yourself
+
+[C Tutor Visualization](https://pythontutor.com/visualize.html#code=int%20*duplicate%28int%20*arr,%20int%20n%29%20%0A%7B%0A%20%20%20%20int%20*new_arr%20%3D%20malloc%28n%20*%20sizeof%28int%29%29%3B%0A%20%20%20%20for%20%28int%20i%20%3D%200%3B%20i%20%3C%20n%3B%20i%2B%2B%29%20%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20new_arr%5Bi%5D%20%3D%20arr%5Bi%5D%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20return%20new_arr%3B%0A%7D%0A%0Aint%20main%28%29%20%7B%0A%20%20int%20arr%5B5%5D%20%3D%20%7B100,%20200,%20300,%20400,%20500%7D%3B%0A%20%20%0A%20%20int%20*dup%20%3D%20duplicate%28arr,%205%29%3B%0A%20%20dup%20%3D%20duplicate%28arr,%205%29%3B%0A%20%20%0A%20%20return%200%3B%0A%7D&cumulative=false&heapPrimitives=nevernest&mode=edit&origin=opt-frontend.js&py=c_gcc9.3.0&rawInputLstJSON=%5B%5D&textReferences=false)
+
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int * duplicate(int *arr, int n) 
+{
+    int *new_arr = malloc(n * sizeof(int));
+    for (int i = 0; i < n; i++) 
+    {
+        new_arr[i] = arr[i];
+    }
+
+    return new_arr;
+}
+
+int main()
+{
+    int myarr[5] = {1,2,3,4,5};
+    int *myarr_copy = duplicate(myarr,5);
+
+    for(int i=0; i< 5; i++)
+    {
+        printf("%d\n",myarr_copy[i]);
+    }
+    free(myarr_copy);
+    return 0;
+}
+```
+
+
+<!--=====================================================================-->
+
+## Example
+- Let's write a function that does this:
+    + Takes two strings as input
+    + Concatenates them together into a new string
+    + Returns the string
+
+- We'll make use of the `strlen` function in `<string.h>`:
+https://cplusplus.com/reference/cstring/strlen/
+
+<!---------------------------------->
+
+## Example Solution
+
+```c
+char *str_concat(char *s1, char *s2)
+{
+    int len1 = strlen(s1); //finds the length not counting null terminator
+    int len2 = strlen(s2);
+    int len3 = len1 + len2 + 1;
+    char *s3 = malloc(len3*sizeof(char));
+
+    int pos = 0;
+
+    for (int i = 0; i < len1; i++, pos++) 
+    {
+        s3[pos] = s1[i];
+    }
+
+    for (int i = 0; i < len2; i++, pos++) 
+    {
+        s3[pos] = s2[i];
+    }
+
+    s3[pos] = '\0';
+    return s3;
+}
+```
+
+[C Tutor Visualization](http://www.pythontutor.com/c.html#code=%23include%20%3Cstdio.h%3E%0A%23include%20%3Cstdlib.h%3E%0A%23include%20%3Cstring.h%3E%0A%0Achar*%20str_concat%28char%20*s1,%20char%20*s2%29%0A%7B%0A%20%20%20%20int%20len1%20%3D%20strlen%28s1%29%3B%0A%20%20%20%20int%20len2%20%3D%20strlen%28s2%29%3B%0A%20%20%20%20int%20len3%20%3D%20len1%20%2B%20len2%20%2B%201%3B%0A%20%20%20%20char%20*s3%20%3D%20%28char*%29%20malloc%28len3*sizeof%28char%29%29%3B%0A%0A%20%20%20%20int%20pos%20%3D%200%3B%0A%20%20%20%20for%20%28int%20i%20%3D%200%3B%20i%20%3C%20len1%3B%20i%2B%2B,%20pos%2B%2B%29%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20s3%5Bpos%5D%20%3D%20s1%5Bi%5D%3B%0A%20%20%20%20%7D%0A%20%20%20%20for%20%28int%20i%20%3D%200%3B%20i%20%3C%20len2%3B%20i%2B%2B,%20pos%2B%2B%29%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20s3%5Bpos%5D%20%3D%20s2%5Bi%5D%3B%0A%20%20%20%20%7D%0A%20%20%20%20s3%5Bpos%5D%20%3D%20'%5C0'%3B%0A%20%20%20%20%0A%20%20%20%20return%20s3%3B%0A%7D%0A%0Aint%20main%28%29%0A%7B%0A%20%20%20%20char%20*arr1%20%3D%20%22abc%22%3B%0A%20%20%20%20char%20arr2%5B7%5D%20%3D%20%22defghi%22%3B%0A%20%20%20%20char%20*arr3%20%3D%20str_concat%28arr1,%20arr2%29%3B%0A%0A%20%20%20%20printf%28%22arr1%20is%3A%20%25s%5Cn%22,%20arr1%29%3B%0A%20%20%20%20printf%28%22arr2%20is%3A%20%25s%5Cn%22,%20arr2%29%3B%0A%20%20%20%20printf%28%22arr3%20is%3A%20%25s%5Cn%22,%20arr3%29%3B%0A%0A%20%20%20%20free%28arr3%29%3B%0A%7D&curInstr=0&mode=display&origin=opt-frontend.js&py=c&rawInputLstJSON=%5B%5D)
+
+<!--=====================================================================-->
+
+## Assignment 9
+
+- [Assignment 9](../../assignments/assignment-9/)
+- One convenient method in Python is the `str.join()` method. For example:
+```py
+>>> " ".join(["The", "quick", "brown", "fox"])
+"The quick brown fox"
+```
+- <!-- .element: class="fragment"-->
+ What would the function prototype have to be?
+    ```c
+    // Takes an array of n strings and returns
+    // a new string allocated on the heap
+    char *join(char **arr, int n)
+    ```
+    <!-- .element: class="fragment"-->
+
+- <!-- .element: class="fragment"-->
+ Finish implementing this
+
+
+                    </textarea>
+                </section>
+            </div>
+        </div>
+
+        <script src="../dist/reveal.js"></script>
+        <script src="../plugin/notes/notes.js"></script>
+        <script src="../plugin/markdown/markdown.js"></script>
+        <script src="../plugin/highlight/highlight.js"></script>
+        <script src="../plugin/chalkboard/plugin.js"></script>
+        <script src="../plugin/math/math.js"></script>
+        <script src="../plugin/menu/menu.js"></script>
+        <!--  -->
+        <script>
+            // More info about initialization & config:
+            // - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
+            Reveal.initialize({
+                hash: true,
+                pdfSeparateFragments: false,
+
+                chalkboard: {
+                    chalkWidth: 4,
+                    chalkEffect: 0.5,
+                    toggleChalkboardButton: false,
+                    toggleNotesButton: false,
+                },
+
+                menu: {
+                    hideMissingTitles: true,
+                    themes: true,
+                    themesPath: '../dist/theme/',
+                },
+
+                // Learn about plugins: https://revealjs.com/plugins/
+                plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, 
+                    RevealChalkboard, RevealMath, RevealMenu ]
+            });
+        </script>
+    </body>
+</html>
