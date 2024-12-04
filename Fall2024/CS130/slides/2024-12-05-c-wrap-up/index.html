@@ -1,0 +1,360 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>reveal.js</title>
+
+        <link rel="stylesheet" href="../dist/reset.css">
+        <link rel="stylesheet" href="../dist/reveal.css">
+        <link rel="stylesheet" href="../dist/theme/white.css" id="theme">
+
+        <!-- Theme used for syntax highlighted code -->
+        <link rel="stylesheet" href="../plugin/highlight/monokai.css" id="highlight-theme">
+
+        <style>
+            .twocolumn {
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           grid-gap: 10px;
+           text-align: left;
+        }
+        </style>
+
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section data-markdown
+                         data-separator="<!--==*-->"
+                         data-separator-vertical="<!----*-->">
+                    <textarea data-template>
+# C Wrap Up
+
+---
+
+CS 130 // 2024-12-05
+
+
+
+<!--=====================================================================-->
+
+# Review
+<!-- .slide: data-background="#004477" -->
+
+<!--=====================================================================-->
+
+## struct and typedef
+
+```c
+#include <stdio.h>
+#include <math.h>
+
+typedef struct {
+    double x;
+    double y;
+} POINT;
+
+double distance(POINT p1, POINT p2)
+{
+    double xdiff = p1.x - p2.x;
+    double ydiff = p1.y - p2.y;
+    return sqrt(xdiff * xdiff + ydiff * ydiff);
+}
+
+int main()
+{
+    POINT p1 = {.x=4,.y=5};
+    POINT p2 = {.x=0,.y=0};
+    printf("Distance: %f\n",distance(p1,p2));
+    return 0;
+}
+```
+
+
+<!---------------------------------->
+
+## Pointers to Structs
+- Pointers to structs are so common that there is a special operator to dereference and extract a field simultaneously
+    ```c
+    POINT p = {.x = 4, .y = 5};
+    POINT *pp = &p;
+    int x = pp->x;   // same as (*pp).x
+    int y = pp->y;   // same as (*pp).y
+    ```
+
+<!--=====================================================================-->
+
+## Exercise from last time
+- Suppose we'd like to parse a table of integers into a 2D array in C
+- <!-- .element: class="fragment"-->
+ Let's assume the file format is as follows:
+    ```text
+    4/4
+    0,1,2,3
+    4,5,6,7
+    8,9,10,11
+    12,13,14,15
+    ```
+- <!-- .element: class="fragment"-->
+ First two numbers are the width/height of the table
+
+<!---------------------------------->
+
+## Progress from 11:00 class
+
+This only works if there are always 4 columns
+
+```c
+#include <stdio.h>
+  
+int main()
+{
+    FILE *fp = fopen("my_file.txt", "r");
+    char buffer[80];
+    int rows = 0;
+    int cols = 0;
+
+    int total = 0;
+
+    fgets(buffer, 80, fp);
+    sscanf(buffer,"%d/%d",&rows,&cols);
+    printf("%d %d\n",rows,cols);
+
+    while (fgets(buffer, 80, fp) != NULL) {
+        // buffer contains the current line here
+        //printf("%s",buffer);
+
+        int w, x, y, z;
+        sscanf(buffer,"%d,%d,%d,%d",&w,&x,&y,&z);
+        total += w+x+y+z;
+    }
+    fclose(fp);
+
+    printf("Total: %d\n",total);
+
+
+    return 0;
+}
+```
+
+<!---------------------------------->
+
+## Progress from 12:30 class
+
+This reads the first item from each row four times
+* it doesn't consume characters from the buffer as you scan
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    FILE *fp = fopen("my_file.txt", "r");
+    char buffer[80];
+    int rows = 0;
+    int cols = 0;
+    int total = 0;
+
+    fgets(buffer, 80, fp);
+    sscanf(buffer,"%d/%d",&rows,&cols);
+    printf("%d rows and %d columns\n",rows,cols);
+
+    while (fgets(buffer, 80, fp) != NULL) {
+        // buffer contains the current line here
+        //printf("%s",buffer);
+
+        for(int c = 0; c < cols; c++)
+        {
+            int curr_int;
+            sscanf(buffer,"%d,",&curr_int);
+
+            total += curr_int;
+        }
+    }
+    fclose(fp);
+
+    printf("Total: %d\n",total);
+
+    return 0;
+}
+```
+
+<!---------------------------------->
+
+## Exercise Solution 
+
+```c
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+
+int main()
+{
+    FILE *fp = fopen("twoDarray.txt", "r");
+    char buffer[80];
+    int rows = 0;
+    int cols = 0;
+    int **array_from_file; //2D array for data from the file
+
+    //read the first line from the file
+    fgets(buffer, 80, fp);
+    sscanf(buffer,"%d/%d",&rows,&cols);
+
+    //allocate outer array of 2D array
+    array_from_file = malloc(rows*sizeof(int *));
+
+    for(int i = 0; i < rows; i++)
+    {
+        //allocate this inner array of the 2D array
+        array_from_file[i] = malloc(cols*sizeof(int));
+        fgets(buffer, 80, fp);
+
+        //following approach from https://cplusplus.com/reference/cstring/strtok/
+        char *token = strtok(buffer,",\n");
+        int j = 0;
+        while(token != NULL)
+        {
+            int intvaloftoken;
+            sscanf(token,"%d",&intvaloftoken);
+            array_from_file[i][j] = intvaloftoken;
+            j++;
+            //printf("%s\n",token); //for debugging
+            token = strtok(NULL,",\n");
+        }
+    }
+
+    //print out the data from the table
+    for( int i = 0; i < rows; i++)
+    {
+        for( int j = 0; j < cols; j++)
+        {
+            printf("%d ",array_from_file[i][j]);
+        }
+        printf("\n");
+    }
+    fclose(fp); //close the file
+
+    return 0;
+}
+```
+
+<!---------------------------------->
+
+## Continuing the exercise
+
+Can you find a function from `<string.h>` that would allow us to iterate through portions of a string?
+
+https://cplusplus.com/reference/cstring/
+
+Look for sample on the documentation - how would this look for our problem?
+
+<!--=====================================================================-->
+
+# Writing to Files
+<!-- .slide: data-background="#004477" -->
+
+<!--=====================================================================-->
+
+## Writing to a File
+- To open a file for writing you use:
+    ```c
+    FILE *fp = fopen("input.txt", "w");
+    ```
+    + <!-- .element: class="fragment"-->
+ If `input.txt` already exists, it is deleted
+    + <!-- .element: class="fragment"-->
+ If it doesn't exit, it is created
+- <!-- .element: class="fragment"-->
+ You can use `fprintf` to print to a file:
+    ```c
+    fprintf(fp, "%d %d %d\n", 100, 200, 300);
+    ```
+
+<!--=====================================================================-->
+
+## Closing Files
+- It is important to **close** your files to inform your OS that you're done with the file
+- <!-- .element: class="fragment"-->
+ You can do this with:
+    ```c
+    fclose(fp);
+    ```
+
+<!--=====================================================================-->
+
+
+# Structs and Files Exercise
+<!-- .slide: data-background="#004477" -->
+
+<!--=====================================================================-->
+
+## Exercise
+- Suppose we have have some 2D points in a file
+- <!-- .element: class="fragment"-->
+ We could encode them in the following way:
+    ```text
+    4
+    0 0
+    1 1
+    0 5
+    3.14 2.71
+    ```
+- <!-- .element: class="fragment"-->
+ First line tells you how many points are in the file and then every other line is of the form `x y`
+
+<!---------------------------------->
+
+## Exercise (cont.)
+- Write a function called `read_points` with the following signature:
+    ```c
+    POINT *read_points(char *filename)
+    ```
+- <!-- .element: class="fragment"-->
+ Should parse the file into an array of `POINT` objects
+- <!-- .element: class="fragment"-->
+ Remember to use `malloc` to allocate the memory on the heap!
+
+                    </textarea>
+                </section>
+            </div>
+        </div>
+
+        <script src="../dist/reveal.js"></script>
+        <script src="../plugin/notes/notes.js"></script>
+        <script src="../plugin/markdown/markdown.js"></script>
+        <script src="../plugin/highlight/highlight.js"></script>
+        <script src="../plugin/chalkboard/plugin.js"></script>
+        <script src="../plugin/math/math.js"></script>
+        <script src="../plugin/menu/menu.js"></script>
+        <!--  -->
+        <script>
+            // More info about initialization & config:
+            // - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
+            Reveal.initialize({
+                hash: true,
+                pdfSeparateFragments: false,
+
+                chalkboard: {
+                    chalkWidth: 4,
+                    chalkEffect: 0.5,
+                    toggleChalkboardButton: false,
+                    toggleNotesButton: false,
+                },
+
+                menu: {
+                    hideMissingTitles: true,
+                    themes: true,
+                    themesPath: '../dist/theme/',
+                },
+
+                // Learn about plugins: https://revealjs.com/plugins/
+                plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, 
+                    RevealChalkboard, RevealMath, RevealMenu ]
+            });
+        </script>
+    </body>
+</html>
