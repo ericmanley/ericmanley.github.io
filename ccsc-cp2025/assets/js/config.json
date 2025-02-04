@@ -1,0 +1,44 @@
+{
+    "map": {
+        "map_provider": "OpenStreetMap.Mapnik",
+        "home_coord": [41.60312465593535, -93.65370619823557],
+        "default_zoom": 17,
+        "pins": [{
+                "coord": [41.60286546776129, -93.65362236369161],
+                "label": "Breakout Sessions - Collier-Scripps Hall"
+            },{
+                "coord": [41.60435998688192, -93.6513855711578],
+                "label": "Plenary Sessions and Meals - Shivers Hospitality Suite"
+            },{
+                "coord": [41.603718116549544, -93.65038963580994],
+                "label": "Park in this parking lot"
+            }] 
+    },
+
+    "live": {
+        "time": {
+            "start": 1743703200,
+            "end": 1743789600
+        },
+
+        "streaming": {
+            "enable": false,
+            "pause": 60,
+            "prepend": 5,
+            "extend": 5
+        },
+
+        "demo": {
+            "enable": false,
+            "duration": 300,
+            "pause": 10
+        }
+    },
+
+    "lang": {
+        "map": {
+            "focus_conf": "Center map on conference location",
+            "focus_me": "Show my current location"
+        }
+    }
+}
