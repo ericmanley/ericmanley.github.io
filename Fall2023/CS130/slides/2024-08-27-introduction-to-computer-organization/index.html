@@ -1,0 +1,283 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>reveal.js</title>
+
+        <link rel="stylesheet" href="../dist/reset.css">
+        <link rel="stylesheet" href="../dist/reveal.css">
+        <link rel="stylesheet" href="../dist/theme/white.css" id="theme">
+
+        <!-- Theme used for syntax highlighted code -->
+        <link rel="stylesheet" href="../plugin/highlight/monokai.css" id="highlight-theme">
+
+        <style>
+            .twocolumn {
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           grid-gap: 10px;
+           text-align: left;
+        }
+        </style>
+
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section data-markdown
+                         data-separator="<!--==*-->"
+                         data-separator-vertical="<!----*-->">
+                    <textarea data-template>
+# Computer Organization
+#### and Assembly Language Programming
+
+---
+
+CS 130 // 2024-08-27
+
+<!--=====================================================================-->
+
+# Welcome!
+Instructor: Eric Manley<br>
+
+---
+
+<div class="twocolumn" style="font-size: 85%">
+<div>
+
+**Office:** Collier-Scripps 327<br>
+**Email:** <eric.manley@drake.edu><br>
+**Phone:** (515) 271-2177
+
+</div>
+<div>
+
+**Office Hours:**<br>
+Schedule in Calendly the day before or drop in<br/>M 9:30am-12:30pm<br/>Th 2:00pm-4:00pm<br>
+(tentative)
+
+</div>
+</div>
+
+
+
+<!--=====================================================================-->
+
+# Course Overview
+<!-- .slide: data-background="#004477" -->
+
+<!--=====================================================================-->
+
+## Overarching Theme
+- Learning how a high-level program is actually executed on your computer's processor
+
+<!--=====================================================================-->
+
+So... what is a processor?
+
+
+<!---------------------------------->
+
+![Photo of the inside of a laptop](/Fall2024/CS130/assets/images/COD/inside-laptop.png)
+
+<!---------------------------------->
+
+![Components of a processor](/Fall2024/CS130/assets/images/COD/processor-components.png)
+
+<!---------------------------------->
+
+![Processor component diagram](/Fall2024/CS130/assets/images/COD/control.png)
+
+<!---------------------------------->
+
+![Compiler-Assembler Diagram](/Fall2024/CS130/assets/images/COD/compiler-assembler.png)
+
+
+<!--=====================================================================-->
+
+## Major Aspects of the Course
+1. Assembly language programming
+2. <!-- .element: class="fragment"-->
+ Digital logic
+3. <!-- .element: class="fragment"-->
+ Processor architecture
+4. <!-- .element: class="fragment"-->
+The C Programming Language
+
+
+<!--=====================================================================-->
+
+#### Why should I learn this stuff?
+
+<!---------------------------------->
+
+Sometimes you really need to understand the system to solve your problems
+
+![Shazam movie poster](/Fall2024/CS130/assets/images/shazam-movie.jpg)
+
+
+
+<p class="fragment">Wait, that's the wrong Shazam </p>
+
+<!---------------------------------->
+
+#### Shazam - the transaction processing company
+
+![Transaction processing network](/Fall2024/CS130/assets/images/transaction-processing-network.png)
+- They hire developers in Des Moines
+- Need to process transactions fast
+ - If the Java garbage collector kicks in, they're in trouble
+
+<!---------------------------------->
+
+#### How does magic *really* work in our world?
+
+
+
+<div class="twocolumn" style="font-size: 85%">
+<div>
+
+
+![Door to Moria](/Fall2024/CS130/assets/images/moria-door.webp) <!-- .element width="400px" -->
+
+![Mistborn novel cover](/Fall2024/CS130/assets/images/mistborn-book.jpg) <!-- .element width="200px" -->
+
+</div>
+<div>
+
+![Dungeons and Dragons spells](/Fall2024/CS130/assets/images/phb-spells.jpg) <!-- .element width="400px" -->
+
+
+
+</div>
+</div>
+</div>
+
+
+
+<!--=====================================================================-->
+
+### My background with this course
+
+- 1996-2004: C/C++ was my _native_ language
+- <!-- .element: class="fragment"-->
+ 2001: I took a course in _assembly_ and _digital circuits_
+    - didn't understand how it related to actual computers
+- <!-- .element: class="fragment"-->
+ 2003: Took an awful course on computer architecture
+    - deathly afraid of systems courses
+- <!-- .element: class="fragment"-->
+ 2005: 😱 assigned to teach _computer organization and assembly language programming_ in grad school
+    - ended up teaching it 8 semesters in a row
+
+<!---------------------------------->
+
+- 2007: 😱 took a qualifying exam on computer architecture
+    - read the entire textbook _and_ the sequel
+- <!-- .element: class="fragment"-->
+ 2009: got Ph.D. 
+    - this stuff was an important part of my research
+    ![optical scalar multiplication](/Fall2024/CS130/assets/images/optical-scalar-mult.png)
+- <!-- .element: class="fragment"-->
+ 2022-2024: Teaching this course after 13 year break
+
+<!--=====================================================================-->
+
+# Course Logistics
+<!-- .slide: data-background="#004477" -->
+
+<!--=====================================================================-->
+
+## Course Website
+
+
+[https://ericmanley.github.io/Fall2024/CS130](https://ericmanley.github.io/Fall2024/CS130/)
+
+
+<!--=====================================================================-->
+
+#### What to do before coming to the next class
+
+
+
+1. Read the [syllabus](https://ericmanley.github.io/Fall2024/CS130/syllabus)
+2. From the [resources](https://ericmanley.github.io/Fall2024/CS130/resources) page
+ - If you don't have a JAVA SDK installed, install a Java SDK
+    - CS67 students - you can probably use the same one for both classes
+ - Download and run MARS - the MIPS simulator we'll be using
+
+
+<!--=====================================================================-->
+
+## Warm up exercises
+
+Get in groups discuss and write down your ideas
+
+1. Rewrite the following code with one arithmetic operator (+, -, etc.) per line
+```python
+pay = (salary + bonus) - (health_premium + taxes)
+```
+
+2. Rewrite lines of this form
+```python
+a = b + c
+```
+like this
+```
+add a, b, c
+```
+
+<!--=====================================================================-->
+
+## Discussion Questions
+
+1. What is the difference between computer _memory_ and the computer _disk_?
+2. When using Excel spreadsheets, what causes something to be in memory? What causes something to be on the disk?
+3. When writing a Python program, what causes something to be in memory? What causes something to be on the disk?
+
+
+
+
+                    </textarea>
+                </section>
+            </div>
+        </div>
+
+        <script src="../dist/reveal.js"></script>
+        <script src="../plugin/notes/notes.js"></script>
+        <script src="../plugin/markdown/markdown.js"></script>
+        <script src="../plugin/highlight/highlight.js"></script>
+        <script src="../plugin/chalkboard/plugin.js"></script>
+        <script src="../plugin/math/math.js"></script>
+        <script src="../plugin/menu/menu.js"></script>
+        <!--  -->
+        <script>
+            // More info about initialization & config:
+            // - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
+            Reveal.initialize({
+                hash: true,
+                pdfSeparateFragments: false,
+
+                chalkboard: {
+                    chalkWidth: 4,
+                    chalkEffect: 0.5,
+                    toggleChalkboardButton: false,
+                    toggleNotesButton: false,
+                },
+
+                menu: {
+                    hideMissingTitles: true,
+                    themes: true,
+                    themesPath: '../dist/theme/',
+                },
+
+                // Learn about plugins: https://revealjs.com/plugins/
+                plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, 
+                    RevealChalkboard, RevealMath, RevealMenu ]
+            });
+        </script>
+    </body>
+</html>
