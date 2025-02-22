@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Easy Handwriting Recognition Nifty Assignment - Eric Manley</title>
+  <meta name="description" content="Academic webpage of Eric Manley">
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="https://ericmanley.github.io/nifty/2019/04/04/easy-handwriting-recognition-nifty-assignment.html">
+  <link rel="shortcut icon" type ="image/x-icon" href="https://ericmanley.github.io/favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+
+  <link rel="preconnect" href="https://player.vimeo.com">
+  <link rel="preconnect" href="https://i.vimeocdn.com">
+  <link rel="preconnect" href="https://f.vimeocdn.com">
+
+
+
+
+<script>
+MathJax = {
+    tex: {
+    inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+    tags: 'ams'  // should be 'ams', 'none', or 'all' }. This line makes the equation numbering and labeling work
+    }, 
+    svg: {
+    fontCache: 'global'
+    }
+};
+</script>
+<script
+    type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script> 
+
+</head>
+
+
+  <body>
+
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id="
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand" href="https://ericmanley.github.io/">
+     <img src="https://ericmanley.github.io/images/initiallogo.png" width=auto height="25" style="margin-right:5px" class="d-inline-block align-top" alt="">
+      Eric Manley
+    </a>
+    <button class="toggler navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor02">
+        <div class="navbar-nav mr-auto">
+            <a class="nav-item nav-link" href="https://ericmanley.github.io/">Home</a>
+                   
+                <a class="nav-item nav-link" href="https://ericmanley.github.io/publications">Publications</a>
+                   
+                <a class="nav-item nav-link" href="https://ericmanley.github.io/nifty">Nifty</a>
+                   
+                <a class="nav-item nav-link" href="https://ericmanley.github.io/teaching">Teaching</a>
+            
+        </div>
+    </div>
+</nav>
+
+
+    <div class="container-fluid">
+      <div class="row">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Easy Handwriting Recognition Nifty Assignment</h1>
+    <p class="post-meta"><time datetime="2019-04-04T00:00:00-05:00" itemprop="datePublished">Apr 4, 2019</time></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>Timothy Urness and I presented this nifty assignment at the 2019 Consortium for Computing Sciences in Colleges - Central Plains Conference. Here are the <a href="https://ericmanley.github.io/papers/2019CCSC_NiftyHandwriting.pdf">paper</a> and <a href="https://docs.google.com/presentation/d/17HVHQPPWfUvS3hKjMsmxT4aV93yK1ugbAaQSWEa375A/edit?usp=sharing">slides</a> from the conference.</p>
+
+<p style="text-align: center;"><img src="/images/handwriting_recognition_demo.gif" alt="handwriting recognition app demo" width="300" /></p>
+
+<h2 id="about">About</h2>
+
+<p>In this assignment, students create a GUI which allows the user to draw handwritten digits using a mouse and then attempts to recognize the character using a CS1-accessible machine learning algorithm.
+The GUI</p>
+
+<h2 id="the-gui-consists-of">The GUI consists of</h2>
+<ul>
+  <li>a canvas which responds to click-move mouse events by changing the color of the canvas pixel and capturing the corresponding entry in a 2D-List of 0s and 1s</li>
+  <li>a button which runs the prediction algorithm</li>
+  <li>a label to display the algorithm’s guess</li>
+  <li>(optional) another canvas to show the closest match in the database of handwritten digit samples</li>
+  <li>(optional) a clear button to clear the drawing canvas</li>
+</ul>
+
+<h2 id="the-data">The Data</h2>
+
+<p>The user’s handwritten digit is compared against a set of <a href="http://analytics.drake.edu/~manley/mnist_partial.csv">handwritten digit samples</a>. The data for this comes from the well-known <a href="http://yann.lecun.com/exdb/mnist/">MNIST database</a>. However, we have made some changes to the data which make it more appropriate for this assignment. Here are the changes we made:</p>
+
+<ul>
+  <li>file format: The MNIST data is stored in a binary format. We converted this to a comma separated values (csv) file where every 29 lines consists of a line with the digit represented and then 28 lines representing the rows in the 28×28 pixel image.</li>
+  <li>grayscale format: The MNIST data contains grayscale values which we converted to black and white (represented as 1s and 0s) for easy comparison with the canvas drawing.</li>
+  <li>size: The MNIST data is large (60000 examples). We reduced this to the first 2000 examples which allows for a nice balance between prediction accuracy and algorithm run time.</li>
+</ul>
+
+<p>The resulting data set has an easy-to-understand format that is just begging to be read in as 2D-lists which can then be compared to the 2D-list from the canvas drawing.</p>
+
+<p style="text-align: center;"><img src="/images/mnistpartial.png" alt="handwriting recognition app demo" width="300" /></p>
+
+<h2 id="the-prediction-algorithm">The Prediction Algorithm</h2>
+
+<p>The <a href="http://yann.lecun.com/exdb/mnist/">MNIST page</a> gives the error rates of several machine learning algorithms, and one of the families of algorithms which performs well is K-nearest-neighbor. The K-nearest-neighbor algorithm works by comparing the unknown drawing against every sample in the database and predicting the most common label among the K most similar examples. This algorithm is accessible for CS1 students, especially when K=1, where you have to do the following:</p>
+
+<ul>
+  <li>Create a function which can return a similarity score between two examples. We found that counting the number of pixels that agree between the two lists worked well, and it does a little better when black pixel agreement is weighted more heavily (5 points for agreeing on a black pixel, 1 point for agreeing on a white pixel). However, this is something that students can be given freedom to investigate on their own.</li>
+  <li>Keep track of the example with the best similarity score and then use that to make the prediction.</li>
+</ul>
+
+<h2 id="materials">Materials</h2>
+
+<ul>
+  <li><a href="/assets/files/HandwritingAssignmentHandout.docx">Assignment Handout</a></li>
+  <li><a href="http://analytics.drake.edu/~manley/mnist_partial.csv">Reformatted Data File</a></li>
+  <li>Sample Starter Code: sample code can be provided depending on how much scaffolding needs to be provided. Here are some examples of code we used in two different terms for in-class labs leading up to the assignment. Some or all of these could be provided.
+    <ul>
+      <li><a href="http://analytics.drake.edu/~manley/sample_starter_code/nongui_1nn.py">nongui_1nn.py</a>: Implement the 1-nearest-neighbor algorithm (or even just compare, the similarity score function), to predict the character in a mystery test file like mystery.csv</li>
+      <li><a href="http://analytics.drake.edu/~manley/sample_starter_code/display_characters_from_dataset.py">display_characters_from_dataset.py</a>: A GUI where handwriting samples from the data set can be displayed on a canvas.</li>
+      <li><a href="http://analytics.drake.edu/~manley/sample_starter_code/draw_on_canvas_save_as_2D_list.py">draw_on_canvas_save_as_2D_list.py</a>: A GUI with a drawing canvas where the drawing can be saved to a 2D list.</li>
+      <li><a href="http://analytics.drake.edu/~manley/sample_starter_code/draw_on_big_canvas.py">draw_on_big_canvas.py</a>: Like draw_on_canvas_save_as_2D_list.py but with a canvas that is larger than the corresponding 2D list.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="topics">Topics</h2>
+
+<p>File input, GUI, 2D lists/arrays</p>
+
+<h2 id="audience">Audience</h2>
+
+<p>CS1 second half</p>
+
+<h2 id="strengths">Strengths</h2>
+
+<p>The assignment uses real data with a simple algorithm to achieve compelling results. No special external libraries or software is needed. It can be adapted to most programming languages that have some sort of GUI. The difficulty is scalable, with several opportunities for scaffolding or lead-in assignments as well as more difficult extensions.</p>
+
+<h2 id="weaknesses">Weaknesses</h2>
+
+<p>While good-enough for students to have the satisfaction of building something that works, the prediction accuracy for the easy-level, 1-nearest-neighbor algorithm isn’t great for certain digits.</p>
+
+<p>It also may need scaffolding for parts like saving drawing to 2D list or larger canvas than 28×28.</p>
+
+<h2 id="variants-and-extensions">Variants and Extensions</h2>
+
+<p>We have built up to this assignment with previous smaller labs/assignments like</p>
+
+<ul>
+  <li>
+    <p>Drawing Canvas: Create a GUI with a canvas you can draw on</p>
+  </li>
+  <li>
+    <p>Non-GUI version: Split the data file into two parts; use one set as the unknown samples and the other as the known set of samples. Use the set of known samples to see how many of the unknown samples the algorithm can correctly identify. This has the benefit of allowing you to quantify the accuracy of your algorithm.</p>
+  </li>
+</ul>
+
+<p>There are also extensions which can make the project more difficult or lead into more advanced topics in computer science:</p>
+
+<ul>
+  <li>
+    <p>Improve the Predictor: As an extra challenge, students can try to improve the algorithm. Implementing the general K-nearest-neighbor algorithm is a little harder than the K=1 version but may result in better performance.</p>
+  </li>
+  <li>
+    <p>GUI Handwriting Capture: Students can be challenged to capture their own handwritten numerals using the GUI, save them to a file (optional), and then make a prediction using the algorithm.</p>
+  </li>
+</ul>
+
+  </div>
+
+</article>
+      </div>
+    </div>
+
+    <!--
+<br/>
+<section id="footer">
+<div class="container-footer">
+  <div class="panel-footer">
+	  <div class="row">
+		<div class="col-sm-5">
+            <p>Associate Professor of Computer Science<br/> Co-Director of Data Analytics<br/> Dept of Mathematics and Computer Science<br/> Drake University
+</p>
+		</div>
+
+
+>
+
+		<div class="col-sm-7">
+
+            <p>2702 Forest Avenue<br/> Des Moines, IA 50311 
+</p>
+		</div>
+	  </div>
+
+	</div>
+  </div>
+</div>
+-->
+<script src="/assets/javascript/bootstrap/bootstrap.bundle.min.js"></script>
+
+
+  </body>
+
+</html>
