@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="canonical" href="https://ericmanley.github.io/publications/">
   <link rel="shortcut icon" type ="image/x-icon" href="https://ericmanley.github.io/favicon.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
 
@@ -47,7 +48,7 @@ MathJax = {
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
+<nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark p-2">
     <a class="navbar-brand" href="https://ericmanley.github.io/">
      <img src="https://ericmanley.github.io/images/initiallogo.png" width=auto height="25" style="margin-right:5px" class="d-inline-block align-top" alt="">
       Eric Manley
@@ -62,7 +63,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                    
                 <a class="nav-item nav-link" href="https://ericmanley.github.io/publications">Publications</a>
                    
-                <a class="nav-item nav-link" href="https://ericmanley.github.io/nifty">Nifty</a>
+                <a class="nav-item nav-link" href="https://ericmanley.github.io/projects">Projects</a>
                    
                 <a class="nav-item nav-link" href="https://ericmanley.github.io/teaching">Teaching</a>
             
@@ -78,7 +79,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div>
 <div>
 
-<div class="jumbotron">
+
+<div class="container py-5 text-center border bg-light rounded mb-4">
    <center>
    <a href="https://ericmanley.github.io/about"><img src="https://ericmanley.github.io/images/headshot.jpg" width="60%" style="block:inline; margin-left:auto; margin-right:auto; margin-bottom:5px;"/></a>
    <h4>Eric Manley</h4>
@@ -115,102 +117,80 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 </div>
 
-<div class="jumbotron">
-  <h4>News</h4>
+<div class="container py-4 bg-light rounded border text-start mb-4">
+  <h4 class="mb-3">News</h4>
 
   
-  <b>4 January, 2025</b>
-    <p>We are hosting the <a href="https://www.ccsc.org/centralplains-new/">2025 CCSC Central Plains Conference</a> April 4-5</p>
+    <p><b>4 January, 2025</b> - We are hosting the <a href="https://www.ccsc.org/centralplains-new/">2025 CCSC Central Plains Conference</a> April 4-5</p>
   
-  <b>5 November, 2024</b>
-    <p>Drake is hiring <a href="https://jobs.drake.edu/jobs/qu-drake-united-college-assistant-professor-of-practice-in-data-analytics">Assistant Professors of Practice in Data Analytics</a> to support the Qingdao-Drake United College</p>
+    <p><b>5 November, 2024</b> - Drake is hiring <a href="https://jobs.drake.edu/jobs/qu-drake-united-college-assistant-professor-of-practice-in-data-analytics">Assistant Professors of Practice in Data Analytics</a> to support the Qingdao-Drake United College</p>
   
-  
+
   <h5><a href="https://ericmanley.github.io/allnews.html">... see all News</a></h5>
-
 </div>
+
 </div>
   </div>
 
 <div id="gridid" class="contain-main px-4">
-  <!-- Bootstrap JavaScript (if not already included) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-<style>
-.jumbotron{
-    padding:3%;
-    padding-bottom:10px;
-    padding-top:10px;
-    margin-top:10px;
-    margin-bottom:30px;
+  <!-- <style>
+.jumbotron {
+    padding: 3%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
-</style>
+</style> -->
 
 <ul class="nav nav-tabs justify-content-center mb-3 btn-group" id="pub-tabs" role="tablist">
 <li class="nav-item" role="presentation">
-<button class="nav-link active btn btn-outline-secondary" id="peer-reviewed-tab" data-bs-toggle="tab" data-bs-target="#peer-reviewed" type="button" role="tab" aria-controls="peer-reviewed" aria-selected="true">
+<button class="nav-link active btn" id="peer-reviewed-tab" data-bs-toggle="tab" data-bs-target="#peer-reviewed" type="button" role="tab" aria-controls="peer-reviewed" aria-selected="true">
 Peer-Reviewed
 </button>
 </li>
 <li class="nav-item" role="presentation">
-<button class="nav-link btn btn-outline-secondary" id="students-tab" data-bs-toggle="tab" data-bs-target="#students" type="button" role="tab" aria-controls="students" aria-selected="false">
+<button class="nav-link btn" id="students-tab" data-bs-toggle="tab" data-bs-target="#students" type="button" role="tab" aria-controls="students" aria-selected="false">
 Work with Students
 </button>
 </li>
 </ul>
+
 <div class="tab-content" id="pub-tabs-content">
   <div class="tab-pane fade show active jumbotron" id="peer-reviewed" role="tabpanel" aria-labelledby="peer-reviewed-tab">
     <h3>Peer-Reviewed</h3>
-    <ol class="bibliography" reversed="reversed"><li><style>
-.btn{
-    margin-bottom:5px;
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    height:20px
-}
-
-pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; overflow-x:auto;
-}
-</style>
-
-
-<div class="text-justify"><span id="reza_wacv2025">Reza, M. A., Manley, E. D., Chen, S., Chaudhary, S., &amp; Elafros, J. (2025, February). SegBuilder: A Semi-automatic Annotation Tool for Segmentation. <i>IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) <i>(to Appear)</i></i>.</span></div>
-
-<!-- You can use the below to make your name bold -->
-<!-- <span id="reza_wacv2025">Reza, M. A., Manley, E. D., Chen, S., Chaudhary, S., &amp; Elafros, J. (2025, February). SegBuilder: A Semi-automatic Annotation Tool for Segmentation. <i>IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) <i>(to Appear)</i></i>.</span></div> -->
-
-
-
-
-
+    <ol class="bibliography" reversed="reversed"><li><div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <!-- Publication Reference -->
+      <p class="card-text text-justify">
+        <span id="reza_wacv2025">Reza, M. A., <b><b>Manley, E.</b> D.</b>, Chen, S., Chaudhary, S., &amp; Elafros, J. (2025, February). SegBuilder: A Semi-automatic Annotation Tool for Segmentation. <i>IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) <i>(to Appear)</i></i>.</span>
+      </p>
   
-    <a href="https://ericmanley.github.io/papers/2025WACV_SegBuilder.pdf" target="_blank">
-      <button class="btn btn-primary btm-sm">PDF</button>
-    </a>
+      <!-- Buttons -->
+      <div class="d-flex flex-wrap gap-2 mt-2">
+        
+        
   
-
-
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleBibtexreza_wacv2025()">BIB</button>
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleAbstractreza_wacv2025()">ABSTRACT</button>
-
-
-
-<div id="areza_wacv2025" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@inproceedings{reza_wacv2025,
+        
+          
+            <a href="https://ericmanley.github.io/papers/2025WACV_SegBuilder.pdf" target="_blank" class="btn btn-primary btn-sm">PDF</a>
+          
+        
+  
+        
+  
+        <!-- Ensure Correct Bootstrap 5 Attributes -->
+        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-reza_wacv2025" aria-expanded="false" aria-controls="bibtex-reza_wacv2025">BIB</button>
+  
+        
+          <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-reza_wacv2025" aria-expanded="false" aria-controls="abstract-reza_wacv2025">ABSTRACT</button>
+        
+      </div>
+  
+      <!-- Collapsible BibTeX -->
+      <div class="collapse mt-3" id="bibtex-reza_wacv2025">
+        <div class="card card-body">
+          <pre>@inproceedings{reza_wacv2025,
   author = {Reza, Md. Alimoor and Manley, Eric D. and Chen, Sean and Chaudhary, Sameer and Elafros, Jacob},
   title = {{SegBuilder}: A Semi-automatic Annotation Tool for Segmentation},
   booktitle = {IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) \emph{(to appear)}},
@@ -221,82 +201,52 @@ pre{
   keywords = {published}
 }
 </pre>
-</div>
-
-
-<div id="breza_wacv2025" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>This paper addresses the problem of image annotation for segmentation tasks. Semantic segmentation involves labeling each pixel in an image with predefined categories, such as sky, cars, roads, and humans. Deep learning models require numerous annotated images for effective training, but manual annotation is slow and time-consuming. To mitigate this challenge, we leverage the Segment Anything Model (SAM) – a vision foundation model. We introduce SegBuilder, a framework that incorporates SAM to automatically generate segments, which are then tagged by human annotators using a quick selection list. To demonstrate SegBuilder’s effectiveness, we introduced a novel dataset for image segmentation in underwater environments featuring animals such as sea lions, beavers, and jellyfish. Experiments on this dataset showed that SegBuilder significantly speeds up the annotation process compared to the publicly available tool, Label Studio. SegBuilder also includes a free-form drawing tool, allowing users to create correct segments missed by SAM. This feature is particularly useful for scenes with shadows, camouflaged objects, and part-based segmentation tasks where SAM falls short. Experimentally, we demonstrated SegBuilder’s efficacy in these scenarios, showcasing its potential for generating pixel-wise annotations crucial for training robust deep learning models for semantic segmentation.</pre>
-</div>
-
-<script>
-function toggleBibtexreza_wacv2025(parameter) {
-    var x= document.getElementById('areza_wacv2025');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function toggleAbstractreza_wacv2025(parameter) {
-    var x= document.getElementById('breza_wacv2025');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
+        </div>
+      </div>
+  
+      <!-- Collapsible Abstract -->
+      
+        <div class="collapse mt-3" id="abstract-reza_wacv2025">
+          <div class="card card-body">
+            This paper addresses the problem of image annotation for segmentation tasks. Semantic segmentation involves labeling each pixel in an image with predefined categories, such as sky, cars, roads, and humans. Deep learning models require numerous annotated images for effective training, but manual annotation is slow and time-consuming. To mitigate this challenge, we leverage the Segment Anything Model (SAM) – a vision foundation model. We introduce SegBuilder, a framework that incorporates SAM to automatically generate segments, which are then tagged by human annotators using a quick selection list. To demonstrate SegBuilder’s effectiveness, we introduced a novel dataset for image segmentation in underwater environments featuring animals such as sea lions, beavers, and jellyfish. Experiments on this dataset showed that SegBuilder significantly speeds up the annotation process compared to the publicly available tool, Label Studio. SegBuilder also includes a free-form drawing tool, allowing users to create correct segments missed by SAM. This feature is particularly useful for scenes with shadows, camouflaged objects, and part-based segmentation tasks where SAM falls short. Experimentally, we demonstrated SegBuilder’s efficacy in these scenarios, showcasing its potential for generating pixel-wise annotations crucial for training robust deep learning models for semantic segmentation.
+          </div>
+        </div>
+      
+    </div>
+  </div>
 </li>
-<li><style>
-.btn{
-    margin-bottom:5px;
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    height:20px
-}
-
-pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; overflow-x:auto;
-}
-</style>
-
-
-<div class="text-justify"><span id="park_sigcse2024">Park, H., &amp; Manley, E. D. (2024). Programming-Integrated Mathematics Learning for Future Elementary Teachers and non-STEM Majors. <i>Proceedings of the 55th ACM Technical Symposium on Computer Science Education (SIGCSE)</i>, 1014–1020.</span></div>
-
-<!-- You can use the below to make your name bold -->
-<!-- <span id="park_sigcse2024">Park, H., &amp; Manley, E. D. (2024). Programming-Integrated Mathematics Learning for Future Elementary Teachers and non-STEM Majors. <i>Proceedings of the 55th ACM Technical Symposium on Computer Science Education (SIGCSE)</i>, 1014–1020.</span></div> -->
-
-
-
-
-
+<li><div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <!-- Publication Reference -->
+      <p class="card-text text-justify">
+        <span id="park_sigcse2024">Park, H., &amp; <b><b>Manley, E.</b> D.</b> (2024). Programming-Integrated Mathematics Learning for Future Elementary Teachers and non-STEM Majors. <i>Proceedings of the 55th ACM Technical Symposium on Computer Science Education (SIGCSE)</i>, 1014–1020.</span>
+      </p>
   
-    <a href="https://ericmanley.github.io/papers/2024SIGCSE_ProgrammingIntegratedMathLearning.pdf" target="_blank">
-      <button class="btn btn-primary btm-sm">PDF</button>
-    </a>
+      <!-- Buttons -->
+      <div class="d-flex flex-wrap gap-2 mt-2">
+        
+        
   
-
-
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleBibtexpark_sigcse2024()">BIB</button>
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleAbstractpark_sigcse2024()">ABSTRACT</button>
-
-
-
-<div id="apark_sigcse2024" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@inproceedings{park_sigcse2024,
+        
+          
+            <a href="https://ericmanley.github.io/papers/2024SIGCSE_ProgrammingIntegratedMathLearning.pdf" target="_blank" class="btn btn-primary btn-sm">PDF</a>
+          
+        
+  
+        
+  
+        <!-- Ensure Correct Bootstrap 5 Attributes -->
+        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-park_sigcse2024" aria-expanded="false" aria-controls="bibtex-park_sigcse2024">BIB</button>
+  
+        
+          <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-park_sigcse2024" aria-expanded="false" aria-controls="abstract-park_sigcse2024">ABSTRACT</button>
+        
+      </div>
+  
+      <!-- Collapsible BibTeX -->
+      <div class="collapse mt-3" id="bibtex-park_sigcse2024">
+        <div class="card card-body">
+          <pre>@inproceedings{park_sigcse2024,
   address = {Portland, Oregon},
   author = {Park, Hyejin and Manley, Eric D.},
   booktitle = {Proceedings of the 55th ACM Technical Symposium on Computer Science Education (SIGCSE)},
@@ -308,82 +258,52 @@ pre{
   file = {2024SIGCSE_ProgrammingIntegratedMathLearning.pdf}
 }
 </pre>
-</div>
-
-
-<div id="bpark_sigcse2024" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>With the rising emphasis on computer science (CS) education, many states, school districts, and schools have grappled with how to address computing in the K-12 curriculum. While some approaches dedicate classroom time to specific CS topics, others are attempting to infuse computing curriculum into other subjects like math and science. Preparing educators without prior CS experience to teach this integrated content is challenging. In this paper, we share programming-integrated mathematics learning (PML) modules that we developed to support teachers in learning to use programming in mathematics classrooms through argumentation. To test the effectiveness of the modules, we implemented them in a mathematics content course for elementary education majors and a mathematics pathway course for non-STEM majors. We assessed both courses as study contexts for evaluating potential PML modules to enhance teachers’ knowledge and students’ learning outcomes in mathematics and computer programming. This paper focuses on student-written reflections as data to investigate how education and non-STEM majors describe their learning through the PML modules. According to our analysis, the study participants found the PML modules to be useful in enhancing their understanding of mathematical concepts. They also described the value of learning programming in mathematics classrooms through argumentation, learning different perspectives, and helping each other understand. However, most of our student participants displayed a relatively low level of confidence in their programming abilities, specifically regarding the creation of text-based programs. Future study is needed to explore how to increase the programming self-efficacy while students learn mathematics through programming.</pre>
-</div>
-
-<script>
-function toggleBibtexpark_sigcse2024(parameter) {
-    var x= document.getElementById('apark_sigcse2024');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function toggleAbstractpark_sigcse2024(parameter) {
-    var x= document.getElementById('bpark_sigcse2024');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
+        </div>
+      </div>
+  
+      <!-- Collapsible Abstract -->
+      
+        <div class="collapse mt-3" id="abstract-park_sigcse2024">
+          <div class="card card-body">
+            With the rising emphasis on computer science (CS) education, many states, school districts, and schools have grappled with how to address computing in the K-12 curriculum. While some approaches dedicate classroom time to specific CS topics, others are attempting to infuse computing curriculum into other subjects like math and science. Preparing educators without prior CS experience to teach this integrated content is challenging. In this paper, we share programming-integrated mathematics learning (PML) modules that we developed to support teachers in learning to use programming in mathematics classrooms through argumentation. To test the effectiveness of the modules, we implemented them in a mathematics content course for elementary education majors and a mathematics pathway course for non-STEM majors. We assessed both courses as study contexts for evaluating potential PML modules to enhance teachers’ knowledge and students’ learning outcomes in mathematics and computer programming. This paper focuses on student-written reflections as data to investigate how education and non-STEM majors describe their learning through the PML modules. According to our analysis, the study participants found the PML modules to be useful in enhancing their understanding of mathematical concepts. They also described the value of learning programming in mathematics classrooms through argumentation, learning different perspectives, and helping each other understand. However, most of our student participants displayed a relatively low level of confidence in their programming abilities, specifically regarding the creation of text-based programs. Future study is needed to explore how to increase the programming self-efficacy while students learn mathematics through programming.
+          </div>
+        </div>
+      
+    </div>
+  </div>
 </li>
-<li><style>
-.btn{
-    margin-bottom:5px;
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    height:20px
-}
-
-pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; overflow-x:auto;
-}
-</style>
-
-
-<div class="text-justify"><span id="manley_amteconnections2024">Manley, E. D., &amp; Park, H. (2024). Developing secondary mathematics prospective teachers’ confidence in using programming in mathematics classrooms: Benefits of the use of large language models. <i>AMTE Connections</i>, <i>34</i>(1).</span></div>
-
-<!-- You can use the below to make your name bold -->
-<!-- <span id="manley_amteconnections2024">Manley, E. D., &amp; Park, H. (2024). Developing secondary mathematics prospective teachers’ confidence in using programming in mathematics classrooms: Benefits of the use of large language models. <i>AMTE Connections</i>, <i>34</i>(1).</span></div> -->
-
-
-
-
-
+<li><div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <!-- Publication Reference -->
+      <p class="card-text text-justify">
+        <span id="manley_amteconnections2024"><b><b>Manley, E.</b> D.</b>, &amp; Park, H. (2024). Developing secondary mathematics prospective teachers’ confidence in using programming in mathematics classrooms: Benefits of the use of large language models. <i>AMTE Connections</i>, <i>34</i>(1).</span>
+      </p>
   
-    <a href="https://ericmanley.github.io/papers/2024AMTEC_ProgrammingConfidenceLLM.pdf" target="_blank">
-      <button class="btn btn-primary btm-sm">PDF</button>
-    </a>
+      <!-- Buttons -->
+      <div class="d-flex flex-wrap gap-2 mt-2">
+        
+        
   
-
-
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleBibtexmanley_amteconnections2024()">BIB</button>
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleAbstractmanley_amteconnections2024()">ABSTRACT</button>
-
-
-
-<div id="amanley_amteconnections2024" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@article{manley_amteconnections2024,
+        
+          
+            <a href="https://ericmanley.github.io/papers/2024AMTEC_ProgrammingConfidenceLLM.pdf" target="_blank" class="btn btn-primary btn-sm">PDF</a>
+          
+        
+  
+        
+  
+        <!-- Ensure Correct Bootstrap 5 Attributes -->
+        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-manley_amteconnections2024" aria-expanded="false" aria-controls="bibtex-manley_amteconnections2024">BIB</button>
+  
+        
+          <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-manley_amteconnections2024" aria-expanded="false" aria-controls="abstract-manley_amteconnections2024">ABSTRACT</button>
+        
+      </div>
+  
+      <!-- Collapsible BibTeX -->
+      <div class="collapse mt-3" id="bibtex-manley_amteconnections2024">
+        <div class="card card-body">
+          <pre>@article{manley_amteconnections2024,
   author = {Manley, Eric D. and Park, Hyejin},
   title = {Developing secondary mathematics prospective teachers’ confidence in using programming in mathematics classrooms: Benefits of the use of large language models},
   journal = {AMTE Connections},
@@ -394,82 +314,52 @@ pre{
   keywords = {published}
 }
 </pre>
-</div>
-
-
-<div id="bmanley_amteconnections2024" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>In this paper, we share our work with secondary prospective teachers (PSTs) to support their learning in integrating programming in mathematics classrooms. Our study shows the potential use of ChatGPT as an assistant tool to generate computer code, which could contribute to increasing PSTs’ openness to and confidence in incorporating programming into teaching mathematics. However, to support teachers’ judicious integration of ChatGPT-generated code in mathematics lessons, it is necessary to provide learning opportunities through which teachers can experience interpreting, revising, designing, and evaluating programs in mathematics learning contexts so they can build knowledge for teaching mathematics with programming.</pre>
-</div>
-
-<script>
-function toggleBibtexmanley_amteconnections2024(parameter) {
-    var x= document.getElementById('amanley_amteconnections2024');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function toggleAbstractmanley_amteconnections2024(parameter) {
-    var x= document.getElementById('bmanley_amteconnections2024');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
+        </div>
+      </div>
+  
+      <!-- Collapsible Abstract -->
+      
+        <div class="collapse mt-3" id="abstract-manley_amteconnections2024">
+          <div class="card card-body">
+            In this paper, we share our work with secondary prospective teachers (PSTs) to support their learning in integrating programming in mathematics classrooms. Our study shows the potential use of ChatGPT as an assistant tool to generate computer code, which could contribute to increasing PSTs’ openness to and confidence in incorporating programming into teaching mathematics. However, to support teachers’ judicious integration of ChatGPT-generated code in mathematics lessons, it is necessary to provide learning opportunities through which teachers can experience interpreting, revising, designing, and evaluating programs in mathematics learning contexts so they can build knowledge for teaching mathematics with programming.
+          </div>
+        </div>
+      
+    </div>
+  </div>
 </li>
-<li><style>
-.btn{
-    margin-bottom:5px;
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    height:20px
-}
-
-pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; overflow-x:auto;
-}
-</style>
-
-
-<div class="text-justify"><span id="park_jksme2024">Park, H., &amp; Manley, E. D. (2024). Using ChatGPT as a proof assistant in a mathematics pathways course. <i>Mathematics Education</i>, <i>63</i>(2), 139–163.</span></div>
-
-<!-- You can use the below to make your name bold -->
-<!-- <span id="park_jksme2024">Park, H., &amp; Manley, E. D. (2024). Using ChatGPT as a proof assistant in a mathematics pathways course. <i>Mathematics Education</i>, <i>63</i>(2), 139–163.</span></div> -->
-
-
-
-
-
+<li><div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <!-- Publication Reference -->
+      <p class="card-text text-justify">
+        <span id="park_jksme2024">Park, H., &amp; <b><b>Manley, E.</b> D.</b> (2024). Using ChatGPT as a proof assistant in a mathematics pathways course. <i>Mathematics Education</i>, <i>63</i>(2), 139–163.</span>
+      </p>
   
-    <a href="https://ericmanley.github.io/papers/2024JKSME_ChatGPTProofAssistant.pdf" target="_blank">
-      <button class="btn btn-primary btm-sm">PDF</button>
-    </a>
+      <!-- Buttons -->
+      <div class="d-flex flex-wrap gap-2 mt-2">
+        
+        
   
-
-
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleBibtexpark_jksme2024()">BIB</button>
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleAbstractpark_jksme2024()">ABSTRACT</button>
-
-
-
-<div id="apark_jksme2024" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@article{park_jksme2024,
+        
+          
+            <a href="https://ericmanley.github.io/papers/2024JKSME_ChatGPTProofAssistant.pdf" target="_blank" class="btn btn-primary btn-sm">PDF</a>
+          
+        
+  
+        
+  
+        <!-- Ensure Correct Bootstrap 5 Attributes -->
+        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-park_jksme2024" aria-expanded="false" aria-controls="bibtex-park_jksme2024">BIB</button>
+  
+        
+          <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-park_jksme2024" aria-expanded="false" aria-controls="abstract-park_jksme2024">ABSTRACT</button>
+        
+      </div>
+  
+      <!-- Collapsible BibTeX -->
+      <div class="collapse mt-3" id="bibtex-park_jksme2024">
+        <div class="card card-body">
+          <pre>@article{park_jksme2024,
   title = {Using {ChatGPT} as a proof assistant in a mathematics pathways course},
   author = {Park, Hyejin and Manley, Eric D.},
   journal = {Mathematics Education},
@@ -481,11 +371,14 @@ pre{
   keywords = {published}
 }
 </pre>
-</div>
-
-
-<div id="bpark_jksme2024" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>The purpose of this study is to examine the capabilities of ChatGPT as a tool for supporting students in generating
+        </div>
+      </div>
+  
+      <!-- Collapsible Abstract -->
+      
+        <div class="collapse mt-3" id="abstract-park_jksme2024">
+          <div class="card card-body">
+            The purpose of this study is to examine the capabilities of ChatGPT as a tool for supporting students in generating
 mathematical arguments that can be considered proofs. To examine this, we engaged students enrolled in a
 mathematics pathways course in evaluating and revising their original arguments using ChatGPT feedback. Students
 attempted to find and prove a method for the area of a triangle given its side lengths. Instead of directly asking
@@ -501,76 +394,43 @@ themselves and others. Mostly, they agreed with ChatGPT’s suggestions to make 
 proof-like. They, therefore, revised their original arguments following ChatGPT’s suggestions, focusing on improving
 clarity, providing additional justifications, and showing the generality of their arguments. Further investigation is
 needed to explore how ChatGPT can be effectively used as a tool in teaching and learning mathematical proof and
-proof-writing.</pre>
-</div>
-
-<script>
-function toggleBibtexpark_jksme2024(parameter) {
-    var x= document.getElementById('apark_jksme2024');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function toggleAbstractpark_jksme2024(parameter) {
-    var x= document.getElementById('bpark_jksme2024');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
+proof-writing.
+          </div>
+        </div>
+      
+    </div>
+  </div>
 </li>
-<li><style>
-.btn{
-    margin-bottom:5px;
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    height:20px
-}
-
-pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; overflow-x:auto;
-}
-</style>
-
-
-<div class="text-justify"><span id="manley_ccsc2024workshop">Manley, E. D. (2024). Getting Started with Large Language Models for the CS Curriculum. <i>Journal of Computing Sciences in Colleges</i>, <i>39</i>(6), 116–117.</span></div>
-
-<!-- You can use the below to make your name bold -->
-<!-- <span id="manley_ccsc2024workshop">Manley, E. D. (2024). Getting Started with Large Language Models for the CS Curriculum. <i>Journal of Computing Sciences in Colleges</i>, <i>39</i>(6), 116–117.</span></div> -->
-
-
-
-
-
+<li><div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <!-- Publication Reference -->
+      <p class="card-text text-justify">
+        <span id="manley_ccsc2024workshop"><b><b>Manley, E.</b> D.</b> (2024). Getting Started with Large Language Models for the CS Curriculum. <i>Journal of Computing Sciences in Colleges</i>, <i>39</i>(6), 116–117.</span>
+      </p>
   
-    <a href="https://ericmanley.github.io/papers/2024CCSC_LLMWorkshop.pdf" target="_blank">
-      <button class="btn btn-primary btm-sm">PDF</button>
-    </a>
+      <!-- Buttons -->
+      <div class="d-flex flex-wrap gap-2 mt-2">
+        
+        
   
-
-
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleBibtexmanley_ccsc2024workshop()">BIB</button>
-
-
-
-
-
-<div id="amanley_ccsc2024workshop" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@article{manley_ccsc2024workshop,
+        
+          
+            <a href="https://ericmanley.github.io/papers/2024CCSC_LLMWorkshop.pdf" target="_blank" class="btn btn-primary btn-sm">PDF</a>
+          
+        
+  
+        
+  
+        <!-- Ensure Correct Bootstrap 5 Attributes -->
+        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-manley_ccsc2024workshop" aria-expanded="false" aria-controls="bibtex-manley_ccsc2024workshop">BIB</button>
+  
+        
+      </div>
+  
+      <!-- Collapsible BibTeX -->
+      <div class="collapse mt-3" id="bibtex-manley_ccsc2024workshop">
+        <div class="card card-body">
+          <pre>@article{manley_ccsc2024workshop,
   title = {Getting Started with Large Language Models for the CS Curriculum},
   author = {Manley, Eric D.},
   journal = {Journal of Computing Sciences in Colleges},
@@ -583,82 +443,46 @@ pre{
   keywords = {published}
 }
 </pre>
-</div>
-
-
-<div id="bmanley_ccsc2024workshop" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre></pre>
-</div>
-
-<script>
-function toggleBibtexmanley_ccsc2024workshop(parameter) {
-    var x= document.getElementById('amanley_ccsc2024workshop');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function toggleAbstractmanley_ccsc2024workshop(parameter) {
-    var x= document.getElementById('bmanley_ccsc2024workshop');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
+        </div>
+      </div>
+  
+      <!-- Collapsible Abstract -->
+      
+    </div>
+  </div>
 </li>
-<li><style>
-.btn{
-    margin-bottom:5px;
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    height:20px
-}
-
-pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; overflow-x:auto;
-}
-</style>
-
-
-<div class="text-justify"><span id="manley_ccsc2024">Manley, E. D., Urness, T., Migunov, A., &amp; Reza, M. A. (2024). Examining Student Use of AI in CS1 and CS2. <i>Journal of Computing Sciences in Colleges</i>, <i>39</i>(6), 41–51.</span></div>
-
-<!-- You can use the below to make your name bold -->
-<!-- <span id="manley_ccsc2024">Manley, E. D., Urness, T., Migunov, A., &amp; Reza, M. A. (2024). Examining Student Use of AI in CS1 and CS2. <i>Journal of Computing Sciences in Colleges</i>, <i>39</i>(6), 41–51.</span></div> -->
-
-
-
-
-
+<li><div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <!-- Publication Reference -->
+      <p class="card-text text-justify">
+        <span id="manley_ccsc2024"><b><b>Manley, E.</b> D.</b>, Urness, T., Migunov, A., &amp; Reza, M. A. (2024). Examining Student Use of AI in CS1 and CS2. <i>Journal of Computing Sciences in Colleges</i>, <i>39</i>(6), 41–51.</span>
+      </p>
   
-    <a href="https://ericmanley.github.io/papers/2024CCSC_StudentUseOfAI.pdf" target="_blank">
-      <button class="btn btn-primary btm-sm">PDF</button>
-    </a>
+      <!-- Buttons -->
+      <div class="d-flex flex-wrap gap-2 mt-2">
+        
+        
   
-
-
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleBibtexmanley_ccsc2024()">BIB</button>
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleAbstractmanley_ccsc2024()">ABSTRACT</button>
-
-
-
-<div id="amanley_ccsc2024" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@article{manley_ccsc2024,
+        
+          
+            <a href="https://ericmanley.github.io/papers/2024CCSC_StudentUseOfAI.pdf" target="_blank" class="btn btn-primary btn-sm">PDF</a>
+          
+        
+  
+        
+  
+        <!-- Ensure Correct Bootstrap 5 Attributes -->
+        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-manley_ccsc2024" aria-expanded="false" aria-controls="bibtex-manley_ccsc2024">BIB</button>
+  
+        
+          <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-manley_ccsc2024" aria-expanded="false" aria-controls="abstract-manley_ccsc2024">ABSTRACT</button>
+        
+      </div>
+  
+      <!-- Collapsible BibTeX -->
+      <div class="collapse mt-3" id="bibtex-manley_ccsc2024">
+        <div class="card card-body">
+          <pre>@article{manley_ccsc2024,
   author = {Manley, Eric D. and Urness, Timothy and Migunov, Andrei and Reza, Md. Alimoor},
   journal = {Journal of Computing Sciences in Colleges},
   title = {Examining Student Use of {AI} in {CS1} and {CS2}},
@@ -671,80 +495,50 @@ pre{
   keywords = {published}
 }
 </pre>
-</div>
-
-
-<div id="bmanley_ccsc2024" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>The launch of ChatGPT in November 2022 marked a seismic disruption to many disciplines and industries, including higher education. For the first time, students everywhere have widely available access to a Large Language Model (LLM) capable of generating content - including solutions to programming assignments in CS1 and CS2 - that can pass as the work of a high-achieving student while making traditional plagiarism-detection obsolete. This has spurred various responses in higher education, including a shift to more in-class and unplugged assessments. At the same time, LLMs are transforming the way that many people work, including professional software developers, and students similarly might be able to use them to enhance their learning. In this paper, we report on our experiences with a permissive policy towards the use of ChatGPT and other artificial intelligence (AI) tools for assisting students with their programming assignments in CS1 and CS2 courses in the Spring 2023 semester. Students were allowed to use these tools however they wished as long as they submitted a form which included a transcript of their chat and a reflection on what they learned, if anything, through the interaction. We found that students largely approached the AI in positive ways and that they seemed to genuinely learn from the experience. We also document some things that did not go well and that remain challenges to using AI in programming courses, along with our recommendations on how these might be dealt with in the future.</pre>
-</div>
-
-<script>
-function toggleBibtexmanley_ccsc2024(parameter) {
-    var x= document.getElementById('amanley_ccsc2024');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function toggleAbstractmanley_ccsc2024(parameter) {
-    var x= document.getElementById('bmanley_ccsc2024');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
+        </div>
+      </div>
+  
+      <!-- Collapsible Abstract -->
+      
+        <div class="collapse mt-3" id="abstract-manley_ccsc2024">
+          <div class="card card-body">
+            The launch of ChatGPT in November 2022 marked a seismic disruption to many disciplines and industries, including higher education. For the first time, students everywhere have widely available access to a Large Language Model (LLM) capable of generating content - including solutions to programming assignments in CS1 and CS2 - that can pass as the work of a high-achieving student while making traditional plagiarism-detection obsolete. This has spurred various responses in higher education, including a shift to more in-class and unplugged assessments. At the same time, LLMs are transforming the way that many people work, including professional software developers, and students similarly might be able to use them to enhance their learning. In this paper, we report on our experiences with a permissive policy towards the use of ChatGPT and other artificial intelligence (AI) tools for assisting students with their programming assignments in CS1 and CS2 courses in the Spring 2023 semester. Students were allowed to use these tools however they wished as long as they submitted a form which included a transcript of their chat and a reflection on what they learned, if anything, through the interaction. We found that students largely approached the AI in positive ways and that they seemed to genuinely learn from the experience. We also document some things that did not go well and that remain challenges to using AI in programming courses, along with our recommendations on how these might be dealt with in the future.
+          </div>
+        </div>
+      
+    </div>
+  </div>
 </li>
-<li><style>
-.btn{
-    margin-bottom:5px;
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    height:20px
-}
-
-pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; overflow-x:auto;
-}
-</style>
-
-
-<div class="text-justify"><span id="manle_ccsc2023workshop">Manley, E. D. (2023). Dash: An easy-to-use framework for building web applications and dashboards. <i>Journal of Computing Sciences in Colleges</i>, <i>38</i>(6), 104–105.</span></div>
-
-<!-- You can use the below to make your name bold -->
-<!-- <span id="manle_ccsc2023workshop">Manley, E. D. (2023). Dash: An easy-to-use framework for building web applications and dashboards. <i>Journal of Computing Sciences in Colleges</i>, <i>38</i>(6), 104–105.</span></div> -->
-
-
-
-
-
+<li><div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <!-- Publication Reference -->
+      <p class="card-text text-justify">
+        <span id="manle_ccsc2023workshop"><b><b>Manley, E.</b> D.</b> (2023). Dash: An easy-to-use framework for building web applications and dashboards. <i>Journal of Computing Sciences in Colleges</i>, <i>38</i>(6), 104–105.</span>
+      </p>
   
-    <a href="https://ericmanley.github.io/papers/2023CCSC_DashWorkshop.pdf" target="_blank">
-      <button class="btn btn-primary btm-sm">PDF</button>
-    </a>
+      <!-- Buttons -->
+      <div class="d-flex flex-wrap gap-2 mt-2">
+        
+        
   
-
-
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleBibtexmanle_ccsc2023workshop()">BIB</button>
-
-
-
-
-
-<div id="amanle_ccsc2023workshop" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@article{manle_ccsc2023workshop,
+        
+          
+            <a href="https://ericmanley.github.io/papers/2023CCSC_DashWorkshop.pdf" target="_blank" class="btn btn-primary btn-sm">PDF</a>
+          
+        
+  
+        
+  
+        <!-- Ensure Correct Bootstrap 5 Attributes -->
+        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-manle_ccsc2023workshop" aria-expanded="false" aria-controls="bibtex-manle_ccsc2023workshop">BIB</button>
+  
+        
+      </div>
+  
+      <!-- Collapsible BibTeX -->
+      <div class="collapse mt-3" id="bibtex-manle_ccsc2023workshop">
+        <div class="card card-body">
+          <pre>@article{manle_ccsc2023workshop,
   author = {Manley, Eric D.},
   journal = {Journal of Computing Sciences in Colleges},
   number = {6},
@@ -757,80 +551,44 @@ pre{
   keywords = {published}
 }
 </pre>
-</div>
-
-
-<div id="bmanle_ccsc2023workshop" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre></pre>
-</div>
-
-<script>
-function toggleBibtexmanle_ccsc2023workshop(parameter) {
-    var x= document.getElementById('amanle_ccsc2023workshop');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function toggleAbstractmanle_ccsc2023workshop(parameter) {
-    var x= document.getElementById('bmanle_ccsc2023workshop');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
+        </div>
+      </div>
+  
+      <!-- Collapsible Abstract -->
+      
+    </div>
+  </div>
 </li>
-<li><style>
-.btn{
-    margin-bottom:5px;
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    height:20px
-}
-
-pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; overflow-x:auto;
-}
-</style>
-
-
-<div class="text-justify"><span id="manley_ccsc2023nifty">Manley, E. D. (2023). Learning Lists and Dictionaries by Building Web Dashboards with Live Data. <i>Journal of Computing Sciences in Colleges</i>, <i>38</i>(6), 95–97.</span></div>
-
-<!-- You can use the below to make your name bold -->
-<!-- <span id="manley_ccsc2023nifty">Manley, E. D. (2023). Learning Lists and Dictionaries by Building Web Dashboards with Live Data. <i>Journal of Computing Sciences in Colleges</i>, <i>38</i>(6), 95–97.</span></div> -->
-
-
-
-
-
+<li><div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <!-- Publication Reference -->
+      <p class="card-text text-justify">
+        <span id="manley_ccsc2023nifty"><b><b>Manley, E.</b> D.</b> (2023). Learning Lists and Dictionaries by Building Web Dashboards with Live Data. <i>Journal of Computing Sciences in Colleges</i>, <i>38</i>(6), 95–97.</span>
+      </p>
   
-    <a href="https://ericmanley.github.io/papers/2023CCSC_NiftyDashboard.pdf" target="_blank">
-      <button class="btn btn-primary btm-sm">PDF</button>
-    </a>
+      <!-- Buttons -->
+      <div class="d-flex flex-wrap gap-2 mt-2">
+        
+        
   
-
-
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleBibtexmanley_ccsc2023nifty()">BIB</button>
-
-
-
-
-
-<div id="amanley_ccsc2023nifty" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@article{manley_ccsc2023nifty,
+        
+          
+            <a href="https://ericmanley.github.io/papers/2023CCSC_NiftyDashboard.pdf" target="_blank" class="btn btn-primary btn-sm">PDF</a>
+          
+        
+  
+        
+  
+        <!-- Ensure Correct Bootstrap 5 Attributes -->
+        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-manley_ccsc2023nifty" aria-expanded="false" aria-controls="bibtex-manley_ccsc2023nifty">BIB</button>
+  
+        
+      </div>
+  
+      <!-- Collapsible BibTeX -->
+      <div class="collapse mt-3" id="bibtex-manley_ccsc2023nifty">
+        <div class="card card-body">
+          <pre>@article{manley_ccsc2023nifty,
   author = {Manley, Eric D.},
   journal = {Journal of Computing Sciences in Colleges},
   number = {6},
@@ -843,80 +601,44 @@ pre{
   keywords = {published}
 }
 </pre>
-</div>
-
-
-<div id="bmanley_ccsc2023nifty" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre></pre>
-</div>
-
-<script>
-function toggleBibtexmanley_ccsc2023nifty(parameter) {
-    var x= document.getElementById('amanley_ccsc2023nifty');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function toggleAbstractmanley_ccsc2023nifty(parameter) {
-    var x= document.getElementById('bmanley_ccsc2023nifty');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
+        </div>
+      </div>
+  
+      <!-- Collapsible Abstract -->
+      
+    </div>
+  </div>
 </li>
-<li><style>
-.btn{
-    margin-bottom:5px;
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    height:20px
-}
-
-pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; overflow-x:auto;
-}
-</style>
-
-
-<div class="text-justify"><span id="manley_ccsc2019">Manley, E. D., &amp; Urness, T. (2019). Easy Handwriting Recognition. <i>Journal of Computing Sciences in Colleges</i>, <i>34</i>(4), 103–105.</span></div>
-
-<!-- You can use the below to make your name bold -->
-<!-- <span id="manley_ccsc2019">Manley, E. D., &amp; Urness, T. (2019). Easy Handwriting Recognition. <i>Journal of Computing Sciences in Colleges</i>, <i>34</i>(4), 103–105.</span></div> -->
-
-
-
-
-
+<li><div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <!-- Publication Reference -->
+      <p class="card-text text-justify">
+        <span id="manley_ccsc2019"><b><b>Manley, E.</b> D.</b>, &amp; Urness, T. (2019). Easy Handwriting Recognition. <i>Journal of Computing Sciences in Colleges</i>, <i>34</i>(4), 103–105.</span>
+      </p>
   
-    <a href="https://ericmanley.github.io/papers/2019CCSC_NiftyHandwriting.pdf" target="_blank">
-      <button class="btn btn-primary btm-sm">PDF</button>
-    </a>
+      <!-- Buttons -->
+      <div class="d-flex flex-wrap gap-2 mt-2">
+        
+        
   
-
-
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleBibtexmanley_ccsc2019()">BIB</button>
-
-
-
-
-
-<div id="amanley_ccsc2019" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@article{manley_ccsc2019,
+        
+          
+            <a href="https://ericmanley.github.io/papers/2019CCSC_NiftyHandwriting.pdf" target="_blank" class="btn btn-primary btn-sm">PDF</a>
+          
+        
+  
+        
+  
+        <!-- Ensure Correct Bootstrap 5 Attributes -->
+        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-manley_ccsc2019" aria-expanded="false" aria-controls="bibtex-manley_ccsc2019">BIB</button>
+  
+        
+      </div>
+  
+      <!-- Collapsible BibTeX -->
+      <div class="collapse mt-3" id="bibtex-manley_ccsc2019">
+        <div class="card card-body">
+          <pre>@article{manley_ccsc2019,
   author = {Manley, Eric D. and Urness, Timothy},
   issn = {1937-4771},
   issue_date = {April 2019},
@@ -933,80 +655,44 @@ pre{
   keywords = {published}
 }
 </pre>
-</div>
-
-
-<div id="bmanley_ccsc2019" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre></pre>
-</div>
-
-<script>
-function toggleBibtexmanley_ccsc2019(parameter) {
-    var x= document.getElementById('amanley_ccsc2019');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function toggleAbstractmanley_ccsc2019(parameter) {
-    var x= document.getElementById('bmanley_ccsc2019');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
+        </div>
+      </div>
+  
+      <!-- Collapsible Abstract -->
+      
+    </div>
+  </div>
 </li>
-<li><style>
-.btn{
-    margin-bottom:5px;
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    height:20px
-}
-
-pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; overflow-x:auto;
-}
-</style>
-
-
-<div class="text-justify"><span id="parlante_sigcse2016">Parlante, N., Zelenski, J., Franke, B., Bhusnurmath, A., Her, K., Gee, K., Manley, E., Urness, T., Zhang, M., Hou, B., DeNero, J., Hug, J., &amp; Wayne, K. (2016). Nifty Assignments. <i>Proceedings of the ACM Technical Symposium on Computer Science Education (SIGCSE)</i>, 588–589.</span></div>
-
-<!-- You can use the below to make your name bold -->
-<!-- <span id="parlante_sigcse2016">Parlante, N., Zelenski, J., Franke, B., Bhusnurmath, A., Her, K., Gee, K., Manley, E., Urness, T., Zhang, M., Hou, B., DeNero, J., Hug, J., &amp; Wayne, K. (2016). Nifty Assignments. <i>Proceedings of the ACM Technical Symposium on Computer Science Education (SIGCSE)</i>, 588–589.</span></div> -->
-
-
-
-
-
+<li><div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <!-- Publication Reference -->
+      <p class="card-text text-justify">
+        <span id="parlante_sigcse2016">Parlante, N., Zelenski, J., Franke, B., Bhusnurmath, A., Her, K., Gee, K., <b>Manley, E.</b>, Urness, T., Zhang, M., Hou, B., DeNero, J., Hug, J., &amp; Wayne, K. (2016). Nifty Assignments. <i>Proceedings of the ACM Technical Symposium on Computer Science Education (SIGCSE)</i>, 588–589.</span>
+      </p>
   
-    <a href="https://ericmanley.github.io/papers/2016SIGCSE_NiftySentiment.pdf" target="_blank">
-      <button class="btn btn-primary btm-sm">PDF</button>
-    </a>
+      <!-- Buttons -->
+      <div class="d-flex flex-wrap gap-2 mt-2">
+        
+        
   
-
-
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleBibtexparlante_sigcse2016()">BIB</button>
-
-
-
-
-
-<div id="aparlante_sigcse2016" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@inproceedings{parlante_sigcse2016,
+        
+          
+            <a href="https://ericmanley.github.io/papers/2016SIGCSE_NiftySentiment.pdf" target="_blank" class="btn btn-primary btn-sm">PDF</a>
+          
+        
+  
+        
+  
+        <!-- Ensure Correct Bootstrap 5 Attributes -->
+        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-parlante_sigcse2016" aria-expanded="false" aria-controls="bibtex-parlante_sigcse2016">BIB</button>
+  
+        
+      </div>
+  
+      <!-- Collapsible BibTeX -->
+      <div class="collapse mt-3" id="bibtex-parlante_sigcse2016">
+        <div class="card card-body">
+          <pre>@inproceedings{parlante_sigcse2016,
   address = {Memphis, Tennessee},
   author = {Parlante, Nick and Zelenski, Julie and Franke, Baker and Bhusnurmath, Arvind and Her, Karen and Gee, Kristen and Manley, Eric and Urness, Timothy and Zhang, Marvin and Hou, Brian and DeNero, John and Hug, Josh and Wayne, Kevin},
   booktitle = {Proceedings of the ACM Technical Symposium on Computer Science Education (SIGCSE)},
@@ -1018,83 +704,47 @@ pre{
   keywords = {published}
 }
 </pre>
-</div>
-
-
-<div id="bparlante_sigcse2016" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre></pre>
-</div>
-
-<script>
-function toggleBibtexparlante_sigcse2016(parameter) {
-    var x= document.getElementById('aparlante_sigcse2016');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function toggleAbstractparlante_sigcse2016(parameter) {
-    var x= document.getElementById('bparlante_sigcse2016');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
+        </div>
+      </div>
+  
+      <!-- Collapsible Abstract -->
+      
+    </div>
+  </div>
 </li>
-<li><style>
-.btn{
-    margin-bottom:5px;
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    height:20px
-}
-
-pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; overflow-x:auto;
-}
-</style>
-
-
-<div class="text-justify"><span id="manley_ccnc2016">Mascharka, D., &amp; Manley, E. (2016). LIPS: Learning Based Indoor Positioning System Using Mobile Phone-Based Sensors. <i>Proceedings of the IEEE Consumer Communications &amp; Networking Conference</i>, 975–978.</span></div>
-
-<!-- You can use the below to make your name bold -->
-<!-- <span id="manley_ccnc2016">Mascharka, D., &amp; Manley, E. (2016). LIPS: Learning Based Indoor Positioning System Using Mobile Phone-Based Sensors. <i>Proceedings of the IEEE Consumer Communications &amp; Networking Conference</i>, 975–978.</span></div> -->
-
-
-
-
-
+<li><div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <!-- Publication Reference -->
+      <p class="card-text text-justify">
+        <span id="manley_ccnc2016">Mascharka, D., &amp; <b>Manley, E.</b> (2016). LIPS: Learning Based Indoor Positioning System Using Mobile Phone-Based Sensors. <i>Proceedings of the IEEE Consumer Communications &amp; Networking Conference</i>, 975–978.</span>
+      </p>
   
-    <a href="https://ericmanley.github.io/papers/2016CCNC_LIPS.pdf" target="_blank">
-      <button class="btn btn-primary btm-sm">PDF</button>
-    </a>
+      <!-- Buttons -->
+      <div class="d-flex flex-wrap gap-2 mt-2">
+        
+        
   
-
-
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleBibtexmanley_ccnc2016()">BIB</button>
-
-
-
-
-
-<div id="amanley_ccnc2016" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@inproceedings{manley_ccnc2016,
+        
+          
+            <a href="https://ericmanley.github.io/papers/2016CCNC_LIPS.pdf" target="_blank" class="btn btn-primary btn-sm">PDF</a>
+          
+        
+  
+        
+  
+        <!-- Ensure Correct Bootstrap 5 Attributes -->
+        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-manley_ccnc2016" aria-expanded="false" aria-controls="bibtex-manley_ccnc2016">BIB</button>
+  
+        
+      </div>
+  
+      <!-- Collapsible BibTeX -->
+      <div class="collapse mt-3" id="bibtex-manley_ccnc2016">
+        <div class="card card-body">
+          <pre>@inproceedings{manley_ccnc2016,
   address = {Las Vegas, Nevada},
   author = {Mascharka, David and Manley, Eric},
-  booktitle = {Proceedings of the IEEE Consumer Communications \&amp; Networking Conference},
+  booktitle = {Proceedings of the IEEE Consumer Communications \& Networking Conference},
   month = jan,
   pages = {975-978},
   title = {{LIPS}: Learning Based Indoor Positioning System Using Mobile Phone-Based Sensors},
@@ -1103,80 +753,44 @@ pre{
   keywords = {published}
 }
 </pre>
-</div>
-
-
-<div id="bmanley_ccnc2016" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre></pre>
-</div>
-
-<script>
-function toggleBibtexmanley_ccnc2016(parameter) {
-    var x= document.getElementById('amanley_ccnc2016');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function toggleAbstractmanley_ccnc2016(parameter) {
-    var x= document.getElementById('bmanley_ccnc2016');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
+        </div>
+      </div>
+  
+      <!-- Collapsible Abstract -->
+      
+    </div>
+  </div>
 </li>
-<li><style>
-.btn{
-    margin-bottom:5px;
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    height:20px
-}
-
-pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; overflow-x:auto;
-}
-</style>
-
-
-<div class="text-justify"><span id="manley_ccsc2014">Manley, E. D., &amp; Urness, T. (2014). Video-Based Instruction for Introductory Computer Programming. <i>Consortium for Computing Sciences in Colleges Journal of Computing Sciences in Colleges</i>, <i>29</i>(5), 221–227.</span></div>
-
-<!-- You can use the below to make your name bold -->
-<!-- <span id="manley_ccsc2014">Manley, E. D., &amp; Urness, T. (2014). Video-Based Instruction for Introductory Computer Programming. <i>Consortium for Computing Sciences in Colleges Journal of Computing Sciences in Colleges</i>, <i>29</i>(5), 221–227.</span></div> -->
-
-
-
-
-
+<li><div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <!-- Publication Reference -->
+      <p class="card-text text-justify">
+        <span id="manley_ccsc2014"><b><b>Manley, E.</b> D.</b>, &amp; Urness, T. (2014). Video-Based Instruction for Introductory Computer Programming. <i>Consortium for Computing Sciences in Colleges Journal of Computing Sciences in Colleges</i>, <i>29</i>(5), 221–227.</span>
+      </p>
   
-    <a href="http://escholarshare.drake.edu/bitstream/handle/2092/2063/Manley2014.05%2029%205.pdf" target="_blank">
-      <button class="btn btn-primary btm-sm">PDF</button>
-    </a>
+      <!-- Buttons -->
+      <div class="d-flex flex-wrap gap-2 mt-2">
+        
+        
   
-
-
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleBibtexmanley_ccsc2014()">BIB</button>
-
-
-
-
-
-<div id="amanley_ccsc2014" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@article{manley_ccsc2014,
+        
+          
+            <a href="http://escholarshare.drake.edu/bitstream/handle/2092/2063/Manley2014.05%2029%205.pdf" target="_blank" class="btn btn-primary btn-sm">PDF</a>
+          
+        
+  
+        
+  
+        <!-- Ensure Correct Bootstrap 5 Attributes -->
+        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-manley_ccsc2014" aria-expanded="false" aria-controls="bibtex-manley_ccsc2014">BIB</button>
+  
+        
+      </div>
+  
+      <!-- Collapsible BibTeX -->
+      <div class="collapse mt-3" id="bibtex-manley_ccsc2014">
+        <div class="card card-body">
+          <pre>@article{manley_ccsc2014,
   author = {Manley, Eric D. and Urness, Timothy},
   journal = {Consortium for Computing Sciences in Colleges Journal of Computing Sciences in Colleges},
   month = may,
@@ -1189,80 +803,44 @@ pre{
   keywords = {published}
 }
 </pre>
-</div>
-
-
-<div id="bmanley_ccsc2014" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre></pre>
-</div>
-
-<script>
-function toggleBibtexmanley_ccsc2014(parameter) {
-    var x= document.getElementById('amanley_ccsc2014');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function toggleAbstractmanley_ccsc2014(parameter) {
-    var x= document.getElementById('bmanley_ccsc2014');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
+        </div>
+      </div>
+  
+      <!-- Collapsible Abstract -->
+      
+    </div>
+  </div>
 </li>
-<li><style>
-.btn{
-    margin-bottom:5px;
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    height:20px
-}
-
-pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; overflow-x:auto;
-}
-</style>
-
-
-<div class="text-justify"><span id="manley_icnc2014">Manley, E. D. (2014). Low Complexity All-Optical Network Coder Architecture. <i>Proceedings of the IEEE International Conference on Computing, Networking and Communications (ICNC)</i>, 1046–1050.</span></div>
-
-<!-- You can use the below to make your name bold -->
-<!-- <span id="manley_icnc2014">Manley, E. D. (2014). Low Complexity All-Optical Network Coder Architecture. <i>Proceedings of the IEEE International Conference on Computing, Networking and Communications (ICNC)</i>, 1046–1050.</span></div> -->
-
-
-
-
-
+<li><div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <!-- Publication Reference -->
+      <p class="card-text text-justify">
+        <span id="manley_icnc2014"><b><b>Manley, E.</b> D.</b> (2014). Low Complexity All-Optical Network Coder Architecture. <i>Proceedings of the IEEE International Conference on Computing, Networking and Communications (ICNC)</i>, 1046–1050.</span>
+      </p>
   
-    <a href="http://escholarshare.drake.edu/bitstream/handle/2092/2061/Manley2014.02.pdf" target="_blank">
-      <button class="btn btn-primary btm-sm">PDF</button>
-    </a>
+      <!-- Buttons -->
+      <div class="d-flex flex-wrap gap-2 mt-2">
+        
+        
   
-
-
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleBibtexmanley_icnc2014()">BIB</button>
-
-
-
-
-
-<div id="amanley_icnc2014" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@inproceedings{manley_icnc2014,
+        
+          
+            <a href="http://escholarshare.drake.edu/bitstream/handle/2092/2061/Manley2014.02.pdf" target="_blank" class="btn btn-primary btn-sm">PDF</a>
+          
+        
+  
+        
+  
+        <!-- Ensure Correct Bootstrap 5 Attributes -->
+        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-manley_icnc2014" aria-expanded="false" aria-controls="bibtex-manley_icnc2014">BIB</button>
+  
+        
+      </div>
+  
+      <!-- Collapsible BibTeX -->
+      <div class="collapse mt-3" id="bibtex-manley_icnc2014">
+        <div class="card card-body">
+          <pre>@inproceedings{manley_icnc2014,
   address = {Honolulu, Hawaii},
   author = {Manley, Eric D.},
   booktitle = {Proceedings of the IEEE International Conference on Computing, Networking and Communications (ICNC)},
@@ -1274,80 +852,44 @@ pre{
   keywords = {published}
 }
 </pre>
-</div>
-
-
-<div id="bmanley_icnc2014" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre></pre>
-</div>
-
-<script>
-function toggleBibtexmanley_icnc2014(parameter) {
-    var x= document.getElementById('amanley_icnc2014');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function toggleAbstractmanley_icnc2014(parameter) {
-    var x= document.getElementById('bmanley_icnc2014');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
+        </div>
+      </div>
+  
+      <!-- Collapsible Abstract -->
+      
+    </div>
+  </div>
 </li>
-<li><style>
-.btn{
-    margin-bottom:5px;
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    height:20px
-}
-
-pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; overflow-x:auto;
-}
-</style>
-
-
-<div class="text-justify"><span id="urness_ccsc2013">Urness, T., &amp; Manley, E. D. (2013). Generating Interest in Computer Science Through Middle-School Android Summer Camps. <i>Consortium for Computing Sciences in Colleges Journal of Computing Sciences in Colleges</i>, <i>28</i>(5), 211–217.</span></div>
-
-<!-- You can use the below to make your name bold -->
-<!-- <span id="urness_ccsc2013">Urness, T., &amp; Manley, E. D. (2013). Generating Interest in Computer Science Through Middle-School Android Summer Camps. <i>Consortium for Computing Sciences in Colleges Journal of Computing Sciences in Colleges</i>, <i>28</i>(5), 211–217.</span></div> -->
-
-
-
-
-
+<li><div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <!-- Publication Reference -->
+      <p class="card-text text-justify">
+        <span id="urness_ccsc2013">Urness, T., &amp; <b><b>Manley, E.</b> D.</b> (2013). Generating Interest in Computer Science Through Middle-School Android Summer Camps. <i>Consortium for Computing Sciences in Colleges Journal of Computing Sciences in Colleges</i>, <i>28</i>(5), 211–217.</span>
+      </p>
   
-    <a href="http://escholarshare.drake.edu/bitstream/handle/2092/2060/Manley2013.05%2028%205.pdf" target="_blank">
-      <button class="btn btn-primary btm-sm">PDF</button>
-    </a>
+      <!-- Buttons -->
+      <div class="d-flex flex-wrap gap-2 mt-2">
+        
+        
   
-
-
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleBibtexurness_ccsc2013()">BIB</button>
-
-
-
-
-
-<div id="aurness_ccsc2013" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@article{urness_ccsc2013,
+        
+          
+            <a href="http://escholarshare.drake.edu/bitstream/handle/2092/2060/Manley2013.05%2028%205.pdf" target="_blank" class="btn btn-primary btn-sm">PDF</a>
+          
+        
+  
+        
+  
+        <!-- Ensure Correct Bootstrap 5 Attributes -->
+        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-urness_ccsc2013" aria-expanded="false" aria-controls="bibtex-urness_ccsc2013">BIB</button>
+  
+        
+      </div>
+  
+      <!-- Collapsible BibTeX -->
+      <div class="collapse mt-3" id="bibtex-urness_ccsc2013">
+        <div class="card card-body">
+          <pre>@article{urness_ccsc2013,
   author = {Urness, Timothy and Manley, Eric D.},
   journal = {Consortium for Computing Sciences in Colleges Journal of Computing Sciences in Colleges},
   month = may,
@@ -1360,80 +902,44 @@ pre{
   keywords = {published}
 }
 </pre>
-</div>
-
-
-<div id="burness_ccsc2013" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre></pre>
-</div>
-
-<script>
-function toggleBibtexurness_ccsc2013(parameter) {
-    var x= document.getElementById('aurness_ccsc2013');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function toggleAbstracturness_ccsc2013(parameter) {
-    var x= document.getElementById('burness_ccsc2013');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
+        </div>
+      </div>
+  
+      <!-- Collapsible Abstract -->
+      
+    </div>
+  </div>
 </li>
-<li><style>
-.btn{
-    margin-bottom:5px;
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    height:20px
-}
-
-pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; overflow-x:auto;
-}
-</style>
-
-
-<div class="text-justify"><span id="urness_ccsc2011">Urness, T., &amp; Manley, E. D. (2011). Building a Thriving CS Program in a Small Liberal Arts College. <i>Consortium for Computing Sciences in Colleges Journal of Computing Sciences in Colleges</i>, <i>26</i>(5), 268–274.</span></div>
-
-<!-- You can use the below to make your name bold -->
-<!-- <span id="urness_ccsc2011">Urness, T., &amp; Manley, E. D. (2011). Building a Thriving CS Program in a Small Liberal Arts College. <i>Consortium for Computing Sciences in Colleges Journal of Computing Sciences in Colleges</i>, <i>26</i>(5), 268–274.</span></div> -->
-
-
-
-
-
+<li><div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <!-- Publication Reference -->
+      <p class="card-text text-justify">
+        <span id="urness_ccsc2011">Urness, T., &amp; <b><b>Manley, E.</b> D.</b> (2011). Building a Thriving CS Program in a Small Liberal Arts College. <i>Consortium for Computing Sciences in Colleges Journal of Computing Sciences in Colleges</i>, <i>26</i>(5), 268–274.</span>
+      </p>
   
-    <a href="http://escholarshare.drake.edu/bitstream/handle/2092/2057/Manley2011%2026%205.pdf" target="_blank">
-      <button class="btn btn-primary btm-sm">PDF</button>
-    </a>
+      <!-- Buttons -->
+      <div class="d-flex flex-wrap gap-2 mt-2">
+        
+        
   
-
-
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleBibtexurness_ccsc2011()">BIB</button>
-
-
-
-
-
-<div id="aurness_ccsc2011" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@article{urness_ccsc2011,
+        
+          
+            <a href="http://escholarshare.drake.edu/bitstream/handle/2092/2057/Manley2011%2026%205.pdf" target="_blank" class="btn btn-primary btn-sm">PDF</a>
+          
+        
+  
+        
+  
+        <!-- Ensure Correct Bootstrap 5 Attributes -->
+        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-urness_ccsc2011" aria-expanded="false" aria-controls="bibtex-urness_ccsc2011">BIB</button>
+  
+        
+      </div>
+  
+      <!-- Collapsible BibTeX -->
+      <div class="collapse mt-3" id="bibtex-urness_ccsc2011">
+        <div class="card card-body">
+          <pre>@article{urness_ccsc2011,
   author = {Urness, Timothy and Manley, Eric D.},
   journal = {Consortium for Computing Sciences in Colleges Journal of Computing Sciences in Colleges},
   number = {5},
@@ -1445,80 +951,44 @@ pre{
   keywords = {published}
 }
 </pre>
-</div>
-
-
-<div id="burness_ccsc2011" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre></pre>
-</div>
-
-<script>
-function toggleBibtexurness_ccsc2011(parameter) {
-    var x= document.getElementById('aurness_ccsc2011');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function toggleAbstracturness_ccsc2011(parameter) {
-    var x= document.getElementById('burness_ccsc2011');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
+        </div>
+      </div>
+  
+      <!-- Collapsible Abstract -->
+      
+    </div>
+  </div>
 </li>
-<li><style>
-.btn{
-    margin-bottom:5px;
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    height:20px
-}
-
-pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; overflow-x:auto;
-}
-</style>
-
-
-<div class="text-justify"><span id="saha_pdcs2010concentrator">Saha, S., Manley, E. D., &amp; Deogun, J. S. (2010). Design of an All-Optical WDM Lightpath Concentrator. <i>22nd IASTED International Conference on Parallel and Distributed Computing and Systems (PDCS)</i>, 285–288.</span></div>
-
-<!-- You can use the below to make your name bold -->
-<!-- <span id="saha_pdcs2010concentrator">Saha, S., Manley, E. D., &amp; Deogun, J. S. (2010). Design of an All-Optical WDM Lightpath Concentrator. <i>22nd IASTED International Conference on Parallel and Distributed Computing and Systems (PDCS)</i>, 285–288.</span></div> -->
-
-
-
-
-
+<li><div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <!-- Publication Reference -->
+      <p class="card-text text-justify">
+        <span id="saha_pdcs2010concentrator">Saha, S., <b><b>Manley, E.</b> D.</b>, &amp; Deogun, J. S. (2010). Design of an All-Optical WDM Lightpath Concentrator. <i>22nd IASTED International Conference on Parallel and Distributed Computing and Systems (PDCS)</i>, 285–288.</span>
+      </p>
   
-    <a href="http://escholarshare.drake.edu/bitstream/handle/2092/2056/Manley2010.11%20285-288.pdf" target="_blank">
-      <button class="btn btn-primary btm-sm">PDF</button>
-    </a>
+      <!-- Buttons -->
+      <div class="d-flex flex-wrap gap-2 mt-2">
+        
+        
   
-
-
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleBibtexsaha_pdcs2010concentrator()">BIB</button>
-
-
-
-
-
-<div id="asaha_pdcs2010concentrator" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@inproceedings{saha_pdcs2010concentrator,
+        
+          
+            <a href="http://escholarshare.drake.edu/bitstream/handle/2092/2056/Manley2010.11%20285-288.pdf" target="_blank" class="btn btn-primary btn-sm">PDF</a>
+          
+        
+  
+        
+  
+        <!-- Ensure Correct Bootstrap 5 Attributes -->
+        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-saha_pdcs2010concentrator" aria-expanded="false" aria-controls="bibtex-saha_pdcs2010concentrator">BIB</button>
+  
+        
+      </div>
+  
+      <!-- Collapsible BibTeX -->
+      <div class="collapse mt-3" id="bibtex-saha_pdcs2010concentrator">
+        <div class="card card-body">
+          <pre>@inproceedings{saha_pdcs2010concentrator,
   address = {Marina Del Rey, California},
   author = {Saha, Shivashis and Manley, Eric D. and Deogun, Jitender S.},
   booktitle = {22nd IASTED International Conference on Parallel and Distributed Computing and Systems (PDCS)},
@@ -1530,80 +1000,44 @@ pre{
   keywords = {published}
 }
 </pre>
-</div>
-
-
-<div id="bsaha_pdcs2010concentrator" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre></pre>
-</div>
-
-<script>
-function toggleBibtexsaha_pdcs2010concentrator(parameter) {
-    var x= document.getElementById('asaha_pdcs2010concentrator');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function toggleAbstractsaha_pdcs2010concentrator(parameter) {
-    var x= document.getElementById('bsaha_pdcs2010concentrator');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
+        </div>
+      </div>
+  
+      <!-- Collapsible Abstract -->
+      
+    </div>
+  </div>
 </li>
-<li><style>
-.btn{
-    margin-bottom:5px;
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    height:20px
-}
-
-pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; overflow-x:auto;
-}
-</style>
-
-
-<div class="text-justify"><span id="saha_pdcs2010switchingsites">Saha, S., Manley, E. D., &amp; Deogun, J. S. (2010). Selection of Switching Sites in All-Optical Network Topology Design. <i>22nd IASTED International Conference on Parallel and Distributed Computing and Systems (PDCS)</i>, 278–284.</span></div>
-
-<!-- You can use the below to make your name bold -->
-<!-- <span id="saha_pdcs2010switchingsites">Saha, S., Manley, E. D., &amp; Deogun, J. S. (2010). Selection of Switching Sites in All-Optical Network Topology Design. <i>22nd IASTED International Conference on Parallel and Distributed Computing and Systems (PDCS)</i>, 278–284.</span></div> -->
-
-
-
-
-
+<li><div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <!-- Publication Reference -->
+      <p class="card-text text-justify">
+        <span id="saha_pdcs2010switchingsites">Saha, S., <b><b>Manley, E.</b> D.</b>, &amp; Deogun, J. S. (2010). Selection of Switching Sites in All-Optical Network Topology Design. <i>22nd IASTED International Conference on Parallel and Distributed Computing and Systems (PDCS)</i>, 278–284.</span>
+      </p>
   
-    <a href="http://escholarshare.drake.edu/bitstream/handle/2092/2055/Manley2010.11%20278-284.pdf" target="_blank">
-      <button class="btn btn-primary btm-sm">PDF</button>
-    </a>
+      <!-- Buttons -->
+      <div class="d-flex flex-wrap gap-2 mt-2">
+        
+        
   
-
-
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleBibtexsaha_pdcs2010switchingsites()">BIB</button>
-
-
-
-
-
-<div id="asaha_pdcs2010switchingsites" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@inproceedings{saha_pdcs2010switchingsites,
+        
+          
+            <a href="http://escholarshare.drake.edu/bitstream/handle/2092/2055/Manley2010.11%20278-284.pdf" target="_blank" class="btn btn-primary btn-sm">PDF</a>
+          
+        
+  
+        
+  
+        <!-- Ensure Correct Bootstrap 5 Attributes -->
+        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-saha_pdcs2010switchingsites" aria-expanded="false" aria-controls="bibtex-saha_pdcs2010switchingsites">BIB</button>
+  
+        
+      </div>
+  
+      <!-- Collapsible BibTeX -->
+      <div class="collapse mt-3" id="bibtex-saha_pdcs2010switchingsites">
+        <div class="card card-body">
+          <pre>@inproceedings{saha_pdcs2010switchingsites,
   address = {Marina Del Rey, California},
   author = {Saha, Shivashis and Manley, Eric D. and Deogun, Jitender S.},
   booktitle = {22nd IASTED International Conference on Parallel and Distributed Computing and Systems (PDCS)},
@@ -1615,80 +1049,44 @@ pre{
   keywords = {published}
 }
 </pre>
-</div>
-
-
-<div id="bsaha_pdcs2010switchingsites" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre></pre>
-</div>
-
-<script>
-function toggleBibtexsaha_pdcs2010switchingsites(parameter) {
-    var x= document.getElementById('asaha_pdcs2010switchingsites');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function toggleAbstractsaha_pdcs2010switchingsites(parameter) {
-    var x= document.getElementById('bsaha_pdcs2010switchingsites');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
+        </div>
+      </div>
+  
+      <!-- Collapsible Abstract -->
+      
+    </div>
+  </div>
 </li>
-<li><style>
-.btn{
-    margin-bottom:5px;
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    height:20px
-}
-
-pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; overflow-x:auto;
-}
-</style>
-
-
-<div class="text-justify"><span id="manley_jocn2010">Manley, E. D., Deogun, J. S., Xu, L., &amp; Alexander, D. R. (2010). All-Optical Network Coding. <i>IEEE/OSA Journal of Optical Communications and Networking</i>, <i>2</i>(4), 175–191.</span></div>
-
-<!-- You can use the below to make your name bold -->
-<!-- <span id="manley_jocn2010">Manley, E. D., Deogun, J. S., Xu, L., &amp; Alexander, D. R. (2010). All-Optical Network Coding. <i>IEEE/OSA Journal of Optical Communications and Networking</i>, <i>2</i>(4), 175–191.</span></div> -->
-
-
-
-
-
+<li><div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <!-- Publication Reference -->
+      <p class="card-text text-justify">
+        <span id="manley_jocn2010"><b><b>Manley, E.</b> D.</b>, Deogun, J. S., Xu, L., &amp; Alexander, D. R. (2010). All-Optical Network Coding. <i>IEEE/OSA Journal of Optical Communications and Networking</i>, <i>2</i>(4), 175–191.</span>
+      </p>
   
-    <a href="http://escholarshare.drake.edu/bitstream/handle/2092/2054/Manley2010.04.pdf" target="_blank">
-      <button class="btn btn-primary btm-sm">PDF</button>
-    </a>
+      <!-- Buttons -->
+      <div class="d-flex flex-wrap gap-2 mt-2">
+        
+        
   
-
-
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleBibtexmanley_jocn2010()">BIB</button>
-
-
-
-
-
-<div id="amanley_jocn2010" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@article{manley_jocn2010,
+        
+          
+            <a href="http://escholarshare.drake.edu/bitstream/handle/2092/2054/Manley2010.04.pdf" target="_blank" class="btn btn-primary btn-sm">PDF</a>
+          
+        
+  
+        
+  
+        <!-- Ensure Correct Bootstrap 5 Attributes -->
+        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-manley_jocn2010" aria-expanded="false" aria-controls="bibtex-manley_jocn2010">BIB</button>
+  
+        
+      </div>
+  
+      <!-- Collapsible BibTeX -->
+      <div class="collapse mt-3" id="bibtex-manley_jocn2010">
+        <div class="card card-body">
+          <pre>@article{manley_jocn2010,
   author = {Manley, Eric D. and Deogun, Jitender S. and Xu, Lisong and Alexander, Dennis R.},
   journal = {IEEE/OSA Journal of Optical Communications and Networking},
   month = apr,
@@ -1701,78 +1099,44 @@ pre{
   keywords = {published}
 }
 </pre>
-</div>
-
-
-<div id="bmanley_jocn2010" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre></pre>
-</div>
-
-<script>
-function toggleBibtexmanley_jocn2010(parameter) {
-    var x= document.getElementById('amanley_jocn2010');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function toggleAbstractmanley_jocn2010(parameter) {
-    var x= document.getElementById('bmanley_jocn2010');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
+        </div>
+      </div>
+  
+      <!-- Collapsible Abstract -->
+      
+    </div>
+  </div>
 </li>
-<li><style>
-.btn{
-    margin-bottom:5px;
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    height:20px
-}
-
-pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; overflow-x:auto;
-}
-</style>
-
-
-<div class="text-justify"><span id="saha_ants2009">Saha, S., Manley, E. D., &amp; Deogun, J. S. (2009, December). Minimizing Network Cost in All-Optical Networks. <i>IEEE International Symposium on Advanced Networks and Telecommunications Systems (ANTS)</i>.</span></div>
-
-<!-- You can use the below to make your name bold -->
-<!-- <span id="saha_ants2009">Saha, S., Manley, E. D., &amp; Deogun, J. S. (2009, December). Minimizing Network Cost in All-Optical Networks. <i>IEEE International Symposium on Advanced Networks and Telecommunications Systems (ANTS)</i>.</span></div> -->
-
-
-
-
-
-
-
-
-<a href="http://doi.org/10.1109/ANTS.2009.5409862" target="_blank"><button class="btn btn-primary btm-sm">DOI</button></a>
-
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleBibtexsaha_ants2009()">BIB</button>
-
-
-
-
-
-<div id="asaha_ants2009" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@inproceedings{saha_ants2009,
+<li><div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <!-- Publication Reference -->
+      <p class="card-text text-justify">
+        <span id="saha_ants2009">Saha, S., <b><b>Manley, E.</b> D.</b>, &amp; Deogun, J. S. (2009, December). Minimizing Network Cost in All-Optical Networks. <i>IEEE International Symposium on Advanced Networks and Telecommunications Systems (ANTS)</i>.</span>
+      </p>
+  
+      <!-- Buttons -->
+      <div class="d-flex flex-wrap gap-2 mt-2">
+        
+        
+  
+        
+  
+        
+          
+            <a href="http://doi.org/10.1109/ANTS.2009.5409862" target="_blank" class="btn btn-primary btn-sm">DOI</a>
+          
+        
+  
+        <!-- Ensure Correct Bootstrap 5 Attributes -->
+        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-saha_ants2009" aria-expanded="false" aria-controls="bibtex-saha_ants2009">BIB</button>
+  
+        
+      </div>
+  
+      <!-- Collapsible BibTeX -->
+      <div class="collapse mt-3" id="bibtex-saha_ants2009">
+        <div class="card card-body">
+          <pre>@inproceedings{saha_ants2009,
   address = {New Dehli, India},
   author = {Saha, Shivashis and Manley, Eric D. and Deogun, Jitender S.},
   booktitle = {IEEE International Symposium on Advanced Networks and Telecommunications Systems (ANTS)},
@@ -1783,78 +1147,44 @@ pre{
   keywords = {published}
 }
 </pre>
-</div>
-
-
-<div id="bsaha_ants2009" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre></pre>
-</div>
-
-<script>
-function toggleBibtexsaha_ants2009(parameter) {
-    var x= document.getElementById('asaha_ants2009');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function toggleAbstractsaha_ants2009(parameter) {
-    var x= document.getElementById('bsaha_ants2009');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
+        </div>
+      </div>
+  
+      <!-- Collapsible Abstract -->
+      
+    </div>
+  </div>
 </li>
-<li><style>
-.btn{
-    margin-bottom:5px;
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    height:20px
-}
-
-pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; overflow-x:auto;
-}
-</style>
-
-
-<div class="text-justify"><span id="manley_sigcse2009">Riedesel, C. P., Manley, E. D., Poser, S., &amp; Deogun, J. S. (2009). A Model Academic Ethics and Integrity Policy for Computer Science Departments. <i>Proceedings of the 40th ACM Technical Symposium on Computer Science Education (SIGCSE)</i>, 357–361.</span></div>
-
-<!-- You can use the below to make your name bold -->
-<!-- <span id="manley_sigcse2009">Riedesel, C. P., Manley, E. D., Poser, S., &amp; Deogun, J. S. (2009). A Model Academic Ethics and Integrity Policy for Computer Science Departments. <i>Proceedings of the 40th ACM Technical Symposium on Computer Science Education (SIGCSE)</i>, 357–361.</span></div> -->
-
-
-
-
-
-
-
-
-<a href="http://doi.org/10.1145/1508865.1508994" target="_blank"><button class="btn btn-primary btm-sm">DOI</button></a>
-
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleBibtexmanley_sigcse2009()">BIB</button>
-
-
-
-
-
-<div id="amanley_sigcse2009" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@inproceedings{manley_sigcse2009,
+<li><div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <!-- Publication Reference -->
+      <p class="card-text text-justify">
+        <span id="manley_sigcse2009">Riedesel, C. P., <b><b>Manley, E.</b> D.</b>, Poser, S., &amp; Deogun, J. S. (2009). A Model Academic Ethics and Integrity Policy for Computer Science Departments. <i>Proceedings of the 40th ACM Technical Symposium on Computer Science Education (SIGCSE)</i>, 357–361.</span>
+      </p>
+  
+      <!-- Buttons -->
+      <div class="d-flex flex-wrap gap-2 mt-2">
+        
+        
+  
+        
+  
+        
+          
+            <a href="http://doi.org/10.1145/1508865.1508994" target="_blank" class="btn btn-primary btn-sm">DOI</a>
+          
+        
+  
+        <!-- Ensure Correct Bootstrap 5 Attributes -->
+        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-manley_sigcse2009" aria-expanded="false" aria-controls="bibtex-manley_sigcse2009">BIB</button>
+  
+        
+      </div>
+  
+      <!-- Collapsible BibTeX -->
+      <div class="collapse mt-3" id="bibtex-manley_sigcse2009">
+        <div class="card card-body">
+          <pre>@inproceedings{manley_sigcse2009,
   address = {Chattanooga, Tennessee},
   author = {Riedesel, Charles P. and Manley, Eric D. and Poser, Susan and Deogun, Jitender S.},
   booktitle = {Proceedings of the 40th ACM Technical Symposium on Computer Science Education (SIGCSE)},
@@ -1866,78 +1196,44 @@ pre{
   keywords = {published}
 }
 </pre>
-</div>
-
-
-<div id="bmanley_sigcse2009" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre></pre>
-</div>
-
-<script>
-function toggleBibtexmanley_sigcse2009(parameter) {
-    var x= document.getElementById('amanley_sigcse2009');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function toggleAbstractmanley_sigcse2009(parameter) {
-    var x= document.getElementById('bmanley_sigcse2009');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
+        </div>
+      </div>
+  
+      <!-- Collapsible Abstract -->
+      
+    </div>
+  </div>
 </li>
-<li><style>
-.btn{
-    margin-bottom:5px;
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    height:20px
-}
-
-pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; overflow-x:auto;
-}
-</style>
-
-
-<div class="text-justify"><span id="manley_broadnets2008">Manley, E. D., Deogun, J. S., &amp; Xu, L. (2008, September). Network Coding for Optical-Layer Multicast. <i>Fifth International Conference on Broadband Communications, Networks, and Systems (Broadnets)</i>.</span></div>
-
-<!-- You can use the below to make your name bold -->
-<!-- <span id="manley_broadnets2008">Manley, E. D., Deogun, J. S., &amp; Xu, L. (2008, September). Network Coding for Optical-Layer Multicast. <i>Fifth International Conference on Broadband Communications, Networks, and Systems (Broadnets)</i>.</span></div> -->
-
-
-
-
-
-
-
-
-<a href="http://doi.org/10.1109/BROADNETS.2008.4769125" target="_blank"><button class="btn btn-primary btm-sm">DOI</button></a>
-
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleBibtexmanley_broadnets2008()">BIB</button>
-
-
-
-
-
-<div id="amanley_broadnets2008" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@inproceedings{manley_broadnets2008,
+<li><div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <!-- Publication Reference -->
+      <p class="card-text text-justify">
+        <span id="manley_broadnets2008"><b><b>Manley, E.</b> D.</b>, Deogun, J. S., &amp; Xu, L. (2008, September). Network Coding for Optical-Layer Multicast. <i>Fifth International Conference on Broadband Communications, Networks, and Systems (Broadnets)</i>.</span>
+      </p>
+  
+      <!-- Buttons -->
+      <div class="d-flex flex-wrap gap-2 mt-2">
+        
+        
+  
+        
+  
+        
+          
+            <a href="http://doi.org/10.1109/BROADNETS.2008.4769125" target="_blank" class="btn btn-primary btn-sm">DOI</a>
+          
+        
+  
+        <!-- Ensure Correct Bootstrap 5 Attributes -->
+        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-manley_broadnets2008" aria-expanded="false" aria-controls="bibtex-manley_broadnets2008">BIB</button>
+  
+        
+      </div>
+  
+      <!-- Collapsible BibTeX -->
+      <div class="collapse mt-3" id="bibtex-manley_broadnets2008">
+        <div class="card card-body">
+          <pre>@inproceedings{manley_broadnets2008,
   address = {London, UK},
   author = {Manley, Eric D. and Deogun, Jitender S. and Xu, Lisong},
   booktitle = {Fifth International Conference on Broadband Communications, Networks, and Systems (Broadnets)},
@@ -1948,78 +1244,44 @@ pre{
   keywords = {published}
 }
 </pre>
-</div>
-
-
-<div id="bmanley_broadnets2008" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre></pre>
-</div>
-
-<script>
-function toggleBibtexmanley_broadnets2008(parameter) {
-    var x= document.getElementById('amanley_broadnets2008');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function toggleAbstractmanley_broadnets2008(parameter) {
-    var x= document.getElementById('bmanley_broadnets2008');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
+        </div>
+      </div>
+  
+      <!-- Collapsible Abstract -->
+      
+    </div>
+  </div>
 </li>
-<li><style>
-.btn{
-    margin-bottom:5px;
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    height:20px
-}
-
-pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; overflow-x:auto;
-}
-</style>
-
-
-<div class="text-justify"><span id="manley_icc2007">Manley, E. D., Hamza, H. S., &amp; Deogun, J. S. (2007). On the Bandwidth Efficiency of Pre-Crossconnected Trails. <i>IEEE International Conference on Communications (ICC)</i>, 2294–2299.</span></div>
-
-<!-- You can use the below to make your name bold -->
-<!-- <span id="manley_icc2007">Manley, E. D., Hamza, H. S., &amp; Deogun, J. S. (2007). On the Bandwidth Efficiency of Pre-Crossconnected Trails. <i>IEEE International Conference on Communications (ICC)</i>, 2294–2299.</span></div> -->
-
-
-
-
-
-
-
-
-<a href="http://doi.org/10.1109/ICC.2007.385" target="_blank"><button class="btn btn-primary btm-sm">DOI</button></a>
-
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleBibtexmanley_icc2007()">BIB</button>
-
-
-
-
-
-<div id="amanley_icc2007" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@inproceedings{manley_icc2007,
+<li><div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <!-- Publication Reference -->
+      <p class="card-text text-justify">
+        <span id="manley_icc2007"><b><b>Manley, E.</b> D.</b>, Hamza, H. S., &amp; Deogun, J. S. (2007). On the Bandwidth Efficiency of Pre-Crossconnected Trails. <i>IEEE International Conference on Communications (ICC)</i>, 2294–2299.</span>
+      </p>
+  
+      <!-- Buttons -->
+      <div class="d-flex flex-wrap gap-2 mt-2">
+        
+        
+  
+        
+  
+        
+          
+            <a href="http://doi.org/10.1109/ICC.2007.385" target="_blank" class="btn btn-primary btn-sm">DOI</a>
+          
+        
+  
+        <!-- Ensure Correct Bootstrap 5 Attributes -->
+        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-manley_icc2007" aria-expanded="false" aria-controls="bibtex-manley_icc2007">BIB</button>
+  
+        
+      </div>
+  
+      <!-- Collapsible BibTeX -->
+      <div class="collapse mt-3" id="bibtex-manley_icc2007">
+        <div class="card card-body">
+          <pre>@inproceedings{manley_icc2007,
   address = {Glasgow, Scotland, UK},
   author = {Manley, Eric D. and Hamza, Haitham S. and Deogun, Jitender S.},
   booktitle = {IEEE International Conference on Communications (ICC)},
@@ -2031,78 +1293,44 @@ pre{
   keywords = {published}
 }
 </pre>
-</div>
-
-
-<div id="bmanley_icc2007" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre></pre>
-</div>
-
-<script>
-function toggleBibtexmanley_icc2007(parameter) {
-    var x= document.getElementById('amanley_icc2007');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function toggleAbstractmanley_icc2007(parameter) {
-    var x= document.getElementById('bmanley_icc2007');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
+        </div>
+      </div>
+  
+      <!-- Collapsible Abstract -->
+      
+    </div>
+  </div>
 </li>
-<li><style>
-.btn{
-    margin-bottom:5px;
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    height:20px
-}
-
-pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; overflow-x:auto;
-}
-</style>
-
-
-<div class="text-justify"><span id="manley_aina2007">Manley, E. D., &amp; Deogun, J. S. (2007). Location Learning for Smart Homes. <i>21st IEEE International Conference on Advanced Information Networking and Applications Workshops (AINA)</i>, <i>2</i>, 787–792.</span></div>
-
-<!-- You can use the below to make your name bold -->
-<!-- <span id="manley_aina2007">Manley, E. D., &amp; Deogun, J. S. (2007). Location Learning for Smart Homes. <i>21st IEEE International Conference on Advanced Information Networking and Applications Workshops (AINA)</i>, <i>2</i>, 787–792.</span></div> -->
-
-
-
-
-
-
-
-
-<a href="http://doi.org/10.1109/AINAW.2007.223" target="_blank"><button class="btn btn-primary btm-sm">DOI</button></a>
-
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleBibtexmanley_aina2007()">BIB</button>
-
-
-
-
-
-<div id="amanley_aina2007" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@inproceedings{manley_aina2007,
+<li><div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <!-- Publication Reference -->
+      <p class="card-text text-justify">
+        <span id="manley_aina2007"><b><b>Manley, E.</b> D.</b>, &amp; Deogun, J. S. (2007). Location Learning for Smart Homes. <i>21st IEEE International Conference on Advanced Information Networking and Applications Workshops (AINA)</i>, <i>2</i>, 787–792.</span>
+      </p>
+  
+      <!-- Buttons -->
+      <div class="d-flex flex-wrap gap-2 mt-2">
+        
+        
+  
+        
+  
+        
+          
+            <a href="http://doi.org/10.1109/AINAW.2007.223" target="_blank" class="btn btn-primary btn-sm">DOI</a>
+          
+        
+  
+        <!-- Ensure Correct Bootstrap 5 Attributes -->
+        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-manley_aina2007" aria-expanded="false" aria-controls="bibtex-manley_aina2007">BIB</button>
+  
+        
+      </div>
+  
+      <!-- Collapsible BibTeX -->
+      <div class="collapse mt-3" id="bibtex-manley_aina2007">
+        <div class="card card-body">
+          <pre>@inproceedings{manley_aina2007,
   address = {Niagara Falls, Ontario, Canada},
   author = {Manley, Eric D. and Deogun, Jitender S.},
   booktitle = {21st IEEE International Conference on Advanced Information Networking and Applications Workshops (AINA)},
@@ -2115,78 +1343,44 @@ pre{
   keywords = {published}
 }
 </pre>
-</div>
-
-
-<div id="bmanley_aina2007" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre></pre>
-</div>
-
-<script>
-function toggleBibtexmanley_aina2007(parameter) {
-    var x= document.getElementById('amanley_aina2007');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function toggleAbstractmanley_aina2007(parameter) {
-    var x= document.getElementById('bmanley_aina2007');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
+        </div>
+      </div>
+  
+      <!-- Collapsible Abstract -->
+      
+    </div>
+  </div>
 </li>
-<li><style>
-.btn{
-    margin-bottom:5px;
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    height:20px
-}
-
-pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; overflow-x:auto;
-}
-</style>
-
-
-<div class="text-justify"><span id="manley_jon2007">Manley, E. D., Hamza, H. S., &amp; Deogun, J. S. (2007). Efficient Use of Protection Bandwidth and Switching Resources in Optical WDM Networks. <i>The OSA Journal of Optical Networking</i>, <i>6</i>(4), 349–368.</span></div>
-
-<!-- You can use the below to make your name bold -->
-<!-- <span id="manley_jon2007">Manley, E. D., Hamza, H. S., &amp; Deogun, J. S. (2007). Efficient Use of Protection Bandwidth and Switching Resources in Optical WDM Networks. <i>The OSA Journal of Optical Networking</i>, <i>6</i>(4), 349–368.</span></div> -->
-
-
-
-
-
-
-
-
-<a href="http://doi.org/10.1364/JON.6.000349" target="_blank"><button class="btn btn-primary btm-sm">DOI</button></a>
-
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleBibtexmanley_jon2007()">BIB</button>
-
-
-
-
-
-<div id="amanley_jon2007" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@article{manley_jon2007,
+<li><div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <!-- Publication Reference -->
+      <p class="card-text text-justify">
+        <span id="manley_jon2007"><b><b>Manley, E.</b> D.</b>, Hamza, H. S., &amp; Deogun, J. S. (2007). Efficient Use of Protection Bandwidth and Switching Resources in Optical WDM Networks. <i>The OSA Journal of Optical Networking</i>, <i>6</i>(4), 349–368.</span>
+      </p>
+  
+      <!-- Buttons -->
+      <div class="d-flex flex-wrap gap-2 mt-2">
+        
+        
+  
+        
+  
+        
+          
+            <a href="http://doi.org/10.1364/JON.6.000349" target="_blank" class="btn btn-primary btn-sm">DOI</a>
+          
+        
+  
+        <!-- Ensure Correct Bootstrap 5 Attributes -->
+        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-manley_jon2007" aria-expanded="false" aria-controls="bibtex-manley_jon2007">BIB</button>
+  
+        
+      </div>
+  
+      <!-- Collapsible BibTeX -->
+      <div class="collapse mt-3" id="bibtex-manley_jon2007">
+        <div class="card card-body">
+          <pre>@article{manley_jon2007,
   author = {Manley, Eric D. and Hamza, Haitham S. and Deogun, Jitender S.},
   journal = {The OSA Journal of Optical Networking},
   month = apr,
@@ -2199,78 +1393,44 @@ pre{
   keywords = {published}
 }
 </pre>
-</div>
-
-
-<div id="bmanley_jon2007" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre></pre>
-</div>
-
-<script>
-function toggleBibtexmanley_jon2007(parameter) {
-    var x= document.getElementById('amanley_jon2007');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function toggleAbstractmanley_jon2007(parameter) {
-    var x= document.getElementById('bmanley_jon2007');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
+        </div>
+      </div>
+  
+      <!-- Collapsible Abstract -->
+      
+    </div>
+  </div>
 </li>
-<li><style>
-.btn{
-    margin-bottom:5px;
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    height:20px
-}
-
-pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; overflow-x:auto;
-}
-</style>
-
-
-<div class="text-justify"><span id="alnahas_chinacom2006">Nahas, H. A., Deogun, J. S., &amp; Manley, E. D. (2006, October). Secure and Energy Aware Routing Against Wormholes and Sinkholes in Wireless Sensor Networks. <i>First International Conference on Communications and Networking in China (ChinaCOM)</i>. \it Invited Paper.</span></div>
-
-<!-- You can use the below to make your name bold -->
-<!-- <span id="alnahas_chinacom2006">Nahas, H. A., Deogun, J. S., &amp; Manley, E. D. (2006, October). Secure and Energy Aware Routing Against Wormholes and Sinkholes in Wireless Sensor Networks. <i>First International Conference on Communications and Networking in China (ChinaCOM)</i>. \it Invited Paper.</span></div> -->
-
-
-
-
-
-
-
-
-<a href="http://doi.org/10.1109/CHINACOM.2006.344677" target="_blank"><button class="btn btn-primary btm-sm">DOI</button></a>
-
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleBibtexalnahas_chinacom2006()">BIB</button>
-
-
-
-
-
-<div id="aalnahas_chinacom2006" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@inproceedings{alnahas_chinacom2006,
+<li><div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <!-- Publication Reference -->
+      <p class="card-text text-justify">
+        <span id="alnahas_chinacom2006">Nahas, H. A., Deogun, J. S., &amp; <b><b>Manley, E.</b> D.</b> (2006, October). Secure and Energy Aware Routing Against Wormholes and Sinkholes in Wireless Sensor Networks. <i>First International Conference on Communications and Networking in China (ChinaCOM)</i>. \it Invited Paper.</span>
+      </p>
+  
+      <!-- Buttons -->
+      <div class="d-flex flex-wrap gap-2 mt-2">
+        
+        
+  
+        
+  
+        
+          
+            <a href="http://doi.org/10.1109/CHINACOM.2006.344677" target="_blank" class="btn btn-primary btn-sm">DOI</a>
+          
+        
+  
+        <!-- Ensure Correct Bootstrap 5 Attributes -->
+        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-alnahas_chinacom2006" aria-expanded="false" aria-controls="bibtex-alnahas_chinacom2006">BIB</button>
+  
+        
+      </div>
+  
+      <!-- Collapsible BibTeX -->
+      <div class="collapse mt-3" id="bibtex-alnahas_chinacom2006">
+        <div class="card card-body">
+          <pre>@inproceedings{alnahas_chinacom2006,
   address = {Beijing, China},
   author = {Nahas, Huzaifa Al and Deogun, Jitender S. and Manley, Eric D.},
   booktitle = {First International Conference on Communications and Networking in China (ChinaCOM)},
@@ -2282,74 +1442,40 @@ pre{
   keywords = {published}
 }
 </pre>
-</div>
-
-
-<div id="balnahas_chinacom2006" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre></pre>
-</div>
-
-<script>
-function toggleBibtexalnahas_chinacom2006(parameter) {
-    var x= document.getElementById('aalnahas_chinacom2006');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function toggleAbstractalnahas_chinacom2006(parameter) {
-    var x= document.getElementById('balnahas_chinacom2006');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
+        </div>
+      </div>
+  
+      <!-- Collapsible Abstract -->
+      
+    </div>
+  </div>
 </li>
-<li><style>
-.btn{
-    margin-bottom:5px;
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    height:20px
-}
-
-pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; overflow-x:auto;
-}
-</style>
-
-
-<div class="text-justify"><span id="alnahas_inss2006">Nahas, H. A., Deogun, J. S., &amp; Manley, E. D. (2006, June). SPR:Secure-Path Routing in Sensor Networks. <i>Third International Conference on Network Sensing Systems (INSS)</i>.</span></div>
-
-<!-- You can use the below to make your name bold -->
-<!-- <span id="alnahas_inss2006">Nahas, H. A., Deogun, J. S., &amp; Manley, E. D. (2006, June). SPR:Secure-Path Routing in Sensor Networks. <i>Third International Conference on Network Sensing Systems (INSS)</i>.</span></div> -->
-
-
-
-
-
-
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleBibtexalnahas_inss2006()">BIB</button>
-
-
-
-
-
-<div id="aalnahas_inss2006" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@inproceedings{alnahas_inss2006,
+<li><div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <!-- Publication Reference -->
+      <p class="card-text text-justify">
+        <span id="alnahas_inss2006">Nahas, H. A., Deogun, J. S., &amp; <b><b>Manley, E.</b> D.</b> (2006, June). SPR:Secure-Path Routing in Sensor Networks. <i>Third International Conference on Network Sensing Systems (INSS)</i>.</span>
+      </p>
+  
+      <!-- Buttons -->
+      <div class="d-flex flex-wrap gap-2 mt-2">
+        
+        
+  
+        
+  
+        
+  
+        <!-- Ensure Correct Bootstrap 5 Attributes -->
+        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-alnahas_inss2006" aria-expanded="false" aria-controls="bibtex-alnahas_inss2006">BIB</button>
+  
+        
+      </div>
+  
+      <!-- Collapsible BibTeX -->
+      <div class="collapse mt-3" id="bibtex-alnahas_inss2006">
+        <div class="card card-body">
+          <pre>@inproceedings{alnahas_inss2006,
   address = {Chicago, Illinois},
   author = {Nahas, Huzaifa Al and Deogun, Jitender S. and Manley, Eric D.},
   booktitle = {Third International Conference on Network Sensing Systems (INSS)},
@@ -2359,80 +1485,44 @@ pre{
   keywords = {published}
 }
 </pre>
-</div>
-
-
-<div id="balnahas_inss2006" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre></pre>
-</div>
-
-<script>
-function toggleBibtexalnahas_inss2006(parameter) {
-    var x= document.getElementById('aalnahas_inss2006');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function toggleAbstractalnahas_inss2006(parameter) {
-    var x= document.getElementById('balnahas_inss2006');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
+        </div>
+      </div>
+  
+      <!-- Collapsible Abstract -->
+      
+    </div>
+  </div>
 </li>
-<li><style>
-.btn{
-    margin-bottom:5px;
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    height:20px
-}
-
-pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; overflow-x:auto;
-}
-</style>
-
-
-<div class="text-justify"><span id="manley_sutc2006">Manley, E. D., Nahas, H. A., &amp; Deogun, J. S. (2006). Localization and Tracking in Sensor Systems. <i>IEEE International Conference on Sensor Networks, Ubiquitous, and Trustworthy Computing (SUTC)</i>, <i>2</i>, 237–242.</span></div>
-
-<!-- You can use the below to make your name bold -->
-<!-- <span id="manley_sutc2006">Manley, E. D., Nahas, H. A., &amp; Deogun, J. S. (2006). Localization and Tracking in Sensor Systems. <i>IEEE International Conference on Sensor Networks, Ubiquitous, and Trustworthy Computing (SUTC)</i>, <i>2</i>, 237–242.</span></div> -->
-
-
-
-
-
+<li><div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <!-- Publication Reference -->
+      <p class="card-text text-justify">
+        <span id="manley_sutc2006"><b><b>Manley, E.</b> D.</b>, Nahas, H. A., &amp; Deogun, J. S. (2006). Localization and Tracking in Sensor Systems. <i>IEEE International Conference on Sensor Networks, Ubiquitous, and Trustworthy Computing (SUTC)</i>, <i>2</i>, 237–242.</span>
+      </p>
   
-    <a href="http://static.googleusercontent.com/media/research.google.com/en/us/pubs/archive/33304.pdf" target="_blank">
-      <button class="btn btn-primary btm-sm">PDF</button>
-    </a>
+      <!-- Buttons -->
+      <div class="d-flex flex-wrap gap-2 mt-2">
+        
+        
   
-
-
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleBibtexmanley_sutc2006()">BIB</button>
-
-
-
-
-
-<div id="amanley_sutc2006" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@inproceedings{manley_sutc2006,
+        
+          
+            <a href="http://static.googleusercontent.com/media/research.google.com/en/us/pubs/archive/33304.pdf" target="_blank" class="btn btn-primary btn-sm">PDF</a>
+          
+        
+  
+        
+  
+        <!-- Ensure Correct Bootstrap 5 Attributes -->
+        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-manley_sutc2006" aria-expanded="false" aria-controls="bibtex-manley_sutc2006">BIB</button>
+  
+        
+      </div>
+  
+      <!-- Collapsible BibTeX -->
+      <div class="collapse mt-3" id="bibtex-manley_sutc2006">
+        <div class="card card-body">
+          <pre>@inproceedings{manley_sutc2006,
   address = {Taichung, Taiwan},
   author = {Manley, Eric D. and Nahas, Huzaifa Al and Deogun, Jitender S.},
   booktitle = {IEEE International Conference on Sensor Networks, Ubiquitous, and Trustworthy Computing (SUTC)},
@@ -2445,80 +1535,44 @@ pre{
   keywords = {published}
 }
 </pre>
-</div>
-
-
-<div id="bmanley_sutc2006" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre></pre>
-</div>
-
-<script>
-function toggleBibtexmanley_sutc2006(parameter) {
-    var x= document.getElementById('amanley_sutc2006');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function toggleAbstractmanley_sutc2006(parameter) {
-    var x= document.getElementById('bmanley_sutc2006');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
+        </div>
+      </div>
+  
+      <!-- Collapsible Abstract -->
+      
+    </div>
+  </div>
 </li>
-<li><style>
-.btn{
-    margin-bottom:5px;
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    height:20px
-}
-
-pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; overflow-x:auto;
-}
-</style>
-
-
-<div class="text-justify"><span id="manley_rmjm2006">Manley, E. D. (2006). On Quadratic Solutions of x^4+py^4=z^4. <i>Rocky Mountain Journal of Mathematics</i>, <i>36</i>(3), 1027–1031.</span></div>
-
-<!-- You can use the below to make your name bold -->
-<!-- <span id="manley_rmjm2006">Manley, E. D. (2006). On Quadratic Solutions of x^4+py^4=z^4. <i>Rocky Mountain Journal of Mathematics</i>, <i>36</i>(3), 1027–1031.</span></div> -->
-
-
-
-
-
+<li><div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <!-- Publication Reference -->
+      <p class="card-text text-justify">
+        <span id="manley_rmjm2006"><b><b>Manley, E.</b> D.</b> (2006). On Quadratic Solutions of x^4+py^4=z^4. <i>Rocky Mountain Journal of Mathematics</i>, <i>36</i>(3), 1027–1031.</span>
+      </p>
   
-    <a href="http://projecteuclid.org/download/pdf_1/euclid.rmjm/1181069443" target="_blank">
-      <button class="btn btn-primary btm-sm">PDF</button>
-    </a>
+      <!-- Buttons -->
+      <div class="d-flex flex-wrap gap-2 mt-2">
+        
+        
   
-
-
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleBibtexmanley_rmjm2006()">BIB</button>
-
-
-
-
-
-<div id="amanley_rmjm2006" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@article{manley_rmjm2006,
+        
+          
+            <a href="http://projecteuclid.org/download/pdf_1/euclid.rmjm/1181069443" target="_blank" class="btn btn-primary btn-sm">PDF</a>
+          
+        
+  
+        
+  
+        <!-- Ensure Correct Bootstrap 5 Attributes -->
+        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-manley_rmjm2006" aria-expanded="false" aria-controls="bibtex-manley_rmjm2006">BIB</button>
+  
+        
+      </div>
+  
+      <!-- Collapsible BibTeX -->
+      <div class="collapse mt-3" id="bibtex-manley_rmjm2006">
+        <div class="card card-body">
+          <pre>@article{manley_rmjm2006,
   author = {Manley, Eric D.},
   journal = {Rocky Mountain Journal of Mathematics},
   number = {3},
@@ -2530,74 +1584,40 @@ pre{
   keywords = {published}
 }
 </pre>
-</div>
-
-
-<div id="bmanley_rmjm2006" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre></pre>
-</div>
-
-<script>
-function toggleBibtexmanley_rmjm2006(parameter) {
-    var x= document.getElementById('amanley_rmjm2006');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function toggleAbstractmanley_rmjm2006(parameter) {
-    var x= document.getElementById('bmanley_rmjm2006');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
+        </div>
+      </div>
+  
+      <!-- Collapsible Abstract -->
+      
+    </div>
+  </div>
 </li>
-<li><style>
-.btn{
-    margin-bottom:5px;
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    height:20px
-}
-
-pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; overflow-x:auto;
-}
-</style>
-
-
-<div class="text-justify"><span id="manley_wnet2005">Manley, E. D., Deogun, J. S., &amp; Nahas, H. A. (2005, July). Public-Key Cryptography in Sensor Networks. <i>IASTED Wireless Networks and Emerging Technologies</i>.</span></div>
-
-<!-- You can use the below to make your name bold -->
-<!-- <span id="manley_wnet2005">Manley, E. D., Deogun, J. S., &amp; Nahas, H. A. (2005, July). Public-Key Cryptography in Sensor Networks. <i>IASTED Wireless Networks and Emerging Technologies</i>.</span></div> -->
-
-
-
-
-
-
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleBibtexmanley_wnet2005()">BIB</button>
-
-
-
-
-
-<div id="amanley_wnet2005" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@inproceedings{manley_wnet2005,
+<li><div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <!-- Publication Reference -->
+      <p class="card-text text-justify">
+        <span id="manley_wnet2005"><b><b>Manley, E.</b> D.</b>, Deogun, J. S., &amp; Nahas, H. A. (2005, July). Public-Key Cryptography in Sensor Networks. <i>IASTED Wireless Networks and Emerging Technologies</i>.</span>
+      </p>
+  
+      <!-- Buttons -->
+      <div class="d-flex flex-wrap gap-2 mt-2">
+        
+        
+  
+        
+  
+        
+  
+        <!-- Ensure Correct Bootstrap 5 Attributes -->
+        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-manley_wnet2005" aria-expanded="false" aria-controls="bibtex-manley_wnet2005">BIB</button>
+  
+        
+      </div>
+  
+      <!-- Collapsible BibTeX -->
+      <div class="collapse mt-3" id="bibtex-manley_wnet2005">
+        <div class="card card-body">
+          <pre>@inproceedings{manley_wnet2005,
   address = {Banff, Alberta, Canada},
   author = {Manley, Eric D. and Deogun, Jitender S. and Nahas, Huzaifa Al},
   booktitle = {IASTED Wireless Networks and Emerging Technologies},
@@ -2607,74 +1627,40 @@ pre{
   keywords = {published}
 }
 </pre>
-</div>
-
-
-<div id="bmanley_wnet2005" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre></pre>
-</div>
-
-<script>
-function toggleBibtexmanley_wnet2005(parameter) {
-    var x= document.getElementById('amanley_wnet2005');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function toggleAbstractmanley_wnet2005(parameter) {
-    var x= document.getElementById('bmanley_wnet2005');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
+        </div>
+      </div>
+  
+      <!-- Collapsible Abstract -->
+      
+    </div>
+  </div>
 </li>
-<li><style>
-.btn{
-    margin-bottom:5px;
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    height:20px
-}
-
-pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; overflow-x:auto;
-}
-</style>
-
-
-<div class="text-justify"><span id="alnahas_csitea2004">Nahas, H. A., Deogun, J. S., &amp; Manley, E. D. (2004, December). Security in Wireless Sensor Networks: Issues and Protocols. <i>Computer Science, Software Engineering, Information Technology, e-Business, and Applications (CSITeA)</i>.</span></div>
-
-<!-- You can use the below to make your name bold -->
-<!-- <span id="alnahas_csitea2004">Nahas, H. A., Deogun, J. S., &amp; Manley, E. D. (2004, December). Security in Wireless Sensor Networks: Issues and Protocols. <i>Computer Science, Software Engineering, Information Technology, e-Business, and Applications (CSITeA)</i>.</span></div> -->
-
-
-
-
-
-
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleBibtexalnahas_csitea2004()">BIB</button>
-
-
-
-
-
-<div id="aalnahas_csitea2004" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@inproceedings{alnahas_csitea2004,
+<li><div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <!-- Publication Reference -->
+      <p class="card-text text-justify">
+        <span id="alnahas_csitea2004">Nahas, H. A., Deogun, J. S., &amp; <b><b>Manley, E.</b> D.</b> (2004, December). Security in Wireless Sensor Networks: Issues and Protocols. <i>Computer Science, Software Engineering, Information Technology, e-Business, and Applications (CSITeA)</i>.</span>
+      </p>
+  
+      <!-- Buttons -->
+      <div class="d-flex flex-wrap gap-2 mt-2">
+        
+        
+  
+        
+  
+        
+  
+        <!-- Ensure Correct Bootstrap 5 Attributes -->
+        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-alnahas_csitea2004" aria-expanded="false" aria-controls="bibtex-alnahas_csitea2004">BIB</button>
+  
+        
+      </div>
+  
+      <!-- Collapsible BibTeX -->
+      <div class="collapse mt-3" id="bibtex-alnahas_csitea2004">
+        <div class="card card-body">
+          <pre>@inproceedings{alnahas_csitea2004,
   address = {Cairo, Egypt},
   author = {Nahas, Huzaifa Al and Deogun, Jitender S. and Manley, Eric D.},
   booktitle = {Computer Science, Software Engineering, Information Technology, e-Business, and Applications (CSITeA)},
@@ -2684,83 +1670,48 @@ pre{
   keywords = {published}
 }
 </pre>
-</div>
-
-
-<div id="balnahas_csitea2004" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre></pre>
-</div>
-
-<script>
-function toggleBibtexalnahas_csitea2004(parameter) {
-    var x= document.getElementById('aalnahas_csitea2004');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function toggleAbstractalnahas_csitea2004(parameter) {
-    var x= document.getElementById('balnahas_csitea2004');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
+        </div>
+      </div>
+  
+      <!-- Collapsible Abstract -->
+      
+    </div>
+  </div>
 </li></ol>
   </div>
+
   <div class="tab-pane fade jumbotron" id="students" role="tabpanel" aria-labelledby="students-tab">
     <h3>Work with Students</h3>
-    <ol class="bibliography" reversed="reversed"><li><style>
-.btn{
-    margin-bottom:5px;
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    height:20px
-}
-
-pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; overflow-x:auto;
-}
-</style>
-
-
-<div class="text-justify"><span id="chen_ccsc2024segbuilder">Chen, S., Chaudhary, S., Elafros, J., Manley, E., &amp; Reza, M. A. (2024, April). SegBuilder: Semi-automatic Annotation for Semantic Segmentation (<i>Best Student Poster Award</i>). <i>Consortium for Computing Sciences in Colleges Central Plains Regional Conference</i>.</span></div>
-
-<!-- You can use the below to make your name bold -->
-<!-- <span id="chen_ccsc2024segbuilder">Chen, S., Chaudhary, S., Elafros, J., Manley, E., &amp; Reza, M. A. (2024, April). SegBuilder: Semi-automatic Annotation for Semantic Segmentation (<i>Best Student Poster Award</i>). <i>Consortium for Computing Sciences in Colleges Central Plains Regional Conference</i>.</span></div> -->
-
-
-
-
-
+    <ol class="bibliography" reversed="reversed"><li><div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <!-- Publication Reference -->
+      <p class="card-text text-justify">
+        <span id="chen_ccsc2024segbuilder">Chen, S., Chaudhary, S., Elafros, J., <b>Manley, E.</b>, &amp; Reza, M. A. (2024, April). SegBuilder: Semi-automatic Annotation for Semantic Segmentation (<i>Best Student Poster Award</i>). <i>Consortium for Computing Sciences in Colleges Central Plains Regional Conference</i>.</span>
+      </p>
   
-    <a href="https://ericmanley.github.io/papers/2024CCSC_SegBuilder.pdf" target="_blank">
-      <button class="btn btn-primary btm-sm">PDF</button>
-    </a>
+      <!-- Buttons -->
+      <div class="d-flex flex-wrap gap-2 mt-2">
+        
+        
   
-
-
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleBibtexchen_ccsc2024segbuilder()">BIB</button>
-
-
-
-
-
-<div id="achen_ccsc2024segbuilder" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@conference{chen_ccsc2024segbuilder,
+        
+          
+            <a href="https://ericmanley.github.io/papers/2024CCSC_SegBuilder.pdf" target="_blank" class="btn btn-primary btn-sm">PDF</a>
+          
+        
+  
+        
+  
+        <!-- Ensure Correct Bootstrap 5 Attributes -->
+        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-chen_ccsc2024segbuilder" aria-expanded="false" aria-controls="bibtex-chen_ccsc2024segbuilder">BIB</button>
+  
+        
+      </div>
+  
+      <!-- Collapsible BibTeX -->
+      <div class="collapse mt-3" id="bibtex-chen_ccsc2024segbuilder">
+        <div class="card card-body">
+          <pre>@conference{chen_ccsc2024segbuilder,
   address = {Lamoni, Iowa},
   author = {Chen, Sean and Chaudhary, Sameer and Elafros, Jacob and Manley, Eric and Reza, Md. Alimoor},
   booktitle = {Consortium for Computing Sciences in Colleges Central Plains Regional Conference},
@@ -2771,80 +1722,44 @@ pre{
   keywords = {student}
 }
 </pre>
-</div>
-
-
-<div id="bchen_ccsc2024segbuilder" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre></pre>
-</div>
-
-<script>
-function toggleBibtexchen_ccsc2024segbuilder(parameter) {
-    var x= document.getElementById('achen_ccsc2024segbuilder');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function toggleAbstractchen_ccsc2024segbuilder(parameter) {
-    var x= document.getElementById('bchen_ccsc2024segbuilder');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
+        </div>
+      </div>
+  
+      <!-- Collapsible Abstract -->
+      
+    </div>
+  </div>
 </li>
-<li><style>
-.btn{
-    margin-bottom:5px;
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    height:20px
-}
-
-pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; overflow-x:auto;
-}
-</style>
-
-
-<div class="text-justify"><span id="becker_ccsc2024bankfailure">Becker, J., Bui, V., Mehuljic, H., Mogro, J. U., Valdenebro, G., Manley, E., &amp; Severe, S. (2024, April). Bank Failure Early Warning Systems Using Machine Learning. <i>Consortium for Computing Sciences in Colleges Central Plains Regional Conference</i>.</span></div>
-
-<!-- You can use the below to make your name bold -->
-<!-- <span id="becker_ccsc2024bankfailure">Becker, J., Bui, V., Mehuljic, H., Mogro, J. U., Valdenebro, G., Manley, E., &amp; Severe, S. (2024, April). Bank Failure Early Warning Systems Using Machine Learning. <i>Consortium for Computing Sciences in Colleges Central Plains Regional Conference</i>.</span></div> -->
-
-
-
-
-
+<li><div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <!-- Publication Reference -->
+      <p class="card-text text-justify">
+        <span id="becker_ccsc2024bankfailure">Becker, J., Bui, V., Mehuljic, H., Mogro, J. U., Valdenebro, G., <b>Manley, E.</b>, &amp; Severe, S. (2024, April). Bank Failure Early Warning Systems Using Machine Learning. <i>Consortium for Computing Sciences in Colleges Central Plains Regional Conference</i>.</span>
+      </p>
   
-    <a href="https://ericmanley.github.io/papers/2024CCSC_BankFailureEWS.pdf" target="_blank">
-      <button class="btn btn-primary btm-sm">PDF</button>
-    </a>
+      <!-- Buttons -->
+      <div class="d-flex flex-wrap gap-2 mt-2">
+        
+        
   
-
-
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleBibtexbecker_ccsc2024bankfailure()">BIB</button>
-
-
-
-
-
-<div id="abecker_ccsc2024bankfailure" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@conference{becker_ccsc2024bankfailure,
+        
+          
+            <a href="https://ericmanley.github.io/papers/2024CCSC_BankFailureEWS.pdf" target="_blank" class="btn btn-primary btn-sm">PDF</a>
+          
+        
+  
+        
+  
+        <!-- Ensure Correct Bootstrap 5 Attributes -->
+        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-becker_ccsc2024bankfailure" aria-expanded="false" aria-controls="bibtex-becker_ccsc2024bankfailure">BIB</button>
+  
+        
+      </div>
+  
+      <!-- Collapsible BibTeX -->
+      <div class="collapse mt-3" id="bibtex-becker_ccsc2024bankfailure">
+        <div class="card card-body">
+          <pre>@conference{becker_ccsc2024bankfailure,
   address = {Lamoni, Iowa},
   author = {Becker, Jackson and Bui, Vu and Mehuljic, Haris and Mogro, Jose Usina and Valdenebro, Gonzalo and Manley, Eric and Severe, Sean},
   booktitle = {Consortium for Computing Sciences in Colleges Central Plains Regional Conference},
@@ -2855,80 +1770,44 @@ pre{
   keywords = {student}
 }
 </pre>
-</div>
-
-
-<div id="bbecker_ccsc2024bankfailure" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre></pre>
-</div>
-
-<script>
-function toggleBibtexbecker_ccsc2024bankfailure(parameter) {
-    var x= document.getElementById('abecker_ccsc2024bankfailure');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function toggleAbstractbecker_ccsc2024bankfailure(parameter) {
-    var x= document.getElementById('bbecker_ccsc2024bankfailure');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
+        </div>
+      </div>
+  
+      <!-- Collapsible Abstract -->
+      
+    </div>
+  </div>
 </li>
-<li><style>
-.btn{
-    margin-bottom:5px;
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    height:20px
-}
-
-pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; overflow-x:auto;
-}
-</style>
-
-
-<div class="text-justify"><span id="valdenebro_ccsc2023machinelearning">Valdenebro, G., Rongere, R., Danner, J., Mathesius, K., Choi, J., &amp; Manley, E. (2023, April). Building a Machine Learning Model to Predict Bank Failure. <i>Consortium for Computing Sciences in Colleges Central Plains Regional Conference</i>.</span></div>
-
-<!-- You can use the below to make your name bold -->
-<!-- <span id="valdenebro_ccsc2023machinelearning">Valdenebro, G., Rongere, R., Danner, J., Mathesius, K., Choi, J., &amp; Manley, E. (2023, April). Building a Machine Learning Model to Predict Bank Failure. <i>Consortium for Computing Sciences in Colleges Central Plains Regional Conference</i>.</span></div> -->
-
-
-
-
-
+<li><div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <!-- Publication Reference -->
+      <p class="card-text text-justify">
+        <span id="valdenebro_ccsc2023machinelearning">Valdenebro, G., Rongere, R., Danner, J., Mathesius, K., Choi, J., &amp; <b>Manley, E.</b> (2023, April). Building a Machine Learning Model to Predict Bank Failure. <i>Consortium for Computing Sciences in Colleges Central Plains Regional Conference</i>.</span>
+      </p>
   
-    <a href="https://ericmanley.github.io/papers/2023CCSC_MLBankFailure.pdf" target="_blank">
-      <button class="btn btn-primary btm-sm">PDF</button>
-    </a>
+      <!-- Buttons -->
+      <div class="d-flex flex-wrap gap-2 mt-2">
+        
+        
   
-
-
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleBibtexvaldenebro_ccsc2023machinelearning()">BIB</button>
-
-
-
-
-
-<div id="avaldenebro_ccsc2023machinelearning" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@conference{valdenebro_ccsc2023machinelearning,
+        
+          
+            <a href="https://ericmanley.github.io/papers/2023CCSC_MLBankFailure.pdf" target="_blank" class="btn btn-primary btn-sm">PDF</a>
+          
+        
+  
+        
+  
+        <!-- Ensure Correct Bootstrap 5 Attributes -->
+        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-valdenebro_ccsc2023machinelearning" aria-expanded="false" aria-controls="bibtex-valdenebro_ccsc2023machinelearning">BIB</button>
+  
+        
+      </div>
+  
+      <!-- Collapsible BibTeX -->
+      <div class="collapse mt-3" id="bibtex-valdenebro_ccsc2023machinelearning">
+        <div class="card card-body">
+          <pre>@conference{valdenebro_ccsc2023machinelearning,
   address = {Overland Park, Kansas},
   author = {Valdenebro, Gonzalo and Rongere, Riley and Danner, Jacob and Mathesius, Katja and Choi, Jaehyeok and Manley, Eric},
   booktitle = {Consortium for Computing Sciences in Colleges Central Plains Regional Conference},
@@ -2939,80 +1818,44 @@ pre{
   keywords = {student}
 }
 </pre>
-</div>
-
-
-<div id="bvaldenebro_ccsc2023machinelearning" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre></pre>
-</div>
-
-<script>
-function toggleBibtexvaldenebro_ccsc2023machinelearning(parameter) {
-    var x= document.getElementById('avaldenebro_ccsc2023machinelearning');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function toggleAbstractvaldenebro_ccsc2023machinelearning(parameter) {
-    var x= document.getElementById('bvaldenebro_ccsc2023machinelearning');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
+        </div>
+      </div>
+  
+      <!-- Collapsible Abstract -->
+      
+    </div>
+  </div>
 </li>
-<li><style>
-.btn{
-    margin-bottom:5px;
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    height:20px
-}
-
-pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; overflow-x:auto;
-}
-</style>
-
-
-<div class="text-justify"><span id="choi_ccsc2023async">Choi, J., Danner, J., Rongere, R., Kelly, B., Valdenebro, G., &amp; Manley, E. (2023, April). Async vs Sync for Non-Computation Heavy Applications. <i>Consortium for Computing Sciences in Colleges Central Plains Regional Conference</i>.</span></div>
-
-<!-- You can use the below to make your name bold -->
-<!-- <span id="choi_ccsc2023async">Choi, J., Danner, J., Rongere, R., Kelly, B., Valdenebro, G., &amp; Manley, E. (2023, April). Async vs Sync for Non-Computation Heavy Applications. <i>Consortium for Computing Sciences in Colleges Central Plains Regional Conference</i>.</span></div> -->
-
-
-
-
-
+<li><div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <!-- Publication Reference -->
+      <p class="card-text text-justify">
+        <span id="choi_ccsc2023async">Choi, J., Danner, J., Rongere, R., Kelly, B., Valdenebro, G., &amp; <b>Manley, E.</b> (2023, April). Async vs Sync for Non-Computation Heavy Applications. <i>Consortium for Computing Sciences in Colleges Central Plains Regional Conference</i>.</span>
+      </p>
   
-    <a href="https://ericmanley.github.io/papers/2023CCSC_AsyncVsSync.pdf" target="_blank">
-      <button class="btn btn-primary btm-sm">PDF</button>
-    </a>
+      <!-- Buttons -->
+      <div class="d-flex flex-wrap gap-2 mt-2">
+        
+        
   
-
-
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleBibtexchoi_ccsc2023async()">BIB</button>
-
-
-
-
-
-<div id="achoi_ccsc2023async" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@conference{choi_ccsc2023async,
+        
+          
+            <a href="https://ericmanley.github.io/papers/2023CCSC_AsyncVsSync.pdf" target="_blank" class="btn btn-primary btn-sm">PDF</a>
+          
+        
+  
+        
+  
+        <!-- Ensure Correct Bootstrap 5 Attributes -->
+        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-choi_ccsc2023async" aria-expanded="false" aria-controls="bibtex-choi_ccsc2023async">BIB</button>
+  
+        
+      </div>
+  
+      <!-- Collapsible BibTeX -->
+      <div class="collapse mt-3" id="bibtex-choi_ccsc2023async">
+        <div class="card card-body">
+          <pre>@conference{choi_ccsc2023async,
   address = {Overland Park, Kansas},
   author = {Choi, Jaehyeok and Danner, Jacob and Rongere, Riley and Kelly, Blythe and Valdenebro, Gonzalo and Manley, Eric},
   booktitle = {Consortium for Computing Sciences in Colleges Central Plains Regional Conference},
@@ -3023,80 +1866,44 @@ pre{
   keywords = {student}
 }
 </pre>
-</div>
-
-
-<div id="bchoi_ccsc2023async" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre></pre>
-</div>
-
-<script>
-function toggleBibtexchoi_ccsc2023async(parameter) {
-    var x= document.getElementById('achoi_ccsc2023async');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function toggleAbstractchoi_ccsc2023async(parameter) {
-    var x= document.getElementById('bchoi_ccsc2023async');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
+        </div>
+      </div>
+  
+      <!-- Collapsible Abstract -->
+      
+    </div>
+  </div>
 </li>
-<li><style>
-.btn{
-    margin-bottom:5px;
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    height:20px
-}
-
-pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; overflow-x:auto;
-}
-</style>
-
-
-<div class="text-justify"><span id="kelly_ccsc2023serverless">Kelly, B., Choi, J., &amp; Manley, E. (2023, April). Serverless Dashboard for Bank Call Report Data Exploration. <i>Consortium for Computing Sciences in Colleges Central Plains Regional Conference</i>.</span></div>
-
-<!-- You can use the below to make your name bold -->
-<!-- <span id="kelly_ccsc2023serverless">Kelly, B., Choi, J., &amp; Manley, E. (2023, April). Serverless Dashboard for Bank Call Report Data Exploration. <i>Consortium for Computing Sciences in Colleges Central Plains Regional Conference</i>.</span></div> -->
-
-
-
-
-
+<li><div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <!-- Publication Reference -->
+      <p class="card-text text-justify">
+        <span id="kelly_ccsc2023serverless">Kelly, B., Choi, J., &amp; <b>Manley, E.</b> (2023, April). Serverless Dashboard for Bank Call Report Data Exploration. <i>Consortium for Computing Sciences in Colleges Central Plains Regional Conference</i>.</span>
+      </p>
   
-    <a href="https://ericmanley.github.io/papers/2023CCSC_ServerlessDashboard.pdf" target="_blank">
-      <button class="btn btn-primary btm-sm">PDF</button>
-    </a>
+      <!-- Buttons -->
+      <div class="d-flex flex-wrap gap-2 mt-2">
+        
+        
   
-
-
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleBibtexkelly_ccsc2023serverless()">BIB</button>
-
-
-
-
-
-<div id="akelly_ccsc2023serverless" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@conference{kelly_ccsc2023serverless,
+        
+          
+            <a href="https://ericmanley.github.io/papers/2023CCSC_ServerlessDashboard.pdf" target="_blank" class="btn btn-primary btn-sm">PDF</a>
+          
+        
+  
+        
+  
+        <!-- Ensure Correct Bootstrap 5 Attributes -->
+        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-kelly_ccsc2023serverless" aria-expanded="false" aria-controls="bibtex-kelly_ccsc2023serverless">BIB</button>
+  
+        
+      </div>
+  
+      <!-- Collapsible BibTeX -->
+      <div class="collapse mt-3" id="bibtex-kelly_ccsc2023serverless">
+        <div class="card card-body">
+          <pre>@conference{kelly_ccsc2023serverless,
   address = {Overland Park, Kansas},
   author = {Kelly, Blythe and Choi, Jaehyeok and Manley, Eric},
   booktitle = {Consortium for Computing Sciences in Colleges Central Plains Regional Conference},
@@ -3107,80 +1914,44 @@ pre{
   keywords = {student}
 }
 </pre>
-</div>
-
-
-<div id="bkelly_ccsc2023serverless" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre></pre>
-</div>
-
-<script>
-function toggleBibtexkelly_ccsc2023serverless(parameter) {
-    var x= document.getElementById('akelly_ccsc2023serverless');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function toggleAbstractkelly_ccsc2023serverless(parameter) {
-    var x= document.getElementById('bkelly_ccsc2023serverless');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
+        </div>
+      </div>
+  
+      <!-- Collapsible Abstract -->
+      
+    </div>
+  </div>
 </li>
-<li><style>
-.btn{
-    margin-bottom:5px;
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    height:20px
-}
-
-pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; overflow-x:auto;
-}
-</style>
-
-
-<div class="text-justify"><span id="betterman_ducurs2023">Betterman, J., Whitlow, K., Schlick, P., &amp; Manley, E. (2023, April). Evaluating Passing Metrics in Soccer. <i>Drake University Conference on Undergraduate Research in the Sciences</i>.</span></div>
-
-<!-- You can use the below to make your name bold -->
-<!-- <span id="betterman_ducurs2023">Betterman, J., Whitlow, K., Schlick, P., &amp; Manley, E. (2023, April). Evaluating Passing Metrics in Soccer. <i>Drake University Conference on Undergraduate Research in the Sciences</i>.</span></div> -->
-
-
-
-
-
+<li><div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <!-- Publication Reference -->
+      <p class="card-text text-justify">
+        <span id="betterman_ducurs2023">Betterman, J., Whitlow, K., Schlick, P., &amp; <b>Manley, E.</b> (2023, April). Evaluating Passing Metrics in Soccer. <i>Drake University Conference on Undergraduate Research in the Sciences</i>.</span>
+      </p>
   
-    <a href="https://ericmanley.github.io/papers/2023DUCURS_SoccerPassingMetrics.pdf" target="_blank">
-      <button class="btn btn-primary btm-sm">PDF</button>
-    </a>
+      <!-- Buttons -->
+      <div class="d-flex flex-wrap gap-2 mt-2">
+        
+        
   
-
-
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleBibtexbetterman_ducurs2023()">BIB</button>
-
-
-
-
-
-<div id="abetterman_ducurs2023" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@conference{betterman_ducurs2023,
+        
+          
+            <a href="https://ericmanley.github.io/papers/2023DUCURS_SoccerPassingMetrics.pdf" target="_blank" class="btn btn-primary btn-sm">PDF</a>
+          
+        
+  
+        
+  
+        <!-- Ensure Correct Bootstrap 5 Attributes -->
+        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-betterman_ducurs2023" aria-expanded="false" aria-controls="bibtex-betterman_ducurs2023">BIB</button>
+  
+        
+      </div>
+  
+      <!-- Collapsible BibTeX -->
+      <div class="collapse mt-3" id="bibtex-betterman_ducurs2023">
+        <div class="card card-body">
+          <pre>@conference{betterman_ducurs2023,
   address = {Des Moines, Iowa},
   author = {Betterman, Jordan and Whitlow, Kaden and Schlick, Parker and Manley, Eric},
   booktitle = {Drake University Conference on Undergraduate Research in the Sciences},
@@ -3191,80 +1962,44 @@ pre{
   keywords = {student}
 }
 </pre>
-</div>
-
-
-<div id="bbetterman_ducurs2023" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre></pre>
-</div>
-
-<script>
-function toggleBibtexbetterman_ducurs2023(parameter) {
-    var x= document.getElementById('abetterman_ducurs2023');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function toggleAbstractbetterman_ducurs2023(parameter) {
-    var x= document.getElementById('bbetterman_ducurs2023');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
+        </div>
+      </div>
+  
+      <!-- Collapsible Abstract -->
+      
+    </div>
+  </div>
 </li>
-<li><style>
-.btn{
-    margin-bottom:5px;
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    height:20px
-}
-
-pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; overflow-x:auto;
-}
-</style>
-
-
-<div class="text-justify"><span id="mathesius_ccsc2022machinelearning">Mathesius, K., Lear, A., Basala, S., Huelhorst, T., Dang, C., Manley, E., &amp; Severe, S. (2022, April). Machine Learning for Bank Failure Early Warning Systems. <i>Consortium for Computing Sciences in Colleges Central Plains Regional Conference</i>.</span></div>
-
-<!-- You can use the below to make your name bold -->
-<!-- <span id="mathesius_ccsc2022machinelearning">Mathesius, K., Lear, A., Basala, S., Huelhorst, T., Dang, C., Manley, E., &amp; Severe, S. (2022, April). Machine Learning for Bank Failure Early Warning Systems. <i>Consortium for Computing Sciences in Colleges Central Plains Regional Conference</i>.</span></div> -->
-
-
-
-
-
+<li><div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <!-- Publication Reference -->
+      <p class="card-text text-justify">
+        <span id="mathesius_ccsc2022machinelearning">Mathesius, K., Lear, A., Basala, S., Huelhorst, T., Dang, C., <b>Manley, E.</b>, &amp; Severe, S. (2022, April). Machine Learning for Bank Failure Early Warning Systems. <i>Consortium for Computing Sciences in Colleges Central Plains Regional Conference</i>.</span>
+      </p>
   
-    <a href="https://ericmanley.github.io/papers/2022CCSC_MLBankFailure.pdf" target="_blank">
-      <button class="btn btn-primary btm-sm">PDF</button>
-    </a>
+      <!-- Buttons -->
+      <div class="d-flex flex-wrap gap-2 mt-2">
+        
+        
   
-
-
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleBibtexmathesius_ccsc2022machinelearning()">BIB</button>
-
-
-
-
-
-<div id="amathesius_ccsc2022machinelearning" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@conference{mathesius_ccsc2022machinelearning,
+        
+          
+            <a href="https://ericmanley.github.io/papers/2022CCSC_MLBankFailure.pdf" target="_blank" class="btn btn-primary btn-sm">PDF</a>
+          
+        
+  
+        
+  
+        <!-- Ensure Correct Bootstrap 5 Attributes -->
+        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-mathesius_ccsc2022machinelearning" aria-expanded="false" aria-controls="bibtex-mathesius_ccsc2022machinelearning">BIB</button>
+  
+        
+      </div>
+  
+      <!-- Collapsible BibTeX -->
+      <div class="collapse mt-3" id="bibtex-mathesius_ccsc2022machinelearning">
+        <div class="card card-body">
+          <pre>@conference{mathesius_ccsc2022machinelearning,
   address = {Springfield, Missouri},
   author = {Mathesius, Katja and Lear, Adam and Basala, Sam and Huelhorst, Tommy and Dang, Chi and Manley, Eric and Severe, Sean},
   booktitle = {Consortium for Computing Sciences in Colleges Central Plains Regional Conference},
@@ -3277,80 +2012,44 @@ pre{
   keywords = {student}
 }
 </pre>
-</div>
-
-
-<div id="bmathesius_ccsc2022machinelearning" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre></pre>
-</div>
-
-<script>
-function toggleBibtexmathesius_ccsc2022machinelearning(parameter) {
-    var x= document.getElementById('amathesius_ccsc2022machinelearning');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function toggleAbstractmathesius_ccsc2022machinelearning(parameter) {
-    var x= document.getElementById('bmathesius_ccsc2022machinelearning');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
+        </div>
+      </div>
+  
+      <!-- Collapsible Abstract -->
+      
+    </div>
+  </div>
 </li>
-<li><style>
-.btn{
-    margin-bottom:5px;
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    height:20px
-}
-
-pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; overflow-x:auto;
-}
-</style>
-
-
-<div class="text-justify"><span id="choi_ccsc2022api">Choi, J., Danner, J., Manley, E., &amp; Severe, S. (2022, April). API and Web App for Bank Failure Database. <i>Consortium for Computing Sciences in Colleges Central Plains Regional Conference</i>.</span></div>
-
-<!-- You can use the below to make your name bold -->
-<!-- <span id="choi_ccsc2022api">Choi, J., Danner, J., Manley, E., &amp; Severe, S. (2022, April). API and Web App for Bank Failure Database. <i>Consortium for Computing Sciences in Colleges Central Plains Regional Conference</i>.</span></div> -->
-
-
-
-
-
+<li><div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <!-- Publication Reference -->
+      <p class="card-text text-justify">
+        <span id="choi_ccsc2022api">Choi, J., Danner, J., <b>Manley, E.</b>, &amp; Severe, S. (2022, April). API and Web App for Bank Failure Database. <i>Consortium for Computing Sciences in Colleges Central Plains Regional Conference</i>.</span>
+      </p>
   
-    <a href="https://ericmanley.github.io/papers/2022CCSC_BankFailureAPIAppDatabase.pdf" target="_blank">
-      <button class="btn btn-primary btm-sm">PDF</button>
-    </a>
+      <!-- Buttons -->
+      <div class="d-flex flex-wrap gap-2 mt-2">
+        
+        
   
-
-
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleBibtexchoi_ccsc2022api()">BIB</button>
-
-
-
-
-
-<div id="achoi_ccsc2022api" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@conference{choi_ccsc2022api,
+        
+          
+            <a href="https://ericmanley.github.io/papers/2022CCSC_BankFailureAPIAppDatabase.pdf" target="_blank" class="btn btn-primary btn-sm">PDF</a>
+          
+        
+  
+        
+  
+        <!-- Ensure Correct Bootstrap 5 Attributes -->
+        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-choi_ccsc2022api" aria-expanded="false" aria-controls="bibtex-choi_ccsc2022api">BIB</button>
+  
+        
+      </div>
+  
+      <!-- Collapsible BibTeX -->
+      <div class="collapse mt-3" id="bibtex-choi_ccsc2022api">
+        <div class="card card-body">
+          <pre>@conference{choi_ccsc2022api,
   address = {Springfield, Missouri},
   author = {Choi, Jaehyoek and Danner, Jacob and Manley, Eric and Severe, Sean},
   booktitle = {Consortium for Computing Sciences in Colleges Central Plains Regional Conference},
@@ -3363,74 +2062,40 @@ pre{
   keywords = {student}
 }
 </pre>
-</div>
-
-
-<div id="bchoi_ccsc2022api" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre></pre>
-</div>
-
-<script>
-function toggleBibtexchoi_ccsc2022api(parameter) {
-    var x= document.getElementById('achoi_ccsc2022api');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function toggleAbstractchoi_ccsc2022api(parameter) {
-    var x= document.getElementById('bchoi_ccsc2022api');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
+        </div>
+      </div>
+  
+      <!-- Collapsible Abstract -->
+      
+    </div>
+  </div>
 </li>
-<li><style>
-.btn{
-    margin-bottom:5px;
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    height:20px
-}
-
-pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; overflow-x:auto;
-}
-</style>
-
-
-<div class="text-justify"><span id="madison_ccsc2020diffeq">Madison, D., Pendleton, T., &amp; Manley, E. D. (2020). Improving the Efficiency of Using Artificial Neural Networks to Solve Ordinary Differential Equations. <i>Accepted in Consortium for Computing Sciences in Colleges Central Plains Regional Conference, <i>Conference Cancelled Due to COVID-19</i></i>.</span></div>
-
-<!-- You can use the below to make your name bold -->
-<!-- <span id="madison_ccsc2020diffeq">Madison, D., Pendleton, T., &amp; Manley, E. D. (2020). Improving the Efficiency of Using Artificial Neural Networks to Solve Ordinary Differential Equations. <i>Accepted in Consortium for Computing Sciences in Colleges Central Plains Regional Conference, <i>Conference Cancelled Due to COVID-19</i></i>.</span></div> -->
-
-
-
-
-
-
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleBibtexmadison_ccsc2020diffeq()">BIB</button>
-
-
-
-
-
-<div id="amadison_ccsc2020diffeq" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@conference{madison_ccsc2020diffeq,
+<li><div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <!-- Publication Reference -->
+      <p class="card-text text-justify">
+        <span id="madison_ccsc2020diffeq">Madison, D., Pendleton, T., &amp; <b><b>Manley, E.</b> D.</b> (2020). Improving the Efficiency of Using Artificial Neural Networks to Solve Ordinary Differential Equations. <i>Accepted in Consortium for Computing Sciences in Colleges Central Plains Regional Conference, <i>Conference Cancelled Due to COVID-19</i></i>.</span>
+      </p>
+  
+      <!-- Buttons -->
+      <div class="d-flex flex-wrap gap-2 mt-2">
+        
+        
+  
+        
+  
+        
+  
+        <!-- Ensure Correct Bootstrap 5 Attributes -->
+        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-madison_ccsc2020diffeq" aria-expanded="false" aria-controls="bibtex-madison_ccsc2020diffeq">BIB</button>
+  
+        
+      </div>
+  
+      <!-- Collapsible BibTeX -->
+      <div class="collapse mt-3" id="bibtex-madison_ccsc2020diffeq">
+        <div class="card card-body">
+          <pre>@conference{madison_ccsc2020diffeq,
   author = {Madison, Daniel and Pendleton, Terrance and Manley, Eric D.},
   booktitle = {Accepted in Consortium for Computing Sciences in Colleges Central Plains Regional Conference, \emph{conference cancelled due to COVID-19}},
   date-added = {2021-01-14 17:52:17 +0000},
@@ -3440,74 +2105,40 @@ pre{
   keywords = {student}
 }
 </pre>
-</div>
-
-
-<div id="bmadison_ccsc2020diffeq" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre></pre>
-</div>
-
-<script>
-function toggleBibtexmadison_ccsc2020diffeq(parameter) {
-    var x= document.getElementById('amadison_ccsc2020diffeq');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function toggleAbstractmadison_ccsc2020diffeq(parameter) {
-    var x= document.getElementById('bmadison_ccsc2020diffeq');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
+        </div>
+      </div>
+  
+      <!-- Collapsible Abstract -->
+      
+    </div>
+  </div>
 </li>
-<li><style>
-.btn{
-    margin-bottom:5px;
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    height:20px
-}
-
-pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; overflow-x:auto;
-}
-</style>
-
-
-<div class="text-justify"><span id="dannenmueller_ccsc2020sound">Dannenmueller, B., &amp; Manley, E. D. (2020). Urban Sound Tagging With Neural Architecture Search. <i>Accepted in Consortium for Computing Sciences in Colleges Central Plains Regional Conference, <i>Conference Cancelled Due to COVID-19</i></i>.</span></div>
-
-<!-- You can use the below to make your name bold -->
-<!-- <span id="dannenmueller_ccsc2020sound">Dannenmueller, B., &amp; Manley, E. D. (2020). Urban Sound Tagging With Neural Architecture Search. <i>Accepted in Consortium for Computing Sciences in Colleges Central Plains Regional Conference, <i>Conference Cancelled Due to COVID-19</i></i>.</span></div> -->
-
-
-
-
-
-
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleBibtexdannenmueller_ccsc2020sound()">BIB</button>
-
-
-
-
-
-<div id="adannenmueller_ccsc2020sound" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@conference{dannenmueller_ccsc2020sound,
+<li><div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <!-- Publication Reference -->
+      <p class="card-text text-justify">
+        <span id="dannenmueller_ccsc2020sound">Dannenmueller, B., &amp; <b><b>Manley, E.</b> D.</b> (2020). Urban Sound Tagging With Neural Architecture Search. <i>Accepted in Consortium for Computing Sciences in Colleges Central Plains Regional Conference, <i>Conference Cancelled Due to COVID-19</i></i>.</span>
+      </p>
+  
+      <!-- Buttons -->
+      <div class="d-flex flex-wrap gap-2 mt-2">
+        
+        
+  
+        
+  
+        
+  
+        <!-- Ensure Correct Bootstrap 5 Attributes -->
+        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-dannenmueller_ccsc2020sound" aria-expanded="false" aria-controls="bibtex-dannenmueller_ccsc2020sound">BIB</button>
+  
+        
+      </div>
+  
+      <!-- Collapsible BibTeX -->
+      <div class="collapse mt-3" id="bibtex-dannenmueller_ccsc2020sound">
+        <div class="card card-body">
+          <pre>@conference{dannenmueller_ccsc2020sound,
   author = {Dannenmueller, Brian and Manley, Eric D.},
   booktitle = {Accepted in Consortium for Computing Sciences in Colleges Central Plains Regional Conference, \emph{conference cancelled due to COVID-19}},
   date-added = {2021-01-14 17:49:12 +0000},
@@ -3517,80 +2148,44 @@ pre{
   keywords = {student}
 }
 </pre>
-</div>
-
-
-<div id="bdannenmueller_ccsc2020sound" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre></pre>
-</div>
-
-<script>
-function toggleBibtexdannenmueller_ccsc2020sound(parameter) {
-    var x= document.getElementById('adannenmueller_ccsc2020sound');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function toggleAbstractdannenmueller_ccsc2020sound(parameter) {
-    var x= document.getElementById('bdannenmueller_ccsc2020sound');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
+        </div>
+      </div>
+  
+      <!-- Collapsible Abstract -->
+      
+    </div>
+  </div>
 </li>
-<li><style>
-.btn{
-    margin-bottom:5px;
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    height:20px
-}
-
-pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; overflow-x:auto;
-}
-</style>
-
-
-<div class="text-justify"><span id="afriyie_ccsc2018">Afriyie, J., Camson, L., &amp; Manley, E. (2018, April). Memory Constrained Camera Based Obstacle Detection for Autonomous Vehicle Navigation. <i>Consortium for Computing Sciences in Colleges Central Plains Regional Conference</i>.</span></div>
-
-<!-- You can use the below to make your name bold -->
-<!-- <span id="afriyie_ccsc2018">Afriyie, J., Camson, L., &amp; Manley, E. (2018, April). Memory Constrained Camera Based Obstacle Detection for Autonomous Vehicle Navigation. <i>Consortium for Computing Sciences in Colleges Central Plains Regional Conference</i>.</span></div> -->
-
-
-
-
-
+<li><div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <!-- Publication Reference -->
+      <p class="card-text text-justify">
+        <span id="afriyie_ccsc2018">Afriyie, J., Camson, L., &amp; <b>Manley, E.</b> (2018, April). Memory Constrained Camera Based Obstacle Detection for Autonomous Vehicle Navigation. <i>Consortium for Computing Sciences in Colleges Central Plains Regional Conference</i>.</span>
+      </p>
   
-    <a href="https://ericmanley.github.io/papers/2018CCSC_VehicleNavigation.pdf" target="_blank">
-      <button class="btn btn-primary btm-sm">PDF</button>
-    </a>
+      <!-- Buttons -->
+      <div class="d-flex flex-wrap gap-2 mt-2">
+        
+        
   
-
-
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleBibtexafriyie_ccsc2018()">BIB</button>
-
-
-
-
-
-<div id="aafriyie_ccsc2018" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@inproceedings{afriyie_ccsc2018,
+        
+          
+            <a href="https://ericmanley.github.io/papers/2018CCSC_VehicleNavigation.pdf" target="_blank" class="btn btn-primary btn-sm">PDF</a>
+          
+        
+  
+        
+  
+        <!-- Ensure Correct Bootstrap 5 Attributes -->
+        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-afriyie_ccsc2018" aria-expanded="false" aria-controls="bibtex-afriyie_ccsc2018">BIB</button>
+  
+        
+      </div>
+  
+      <!-- Collapsible BibTeX -->
+      <div class="collapse mt-3" id="bibtex-afriyie_ccsc2018">
+        <div class="card card-body">
+          <pre>@inproceedings{afriyie_ccsc2018,
   address = {Maryville, Missouri},
   author = {Afriyie, Joel and Camson, Lhito and Manley, Eric},
   booktitle = {Consortium for Computing Sciences in Colleges Central Plains Regional Conference},
@@ -3601,80 +2196,44 @@ pre{
   keywords = {student}
 }
 </pre>
-</div>
-
-
-<div id="bafriyie_ccsc2018" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre></pre>
-</div>
-
-<script>
-function toggleBibtexafriyie_ccsc2018(parameter) {
-    var x= document.getElementById('aafriyie_ccsc2018');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function toggleAbstractafriyie_ccsc2018(parameter) {
-    var x= document.getElementById('bafriyie_ccsc2018');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
+        </div>
+      </div>
+  
+      <!-- Collapsible Abstract -->
+      
+    </div>
+  </div>
 </li>
-<li><style>
-.btn{
-    margin-bottom:5px;
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    height:20px
-}
-
-pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; overflow-x:auto;
-}
-</style>
-
-
-<div class="text-justify"><span id="gaya_ccsc2017lips">Gaya, M., Mascharka, D., Afriyie, J., Steffens, J., Sherman, D., &amp; Manley, E. (2017, March). Adaptive Cloud-based Indoor Positioning System Using WiFi Fingerprints. <i>Consortium for Computing Sciences in Colleges Central Plains Regional Conference</i>.</span></div>
-
-<!-- You can use the below to make your name bold -->
-<!-- <span id="gaya_ccsc2017lips">Gaya, M., Mascharka, D., Afriyie, J., Steffens, J., Sherman, D., &amp; Manley, E. (2017, March). Adaptive Cloud-based Indoor Positioning System Using WiFi Fingerprints. <i>Consortium for Computing Sciences in Colleges Central Plains Regional Conference</i>.</span></div> -->
-
-
-
-
-
+<li><div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <!-- Publication Reference -->
+      <p class="card-text text-justify">
+        <span id="gaya_ccsc2017lips">Gaya, M., Mascharka, D., Afriyie, J., Steffens, J., Sherman, D., &amp; <b>Manley, E.</b> (2017, March). Adaptive Cloud-based Indoor Positioning System Using WiFi Fingerprints. <i>Consortium for Computing Sciences in Colleges Central Plains Regional Conference</i>.</span>
+      </p>
   
-    <a href="https://ericmanley.github.io/papers/2017CCSC_IndoorGPS.pdf" target="_blank">
-      <button class="btn btn-primary btm-sm">PDF</button>
-    </a>
+      <!-- Buttons -->
+      <div class="d-flex flex-wrap gap-2 mt-2">
+        
+        
   
-
-
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleBibtexgaya_ccsc2017lips()">BIB</button>
-
-
-
-
-
-<div id="agaya_ccsc2017lips" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@inproceedings{gaya_ccsc2017lips,
+        
+          
+            <a href="https://ericmanley.github.io/papers/2017CCSC_IndoorGPS.pdf" target="_blank" class="btn btn-primary btn-sm">PDF</a>
+          
+        
+  
+        
+  
+        <!-- Ensure Correct Bootstrap 5 Attributes -->
+        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-gaya_ccsc2017lips" aria-expanded="false" aria-controls="bibtex-gaya_ccsc2017lips">BIB</button>
+  
+        
+      </div>
+  
+      <!-- Collapsible BibTeX -->
+      <div class="collapse mt-3" id="bibtex-gaya_ccsc2017lips">
+        <div class="card card-body">
+          <pre>@inproceedings{gaya_ccsc2017lips,
   address = {Lincoln, Nebraska},
   author = {Gaya, Mahesh and Mascharka, David and Afriyie, Joel and Steffens, Jennifer and Sherman, Dominic and Manley, Eric},
   booktitle = {Consortium for Computing Sciences in Colleges Central Plains Regional Conference},
@@ -3685,80 +2244,44 @@ pre{
   keywords = {student}
 }
 </pre>
-</div>
-
-
-<div id="bgaya_ccsc2017lips" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre></pre>
-</div>
-
-<script>
-function toggleBibtexgaya_ccsc2017lips(parameter) {
-    var x= document.getElementById('agaya_ccsc2017lips');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function toggleAbstractgaya_ccsc2017lips(parameter) {
-    var x= document.getElementById('bgaya_ccsc2017lips');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
+        </div>
+      </div>
+  
+      <!-- Collapsible Abstract -->
+      
+    </div>
+  </div>
 </li>
-<li><style>
-.btn{
-    margin-bottom:5px;
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    height:20px
-}
-
-pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; overflow-x:auto;
-}
-</style>
-
-
-<div class="text-justify"><span id="steffens_ccsc2017twitter">Steffins, J., Kulash, A., Manley, E. D., &amp; Urness, T. (2017, March). Predicting 2016 U.S. Presidential Candidate Success Using Twitter and Machine Learning (<i>Best Student Paper Award</i>). <i>Consortium for Computing Sciences in Colleges Central Plains Regional Conference</i>.</span></div>
-
-<!-- You can use the below to make your name bold -->
-<!-- <span id="steffens_ccsc2017twitter">Steffins, J., Kulash, A., Manley, E. D., &amp; Urness, T. (2017, March). Predicting 2016 U.S. Presidential Candidate Success Using Twitter and Machine Learning (<i>Best Student Paper Award</i>). <i>Consortium for Computing Sciences in Colleges Central Plains Regional Conference</i>.</span></div> -->
-
-
-
-
-
+<li><div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <!-- Publication Reference -->
+      <p class="card-text text-justify">
+        <span id="steffens_ccsc2017twitter">Steffins, J., Kulash, A., <b><b>Manley, E.</b> D.</b>, &amp; Urness, T. (2017, March). Predicting 2016 U.S. Presidential Candidate Success Using Twitter and Machine Learning (<i>Best Student Paper Award</i>). <i>Consortium for Computing Sciences in Colleges Central Plains Regional Conference</i>.</span>
+      </p>
   
-    <a href="https://ericmanley.github.io/papers/2017CCSC_PredictingElectionTwitterData.pdf" target="_blank">
-      <button class="btn btn-primary btm-sm">PDF</button>
-    </a>
+      <!-- Buttons -->
+      <div class="d-flex flex-wrap gap-2 mt-2">
+        
+        
   
-
-
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleBibtexsteffens_ccsc2017twitter()">BIB</button>
-
-
-
-
-
-<div id="asteffens_ccsc2017twitter" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@inproceedings{steffens_ccsc2017twitter,
+        
+          
+            <a href="https://ericmanley.github.io/papers/2017CCSC_PredictingElectionTwitterData.pdf" target="_blank" class="btn btn-primary btn-sm">PDF</a>
+          
+        
+  
+        
+  
+        <!-- Ensure Correct Bootstrap 5 Attributes -->
+        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-steffens_ccsc2017twitter" aria-expanded="false" aria-controls="bibtex-steffens_ccsc2017twitter">BIB</button>
+  
+        
+      </div>
+  
+      <!-- Collapsible BibTeX -->
+      <div class="collapse mt-3" id="bibtex-steffens_ccsc2017twitter">
+        <div class="card card-body">
+          <pre>@inproceedings{steffens_ccsc2017twitter,
   address = {Lincoln, Nebraska},
   author = {Steffins, Jennifer and Kulash, Alexis and Manley, Eric D. and Urness, Timothy},
   booktitle = {Consortium for Computing Sciences in Colleges Central Plains Regional Conference},
@@ -3770,83 +2293,47 @@ pre{
   keywords = {student}
 }
 </pre>
-</div>
-
-
-<div id="bsteffens_ccsc2017twitter" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre></pre>
-</div>
-
-<script>
-function toggleBibtexsteffens_ccsc2017twitter(parameter) {
-    var x= document.getElementById('asteffens_ccsc2017twitter');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function toggleAbstractsteffens_ccsc2017twitter(parameter) {
-    var x= document.getElementById('bsteffens_ccsc2017twitter');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
+        </div>
+      </div>
+  
+      <!-- Collapsible Abstract -->
+      
+    </div>
+  </div>
 </li>
-<li><style>
-.btn{
-    margin-bottom:5px;
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    height:20px
-}
-
-pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; overflow-x:auto;
-}
-</style>
-
-
-<div class="text-justify"><span id="gormley_mics2014">Gormley, J., &amp; Manley, E. D. (2014, April). Multicast Network Coded Flow in Grid Graphs. <i>Proceedings of the Midwest Instruction &amp; Computing Symposium</i>.</span></div>
-
-<!-- You can use the below to make your name bold -->
-<!-- <span id="gormley_mics2014">Gormley, J., &amp; Manley, E. D. (2014, April). Multicast Network Coded Flow in Grid Graphs. <i>Proceedings of the Midwest Instruction &amp; Computing Symposium</i>.</span></div> -->
-
-
-
-
-
+<li><div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <!-- Publication Reference -->
+      <p class="card-text text-justify">
+        <span id="gormley_mics2014">Gormley, J., &amp; <b><b>Manley, E.</b> D.</b> (2014, April). Multicast Network Coded Flow in Grid Graphs. <i>Proceedings of the Midwest Instruction &amp; Computing Symposium</i>.</span>
+      </p>
   
-    <a href="http://www.micsymposium.org/mics2014/ProceedingsMICS_2014/mics2014_submission_19.pdf" target="_blank">
-      <button class="btn btn-primary btm-sm">PDF</button>
-    </a>
+      <!-- Buttons -->
+      <div class="d-flex flex-wrap gap-2 mt-2">
+        
+        
   
-
-
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleBibtexgormley_mics2014()">BIB</button>
-
-
-
-
-
-<div id="agormley_mics2014" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@inproceedings{gormley_mics2014,
+        
+          
+            <a href="http://www.micsymposium.org/mics2014/ProceedingsMICS_2014/mics2014_submission_19.pdf" target="_blank" class="btn btn-primary btn-sm">PDF</a>
+          
+        
+  
+        
+  
+        <!-- Ensure Correct Bootstrap 5 Attributes -->
+        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-gormley_mics2014" aria-expanded="false" aria-controls="bibtex-gormley_mics2014">BIB</button>
+  
+        
+      </div>
+  
+      <!-- Collapsible BibTeX -->
+      <div class="collapse mt-3" id="bibtex-gormley_mics2014">
+        <div class="card card-body">
+          <pre>@inproceedings{gormley_mics2014,
   address = {Verona, Wisconsin},
   author = {Gormley, John and Manley, Eric D.},
-  booktitle = {Proceedings of the Midwest Instruction \&amp; Computing Symposium},
+  booktitle = {Proceedings of the Midwest Instruction \& Computing Symposium},
   month = apr,
   title = {Multicast Network Coded Flow in Grid Graphs},
   year = {2014},
@@ -3854,80 +2341,44 @@ pre{
   keywords = {student}
 }
 </pre>
-</div>
-
-
-<div id="bgormley_mics2014" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre></pre>
-</div>
-
-<script>
-function toggleBibtexgormley_mics2014(parameter) {
-    var x= document.getElementById('agormley_mics2014');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function toggleAbstractgormley_mics2014(parameter) {
-    var x= document.getElementById('bgormley_mics2014');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
+        </div>
+      </div>
+  
+      <!-- Collapsible Abstract -->
+      
+    </div>
+  </div>
 </li>
-<li><style>
-.btn{
-    margin-bottom:5px;
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    height:20px
-}
-
-pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; overflow-x:auto;
-}
-</style>
-
-
-<div class="text-justify"><span id="holcomb_mighty2012">Holcomb, D., Manley, E. D., Grout, J., &amp; Hoyer, A. (2012, September). On the Integral Coding Advantage in Unit Combination Networks. <i>Midwestern Graph Theory Conference (MIGHTY)</i>.</span></div>
-
-<!-- You can use the below to make your name bold -->
-<!-- <span id="holcomb_mighty2012">Holcomb, D., Manley, E. D., Grout, J., &amp; Hoyer, A. (2012, September). On the Integral Coding Advantage in Unit Combination Networks. <i>Midwestern Graph Theory Conference (MIGHTY)</i>.</span></div> -->
-
-
-
-
-
+<li><div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <!-- Publication Reference -->
+      <p class="card-text text-justify">
+        <span id="holcomb_mighty2012">Holcomb, D., <b><b>Manley, E.</b> D.</b>, Grout, J., &amp; Hoyer, A. (2012, September). On the Integral Coding Advantage in Unit Combination Networks. <i>Midwestern Graph Theory Conference (MIGHTY)</i>.</span>
+      </p>
   
-    <a href="http://escholarshare.drake.edu/bitstream/handle/2092/2059/Manley2012.09.pdf" target="_blank">
-      <button class="btn btn-primary btm-sm">PDF</button>
-    </a>
+      <!-- Buttons -->
+      <div class="d-flex flex-wrap gap-2 mt-2">
+        
+        
   
-
-
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleBibtexholcomb_mighty2012()">BIB</button>
-
-
-
-
-
-<div id="aholcomb_mighty2012" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@conference{holcomb_mighty2012,
+        
+          
+            <a href="http://escholarshare.drake.edu/bitstream/handle/2092/2059/Manley2012.09.pdf" target="_blank" class="btn btn-primary btn-sm">PDF</a>
+          
+        
+  
+        
+  
+        <!-- Ensure Correct Bootstrap 5 Attributes -->
+        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-holcomb_mighty2012" aria-expanded="false" aria-controls="bibtex-holcomb_mighty2012">BIB</button>
+  
+        
+      </div>
+  
+      <!-- Collapsible BibTeX -->
+      <div class="collapse mt-3" id="bibtex-holcomb_mighty2012">
+        <div class="card card-body">
+          <pre>@conference{holcomb_mighty2012,
   author = {Holcomb, David and Manley, Eric D. and Grout, Jason and Hoyer, Alex},
   booktitle = {Midwestern Graph Theory Conference (MIGHTY)},
   month = sep,
@@ -3937,83 +2388,47 @@ pre{
   keywords = {student}
 }
 </pre>
-</div>
-
-
-<div id="bholcomb_mighty2012" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre></pre>
-</div>
-
-<script>
-function toggleBibtexholcomb_mighty2012(parameter) {
-    var x= document.getElementById('aholcomb_mighty2012');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function toggleAbstractholcomb_mighty2012(parameter) {
-    var x= document.getElementById('bholcomb_mighty2012');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
+        </div>
+      </div>
+  
+      <!-- Collapsible Abstract -->
+      
+    </div>
+  </div>
 </li>
-<li><style>
-.btn{
-    margin-bottom:5px;
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-left:15px;
-    padding-right:15px;
-    height:20px
-}
-
-pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; overflow-x:auto;
-}
-</style>
-
-
-<div class="text-justify"><span id="janssen_mics2011">Janssen, W., &amp; Manley, E. D. (2011, April). Classifying Networks for Network Coding. <i>Proceedings of the Midwest Instruction &amp; Computing Symposium</i>.</span></div>
-
-<!-- You can use the below to make your name bold -->
-<!-- <span id="janssen_mics2011">Janssen, W., &amp; Manley, E. D. (2011, April). Classifying Networks for Network Coding. <i>Proceedings of the Midwest Instruction &amp; Computing Symposium</i>.</span></div> -->
-
-
-
-
-
+<li><div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <!-- Publication Reference -->
+      <p class="card-text text-justify">
+        <span id="janssen_mics2011">Janssen, W., &amp; <b><b>Manley, E.</b> D.</b> (2011, April). Classifying Networks for Network Coding. <i>Proceedings of the Midwest Instruction &amp; Computing Symposium</i>.</span>
+      </p>
   
-    <a href="http://escholarshare.drake.edu/bitstream/handle/2092/2058/Manley2011.04.pdf" target="_blank">
-      <button class="btn btn-primary btm-sm">PDF</button>
-    </a>
+      <!-- Buttons -->
+      <div class="d-flex flex-wrap gap-2 mt-2">
+        
+        
   
-
-
-
-
-
-<button class="btn btn-primary btm-sm" onclick="toggleBibtexjanssen_mics2011()">BIB</button>
-
-
-
-
-
-<div id="ajanssen_mics2011" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@inproceedings{janssen_mics2011,
+        
+          
+            <a href="http://escholarshare.drake.edu/bitstream/handle/2092/2058/Manley2011.04.pdf" target="_blank" class="btn btn-primary btn-sm">PDF</a>
+          
+        
+  
+        
+  
+        <!-- Ensure Correct Bootstrap 5 Attributes -->
+        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-janssen_mics2011" aria-expanded="false" aria-controls="bibtex-janssen_mics2011">BIB</button>
+  
+        
+      </div>
+  
+      <!-- Collapsible BibTeX -->
+      <div class="collapse mt-3" id="bibtex-janssen_mics2011">
+        <div class="card card-body">
+          <pre>@inproceedings{janssen_mics2011,
   address = {Duluth, Minnesota},
   author = {Janssen, William and Manley, Eric D.},
-  booktitle = {Proceedings of the Midwest Instruction \&amp; Computing Symposium},
+  booktitle = {Proceedings of the Midwest Instruction \& Computing Symposium},
   month = apr,
   title = {Classifying Networks for Network Coding},
   year = {2011},
@@ -4021,34 +2436,17 @@ pre{
   keywords = {student}
 }
 </pre>
-</div>
-
-
-<div id="bjanssen_mics2011" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre></pre>
-</div>
-
-<script>
-function toggleBibtexjanssen_mics2011(parameter) {
-    var x= document.getElementById('ajanssen_mics2011');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-function toggleAbstractjanssen_mics2011(parameter) {
-    var x= document.getElementById('bjanssen_mics2011');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
+        </div>
+      </div>
+  
+      <!-- Collapsible Abstract -->
+      
+    </div>
+  </div>
 </li></ol>
   </div>
 </div>
+
 
 
 </div>
@@ -4084,6 +2482,25 @@ function toggleAbstractjanssen_mics2011(parameter) {
 <script src="/assets/javascript/bootstrap/bootstrap.bundle.min.js"></script>
 
 
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll('[data-bs-toggle="collapse"]').forEach(button => {
+          button.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevents interference from other scripts
+            let target = document.querySelector(this.getAttribute("data-bs-target"));
+            if (target) {
+              let bsCollapse = bootstrap.Collapse.getInstance(target);
+              if (bsCollapse) {
+                bsCollapse.toggle();
+              } else {
+                new bootstrap.Collapse(target).toggle();
+              }
+            }
+          });
+        });
+      });
+    </script>
   </body>
 
 </html>
