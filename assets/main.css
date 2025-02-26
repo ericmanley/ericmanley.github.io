@@ -245,7 +245,16 @@ ol.bibliography {
 }
 
 .icon-square i {
-  font-size: 2.25em; /* Adjust icon size */
+  font-size: 2.25em;
+  line-height: 1; /* Ensures consistent vertical alignment */
+}
+
+.icon-square .bi {
+  font-size: 2.25em;
+  width: auto;
+  height: 1em;
+  display: inline-block;
+  vertical-align: middle; /* Aligns the Bootstrap icon */
 }
 
 /*# sourceMappingURL=main.css.map */
