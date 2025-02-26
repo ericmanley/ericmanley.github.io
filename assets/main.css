@@ -233,4 +233,19 @@ ol.bibliography {
   padding-left: 0 !important;
 }
 
+.icon-square {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75em; /* Adjust as needed */
+  height: 2.75em;
+  background-color: #03a5fc; /* Adjust color */
+  color: #FFF;
+  border-radius: 5px; /* Optional: rounded corners */
+}
+
+.icon-square i {
+  font-size: 2.25em; /* Adjust icon size */
+}
+
 /*# sourceMappingURL=main.css.map */
