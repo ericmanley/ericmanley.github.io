@@ -9,10 +9,6 @@ body a:not(.navbar-brand):not(.nav-link):not(.btn):hover {
   text-decoration: underline !important;
 }
 
-img {
-  border-radius: 5%;
-}
-
 .jumbotron {
   padding: 20px;
   padding-bottom: 7px;
