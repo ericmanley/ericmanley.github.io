@@ -24,15 +24,16 @@
 
 
 @inproceedings{reza_wacv2025,
-	author = {Md. Alimoor Reza and Eric D. Manley and Sean Chen and Sameer Chaudhary and Jacob Elafros},
-	title = {{SegBuilder}: A Semi-automatic Annotation Tool for Segmentation},
-	booktitle = {IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) \emph{(to appear)}},
-	year = {2025},
-	month = {Feb-Mar},
-	address = {Tucson, Arizona},
+    author    = {Reza, Md Alimoor and Manley, Eric and Chen, Sean and Chaudhary, Sameer and Elafros, Jacob},
+    title     = {SegBuilder: A Semi-Automatic Annotation Tool for Segmentation},
+    booktitle = {Proceedings of the Winter Conference on Applications of Computer Vision (WACV)},
+    month     = {February},
+    year      = {2025},
+    pages     = {8483-8492},
 	file = {2025WACV_SegBuilder.pdf},
 	image = {/images/segbuilder_thumb.png},
-	keywords = {published},
+	code = {https://github.com/alimoorreza/segbuilder-v1},
+	keywords = {published,segbuilder},
 	abstract = {This paper addresses the problem of image annotation for segmentation tasks. Semantic segmentation involves labeling each pixel in an image with predefined categories, such as sky, cars, roads, and humans. Deep learning models require numerous annotated images for effective training, but manual annotation is slow and time-consuming. To mitigate this challenge, we leverage the Segment Anything Model (SAM) – a vision foundation model. We introduce SegBuilder, a framework that incorporates SAM to automatically generate segments, which are then tagged by human annotators using a quick selection list. To demonstrate SegBuilder’s effectiveness, we introduced a novel dataset for image segmentation in underwater environments featuring animals such as sea lions, beavers, and jellyfish. Experiments on this dataset showed that SegBuilder significantly speeds up the annotation process compared to the publicly available tool, Label Studio. SegBuilder also includes a free-form drawing tool, allowing users to create correct segments missed by SAM. This feature is particularly useful for scenes with shadows, camouflaged objects, and part-based segmentation tasks where SAM falls short. Experimentally, we demonstrated SegBuilder’s efficacy in these scenarios, showcasing its potential for generating pixel-wise annotations crucial for training robust deep learning models for semantic segmentation.},
 	}
 	
@@ -68,7 +69,7 @@
 	title = {{SegBuilder}: Semi-automatic Annotation for Semantic Segmentation (\emph{Best Student Poster Award})},
 	year = {2024},
 	file = {2024CCSC_SegBuilder.pdf},
-	keywords = {student},}
+	keywords = {student,segbuilder},}
 
 @conference{becker_ccsc2024bankfailure,
 	address = {Lamoni, Iowa},
