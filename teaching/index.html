@@ -43,8 +43,9 @@ MathJax = {
 
 
   <body>
+    <div class="d-flex flex-column min-vh-100"> <!-- Flex container to manage layout height -->
 
-    <!-- Google Tag Manager (noscript) -->
+      <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id="
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
@@ -73,9 +74,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </nav>
 
 
-    <div class="container-fluid">
-      <div class="row">
-        <div class="content-wrapper">
+      <div class="container-fluid flex-grow-1">
+        <div class="row">
+          <div class="content-wrapper">
   <div class="container-sidebar hide-sidebar-on-mobile">
   <div>
 <div>
@@ -130,7 +131,56 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <h5><a href="https://ericmanley.github.io/allnews.html">... see all News</a></h5>
 </div>
 
+<div class="container py-4 bg-light rounded border text-start mb-4">
+  <h4 class="mb-3">Student Opportunities</h4>
+
+  <div id="sidebar-opportunities">
+    <p>Loading...</p> <!-- Placeholder while JS processes the data -->
+  </div>
+
+  <h5><a href="https://ericmanley.github.io/opportunities.html">... see all opportunities</a></h5>
 </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const opportunities = [
+        
+        {
+            title: "CCSC Central Plains student competitions",
+            deadline: "21 March, 2025",
+            link: "https://www.ccsc.org/centralplains-new/"
+        },
+        
+        {
+            title: "Iowa Institute of Human Genetics Summer Internship in Bioinformatics",
+            deadline: "17 March, 2025",
+            link: "https://humangenetics.medicine.uiowa.edu/education-division/summer-internship-bioinformatics"
+        },
+        
+        {
+            title: "Pi515 AI Challenge",
+            deadline: "8 February, 2025",
+            link: "https://www.pi515.org/day-of-innovation/ai-challenge"
+        },
+        
+    ];
+
+    const now = new Date();
+    let upcoming = opportunities
+        .map(opp => ({ ...opp, deadlineDate: new Date(opp.deadline) })) // Convert deadline to Date object
+        .filter(opp => !isNaN(opp.deadlineDate) && opp.deadlineDate >= now) // Filter upcoming
+        .sort((a, b) => a.deadlineDate - b.deadlineDate) // Sort soonest first
+
+    let sidebarContent = upcoming.length > 0
+        ? upcoming.map(opp => `<p><b>Deadline:</b> ${opp.deadline} - <a href="${opp.link}">${opp.title}</a></p>`).join("")
+        : "<p>No upcoming deadlines.</p>";
+
+    document.getElementById("sidebar-opportunities").innerHTML = sidebarContent;
+});
+</script>
+
+
   </div>
 
 <div id="gridid" class="contain-main px-4">
@@ -320,34 +370,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 </div>
 </div>
+        </div>
       </div>
-    </div>
 
-    <!--
-<br/>
-<section id="footer">
-<div class="container-footer">
-  <div class="panel-footer">
-	  <div class="row">
-		<div class="col-sm-5">
-            <p>Associate Professor of Computer Science<br/> Co-Director of Data Analytics<br/> Dept of Mathematics and Computer Science<br/> Drake University
-</p>
-		</div>
-
-
->
-
-		<div class="col-sm-7">
-
-            <p>2702 Forest Avenue<br/> Des Moines, IA 50311 
-</p>
-		</div>
-	  </div>
-
-	</div>
-  </div>
-</div>
--->
+      
 
 <br/>
 
@@ -360,6 +386,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script src="/assets/javascript/bootstrap/bootstrap.bundle.min.js"></script>
 
 
+    </div>
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
