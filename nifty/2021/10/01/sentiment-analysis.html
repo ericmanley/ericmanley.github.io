@@ -6,10 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Getting Started with Large Language Models for the CS Curriculum - Eric Manley</title>
+  <title>Movie Review Sentiment Analysis Nift Assignment - Eric Manley</title>
   <meta name="description" content="Academic webpage of Eric Manley">
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="https://ericmanley.github.io/workshop/2024/04/21/llm-workshop.html">
+  <link rel="canonical" href="https://ericmanley.github.io/nifty/2021/10/01/sentiment-analysis.html">
   <link rel="shortcut icon" type ="image/x-icon" href="https://ericmanley.github.io/favicon.ico">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
@@ -76,21 +76,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="container-fluid">
       <div class="row">
         <article class="project">
-    <h1>Getting Started with Large Language Models for the CS Curriculum</h1>
-    <p><strong>Date:</strong> April 21, 2024</p>
-    <p>A workshop introducing Large Language Models and the Hugging Face NLP libraries for CS educators wanting to include LLM content in their curriculum, either as a standalone course or integrated into existing courses.</p>
+    <h1>Movie Review Sentiment Analysis Nift Assignment</h1>
+    <p><strong>Date:</strong> October 01, 2021</p>
+    <p>A Nifty Assignment where students use Rotten Tomatoes movie reviews to build a predictor for positive/negative sentiment of text</p>
     <div>
-        <p>In Fall of 2023, I taught a <a href="https://github.com/ericmanley/F23-CS195NLP">course on Natural Language Processing</a> in which I covered modern techniques relevant for Large Language Models like attention and transformers with applications to summarization, translation, classification, and conversation. I utilized <a href="https://huggingface.co/">Hugging Face</a> models and datasets as well as their <a href="https://huggingface.co/docs/transformers/en/index">transformers library</a> for Python. It was an insightful learning experience that I wanted to share with other CS educators, so I gave a workshop introducing these topics at the CCSC Central Plains 2024 conference with a basic introduction into transformers and the Hugging Face library, which included discussion on how it could be integrated into various places in a typical CS curriculum.</p>
+        <p>This assignment uses movie reviews from the Rotten Tomatoes database to do some simple sentiment analysis. Students will write programs that use the review text and a manually labeled review score to automatically learn how negative or positive the connotations of a particular word are. This can then be used to predict the sentiment of new text with reasonably good results. For example, student programs will be able to read text like this:</p>
 
-<p style="text-align: center;"><img src="/images/attention_viz.png" alt="attention visualization" width="300px" style="border-radius:0%;" /></p>
+<p><em>The film was a breath of fresh air.</em></p>
 
-<p>The cover image is from the <a href="https://arxiv.org/abs/1706.03762">Attention Is All You Need</a> paper, which introduced the transformer architecture.</p>
+<p>and predict that it is a positive review while predicting negative sentiment for text like this:</p>
 
-<h2 id="materials">Materials</h2>
+<p><em>It made me want to poke out my eyeballs.</em></p>
 
-<p>I presented slides and sample code using a Jupyter notebook and have shared them here:</p>
+<p style="text-align: center;"><img src="/images/sentiment_screenshot_full.png" alt="sentiment analysis demo" width="550px" style="border-radius:0%;" /></p>
+
+<h2 id="original-assignment">Original Assignment</h2>
+
+<p>The original version of this assignment appeared in the <a href="http://nifty.stanford.edu/2016/manley-urness-movie-review-sentiment/">SIGCSE 2016 Nifty Assignments session</a>, and all materials for Java and C++ can be found at that page.</p>
+
+<h2 id="python-materials">Python Materials</h2>
+
+<p>Recently, I have been using the assignment spread out over three labs in an introductory Python course. Here’s those materials</p>
 <ul>
-  <li><a href="https://github.com/ericmanley/LLM4CSCurriculumWorkshop/blob/main/LLM_Workshop.ipynb">Slides and code for LLM workshop</a></li>
+  <li><a href="https://analytics.drake.edu/~manley/CS65/Fall2021/movie_reviews.csv">Data</a></li>
+  <li><a href="https://analytics.drake.edu/~manley/CS65/Fall2021/Lab10_CSVTextAnalysis.html">CSV Files Lab</a></li>
+  <li><a href="https://analytics.drake.edu/~manley/CS65/Fall2021/Lab12_SentimentAnalysis.html">Sentiment Analysis Program Decomposition Lab</a></li>
+  <li><a href="https://analytics.drake.edu/~manley/CS65/Fall2021/Lab13_ImprovingSentimentAnalysis.html">Enhancing Sentiment Analysis Lab</a></li>
 </ul>
 
     </div>
