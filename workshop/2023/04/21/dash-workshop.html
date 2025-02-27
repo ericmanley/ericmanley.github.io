@@ -6,10 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Nifty Assignment: Making an Interactive Visualization Dashboard with Live Data - Eric Manley</title>
+  <title>Dash: An easy-to-use framework for building web applications and dashboards - Eric Manley</title>
   <meta name="description" content="Academic webpage of Eric Manley">
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="https://ericmanley.github.io/nifty/2023/04/21/interactive-dashboard-nifty-assignment.html">
+  <link rel="canonical" href="https://ericmanley.github.io/workshop/2023/04/21/dash-workshop.html">
   <link rel="shortcut icon" type ="image/x-icon" href="https://ericmanley.github.io/favicon.ico">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
@@ -76,20 +76,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="container-fluid">
       <div class="row">
         <article class="project">
-    <h1>Nifty Assignment: Making an Interactive Visualization Dashboard with Live Data</h1>
+    <h1>Dash: An easy-to-use framework for building web applications and dashboards</h1>
     <p><strong>Date:</strong> April 21, 2023</p>
-    <p>A Nifty Assignment in which students use data retrieved from a Web API and use it to display an interactive data visualization in Python.</p>
+    <p>Dash is a low-code Python framework for creating web-based applications and visualization dashboards. This workshop introduces the framework for CS educators who would like to incorporate it in CS1 or CS2.</p>
     <div>
-        <p>I presented this nifty assignment at the 2023 Consortium for Computing Sciences in Colleges - Central Plains Conference. Here is the <a href="/papers/2023CCSC_NiftyDashboard.pdf">paper</a>.</p>
+        <p>This workshop on Dash was presented at the CCSC: Central Plains 2023 conference. <a href="https://dash.plotly.com/">Dash</a> is an accessible framework for building web applications and data dashboards that can be introduced early in the CS curriculum. The workshop starts by showing how to set it up in a GitHub Codespace (to make sure it works the same for all students) and build basic interface, using buttons, inputs, dropdown menus, etc. Here’s an example using movie sales data to display a movie’s information after being selected in from a dropdown menu.</p>
 
-<p style="text-align: center;"><img src="/images/nifty_dashboard.png" alt="nifty dashboard screenshot" width="90%" style="border-radius:0%;" /></p>
+<p style="text-align: center;"><img src="/images/dash_gui.png" alt="an interface with a Dash dropdown menu" width="300px" style="border-radius:0%;" /></p>
+
+<p>Then in part 2, we see how to use it with <a href="https://plotly.com/python/">Plotly</a> graphs to create dynamic visualization dashboards. We can use the same data above to create a bar graph.</p>
+
+<p style="text-align: center;"><img src="/images/dash_movies.png" alt="a plotly visualization in Dash" width="300px" style="border-radius:0%;" /></p>
+
+<p>Or even create maps using a WHO life expectancy data set.</p>
+
+<p style="text-align: center;"><img src="/images/dash_workshop.png" alt="a plotly map in Dash" width="300px" style="border-radius:0%;" /></p>
 
 <h2 id="materials">Materials</h2>
 
-<p>The materials presented in the conference include</p>
 <ul>
-  <li><a href="https://analytics.drake.edu/~manley/nifty/DashLab.html">A lab on using Dash</a></li>
-  <li><a href="https://analytics.drake.edu/~manley/nifty/NiftyCOVIDDashboard.html">An assignment on building the interactive dashboard using live data</a></li>
+  <li><a href="https://analytics.drake.edu/~manley/workshop/dash_workshop_part1.html">Dash Workshop Part 1</a></li>
+  <li><a href="https://analytics.drake.edu/~manley/workshop/dash_workshop_part2.html">Dash Workshop Part 2</a></li>
+  <li>Movie data: <a href="https://analytics.drake.edu/~manley/workshop/data/HighestHolywoodGrossingMovies.csv">CSV</a>, <a href="https://analytics.drake.edu/~manley/workshop/data/HighestHolywoodGrossingMovies.json">JSON</a></li>
+  <li>Life expectancy data: <a href="https://analytics.drake.edu/~manley/workshop/data/HALElifeExpectancyAtBirth.csv">CSV</a>, <a href="https://analytics.drake.edu/~manley/workshop/data/HALElifeExpectancyAtBirth.json">JSON</a></li>
 </ul>
 
     </div>
