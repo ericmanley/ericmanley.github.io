@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/claimbot/static/css/main.906b8930.css",
-    "main.js": "/claimbot/static/js/main.deb23a84.js",
+    "main.js": "/claimbot/static/js/main.7f375839.js",
     "static/js/453.d7ed5c77.chunk.js": "/claimbot/static/js/453.d7ed5c77.chunk.js",
     "static/media/KaTeX_AMS-Regular.ttf": "/claimbot/static/media/KaTeX_AMS-Regular.853be92419a6c3766b9a.ttf",
     "static/media/KaTeX_Main-Regular.ttf": "/claimbot/static/media/KaTeX_Main-Regular.9eba1d77abcf2aa6e94e.ttf",
@@ -65,11 +65,11 @@
     "static/media/KaTeX_Size3-Regular.woff2": "/claimbot/static/media/KaTeX_Size3-Regular.e1951519f6f0596f7356.woff2",
     "index.html": "/claimbot/index.html",
     "main.906b8930.css.map": "/claimbot/static/css/main.906b8930.css.map",
-    "main.deb23a84.js.map": "/claimbot/static/js/main.deb23a84.js.map",
+    "main.7f375839.js.map": "/claimbot/static/js/main.7f375839.js.map",
     "453.d7ed5c77.chunk.js.map": "/claimbot/static/js/453.d7ed5c77.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.906b8930.css",
-    "static/js/main.deb23a84.js"
+    "static/js/main.7f375839.js"
   ]
 }
