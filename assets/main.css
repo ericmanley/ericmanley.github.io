@@ -257,11 +257,10 @@ ol.bibliography {
   background-color: #1e1e1e; /* Darker background */
   color: #a9b7c6; /* Lighter text */
   font-family: monospace;
-  border-left: 5px solid #03a5fc;
+  border-left: 10px solid #03a5fc;
   padding: 10px;
   margin: 0; /* Remove margin */
   white-space: pre-wrap;
-  display: inline-block; /* Shrink to fit content */
 }
 
 .output-box p {
