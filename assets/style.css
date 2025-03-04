@@ -115,11 +115,3 @@
   font-weight: bold;
 }
 
-.output-box {
-  background-color: #1e1e1e; /* Darker background */
-  color: #a9b7c6; /* Lighter text */
-  font-family: monospace;
-  padding: 10px;
-  margin: 10px 0;
-  white-space: pre-wrap;
-}

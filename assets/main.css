@@ -253,4 +253,20 @@ ol.bibliography {
   vertical-align: middle; /* Aligns the Bootstrap icon */
 }
 
+.output-box {
+  background-color: #1e1e1e; /* Darker background */
+  color: #a9b7c6; /* Lighter text */
+  font-family: monospace;
+  border-left: 5px solid #03a5fc;
+  padding: 10px;
+  margin: 0; /* Remove margin */
+  white-space: pre-wrap;
+  display: inline-block; /* Shrink to fit content */
+}
+
+.output-box p {
+  margin: 0; /* Remove extra space above/below */
+  padding: 0; /* Remove any extra internal padding */
+}
+
 /*# sourceMappingURL=main.css.map */
