@@ -268,4 +268,8 @@ ol.bibliography {
   padding: 0; /* Remove any extra internal padding */
 }
 
+.list-group-item.active {
+  background-color: #03a5fc !important;
+}
+
 /*# sourceMappingURL=main.css.map */
