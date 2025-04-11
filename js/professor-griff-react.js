@@ -337,7 +337,7 @@ class ProfessorGriffApp extends React.Component {
                                                     )}
                                                     <div>
                                                         <strong>{resp.advisor_name} says:</strong>
-                                                        <div>{resp.advisor_text}</div>
+                                                        <div dangerouslySetInnerHTML={{ __html: marked.parse(resp.advisor_text || "") }} />
                                                     </div>
                                                 </div>
                                             ))}
