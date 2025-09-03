@@ -2,15 +2,19 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://ericmanley.github.io/Fall2025/CS130/assignments/assignment-1/</loc>
-<lastmod>2025-08-27T10:59:56-05:00</lastmod>
+<lastmod>2025-09-02T20:22:31-05:00</lastmod>
 </url>
 <url>
 <loc>https://ericmanley.github.io/Fall2025/CS130/slides/2025-08-25-introduction-to-computer-organization/</loc>
 <lastmod>2025-08-25T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>https://ericmanley.github.io/Fall2025/CS130/slides/2025-08-27-mips-assembly-language/</loc>
+<loc>https://ericmanley.github.io/Fall2025/CS130/slides/2025-08-27-mips-assembly-language%20copy/</loc>
 <lastmod>2025-08-27T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://ericmanley.github.io/Fall2025/CS130/slides/2025-09-03-registers-instructions-syscalls/</loc>
+<lastmod>2025-09-03T00:00:00-05:00</lastmod>
 </url>
 <url>
 <loc>https://ericmanley.github.io/Fall2025/CS130/404/</loc>
