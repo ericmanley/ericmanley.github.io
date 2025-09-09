@@ -1,0 +1,374 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>reveal.js</title>
+
+        <link rel="stylesheet" href="../dist/reset.css">
+        <link rel="stylesheet" href="../dist/reveal.css">
+        <link rel="stylesheet" href="../dist/theme/white.css" id="theme">
+
+        <!-- Theme used for syntax highlighted code -->
+        <link rel="stylesheet" href="../plugin/highlight/monokai.css" id="highlight-theme">
+
+        <style>
+            .twocolumn {
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           grid-gap: 10px;
+           text-align: left;
+        }
+        </style>
+
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section data-markdown
+                         data-separator="<!--==*-->"
+                         data-separator-vertical="<!----*-->">
+                    <textarea data-template>
+# Branching
+
+---
+
+
+CS 130 // 2025-09-10
+
+<!--====================================================================-->
+
+  # Hexadecimal
+  <!-- .slide: data-background="#004477" -->
+
+
+<!--=====================================================================-->
+
+
+### Base 16 (AKA Hexadecimal)
+
+- Hexadecimal is base 16
+- digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F
+- 5C means
+
+`$$(5\cdot 16)+(12\cdot 1)$$`
+
+- Easy to convert back and forth from binary
+- Used as *shorthand* for binary
+
+<!--=====================================================================-->
+
+### Counting in Binary/Hexadecimal
+
+<div class="twocolumn" style="font-size: 75%">
+<div>
+
+<table>
+  <tbody>
+    <tr> <th>Decimal</th> <th>Binary</th><th>Hex</th></tr>
+    <tr> <td>0</td> <td>0000</td> <td>0</td></tr>
+    <tr> <td>1</td> <td>0001</td> <td>1</td></tr> 
+    <tr> <td>2</td> <td>0010</td><td>2</td></tr>
+    <tr> <td>3</td> <td>0011</td> <td>3</td></tr>
+    <tr> <td>4</td> <td>0100</td><td>4</td></tr>
+    <tr> <td>5</td> <td>0101</td><td>5</td></tr>
+    <tr> <td>6</td> <td>0110</td><td>6</td></tr>
+    <tr> <td>7</td> <td>0111</td><td>7</td></tr>
+    <tr> <td>8</td> <td>1000</td> <td>8</td></tr>
+  </tbody>
+</table>
+
+</div>
+<div>
+
+<table>
+  <tbody>
+    <tr> <th>Decimal</th> <th>Binary</th><th>Hex</th></tr>
+    <tr> <td>9</td> <td>1001</td> <td>9</td></tr>
+    <tr> <td>10</td> <td>1010</td><td>A</td></tr>
+    <tr> <td>11</td> <td>1011</td> <td>B</td></tr>
+    <tr> <td>12</td> <td>1100</td><td>C</td></tr>
+    <tr> <td>13</td> <td>1101</td><td>D</td></tr>
+    <tr> <td>14</td> <td>1110</td><td>E</td></tr>
+    <tr> <td>15</td> <td>1111</td><td>F</td></tr>
+    <tr> <td>16</td> <td>0001 0000</td><td>10</td></tr>
+    <tr> <td>17</td> <td>0001 0001</td><td>11</td></tr>
+  </tbody>
+</table>
+
+</div>
+</div>
+
+
+<!--=====================================================================-->
+
+### Exercise: Exploring in Mars
+  
+- Open up Mars and create a `.asm` file 
+- Put the number 302 in your data section
+- How does Mars display that in Hex?
+- What is the Binary equivalent?
+
+<!--=====================================================================-->
+
+### Exercise: Convert back and forth
+  
+- Convert the following binary number into hex
+  - $\text{1111 1010 0001 1011 0100 1110 0010 0011}_\text{two}$
+- Convert the following hexadecimal number into binary
+  - $\text{00FF33AA}_\text{hex}$
+
+
+  <!--====================================================================-->
+
+# Conditionals
+<!-- .slide: data-background="#004477" -->
+
+
+<!--====================================================================-->
+
+## Branching
+- **Branching** allows MIPS programs to skip around to different parts of the program
+- Useful for
+    - conditional statements (if, if-else, etc.)
+    - loops
+
+<!---------------------------------->
+
+- continue executing at the line labeled `my_label`
+```mips
+b my_label
+#...
+my_label:
+```
+- <!-- .element: class="fragment"-->
+ continue executing at the line labeled `my_label` if `$s0` and `$s1` are equal
+```mips
+beq $s0, $s1, my_label
+```
+- <!-- .element: class="fragment"-->
+ continue executing at the line labeled `my_label` if `$s0` and `$s1` are _not_ equal
+```mips
+bne $s0, $s1, my_label
+```
+
+
+<!--====================================================================-->
+
+## Compiling an `if` Statement
+
+<div class="twocolumn" style="font-size: 60%">
+    <div>
+
+```python
+    if i == j:
+        k = 1
+
+    print("The value of k is",k)
+```
+
+</div>
+<div>
+
+```mips
+.data
+
+i: 5
+j: 8
+k: 0
+message: .asciiz "The value of k is "
+
+.text
+
+	lw $s0, i
+	lw $s1, j
+	
+	bne $s0, $s1, disp_msg
+	li $s2, 1
+	sw $s2, k
+
+disp_msg:
+	li $v0, 4 #4 is the code for printing a string
+	la $a0, message #the argument for the syscall
+	syscall 
+	
+	li $v0, 1 #1 is the code for printing an int
+	lw $a0, k #the argument for the syscall
+	syscall 
+```
+<div>    
+
+
+<!---------------------------------->
+
+## Exercise
+
+- Run the above program in Mars, observe the output
+- Change it so `i` and `j` are equal, run again
+- Translate the following Python program into MIPS
+```python
+    if i == j:
+        k = 1
+    else:
+        k = 2
+
+    print("The value of k is",k)
+```
+
+<!--====================================================================-->
+
+
+## Set on Less Than investigation
+
+<div class="twocolumn" style="font-size: 80%">
+<div>
+
+Before executing: guess what you think `$t0`-`$t6` will be
+
+Execute it: were you right?
+
+What do `sle` and `sgt` mean? What do they get translated into by the assemler?
+</div>
+<div>
+
+```mips
+.text 
+
+li $s1, 2
+li $s2, 2
+li $s3, 3
+
+#slt: "set on less than"
+slt $t0, $s2, $s3
+slt $t1, $s1, $s2
+slt $t2, $s3, $s2
+slti $t3, $s3, 10
+
+#psuedoinstructions
+sle $t4, $s1, $s3
+sle $t5, $s1, $s2
+sgt $t6, $s3, $s2
+```
+
+</div>
+
+
+<!---------------------------------->
+
+## Exercise
+
+- Translate the following Python program into MIPS
+- This is the same as your previous exercise, except with `i < j` instead of `i == j`
+```python
+    if i < j:
+        k = 1
+    else:
+        k = 2
+
+    print("The value of k is",k)
+```
+
+ 
+
+<!--====================================================================-->
+
+## Compiling a `while` Statement
+
+```python
+i = 1
+while i != 10:  
+   print(i)
+   i += 1
+```
+
+---
+
+```mips
+.text
+	li $s0, 1
+	li $t0, 10
+	
+start_loop:
+	beq $s0, $t0, done
+
+	li $v0, 1 #print integer - no newline after!
+	add $a0, $s0, $zero #copy $s0 into $a0
+	syscall
+
+	addi $s0, $s0, 1
+	b start_loop
+
+done:
+```
+<!-- .element: class="fragment"-->
+
+
+<!---------------------------------->
+
+## Exercise
+
+- Translate this into MIPS
+- Hint: can you use `slt` here?
+
+```python
+sum = 0
+i = 0
+
+while i < 10:
+    sum = sum + i
+    i += 1
+
+print(sum)
+```
+
+</div>
+
+<!--====================================================================-->
+
+## Assignment
+
+- [Assignment 2](../../assignments/assignment-2/)
+  - Translate a Python program that has both an if statement and a loop
+
+                    </textarea>
+                </section>
+            </div>
+        </div>
+
+        <script src="../dist/reveal.js"></script>
+        <script src="../plugin/notes/notes.js"></script>
+        <script src="../plugin/markdown/markdown.js"></script>
+        <script src="../plugin/highlight/highlight.js"></script>
+        <script src="../plugin/chalkboard/plugin.js"></script>
+        <script src="../plugin/math/math.js"></script>
+        <script src="../plugin/menu/menu.js"></script>
+        <!--  -->
+        <script>
+            // More info about initialization & config:
+            // - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
+            Reveal.initialize({
+                hash: true,
+                pdfSeparateFragments: false,
+
+                chalkboard: {
+                    chalkWidth: 4,
+                    chalkEffect: 0.5,
+                    toggleChalkboardButton: false,
+                    toggleNotesButton: false,
+                },
+
+                menu: {
+                    hideMissingTitles: true,
+                    themes: true,
+                    themesPath: '../dist/theme/',
+                },
+
+                // Learn about plugins: https://revealjs.com/plugins/
+                plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, 
+                    RevealChalkboard, RevealMath, RevealMenu ]
+            });
+        </script>
+    </body>
+</html>
