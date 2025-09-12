@@ -2,11 +2,11 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://ericmanley.github.io/Fall2025/CS130/assignments/assignment-1/</loc>
-<lastmod>2025-09-09T16:06:53-05:00</lastmod>
+<lastmod>2025-09-12T14:36:21-05:00</lastmod>
 </url>
 <url>
 <loc>https://ericmanley.github.io/Fall2025/CS130/assignments/assignment-2/</loc>
-<lastmod>2025-09-09T16:06:53-05:00</lastmod>
+<lastmod>2025-09-12T14:36:21-05:00</lastmod>
 </url>
 <url>
 <loc>https://ericmanley.github.io/Fall2025/CS130/slides/2025-08-25-introduction-to-computer-organization/</loc>
@@ -27,6 +27,10 @@
 <url>
 <loc>https://ericmanley.github.io/Fall2025/CS130/slides/2025-09-10-branching/</loc>
 <lastmod>2025-09-10T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://ericmanley.github.io/Fall2025/CS130/slides/2025-09-15-arrays/</loc>
+<lastmod>2025-09-15T00:00:00-05:00</lastmod>
 </url>
 <url>
 <loc>https://ericmanley.github.io/Fall2025/CS130/404/</loc>

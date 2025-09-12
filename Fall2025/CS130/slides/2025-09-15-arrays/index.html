@@ -1,0 +1,414 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>reveal.js</title>
+
+        <link rel="stylesheet" href="../dist/reset.css">
+        <link rel="stylesheet" href="../dist/reveal.css">
+        <link rel="stylesheet" href="../dist/theme/white.css" id="theme">
+
+        <!-- Theme used for syntax highlighted code -->
+        <link rel="stylesheet" href="../plugin/highlight/monokai.css" id="highlight-theme">
+
+        <style>
+            .twocolumn {
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           grid-gap: 10px;
+           text-align: left;
+        }
+        </style>
+
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section data-markdown
+                         data-separator="<!--==*-->"
+                         data-separator-vertical="<!----*-->">
+                    <textarea data-template>
+# Arrays, Negative Numbers
+
+---
+
+CS 130 // 2025-09-15
+
+<!--====================================================================-->
+
+
+# Review
+
+<!-- .slide: data-background="#004477" -->
+
+<!--====================================================================-->
+
+## Compiling a `while` Statement
+
+```python
+i = 1
+while i != 10:  
+   print(i)
+   i += 1
+```
+
+---
+
+```mips
+.text
+	li $s0, 1
+	li $t0, 10
+	
+start_loop:
+	beq $s0, $t0, done
+
+	li $v0, 1 #print integer - no newline after!
+	add $a0, $s0, $zero #copy $s0 into $a0
+	syscall
+
+	addi $s0, $s0, 1
+	b start_loop
+
+done:
+```
+<!-- .element: class="fragment"-->
+
+
+<!---------------------------------->
+
+## Exercise
+
+- Translate this into MIPS
+- Hint: can you use `slt` here?
+
+```python
+sum = 0
+i = 0
+
+while i < 10:
+    sum = sum + i
+    i += 1
+
+print(sum)
+```
+
+</div>
+
+<!--====================================================================-->
+
+## Assignment
+
+- [Assignment 2](../../assignments/assignment-2/)
+  - Translate a Python program that has both an if statement and a loop
+
+
+
+
+<!--====================================================================-->
+
+# Arrays
+<!-- .slide: data-background="#004477" -->
+
+<!--====================================================================-->
+
+## What is an array?
+
+<section style="text-align: left;">
+     
+An array is a series of data items stored in consecutive memory locations
+
+- Python: list 
+
+- Java: array, ArrayList
+
+- C/C++: array, Vector
+
+</section>
+
+<!--====================================================================-->
+
+## Example array program
+
+```mips
+.data
+ 
+#arrays get stored in consecutive 32-bit memory addresses 
+my_array: 1, 2, 3, 4
+ 
+.text
+
+la $s0, my_array #load the base address of the array
+
+#Addresses go up by 4 because each byte has its own address
+#So a word takes up 4 addresses
+lw $t0, 0($s0) #load my_array[0]
+lw $t1, 4($s0) #load my_array[1]
+lw $t0, 8($s0) #load my_array[2]
+lw $t0, 12($s0) #load my_array[3]
+```
+
+<!---------------------------------->
+
+### New flavor of `lw`
+
+```mips
+lw $t1, 4($s0) #load my_array[1]
+```
+
+- Meaning
+    - load the 32-bit value stored at the address `$s0`+4
+- Good for accessing items in an array
+
+
+<!--====================================================================-->
+
+## Arrays in memory
+
+
+```mips
+.data
+ 
+#arrays get stored in consecutive 32-bit memory addresses 
+my_array: 1, 2, 3, 4
+```
+
+![array in Mars memory](/Fall2025/CS130/assets/images/array-in-memory.png)
+
+<!--====================================================================-->
+
+### Translating a program that uses an array
+
+<div class="twocolumn" style="font-size: 50%">
+<div>
+
+```python
+    my_array = [10,6,0,27,92,18,42]
+    i = 0
+
+    while i < 7:
+        print(my_array[i])
+        i = i + 1
+```
+</div>
+<div>
+
+```mips
+.data
+
+my_array: 10, 6, 0, 27, 92, 18, 42
+newline: .asciiz "\n"
+
+
+.text
+
+    la $s0, my_array #load the base address of the array
+    li $t0, 0 #loop counter
+
+loop:
+
+    slti $t1, $t0, 7 #check if loop counter < 7
+    beq $t1, $zero, end #if not < 7, branch to end
+
+    #print the item from the array
+    lw $a0, 0($s0) #load next value from array
+    li $v0, 1 #print integer
+    syscall
+
+    #print a newline
+    la $a0, newline 
+    li $v0, 4 #print string
+    syscall
+
+    addi $t0, $t0, 1 #increment the loop counter
+    addi $s0, $s0, 4 #move to the next word in the array
+
+    b loop
+
+end:
+```
+<div>    
+
+
+<!---------------------------------->
+
+## Exercise
+
+- edit the above MIPS program to also find the sum of all the items in the array
+
+<!--=====================================================================-->
+
+# Review
+<!-- .slide: data-background="#004477" -->
+
+<!--=====================================================================-->
+
+## Base 2 (AKA Binary)
+
+ $1101_\text{two}$ means 
+
+`$$(1\cdot 8)+(1\cdot 4)+(0\cdot 2)+(1\cdot 1)$$`
+
+or
+
+`$$(1\cdot 2^3)+(1\cdot 2^2)+(0\cdot 2^1)+(1\cdot 2^0)$$`
+
+
+<!--=====================================================================-->
+
+# Negative Numbers
+<!-- .slide: data-background="#004477" -->
+
+<!--=====================================================================-->
+
+## Negative Numbers in Binary
+- We usually represent negative numbers by including a "minus sign" at the beginning of a number: $-437$
+- <!-- .element: class="fragment"-->
+ However, when representing numbers for logic circuits, we can **ONLY** use $0$s and $1$s.
+- <!-- .element: class="fragment"-->
+ So what do we do?
+
+<!---------------------------------->
+
+## Idea 1: Using a Sign Bit
+- We could treat the first bit of a number as the "sign" bit where $0$ means positive and $1$ means negative
+    + $10010$ is the same as $-0010$
+    + $01010$ is the same as $+1010$
+- <!-- .element: class="fragment"-->
+ Drawbacks
+    + Multiple representations for $0$
+    + <!-- .element: class="fragment"-->
+ Addition/subtraction is not as convenient
+ 
+
+<!---------------------------------->
+
+## Idea 2: Wrap Around
+
+![Odometer rollover](/Fall2025/CS130/assets/images/Odometer_rollover.jpg) <!-- .element width="200px" -->
+
+- Numbers "wrap around" from the **largest** number $999999$ to the **smallest** $000000$
+- <!-- .element: class="fragment"-->
+ We can do the same thing in binary!
+    + <!-- .element: class="fragment"-->
+ If you add one to the largest number, it "wraps around" to the smallest negative number
+
+    
+
+<!--=====================================================================-->
+
+# Two's Complement
+<!-- .slide: data-background="#004477" -->
+
+<!--=====================================================================-->
+
+## Two's Complement
+- Most computers use **two's complement** to encode signed integer values
+- What is it exactly?
+    + <!-- .element: class="fragment"-->
+ Non-negative numbers are represented as usual<br>$0000$, $0011$, $0110$
+    + <!-- .element: class="fragment"-->
+ To negate a number, you do the following:
+        1. Flip all the bits: $0\rightarrow 1$ and $1\rightarrow 0$
+        2. Add 1 to the result
+    + <!-- .element: class="fragment"-->
+ $0000$, $1101$, $1010$
+
+<!---------------------------------->
+
+<!-- .slide: data-background-image="/Fall2025/CS130/assets/images/COD/twos-complement.png" data-background-size="contain"-->
+
+<!---------------------------------->
+
+## Two's Complement
+- Most processors are 32-bit or 64-bit, which means values sent to the processor are encoded in 32 or 64 bits, respectively
+- <!-- .element: class="fragment"-->
+ In this class, we are using the MIPS 32-bit architecture
+- <!-- .element: class="fragment"-->
+ Another way to think about two's complement is:
+
+    $1000\\;1001\\;1100\\;1010\\;0110\\;0110\\;0001\\;1110$
+
+    $(x_{31}\cdot -2^{31}) + (x_{30}\cdot 2^{30}) + \cdots + (x_{1}\cdot 2^{1}) + (x_{0}\cdot 2^{0})$
+
+<!---------------------------------->
+
+## Exercise
+### Two's Complement Practice
+- Convert each of the following numbers to decimal:
+
+---
+
+- $1111\\;1111\\;1111\\;1111\\;1111\\;1111\\;1111\\;1111$
+- $1111\\;1111\\;1111\\;1111\\;1111\\;1111\\;1110\\;0101$
+- $0000\\;0000\\;0000\\;0000\\;0000\\;0000\\;0000\\;0101$
+
+
+<!--=====================================================================-->
+
+## Demo: Adding two binary numbers
+
+* Let's use some 8-bit binary numbers 
+<pre>
+      0010 0011
+    + 1111 0100
+    ------------
+
+      0001 1000
+    - 0011 0110
+    ------------
+</pre>
+
+<!--=====================================================================-->
+
+## Exercise
+
+* Using 8-bit binary numbers, show how to compute 
+    - 68 - 55
+    - 20 + 40
+    - 30 - 127
+    - -10 + -3
+    
+
+                    </textarea>
+                </section>
+            </div>
+        </div>
+
+        <script src="../dist/reveal.js"></script>
+        <script src="../plugin/notes/notes.js"></script>
+        <script src="../plugin/markdown/markdown.js"></script>
+        <script src="../plugin/highlight/highlight.js"></script>
+        <script src="../plugin/chalkboard/plugin.js"></script>
+        <script src="../plugin/math/math.js"></script>
+        <script src="../plugin/menu/menu.js"></script>
+        <!--  -->
+        <script>
+            // More info about initialization & config:
+            // - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
+            Reveal.initialize({
+                hash: true,
+                pdfSeparateFragments: false,
+
+                chalkboard: {
+                    chalkWidth: 4,
+                    chalkEffect: 0.5,
+                    toggleChalkboardButton: false,
+                    toggleNotesButton: false,
+                },
+
+                menu: {
+                    hideMissingTitles: true,
+                    themes: true,
+                    themesPath: '../dist/theme/',
+                },
+
+                // Learn about plugins: https://revealjs.com/plugins/
+                plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, 
+                    RevealChalkboard, RevealMath, RevealMenu ]
+            });
+        </script>
+    </body>
+</html>
