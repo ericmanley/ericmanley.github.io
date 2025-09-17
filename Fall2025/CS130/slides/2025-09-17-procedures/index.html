@@ -1,0 +1,371 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>reveal.js</title>
+
+        <link rel="stylesheet" href="../dist/reset.css">
+        <link rel="stylesheet" href="../dist/reveal.css">
+        <link rel="stylesheet" href="../dist/theme/white.css" id="theme">
+
+        <!-- Theme used for syntax highlighted code -->
+        <link rel="stylesheet" href="../plugin/highlight/monokai.css" id="highlight-theme">
+
+        <style>
+            .twocolumn {
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           grid-gap: 10px;
+           text-align: left;
+        }
+        </style>
+
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section data-markdown
+                         data-separator="<!--==*-->"
+                         data-separator-vertical="<!----*-->">
+                    <textarea data-template>
+# Procedures
+
+---
+
+CS 130 // 2025-09-17
+
+
+
+<!--=====================================================================-->
+
+# Procedures
+<!-- .slide: data-background="#004477" -->
+
+<!--====================================================================-->
+
+### Compile a Simple Leaf Procedure
+
+```python
+def func(x,y):
+    return x + y
+```
+
+---
+
+```mips
+func: add $v0, $a0, $a1
+      jr  $ra
+```
+
+* the first argument to the procedure is in `$a0`
+* the second argument to the procedure is in `$a1`
+* the return value of the procedure goes in `$v0`
+* `jr`: jump to the instruction whose address is in register `$ra`
+
+<!-- .element: class="fragment"-->
+
+
+<!---------------------------------->
+
+```mips
+func: add $v0, $a0, $a1
+      jr  $ra
+```
+
+When you call this function, you must
+* put the first argument in `$a0`
+* put the second argument in `$a1`
+* put the **return address** in `$ra`
+* jump to the function
+
+<!--====================================================================-->
+
+### Calling Our Leaf Procedure
+
+```python
+def func(x,y):
+    return x + y
+
+def main():
+    func(1, 2)
+```
+
+---
+
+```mips
+func:
+    add $v0, $a0, $a1
+    jr $ra
+
+main:
+    li  $a0, 1 #load the first argument
+    li  $a1, 2 #load the second argument
+    jal func
+```
+`jal`: **jump and link** - put the next instruction's address in `$ra` and jump to the procedure
+<!-- .element: class="fragment"-->
+
+
+<!---------------------------------->
+
+### Nested Procedure Calls
+
+```python
+def main():
+    func(1, func(2, func(3, 4)))
+```
+
+---
+
+```mips
+main:
+    li  $a0, 3
+    li  $a1, 4
+    jal func
+
+    li   $a0, 2
+    move $a1, $v0
+    jal  func
+
+    li   $a0, 1
+    move $a1, $v0
+    jal  func
+```
+**remember:** `$v0` is where we find the returned value
+<!-- .element: class="fragment"-->
+
+
+<!--====================================================================-->
+
+## Calling a Procedure
+
+1. Put parameters in appropriate registers
+  + `$a0`, `$a1`, `$a2`, `$a3`
+2. Transfer control to the procedure: *jump and link*
+  + `jal ProcedureLabel`
+    - puts the current instruction's address into `$ra`
+3. Perform task
+4. Place result in a location the callee can find
+  + `$v0`, `$v1`
+5. Return control to the caller: *jump to addr. in register*
+  + `jr $ra`
+
+
+<!--====================================================================-->
+
+## Exercise
+- Convert the following Python code into MIPS
+- Make sure to create two functions
+    - make sure the print happens in `main`, not `double_it`
+
+```python
+def double_it(e):
+    return e + e
+
+def main():
+    print( double_it(21) )
+```
+
+
+<!--====================================================================-->
+
+## Non-Leaf Procedures
+- Life would be easy if all procedures were "leaves"
+- In reality, a procedure might call another procedure which may call another procedure ...
+	- could even be *recursive*
+- <!-- .element: class="fragment"-->
+ We need a way to preserve the state of each partially completed call so that they all return properly
+
+
+<!--====================================================================-->
+
+# Stack
+<!-- .slide: data-background="#004477" -->
+
+<!--====================================================================-->
+
+## Stack
+- MIPS provides a register `$sp` that stores a memory address
+- <!-- .element: class="fragment"-->
+ Addresses **above** `$sp` is memory that is already being used by other parts of the program
+- <!-- .element: class="fragment"-->
+ Addresses **below** `$sp` is free memory
+
+<!---------------------------------->
+
+## Stack
+- The **called** procedure is responsible for restoring these registers before returning
+    * any saved registers `$s0`, ..., `$s7`
+    * `$ra` the return address register
+    * the stack pointer `$sp` register 
+- <!-- .element: class="fragment"-->
+ Any other register may be used without restoration, so the **calling** procedure is responsible for saving any data before making the call
+    * e.g., if you use `$t0`, `$a0`, or `$v0` the other function might change them! 
+
+<!--====================================================================-->
+
+## Memory Structure
+![MIPS memory structure](/Fall2025/CS130/assets/images/COD/mips-memory.png)
+
+<!--====================================================================-->
+
+## Stack Frames
+![Procedure frame](/Fall2025/CS130/assets/images/COD/stack-frame.png)
+
+
+
+<!--====================================================================-->
+
+## Exercise
+- Convert the following C code into MIPS
+
+```python
+def double_it(e):
+    return e + e
+
+def calc(c):
+    d = double_it(7)
+    return c + d
+
+def main():
+    a = 5
+    b = calc(a)
+```
+
+<!---------------------------------->
+
+## Exercise Solution: double_it
+
+```python
+def double_it(e):
+    return e + e
+```
+
+```mips
+double_it: add $v0, $a0, $a0    # returns e + e
+         jr $ra
+```
+<!-- .element: class="fragment"-->
+
+
+<!---------------------------------->
+
+## Exercise Solution: Calc - Take 1
+
+```python
+def calc(c):
+    d = double_it(7)
+    return c + d
+```
+
+```mips
+calc: li  $a0, 7          # puts 7 in a0
+      jal double_it         # calls compute(7)
+      add $v0, $v0, $a0   # adds argument to result
+      jr  $ra
+```
+<!-- .element: class="fragment"-->
+
+
+- <!-- .element: class="fragment"-->
+ Unfortunately this will fail. Why?
+    + <!-- .element: class="fragment"-->
+ Both `$a0` and `$ra` will be erased!
+
+<!---------------------------------->
+
+## Exercise Solution: Calc - Take 2
+
+```python
+def calc(c):
+    d = double_it(7)
+    return c + d
+```
+
+```mips
+calc: addi $sp, $sp, -8    # allocates space
+      sw   $a0, 0($sp)     # stores c on the stack
+      sw   $ra, 4($sp)     # stores $ra on the stack
+      li   $a0, 7          # puts 7 in a0
+      jal  double_it       # calls double_it(7)
+      lw   $ra, 4($sp)     # restores $ra
+      lw   $a0, 0($sp)     # restores argument
+      addi $sp, $sp, 8     # deallocates space
+      add  $v0, $v0, $a0   # adds argument to result
+      jr   $ra
+```
+<!-- .element: class="fragment"-->
+
+
+<!---------------------------------->
+
+## Exercise Solution: Main
+
+```python
+def main():
+    a = 5
+    b = calc(a)
+```
+
+```mips
+main:    li   $s0, 5          # a = 5
+         move $a0, $s0        # loads a into argument
+         jal  calc            # calls calc(5)
+         move $s1, $v0        # b = result
+```
+<!-- .element: class="fragment"-->
+
+
+<!--====================================================================-->
+
+## Assignment
+
+- [Assignment 3](../../assignments/assignment-3/)
+  - Translate a Python program that has functions and Arrays
+  - 8 points
+  - Part of it has been done - you'll do a "middle" function.
+
+
+                    </textarea>
+                </section>
+            </div>
+        </div>
+
+        <script src="../dist/reveal.js"></script>
+        <script src="../plugin/notes/notes.js"></script>
+        <script src="../plugin/markdown/markdown.js"></script>
+        <script src="../plugin/highlight/highlight.js"></script>
+        <script src="../plugin/chalkboard/plugin.js"></script>
+        <script src="../plugin/math/math.js"></script>
+        <script src="../plugin/menu/menu.js"></script>
+        <!--  -->
+        <script>
+            // More info about initialization & config:
+            // - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
+            Reveal.initialize({
+                hash: true,
+                pdfSeparateFragments: false,
+
+                chalkboard: {
+                    chalkWidth: 4,
+                    chalkEffect: 0.5,
+                    toggleChalkboardButton: false,
+                    toggleNotesButton: false,
+                },
+
+                menu: {
+                    hideMissingTitles: true,
+                    themes: true,
+                    themesPath: '../dist/theme/',
+                },
+
+                // Learn about plugins: https://revealjs.com/plugins/
+                plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, 
+                    RevealChalkboard, RevealMath, RevealMenu ]
+            });
+        </script>
+    </body>
+</html>

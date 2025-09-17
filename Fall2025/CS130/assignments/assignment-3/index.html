@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Assignment 2 - CS 130: Computer Organization</title>
+<!-- begin _includes/seo.html --><title>Assignment 3 - CS 130: Computer Organization</title>
 <meta name="description" content="">
 
 
@@ -22,8 +22,8 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="CS 130: Computer Organization">
-<meta property="og:title" content="Assignment 2">
-<meta property="og:url" content="https://ericmanley.github.io/Fall2025/CS130/assignments/assignment-2/">
+<meta property="og:title" content="Assignment 3">
+<meta property="og:url" content="https://ericmanley.github.io/Fall2025/CS130/assignments/assignment-3/">
 
 
   <meta property="og:description" content="">
@@ -41,7 +41,7 @@
 
 
 
-<link rel="canonical" href="https://ericmanley.github.io/Fall2025/CS130/assignments/assignment-2/">
+<link rel="canonical" href="https://ericmanley.github.io/Fall2025/CS130/assignments/assignment-3/">
 
 
 
@@ -399,7 +399,7 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Assignment 2">
+    <meta itemprop="headline" content="Assignment 3">
     <meta itemprop="description" content="">
     <meta itemprop="datePublished" content="2025-09-17T11:54:53-05:00">
     
@@ -407,7 +407,7 @@
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Assignment 2
+          <h1 id="page-title" class="page__title" itemprop="headline">Assignment 3
 </h1>
           
 
@@ -423,7 +423,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          1 minute read
+          6 minute read
         
       </span>
     
@@ -438,7 +438,7 @@
           <aside class="sidebar__right ">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
-              <ul class="toc__menu"><li><a href="#a-python-program-to-translate">A Python program to translate</a></li><li><a href="#assignment">Assignment</a></li><li><a href="#purpose">Purpose</a></li><li><a href="#grading">Grading</a></li><li><a href="#what-to-turn-in">What to turn in</a></li><li><a href="#where-to-turn-it-in">Where to turn it in</a></li></ul>
+              <ul class="toc__menu"><li><a href="#a-python-program-with-functions-and-arrays">A Python program with functions and arrays</a></li><li><a href="#a-start-to-translating-the-python-program-into-mips">A start to translating the Python program into MIPS</a></li><li><a href="#assignment">Assignment</a></li><li><a href="#grading">Grading</a></li><li><a href="#what-to-turn-in">What to turn in</a></li><li><a href="#where-to-turn-it-in">Where to turn it in</a></li></ul>
 
             </nav>
           </aside>
@@ -453,57 +453,253 @@ Assignment
 <br>
 -->
 
-<strong>Due:</strong> by the end of the calendar day on Wednesday, September 17, 2025
+<strong>Due:</strong> by the end of the calendar day on Wednesday, September 24, 2025
 
 
 
-<h2 id="a-python-program-to-translate">A Python program to translate</h2>
+<h2 id="a-python-program-with-functions-and-arrays">A Python program with functions and arrays</h2>
 
-<p>The following <strong>Guess the Secret Number Game</strong> has been written in Python.</p>
+<p>The following Python program builds a histogram for an array of data values between 0 and 99. It is spread across four different functions.</p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">secret_number</span> <span class="o">=</span> <span class="mi">42</span>
-<span class="n">guess</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">num_guesses</span> <span class="o">=</span> <span class="mi">0</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># returns the 10s digit of a two-digit number
+</span><span class="k">def</span> <span class="nf">tens_digit</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">x</span> <span class="o">//</span> <span class="mi">10</span>
 
-<span class="k">while</span> <span class="n">guess</span> <span class="o">!=</span> <span class="n">secret_number</span><span class="p">:</span>
-    <span class="n">guess</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Guess the secret number: "</span><span class="p">))</span>
-    <span class="n">num_guesses</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="c1"># for each item in the data array, looks at its tens digit d
+# and increment hist[d]
+</span><span class="k">def</span> <span class="nf">build_hist</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">hist</span><span class="p">):</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
+        <span class="n">d</span> <span class="o">=</span> <span class="n">tens_digit</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+        <span class="n">hist</span><span class="p">[</span><span class="n">d</span><span class="p">]</span> <span class="o">=</span> <span class="n">hist</span><span class="p">[</span><span class="n">d</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
 
-    <span class="k">if</span> <span class="n">guess</span> <span class="o">&lt;</span> <span class="n">secret_number</span><span class="p">:</span>
-        <span class="k">print</span><span class="p">(</span><span class="s">"Too low"</span><span class="p">)</span>
-    <span class="k">elif</span> <span class="n">guess</span> <span class="o">&gt;</span> <span class="n">secret_number</span><span class="p">:</span>
-        <span class="k">print</span><span class="p">(</span><span class="s">"Too high"</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">print</span><span class="p">(</span><span class="s">"Correct! Number of guesses:"</span><span class="p">,</span> <span class="n">num_guesses</span><span class="p">)</span>
+<span class="c1"># prints the digit and a number of * equal to length argument
+</span><span class="k">def</span> <span class="nf">print_bar</span><span class="p">(</span><span class="n">digit</span><span class="p">,</span><span class="n">length</span><span class="p">):</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="n">digit</span><span class="p">,</span><span class="s">"0s "</span><span class="p">,</span><span class="n">sep</span><span class="o">=</span><span class="s">""</span><span class="p">,</span><span class="n">end</span><span class="o">=</span><span class="s">""</span><span class="p">)</span>
+    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">length</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"*"</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s">""</span><span class="p">)</span>
+        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">print</span><span class="p">()</span>
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="c1"># how many data items we'll have
+</span>    <span class="n">data_len</span> <span class="o">=</span> <span class="mi">50</span>
+    <span class="c1"># data we want to make into a histrogram by which digit is in the tens position
+</span>    <span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">36</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">43</span><span class="p">,</span> <span class="mi">42</span><span class="p">,</span> <span class="mi">48</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">66</span><span class="p">,</span> <span class="mi">65</span><span class="p">,</span> <span class="mi">62</span><span class="p">,</span> <span class="mi">28</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">53</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">98</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">47</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">57</span><span class="p">,</span> <span class="mi">43</span><span class="p">,</span> <span class="mi">42</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">48</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">61</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">55</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">61</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">99</span><span class="p">,</span> <span class="mi">91</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">81</span><span class="p">,</span> <span class="mi">54</span><span class="p">,</span> <span class="mi">47</span><span class="p">,</span> <span class="mi">79</span><span class="p">,</span> <span class="mi">39</span><span class="p">,</span> <span class="mi">78</span><span class="p">,</span> <span class="mi">44</span><span class="p">,</span> <span class="mi">63</span><span class="p">]</span>
+    <span class="c1"># hist is an array for counting how many time we see each digit in the tens position
+</span>    <span class="n">hist</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">build_hist</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">data_len</span><span class="p">,</span> <span class="n">hist</span><span class="p">)</span> 
+
+    <span class="c1"># print a bar for each digit
+</span>    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+        <span class="n">print_bar</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">hist</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="n">main</span><span class="p">()</span>
 </code></pre></div></div>
 
-<p>Here’s an example of a sample run in the console:</p>
+<p>Here’s the output you get when you run it in the console. Notice that it prints each tens digit and then a number of * characters reprenting how many of the data items had that tens digit.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Guess the secret number: 27
-Too low
-Guess the secret number: 90
-Too high
-Guess the secret number: 50
-Too high
-Guess the secret number: 40
-Too low
-Guess the secret number: 45
-Too high
-Guess the secret number: 42
-Correct! Number of guesses: 6
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>00s ********
+
+10s **
+
+20s ****
+
+30s *******
+
+40s ***********
+
+50s *****
+
+60s *******
+
+70s **
+
+80s *
+
+90s ***
+</code></pre></div></div>
+
+<h2 id="a-start-to-translating-the-python-program-into-mips">A start to translating the Python program into MIPS</h2>
+
+<p>Here’s an attempt to translate the program into MIPS. The <code class="language-plaintext highlighter-rouge">main</code>, <code class="language-plaintext highlighter-rouge">tens_digit</code>, and <code class="language-plaintext highlighter-rouge">print_bar</code> procedures are finished, but you will need to finish implementing the <code class="language-plaintext highlighter-rouge">build_hist</code> procedure.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># =========================================
+# Your Name:
+#
+# Histogram by tens digit, Python to MIPS translation
+#   of four functions: tens_digit, build_hist, print_bar, main
+#
+# =========================================
+
+.data
+# Input data (50 elements)
+data:		.word 0, 60, 23, 36, 5, 0, 43, 42, 48, 32,
+  		0, 66, 65, 62, 28, 32, 53, 5, 98, 15,
+  		47, 50, 24, 40, 0, 57, 43, 42, 25, 32,
+  		48, 30, 40, 61, 8, 55, 16, 61, 0, 99,
+  		91, 31, 81, 54, 47, 79, 39, 78, 44, 63
+data_len:	.word 50
+
+# Histogram (10 zeros)
+hist:		.word 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+
+# Strings / chars
+newline:	.asciiz "\n"
+label_0s:	.asciiz "0s "
+star_char:	.asciiz "*" 
+
+.text
+
+########################
+# main:
+#   - call build_hist(data, data_len, hist)
+#   - for each digit in 0..9 calls print_bar(digit, hist[digit])
+########################
+main:
+	# Build histogram
+	la $a0, data
+	lw $a1, data_len
+	la $a2, hist
+	jal build_hist
+
+	# Loop digit, i = 0..9
+	li $t0, 0 # i = 0
+main_loop:
+	slti $t4, $t0, 10 # check i &lt; 10
+	beq $t4, $zero, main_end # branch if the check fails
+
+	# a0 = i
+	move $a0, $t0
+
+	# a1 = hist[digit]
+	sll $t1, $t0, 2 # digit * 4
+	la $t2, hist 	# start of the hist array
+	add $t3, $t2, $t1 # calculating address of hist[digit]
+	lw $a1, 0($t3)	# load value of hist[digit] into $a1
+
+	# call print_bar(digit, hist[digit])
+	jal   print_bar
+
+	addi $t0, $t0, 1 #increment loop counter
+	b main_loop
+
+main_end:
+	# Exit program
+	li $v0, 10
+	syscall
+
+########################
+# def tens_digit(x):
+#return x // 10
+#
+# $a0: x - the two-digit value to find the tens digit of
+#
+########################
+tens_digit:
+	li $t0, 10
+	div $a0, $t0 # results of division and multiplication end up in a special register called hi and lo
+	mflo $v0	# this instruction moves out of the lo register into another register, $v0 in this case
+	jr $ra # return
+
+########################
+# def build_hist(data, n, hist):
+#i = 0
+#while i &lt; n:
+#d = tens_digit(data[i])
+#hist[d] = hist[d] + 1
+#i += 1
+#
+# $a0: the address of the data array
+# $a1: n - the number of items in the data array
+# $a2: the address of the hist array
+#
+########################
+build_hist:
+# put your code here
+	# things to do
+	#	- translate the code from the build_hist python function
+	#	- make a call to the tens_digit function
+	#	- for full credit, preserve needed registers by utilizing the stack
+	#		- you must restore $ra and any $s_ registers to what they were originally before you return
+	#		- you have to assume any $t_, $a_, or $v_ registers you need will be changed by functions you call
+	#			- save them before making a call to tens_digit and restore them afterwards (using either $s_ registers or the stack)
+	jr $ra
+
+########################
+# def print_bar(digit,length):
+#i = 0
+#print("\n",digit,"0s ",sep="",end="")
+#while i &lt; length:
+#print("*", end="")
+#i += 1
+#print()
+#
+# $a0: digit - digit to print before the bar
+# $a1: length - the length of the bar to print
+########################
+print_bar:
+	move $s0, $a0 # save the digit we're working on
+
+	# print "\n"
+	li $v0, 4
+	la $a0, newline
+	syscall
+
+	# print the digit (as integer)
+	li $v0, 1
+	move $a0, $s0 # this is the digit we want to print
+	syscall
+
+	# print "0s "
+	li $v0, 4
+	la $a0, label_0s
+	syscall
+
+	# print '*' length times
+	li $t1, 0 # i = 0
+
+pb_loop:
+	slt   $t2, $t1, $a1 # check i &lt; length
+	beq   $t2, $zero, pb_done # branch out if i &lt; length fails
+
+	# print a *
+	li $v0, 4
+	la $a0, star_char
+	syscall
+
+	addi $t1, $t1, 1 # increment loop counter
+	b pb_loop
+
+pb_done:
+	# trailing newline
+	li $v0, 4
+	la $a0, newline
+	syscall
+
+	jr $ra # return
 </code></pre></div></div>
 
 <h2 id="assignment">Assignment</h2>
 
-<p>Translate the above Python program into MIPS. When you run the program, the user interaction in the console should look like it does when you run the Python program.</p>
+<p>Finish translating the <code class="language-plaintext highlighter-rouge">build_hist</code> function into a MIPS procedure.</p>
 
-<h2 id="purpose">Purpose</h2>
-
-<p>The purpose of this assignment is to get practice with branching. You don’t need to worry about having a copy of each variable in the <code class="language-plaintext highlighter-rouge">.data</code> section - if you keep track of a variable exclusively in a register, that is ok.</p>
+<p>The translation should do the following (in order of priority):</p>
+<ol>
+  <li>allow the function to behave just the same way as the Python program</li>
+  <li>call the <code class="language-plaintext highlighter-rouge">tens_digit</code> procedure from inside the <code class="language-plaintext highlighter-rouge">build_hist</code> procedure</li>
+  <li>inside <code class="language-plaintext highlighter-rouge">build_hist</code>, use the stack (with <code class="language-plaintext highlighter-rouge">$sp</code>) to save <code class="language-plaintext highlighter-rouge">$ra</code> and to make sure you restore any <code class="language-plaintext highlighter-rouge">$s_</code> registers that you use to their values that they had before the procedure started. Note that you should also expect that <code class="language-plaintext highlighter-rouge">tens_digit</code> could change any of your <code class="language-plaintext highlighter-rouge">$t_</code>, <code class="language-plaintext highlighter-rouge">$a_</code>, or <code class="language-plaintext highlighter-rouge">$v_</code> registers, so preserver them before making the call by putting them on the stack or putting them in <code class="language-plaintext highlighter-rouge">$s_</code> registers.</li>
+</ol>
 
 <h2 id="grading">Grading</h2>
 
-<p>This is a 4-point assignment. See the <a href="../../syllabus//#assignments">rubric</a> from the syllabus.</p>
+<p>This is an 8-point assignment. See the <a href="../../syllabus//#assignments">rubric</a> from the syllabus, with the following exception:</p>
+
+<p>The full 8 points will be for correct behavior with proper use of the stack and a call to <code class="language-plaintext highlighter-rouge">tens_digit</code> from within <code class="language-plaintext highlighter-rouge">build_hist</code>. You can get 7 points if it behaves correctly and you have utilized at least one of <code class="language-plaintext highlighter-rouge">tens_digit</code> and the stack. You can get 6 points for something that behaves correctly even if it uses neither of <code class="language-plaintext highlighter-rouge">tens_digit</code> nor the stack. You will get 5 points for significant progress towards the solution, even if it produces incorrect results.</p>
 
 <h2 id="what-to-turn-in">What to turn in</h2>
 
@@ -516,7 +712,7 @@ Correct! Number of guesses: 6
 
 <h2 id="where-to-turn-it-in">Where to turn it in</h2>
 
-<p>Submit your files to the <strong>Assignment 2</strong> hand-in form on Blackboard.</p>
+<p>Submit your files to the <strong>Assignment 3</strong> hand-in form on Blackboard.</p>
 
 
         
