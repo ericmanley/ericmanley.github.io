@@ -1,0 +1,241 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>reveal.js</title>
+
+        <link rel="stylesheet" href="../dist/reset.css">
+        <link rel="stylesheet" href="../dist/reveal.css">
+        <link rel="stylesheet" href="../dist/theme/white.css" id="theme">
+
+        <!-- Theme used for syntax highlighted code -->
+        <link rel="stylesheet" href="../plugin/highlight/monokai.css" id="highlight-theme">
+
+        <style>
+            .twocolumn {
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           grid-gap: 10px;
+           text-align: left;
+        }
+        </style>
+
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section data-markdown
+                         data-separator="<!--==*-->"
+                         data-separator-vertical="<!----*-->">
+                    <textarea data-template>
+# MIPS Machine Code
+
+---
+
+CS 130 // 2025-09-24
+
+<!--=====================================================================-->
+
+# Review
+<!-- .slide: data-background="#004477" -->
+
+<!--====================================================================-->
+
+## Two's Complement
+- Most computers use **two's complement** to encode signed integer values
+- What is it exactly?
+    + <!-- .element: class="fragment"-->
+ Non-negative numbers are represented as usual<br>$0000$, $0011$, $0110$
+    + <!-- .element: class="fragment"-->
+ To negate a number, you do the following:
+        1. Flip all the bits: $0\rightarrow 1$ and $1\rightarrow 0$
+        2. Add 1 to the result
+    + <!-- .element: class="fragment"-->
+ $0000$, $1101$, $1010$
+
+<!---------------------------------->
+
+
+## Exercise
+### Two's Complement Practice
+- Convert each of the following numbers to decimal:
+
+---
+
+- $1111\\;1111\\;1111\\;1111\\;1111\\;1111\\;1111\\;1111$
+- $1111\\;1111\\;1111\\;1111\\;1111\\;1111\\;1110\\;0101$
+- $0000\\;0000\\;0000\\;0000\\;0000\\;0000\\;0000\\;0101$
+
+<!--=====================================================================-->
+
+## Demo: Adding two binary numbers
+
+* Let's use some 8-bit binary numbers 
+<pre>
+      0010 0011       0001 1000
+    + 1111 0100     - 0011 0110
+    ------------    ------------
+</pre>
+
+<!--=====================================================================-->
+
+## Exercise
+
+* Using 8-bit binary numbers, show how to compute 
+    - 68 - 55
+    - 20 + 40
+    - 30 - 127
+    - -10 + -3
+    
+
+<!--====================================================================-->
+
+# MIPS Machine Code
+<!-- .slide: data-background="#004477" -->
+
+<!--====================================================================-->
+
+## MIPS Machine Code
+- Each MIPS instruction is encoded in 32-bits
+    + <!-- .element: class="fragment"-->
+ `add` `$t0`, `$s1`, `$s2`
+    + <!-- .element: class="fragment"-->
+ 000000 10001 10010 01000 00000 100000
+
+---
+
+![R-Type Instruction](/Fall2025/CS130/assets/images/COD/r-type-instruction.png)<!-- .element: class="fragment"-->
+
+
+<!---------------------------------->
+
+## R-Type Instructions
+![R-Type Instruction](/Fall2025/CS130/assets/images/COD/r-type-instruction.png)
+
+---
+
+1. <!-- .element: class="fragment"-->
+ `op` (6 bits): Opcode
+2. <!-- .element: class="fragment"-->
+ `rs` (5 bits): First operand register
+3. <!-- .element: class="fragment"-->
+ `rt` (5 bits): Second operand register
+4. <!-- .element: class="fragment"-->
+ `rd` (5 bits): Destination register (result)
+5. <!-- .element: class="fragment"-->
+ `shamt` (5 bits): Shift amount
+6. <!-- .element: class="fragment"-->
+ `funct` (6 bits): Function code
+
+<!---------------------------------->
+
+## I-Type Instructions
+![I-Type Instruction](/Fall2025/CS130/assets/images/COD/i-type-instruction.png)
+
+---
+
+1. `op` (6 bits): Opcode
+2. `rs` (5 bits): First operand register
+3. `rt` (5 bits): Second operand register
+4. <!-- .element: class="fragment"-->
+ `data` (16 bits): Constant or address
+
+<!---------------------------------->
+
+## Exercise
+
+- Use Mars to figure out how each of the following is represented in bits (convert from hex!).
+```mips
+add $t2, $t1, $t0
+sub $t2, $t1, $t0
+addi $t0, $t0, 3
+```
+- What are the opcodes for `add`, `sub`, and `addi`?
+
+<!---------------------------------->
+
+
+## R-Type VS I-Type
+- Why do we need the I-type? Why not just implement `addi`, `lw`, and `sw` using the R-type format?
+    + <!-- .element: class="fragment"-->
+ Allows us to specify larger addresses and constants
+    + <!-- .element: class="fragment"-->
+ $2^5 = 32$ and $2^{16} = 65536$
+
+<!--====================================================================-->
+
+# Shift Instructions
+<!-- .slide: data-background="#004477" -->
+
+<!--====================================================================-->
+
+## Shifting investigation
+
+<div class="twocolumn" style="font-size: 80%">
+<div>
+
+Execute it: what do `sll` and `srl` do?
+
+What happens if you shift an odd number?
+
+Are these R-Type or I-Type instructions?
+</div>
+<div>
+
+```mips
+.text 
+
+li $s0, 16
+
+#shift left logical
+sll $t0, $s0, 1
+sll $t1, $s0, 2
+
+#shift right logical
+srl $t2, $s0, 2
+```
+
+</div>
+                    </textarea>
+                </section>
+            </div>
+        </div>
+
+        <script src="../dist/reveal.js"></script>
+        <script src="../plugin/notes/notes.js"></script>
+        <script src="../plugin/markdown/markdown.js"></script>
+        <script src="../plugin/highlight/highlight.js"></script>
+        <script src="../plugin/chalkboard/plugin.js"></script>
+        <script src="../plugin/math/math.js"></script>
+        <script src="../plugin/menu/menu.js"></script>
+        <!--  -->
+        <script>
+            // More info about initialization & config:
+            // - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
+            Reveal.initialize({
+                hash: true,
+                pdfSeparateFragments: false,
+
+                chalkboard: {
+                    chalkWidth: 4,
+                    chalkEffect: 0.5,
+                    toggleChalkboardButton: false,
+                    toggleNotesButton: false,
+                },
+
+                menu: {
+                    hideMissingTitles: true,
+                    themes: true,
+                    themesPath: '../dist/theme/',
+                },
+
+                // Learn about plugins: https://revealjs.com/plugins/
+                plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, 
+                    RevealChalkboard, RevealMath, RevealMenu ]
+            });
+        </script>
+    </body>
+</html>
