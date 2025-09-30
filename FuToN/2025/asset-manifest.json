@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/FuToN/2025/static/css/main.79d19d76.css",
+    "main.js": "/FuToN/2025/static/js/main.be762b65.js",
+    "static/js/453.4705a7f9.chunk.js": "/FuToN/2025/static/js/453.4705a7f9.chunk.js",
+    "index.html": "/FuToN/2025/index.html",
+    "main.79d19d76.css.map": "/FuToN/2025/static/css/main.79d19d76.css.map",
+    "main.be762b65.js.map": "/FuToN/2025/static/js/main.be762b65.js.map",
+    "453.4705a7f9.chunk.js.map": "/FuToN/2025/static/js/453.4705a7f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.79d19d76.css",
+    "static/js/main.be762b65.js"
+  ]
+}
