@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Assignment 2 - CS 130: Computer Organization</title>
+<!-- begin _includes/seo.html --><title>Exam 1 Corrections - CS 130: Computer Organization</title>
 <meta name="description" content="">
 
 
@@ -22,8 +22,8 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="CS 130: Computer Organization">
-<meta property="og:title" content="Assignment 2">
-<meta property="og:url" content="https://ericmanley.github.io/Fall2025/CS130/assignments/assignment-2/">
+<meta property="og:title" content="Exam 1 Corrections">
+<meta property="og:url" content="https://ericmanley.github.io/Fall2025/CS130/assignments/exam-1-corrections/">
 
 
   <meta property="og:description" content="">
@@ -41,7 +41,7 @@
 
 
 
-<link rel="canonical" href="https://ericmanley.github.io/Fall2025/CS130/assignments/assignment-2/">
+<link rel="canonical" href="https://ericmanley.github.io/Fall2025/CS130/assignments/exam-1-corrections/">
 
 
 
@@ -399,7 +399,7 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Assignment 2">
+    <meta itemprop="headline" content="Exam 1 Corrections">
     <meta itemprop="description" content="">
     <meta itemprop="datePublished" content="2025-10-02T15:17:44-05:00">
     
@@ -407,7 +407,7 @@
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Assignment 2
+          <h1 id="page-title" class="page__title" itemprop="headline">Exam 1 Corrections
 </h1>
           
 
@@ -423,7 +423,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          1 minute read
+          less than 1 minute read
         
       </span>
     
@@ -438,7 +438,7 @@
           <aside class="sidebar__right ">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
-              <ul class="toc__menu"><li><a href="#a-python-program-to-translate">A Python program to translate</a></li><li><a href="#assignment">Assignment</a></li><li><a href="#purpose">Purpose</a></li><li><a href="#grading">Grading</a></li><li><a href="#what-to-turn-in">What to turn in</a></li><li><a href="#where-to-turn-it-in">Where to turn it in</a></li></ul>
+              <ul class="toc__menu"><li><a href="#optional-opportunity-to-receive-credit-back-on-exam-1">Optional opportunity to receive credit back on Exam 1</a></li><li><a href="#how-to-make-corrections">How to make corrections</a></li><li><a href="#turning-it-in">Turning it in</a></li></ul>
 
             </nav>
           </aside>
@@ -453,70 +453,26 @@ Assignment
 <br>
 -->
 
-<strong>Due:</strong> by the end of the calendar day on Wednesday, September 17, 2025
+<strong>Due:</strong> by the end of the calendar day on Wednesday, October 15, 2025
 
 
 
-<h2 id="a-python-program-to-translate">A Python program to translate</h2>
+<h2 id="optional-opportunity-to-receive-credit-back-on-exam-1">Optional opportunity to receive credit back on Exam 1</h2>
 
-<p>The following <strong>Guess the Secret Number Game</strong> has been written in Python.</p>
+<p>You may correct problems that you lost points on for Exam 1 and receive up to half the credit back. You should not expect this opportunity to be given on every exam.</p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">secret_number</span> <span class="o">=</span> <span class="mi">42</span>
-<span class="n">guess</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">num_guesses</span> <span class="o">=</span> <span class="mi">0</span>
+<h2 id="how-to-make-corrections">How to make corrections</h2>
 
-<span class="k">while</span> <span class="n">guess</span> <span class="o">!=</span> <span class="n">secret_number</span><span class="p">:</span>
-    <span class="n">guess</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Guess the secret number: "</span><span class="p">))</span>
-    <span class="n">num_guesses</span> <span class="o">+=</span> <span class="mi">1</span>
-
-    <span class="k">if</span> <span class="n">guess</span> <span class="o">&lt;</span> <span class="n">secret_number</span><span class="p">:</span>
-        <span class="k">print</span><span class="p">(</span><span class="s">"Too low"</span><span class="p">)</span>
-    <span class="k">elif</span> <span class="n">guess</span> <span class="o">&gt;</span> <span class="n">secret_number</span><span class="p">:</span>
-        <span class="k">print</span><span class="p">(</span><span class="s">"Too high"</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">print</span><span class="p">(</span><span class="s">"Correct! Number of guesses:"</span><span class="p">,</span> <span class="n">num_guesses</span><span class="p">)</span>
-</code></pre></div></div>
-
-<p>Here’s an example of a sample run in the console:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Guess the secret number: 27
-Too low
-Guess the secret number: 90
-Too high
-Guess the secret number: 50
-Too high
-Guess the secret number: 40
-Too low
-Guess the secret number: 45
-Too high
-Guess the secret number: 42
-Correct! Number of guesses: 6
-</code></pre></div></div>
-
-<h2 id="assignment">Assignment</h2>
-
-<p>Translate the above Python program into MIPS. When you run the program, the user interaction in the console should look like it does when you run the Python program.</p>
-
-<h2 id="purpose">Purpose</h2>
-
-<p>The purpose of this assignment is to get practice with branching. You don’t need to worry about having a copy of each variable in the <code class="language-plaintext highlighter-rouge">.data</code> section - if you keep track of a variable exclusively in a register, that is ok.</p>
-
-<h2 id="grading">Grading</h2>
-
-<p>This is a 4-point assignment. See the <a href="../../syllabus//#assignments">rubric</a> from the syllabus.</p>
-
-<h2 id="what-to-turn-in">What to turn in</h2>
-
-<p>Turn in the following items</p>
-
+<p>Create a new document and include the following <em>for each problem you want credit on</em></p>
 <ol>
-  <li>Your <code class="language-plaintext highlighter-rouge">.asm</code> file which contains your MIPS program</li>
-  <li>A <code class="language-plaintext highlighter-rouge">.txt</code> file (you can use Notepad, TextEdit, or even Visual Studio Code) where you paste in a sample run of your program that shows how it worked when you ran it in MARS</li>
+  <li>The problem number</li>
+  <li>The corrected answer</li>
+  <li>A written discussion using your own words (not AI generated) where you explain what you did wrong the first time around and justify why your corrected answer is correct.</li>
 </ol>
 
-<h2 id="where-to-turn-it-in">Where to turn it in</h2>
+<h2 id="turning-it-in">Turning it in</h2>
 
-<p>Submit your files to the <strong>Assignment 2</strong> hand-in form on Blackboard.</p>
+<p>Bring your original exam with a physical copy of the corrections document to class on Wednesday, October 15, 2025 and hand it in.</p>
 
 
         
