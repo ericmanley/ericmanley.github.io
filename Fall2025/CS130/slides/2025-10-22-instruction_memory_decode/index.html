@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>reveal.js</title>
+
+        <link rel="stylesheet" href="../dist/reset.css">
+        <link rel="stylesheet" href="../dist/reveal.css">
+        <link rel="stylesheet" href="../dist/theme/white.css" id="theme">
+
+        <!-- Theme used for syntax highlighted code -->
+        <link rel="stylesheet" href="../plugin/highlight/monokai.css" id="highlight-theme">
+
+        <style>
+            .twocolumn {
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           grid-gap: 10px;
+           text-align: left;
+        }
+        </style>
+
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section data-markdown
+                         data-separator="<!--==*-->"
+                         data-separator-vertical="<!----*-->">
+                    <textarea data-template>
+# Instruction Memory and Decode
+
+---
+
+CS 130 // 2025-10-22
+
+
+<!--=====================================================================-->
+
+## Instruction Memory on the CPU
+
+![Instruction Fetch](/Fall2025/CS130/assets/images/COD/instruction_fetch.png)
+
+<!--====================================================================-->
+
+## Demo: Make it in Logisim 
+
+
+<div class="twocolumn">
+
+<div>
+Use a ROM to simulate instruction memory
+
+- 16 bit address (should be 32 for MIPS, but that is too big for Logisim)
+- Quad output - so we can read four bytes at a time
+- lowest-address byte is shown first in Logisim memory contents
+
+</div>
+<div>
+
+
+![MIPS program in Logisim](../../assets/images/mips-for-logisim-rom.png) <!-- .element width="500px" -->
+
+![MIPS program in MARS](../../assets/images/mips-for-logisim-mars.png) <!-- .element width="600px" -->
+
+</div>
+</div>
+
+
+
+<!--====================================================================-->
+
+## Exercise
+
+
+
+- Create a Program Counter Register which iterates through the instructions in memory
+
+
+![Instruction Memory in Logisim](../../assets/images/instruction-memory-logisim.png)
+<!--====================================================================-->
+
+
+## Exercise
+
+
+- You can set your splitter to have custom fan-out ranges
+- Make a separate pin for each instruction field (opcode, rs, rt, etc.)
+
+
+<div class="twocolumn">
+
+<div>
+
+![Custom Ranges for Splitter](../../assets/images/custom-splitter.png) 
+
+</div>
+<div>
+
+![R-Type format](../../assets/images/COD/r-type-instruction.png) 
+![I-Type format](../../assets/images/COD/i-type-instruction.png) 
+
+</div>
+</div>
+
+<!--====================================================================-->
+
+## What's next?
+
+
+* Use these circuits (or build your own)
+    - [Logisim Register File and ALU](https://ericmanley.github.io/Fall2025/CS130/assets/RegisterFileAndALU.circ)
+* Think about how you can hook up your decoded instruction to the register file and ALU so that it does the right thing for the instructions
+
+```
+addi $9, $0, 7
+addi $10, $0, 8
+add $8, $9, $10
+```
+                    </textarea>
+                </section>
+            </div>
+        </div>
+
+        <script src="../dist/reveal.js"></script>
+        <script src="../plugin/notes/notes.js"></script>
+        <script src="../plugin/markdown/markdown.js"></script>
+        <script src="../plugin/highlight/highlight.js"></script>
+        <script src="../plugin/chalkboard/plugin.js"></script>
+        <script src="../plugin/math/math.js"></script>
+        <script src="../plugin/menu/menu.js"></script>
+        <!--  -->
+        <script>
+            // More info about initialization & config:
+            // - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
+            Reveal.initialize({
+                hash: true,
+                pdfSeparateFragments: false,
+
+                chalkboard: {
+                    chalkWidth: 4,
+                    chalkEffect: 0.5,
+                    toggleChalkboardButton: false,
+                    toggleNotesButton: false,
+                },
+
+                menu: {
+                    hideMissingTitles: true,
+                    themes: true,
+                    themesPath: '../dist/theme/',
+                },
+
+                // Learn about plugins: https://revealjs.com/plugins/
+                plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, 
+                    RevealChalkboard, RevealMath, RevealMenu ]
+            });
+        </script>
+    </body>
+</html>

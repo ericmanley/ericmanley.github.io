@@ -1,0 +1,301 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>reveal.js</title>
+
+        <link rel="stylesheet" href="../dist/reset.css">
+        <link rel="stylesheet" href="../dist/reveal.css">
+        <link rel="stylesheet" href="../dist/theme/white.css" id="theme">
+
+        <!-- Theme used for syntax highlighted code -->
+        <link rel="stylesheet" href="../plugin/highlight/monokai.css" id="highlight-theme">
+
+        <style>
+            .twocolumn {
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           grid-gap: 10px;
+           text-align: left;
+        }
+        </style>
+
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section data-markdown
+                         data-separator="<!--==*-->"
+                         data-separator-vertical="<!----*-->">
+                    <textarea data-template>
+# The Datapath
+
+---
+
+CS 130 // 2024-10-24
+
+
+<!--=====================================================================-->
+
+# Course Themes
+<!-- .slide: data-background="#004477" -->
+
+<!--=====================================================================-->
+
+## Overarching Theme
+- Learning how a high-level program is actually executed on your computer's processor
+
+<!---------------------------------->
+
+![Compiler-Assembler Diagram](/Fall2025/CS130/assets/images/COD/compiler-assembler.png)
+
+<!---------------------------------->
+
+## Trajectory of the Course
+1. Assembly language programming
+2. Digital logic
+3. **Processor architecture**
+4. The C Programming Language
+
+<!--=====================================================================-->
+
+# Review
+<!-- .slide: data-background="#004477" -->
+
+
+<!--====================================================================-->
+
+## Review
+
+ - **CPU:** Central Processing Unit
+  - the circuits that execute instructions from a program
+  - AKA "the processor"
+
+ - Processor architecture
+  - logical design of CPU 
+  - how do memory, the ALU, Register File, etc. all fit together?
+
+<!---------------------------------->
+
+<!-- ![Photo of the inside of a laptop](/Fall2025/CS130/assets/images/COD/inside-laptop.png) -->
+
+
+![Photo of the inside of a laptop](/Fall2025/CS130/assets/images/laptop-internal-components.png)
+
+image from https://www.scientecheasy.com/2024/09/laptop-components.html/
+
+<!---------------------------------->
+
+![Components of a processor](/Fall2025/CS130/assets/images/COD/processor-components.png)
+
+<!---------------------------------->
+
+![Processor component diagram](/Fall2025/CS130/assets/images/COD/control.png) 
+
+<!--====================================================================-->
+
+
+# The Datapath
+<!-- .slide: data-background="#004477" -->
+
+<!--=====================================================================-->
+
+## The Datapath
+- What is a "datapath" and what does it consist of?
+    + <!-- .element: class="fragment"-->
+ It is the main component of the CPU that executes instructions
+    + <!-- .element: class="fragment"-->
+ Fetches instructions and data from memory, performs arithmetic, etc.
+    + <!-- .element: class="fragment"-->
+ Consists of ALUs, a register file, RAM, and various supplementary logic gates
+
+<!--====================================================================-->
+
+## Instruction Execution
+1. Uses the PC to fetch the next instruction to be executed from memory
+2. <!-- .element: class="fragment"-->
+ Identifies instruction type and registers involved and fetches their contents from the register file
+3. <!-- .element: class="fragment"-->
+ Depending on the instruction:
+    - <!-- .element: class="fragment"-->
+ Uses the ALU to do appropriate arithmetic
+    - <!-- .element: class="fragment"-->
+ Read/write RAM for load/store
+    - <!-- .element: class="fragment"-->
+ Update PC to PC + 4 or the jump target address
+
+<!--====================================================================-->
+
+# Building a Datapath
+<!-- .slide: data-background="#004477" -->
+
+<!--====================================================================-->
+
+## Instruction Fetch
+
+![Instruction Fetch](/Fall2025/CS130/assets/images/COD/instruction_fetch.png)
+
+<!---------------------------------->
+
+## Review: Handling Instruction Fetch
+- We started this in Logisim
+
+![Instruction Memory in Logisim](../../assets/images/instruction-memory-logisim.png)
+
+
+<!---------------------------------->
+
+
+## Decoding the Instruction
+
+
+- You can set your splitter to have custom fan-out ranges
+
+<div class="twocolumn">
+
+<div>
+
+![Decode Step](../../assets/images/decode.png) 
+
+</div>
+<div>
+
+![R-Type format](../../assets/images/COD/r-type-instruction.png) 
+![I-Type format](../../assets/images/COD/i-type-instruction.png) 
+
+</div>
+</div>
+
+<!---------------------------------->
+
+## Decode close-up
+
+![Decode Step Zoomed In](../../assets/images/decodezoom.png) 
+
+<!--====================================================================-->
+
+## R-Format Instructions
+
+- Read two register operands, perform ALU operation, write result to target register
+
+![R-Format Instructions](/Fall2025/CS130/assets/images/COD/r_format_instructions.png)
+
+<!---------------------------------->
+
+## Inputs to the Register File
+
+![R-Type format](../../assets/images/COD/r-type-instruction.png) 
+
+![Register Inputs](../../assets/images/reg_inputs.png) 
+
+
+ [Logisim Register File and ALU](https://ericmanley.github.io/Fall2025/CS130/assets/RegisterFileAndALU.circ)
+
+
+<!---------------------------------->
+
+## Connecting it to the ALU
+
+![R-Type format](../../assets/images/COD/r-type-instruction.png) 
+
+![Register and ALU](../../assets/images/reg_file_outputs.png) 
+
+<!---------------------------------->
+
+## Walking an instruction through the datapath 
+
+```mips 
+add $10, $8, $9
+```
+
+![R-Type format](../../assets/images/COD/r-type-instruction.png) 
+
+000000 01000 01001 01010 00000 100000
+
+![Register and ALU](../../assets/images/reg_file_outputs.png) 
+
+
+<!--====================================================================-->
+
+## Exercise
+
+How can we handle I-type instructions like 
+
+```mips 
+addi $8, $0, 5
+```
+
+![I-Type format](../../assets/images/COD/i-type-instruction.png) 
+
+001000 00000 01000 0000000000000101
+
+![Register and ALU](../../assets/images/reg_file_outputs.png) 
+
+<!--====================================================================-->
+
+## Load/Store Instructions
+
+- Read register operands, calculate address, read/write to memory
+
+![Load-Store Instructions](/Fall2025/CS130/assets/images/COD/load_store_instructions.png)
+
+<!--====================================================================-->
+
+## Branch Instructions
+
+- Read register operands, compare operands, calculate target address
+
+<!---------------------------------->
+
+![Branch Instructions](/Fall2025/CS130/assets/images/COD/branch_instructions.png)
+
+<!--====================================================================-->
+
+## The Full Datapath
+
+<img src='/Fall2025/CS130/assets/images/COD/full_datapath.png' height='500'>
+
+
+                    </textarea>
+                </section>
+            </div>
+        </div>
+
+        <script src="../dist/reveal.js"></script>
+        <script src="../plugin/notes/notes.js"></script>
+        <script src="../plugin/markdown/markdown.js"></script>
+        <script src="../plugin/highlight/highlight.js"></script>
+        <script src="../plugin/chalkboard/plugin.js"></script>
+        <script src="../plugin/math/math.js"></script>
+        <script src="../plugin/menu/menu.js"></script>
+        <!--  -->
+        <script>
+            // More info about initialization & config:
+            // - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
+            Reveal.initialize({
+                hash: true,
+                pdfSeparateFragments: false,
+
+                chalkboard: {
+                    chalkWidth: 4,
+                    chalkEffect: 0.5,
+                    toggleChalkboardButton: false,
+                    toggleNotesButton: false,
+                },
+
+                menu: {
+                    hideMissingTitles: true,
+                    themes: true,
+                    themesPath: '../dist/theme/',
+                },
+
+                // Learn about plugins: https://revealjs.com/plugins/
+                plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, 
+                    RevealChalkboard, RevealMath, RevealMenu ]
+            });
+        </script>
+    </body>
+</html>
