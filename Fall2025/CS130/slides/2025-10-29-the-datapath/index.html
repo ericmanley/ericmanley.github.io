@@ -34,9 +34,68 @@
 
 ---
 
-CS 130 // 2024-10-24
+CS 130 // 2025-10-29
 
 
+<!--=====================================================================-->
+
+# Continuing our Processor Design
+<!-- .slide: data-background="#004477" -->
+
+<!--=====================================================================-->
+
+## Downloads if you need them
+
+
+ [Logisim Register File and ALU](https://ericmanley.github.io/Fall2025/CS130/assets/RegisterFileAndALU.circ)
+
+<!--=====================================================================-->
+
+## 12:30 section progress
+
+![12:30 section datapath start](/Fall2025/CS130/assets/images/datapathstart1230.png)
+
+* I was rushed to show you this working, but we forgot to hook up the *clock* and the register file's *write* enable
+
+<!--=====================================================================-->
+
+## 2:00 section progress
+
+![2:00 section datapath start](/Fall2025/CS130/assets/images/datapathstart200.png)
+
+<!--=====================================================================-->
+
+## What's next?
+
+We have enabled `addi` instructions
+
+```mips 
+addi $8, $0, 5
+```
+
+but what about a regular `add`?
+
+```mips 
+add $10, $8, $9
+```
+<img src='/Fall2025/CS130/assets/images/decodezoom.png' height='300'>
+
+
+<!--=====================================================================-->
+
+## Group discussion (12:30)
+
+Where would you draw wires to support an `add`?
+
+![12:30 section datapath start](/Fall2025/CS130/assets/images/datapathstart1230.png)
+
+<!--=====================================================================-->
+
+## Group discussion (2:00)
+
+Where would you draw wires to support an `add`?
+
+![2:00 section datapath start](/Fall2025/CS130/assets/images/datapathstart200.png)
 <!--=====================================================================-->
 
 # Course Themes
@@ -168,12 +227,6 @@ image from https://www.scientecheasy.com/2024/09/laptop-components.html/
 </div>
 </div>
 
-<!---------------------------------->
-
-## Decode close-up
-
-![Decode Step Zoomed In](../../assets/images/decodezoom.png) 
-
 <!--====================================================================-->
 
 ## R-Format Instructions
@@ -191,7 +244,6 @@ image from https://www.scientecheasy.com/2024/09/laptop-components.html/
 ![Register Inputs](../../assets/images/reg_inputs.png) 
 
 
- [Logisim Register File and ALU](https://ericmanley.github.io/Fall2025/CS130/assets/RegisterFileAndALU.circ)
 
 
 <!---------------------------------->
@@ -202,36 +254,7 @@ image from https://www.scientecheasy.com/2024/09/laptop-components.html/
 
 ![Register and ALU](../../assets/images/reg_file_outputs.png) 
 
-<!---------------------------------->
 
-## Walking an instruction through the datapath 
-
-```mips 
-add $10, $8, $9
-```
-
-![R-Type format](../../assets/images/COD/r-type-instruction.png) 
-
-000000 01000 01001 01010 00000 100000
-
-![Register and ALU](../../assets/images/reg_file_outputs.png) 
-
-
-<!--====================================================================-->
-
-## Exercise
-
-How can we handle I-type instructions like 
-
-```mips 
-addi $8, $0, 5
-```
-
-![I-Type format](../../assets/images/COD/i-type-instruction.png) 
-
-001000 00000 01000 0000000000000101
-
-![Register and ALU](../../assets/images/reg_file_outputs.png) 
 
 <!--====================================================================-->
 
