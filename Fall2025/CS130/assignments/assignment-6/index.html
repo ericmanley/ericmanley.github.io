@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Assignment 2 - CS 130: Computer Organization</title>
+<!-- begin _includes/seo.html --><title>Assignment 6 - CS 130: Computer Organization</title>
 <meta name="description" content="">
 
 
@@ -22,8 +22,8 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="CS 130: Computer Organization">
-<meta property="og:title" content="Assignment 2">
-<meta property="og:url" content="https://ericmanley.github.io/Fall2025/CS130/assignments/assignment-2/">
+<meta property="og:title" content="Assignment 6">
+<meta property="og:url" content="https://ericmanley.github.io/Fall2025/CS130/assignments/assignment-6/">
 
 
   <meta property="og:description" content="">
@@ -41,7 +41,7 @@
 
 
 
-<link rel="canonical" href="https://ericmanley.github.io/Fall2025/CS130/assignments/assignment-2/">
+<link rel="canonical" href="https://ericmanley.github.io/Fall2025/CS130/assignments/assignment-6/">
 
 
 
@@ -406,7 +406,7 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Assignment 2">
+    <meta itemprop="headline" content="Assignment 6">
     <meta itemprop="description" content="">
     <meta itemprop="datePublished" content="2025-10-31T13:39:56-05:00">
     
@@ -414,7 +414,7 @@
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Assignment 2
+          <h1 id="page-title" class="page__title" itemprop="headline">Assignment 6
 </h1>
           
 
@@ -430,7 +430,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          1 minute read
+          2 minute read
         
       </span>
     
@@ -445,7 +445,7 @@
           <aside class="sidebar__right ">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
-              <ul class="toc__menu"><li><a href="#a-python-program-to-translate">A Python program to translate</a></li><li><a href="#assignment">Assignment</a></li><li><a href="#purpose">Purpose</a></li><li><a href="#grading">Grading</a></li><li><a href="#what-to-turn-in">What to turn in</a></li><li><a href="#where-to-turn-it-in">Where to turn it in</a></li></ul>
+              <ul class="toc__menu"><li><a href="#our-mips-cpu-design-in-logisim">Our MIPS CPU Design in Logisim</a></li><li><a href="#assignment-option-1">Assignment Option 1</a><ul><li><a href="#option-1-bonus-points">Option 1 Bonus Points</a></li><li><a href="#option-1-grading">Option 1 Grading</a></li></ul></li><li><a href="#assignment-option-2">Assignment Option 2</a><ul><li><a href="#option-2-grading">Option 2 Grading</a></li></ul></li><li><a href="#what-to-turn-in">What to turn in</a></li><li><a href="#where-to-turn-it-in">Where to turn it in</a></li></ul>
 
             </nav>
           </aside>
@@ -460,70 +460,73 @@ Assignment
 <br>
 -->
 
-<strong>Due:</strong> by the end of the calendar day on Wednesday, September 17, 2025
+<strong>Due:</strong> by the end of the calendar day on Wednesday, November 12, 2025
 
 
 
-<h2 id="a-python-program-to-translate">A Python program to translate</h2>
+<h2 id="our-mips-cpu-design-in-logisim">Our MIPS CPU Design in Logisim</h2>
 
-<p>The following <strong>Guess the Secret Number Game</strong> has been written in Python.</p>
+<p>So far in class, we’ve designed a partial MIPS CPU.</p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">secret_number</span> <span class="o">=</span> <span class="mi">42</span>
-<span class="n">guess</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">num_guesses</span> <span class="o">=</span> <span class="mi">0</span>
+<p><img src="../../assets/images/logisim_cpu_simulated.png" alt="Datapath with Control in Logisim" /></p>
 
-<span class="k">while</span> <span class="n">guess</span> <span class="o">!=</span> <span class="n">secret_number</span><span class="p">:</span>
-    <span class="n">guess</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Guess the secret number: "</span><span class="p">))</span>
-    <span class="n">num_guesses</span> <span class="o">+=</span> <span class="mi">1</span>
+<p>If you haven’t already, add on to your datapath so that it looks like this one.</p>
 
-    <span class="k">if</span> <span class="n">guess</span> <span class="o">&lt;</span> <span class="n">secret_number</span><span class="p">:</span>
-        <span class="k">print</span><span class="p">(</span><span class="s">"Too low"</span><span class="p">)</span>
-    <span class="k">elif</span> <span class="n">guess</span> <span class="o">&gt;</span> <span class="n">secret_number</span><span class="p">:</span>
-        <span class="k">print</span><span class="p">(</span><span class="s">"Too high"</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">print</span><span class="p">(</span><span class="s">"Correct! Number of guesses:"</span><span class="p">,</span> <span class="n">num_guesses</span><span class="p">)</span>
-</code></pre></div></div>
+<h2 id="assignment-option-1">Assignment Option 1</h2>
 
-<p>Here’s an example of a sample run in the console:</p>
+<p>Update your control unit to support <code class="language-plaintext highlighter-rouge">add</code>, <code class="language-plaintext highlighter-rouge">addi</code>, <code class="language-plaintext highlighter-rouge">sub</code>, <code class="language-plaintext highlighter-rouge">and</code>, <code class="language-plaintext highlighter-rouge">or</code>, <code class="language-plaintext highlighter-rouge">xor</code>, <code class="language-plaintext highlighter-rouge">andi</code>, <code class="language-plaintext highlighter-rouge">ori</code>, <code class="language-plaintext highlighter-rouge">xori</code>, <code class="language-plaintext highlighter-rouge">slt</code>, and <code class="language-plaintext highlighter-rouge">slti</code>.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Guess the secret number: 27
-Too low
-Guess the secret number: 90
-Too high
-Guess the secret number: 50
-Too high
-Guess the secret number: 40
-Too low
-Guess the secret number: 45
-Too high
-Guess the secret number: 42
-Correct! Number of guesses: 6
-</code></pre></div></div>
+<p>Write a MIPS program in MARS with these instructions and look at the bit-pattern in the <em>code</em> column of the Text Segment after it has been assembled. Copy this by hand into your CPU’s <em>instruction memory</em>.</p>
 
-<h2 id="assignment">Assignment</h2>
+<p><img src="../../assets/images/mips-for-logisim-mars.png" alt="MIPS program in MARS" /></p>
 
-<p>Translate the above Python program into MIPS. When you run the program, the user interaction in the console should look like it does when you run the Python program.</p>
+<p><img src="../../assets/images/mips-for-logisim-rom.png" alt="MIPS program in Logisim" /></p>
 
-<h2 id="purpose">Purpose</h2>
+<p>Simulate it, and then prove that the program ran correctly by showing correct values in each of the relevant registers. You should be able to see the value of all registers by right-clicking (or ctrl-clicking) on the register file then select <strong>View RegisterFile</strong> after you have run the simulation.</p>
 
-<p>The purpose of this assignment is to get practice with branching. You don’t need to worry about having a copy of each variable in the <code class="language-plaintext highlighter-rouge">.data</code> section - if you keep track of a variable exclusively in a register, that is ok.</p>
+<p>Submit the following</p>
+<ul>
+  <li>A screenshot of the Text Segment on the <em>Execute</em> tab from MARS which shows the MIPS program that you used to test your CPU. This MIPS program doesn’t have to do anything special, but it should show off all of the instructions that you want to get credit for.</li>
+  <li>A screenshot of your control unit truth table that you used to generate your Control unit</li>
+  <li>A screenshot of the circuit Logisim generated for your control unit</li>
+  <li>A screenshot of your CPU design in Logisim</li>
+  <li>A screenshot or your RegisterFile circuit (right/ctrl-click after simulating as described above) which shows the correct values being displayed on the registers.</li>
+  <li>A short explanation describing what you did and why the registers all show the correct values</li>
+</ul>
 
-<h2 id="grading">Grading</h2>
+<p><strong>Do not zip up your files when you submit them</strong></p>
 
-<p>This is a 4-point assignment. See the <a href="../../syllabus//#assignments">rubric</a> from the syllabus.</p>
+<h3 id="option-1-bonus-points">Option 1 Bonus Points</h3>
+
+<p>You can earn up to 4 points of extra credit by implementing <code class="language-plaintext highlighter-rouge">lw</code>, <code class="language-plaintext highlighter-rouge">sw</code>, <code class="language-plaintext highlighter-rouge">beq</code>, and <code class="language-plaintext highlighter-rouge">bne</code> in your CPU (1 point each). I’ll also entertain points for other kinds of instructions like shifting or jumping instructions. If you do this, make sure to describe what you did for extra credit, and show that you verified it works in a similar way to how you showed the other instructions work.</p>
+
+<h3 id="option-1-grading">Option 1 Grading</h3>
+
+<p>This is an 8-point assignment. See the <a href="../../syllabus//#assignments">rubric</a> from the syllabus.</p>
+
+<h2 id="assignment-option-2">Assignment Option 2</h2>
+
+<p>Design your own instruction set and then build the circuit in Logisim to simulate it.</p>
+
+<p>Some interesting ideas you could look into include</p>
+<ul>
+  <li><a href="https://en.wikipedia.org/wiki/Stack_machine">Stack-based machines</a> which eliminates the need for most registers - you push operands onto the stack and then have a simple instruction like <code class="language-plaintext highlighter-rouge">add</code> which means “add the top two values on the stack and then put the result back on the stack”</li>
+  <li><a href="https://en.wikipedia.org/wiki/One-instruction_set_computer">One-instruction set computer</a> which is a computer that has only one instruction but is still a <a href="https://en.wikipedia.org/wiki/Turing_machine">universal computer</a>, so you can accomplish anything that you can with a bigger instruction set</li>
+</ul>
+
+<p>In this case, you should submit a document which describes your instruction set and gives sample programs along with their expected behavior. You should also submit images of any of the circuits you created and demonstrate that it works.</p>
+
+<h3 id="option-2-grading">Option 2 Grading</h3>
+
+<p>Any working instruction set and CPU design that you can get working (even if it is a small instruction set) will earn the full 8 points, with partial credit for progress towards a working solutions. Projects that are particularly creative or involve extra work are eligible for up to 4 additional points of extra credit.</p>
 
 <h2 id="what-to-turn-in">What to turn in</h2>
 
-<p>Turn in the following items</p>
-
-<ol>
-  <li>Your <code class="language-plaintext highlighter-rouge">.asm</code> file which contains your MIPS program</li>
-  <li>A <code class="language-plaintext highlighter-rouge">.txt</code> file (you can use Notepad, TextEdit, or even Visual Studio Code) where you paste in a sample run of your program that shows how it worked when you ran it in MARS</li>
-</ol>
+<p>Turn in the documentation described in the Assignment section.</p>
 
 <h2 id="where-to-turn-it-in">Where to turn it in</h2>
 
-<p>Submit your files to the <strong>Assignment 2</strong> hand-in form on Blackboard.</p>
+<p>Submit your document of images to the <strong>Assignment 6</strong> hand-in form on Blackboard.</p>
 
 
         
