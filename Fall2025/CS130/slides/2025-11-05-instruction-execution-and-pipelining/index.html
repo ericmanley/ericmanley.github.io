@@ -1,0 +1,399 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>reveal.js</title>
+
+        <link rel="stylesheet" href="../dist/reset.css">
+        <link rel="stylesheet" href="../dist/reveal.css">
+        <link rel="stylesheet" href="../dist/theme/white.css" id="theme">
+
+        <!-- Theme used for syntax highlighted code -->
+        <link rel="stylesheet" href="../plugin/highlight/monokai.css" id="highlight-theme">
+
+        <style>
+            .twocolumn {
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           grid-gap: 10px;
+           text-align: left;
+        }
+            .twocolumn-alt {
+           display: grid;
+           grid-template-columns: 2fr 1fr;
+           grid-gap: 10px;
+           text-align: left;
+        }
+        </style>
+
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section data-markdown
+                         data-separator="<!--==*-->"
+                         data-separator-vertical="<!----*-->">
+                    <textarea data-template>
+# Instruction Execution And Pipelining
+
+---
+
+CS 130 // 2025-11-05
+
+
+<!--=====================================================================-->
+
+## Assignment 6 Reminder
+
+- [Assignment 6](../../assignments/assignment-6/): do these too 
+    - `and`, `or`, `xor`, `andi`, `ori`, `xori`, `slt`, `slti`
+    - Extra Credit: do `lw`, `sw`, `beq`, and/or `bne`
+    - Or... design another instruction set and archtecture of your choosing
+
+<!--====================================================================-->
+
+# Datapath and Control Review
+<!-- .slide: data-background="#004477" -->
+
+
+<!--=====================================================================-->
+
+## Example: `addi`
+
+```mips 
+addi $8, $0, 5
+```
+001000 00000 01000 0000000000000101
+
+<div class="twocolumn">
+
+<div>
+
+<img src='/Fall2025/CS130/assets/images/COD/datapath_with_control_annotated.png' width='900'>
+
+</div>
+<div>
+
+Using this picture, highlight all datapath lines that are used and indicate what values they should have
+
+Show the value each control line should have
+
+
+</div>
+</div>
+
+<!--------------------------------------------------------->
+
+```mips 
+addi $8, $0, 5
+```
+001000 00000 01000 0000000000000101
+
+<div class="twocolumn-alt">
+
+<div>
+
+<img src='/Fall2025/CS130/assets/images/COD/datapath_with_control_annotated.png' width='900'>
+
+</div>
+<div>
+
+ALUop:</br>
+ALUSrc:</br>
+Branch:</br>
+MemRead:</br>
+MemWrite:</br>
+MemtoReg:</br>
+RegWrite:</br>
+RegDst:
+
+
+
+</div>
+</div>
+
+<!--=====================================================================-->
+
+# Supporting More Instructions: Load
+<!-- .slide: data-background="#004477" -->
+
+<!--=====================================================================-->
+
+```mips 
+lw $8, 4($9)
+```
+
+100011 01001 01000 0000000000000100
+
+<div class="twocolumn-alt">
+
+<div>
+
+<img src='/Fall2025/CS130/assets/images/COD/datapath_with_control_annotated.png' width='900'>
+
+</div>
+<div>
+
+ALUop:</br>
+ALUSrc:</br>
+Branch:</br>
+MemRead:</br>
+MemWrite:</br>
+MemtoReg:</br>
+RegWrite:</br>
+RegDst:
+
+
+
+</div>
+</div> 
+
+<!--=====================================================================-->
+
+# Exercises: Store and Branch
+<!-- .slide: data-background="#004477" -->
+
+
+<!--====================================================================-->
+
+```mips 
+sw $8, 4($9)
+```
+
+101011 01001 01000 0000000000000100
+
+<div class="twocolumn-alt">
+
+<div>
+
+<img src='/Fall2025/CS130/assets/images/COD/datapath_with_control_annotated.png' width='900'>
+
+</div>
+<div>
+
+ALUop:</br>
+ALUSrc:</br>
+Branch:</br>
+MemRead:</br>
+MemWrite:</br>
+MemtoReg:</br>
+RegWrite:</br>
+RegDst:
+
+
+
+</div>
+</div>    
+
+<!--====================================================================-->
+
+```mips 
+beq $8, $9, 5 #jump ahead 5 instructions
+```
+
+000100 01000 01001 0000000000000101
+
+<div class="twocolumn-alt">
+
+<div>
+
+<img src='/Fall2025/CS130/assets/images/COD/datapath_with_control_annotated.png' width='900'>
+
+</div>
+<div>
+
+ALUop:</br>
+ALUSrc:</br>
+Branch:</br>
+MemRead:</br>
+MemWrite:</br>
+MemtoReg:</br>
+RegWrite:</br>
+RegDst:
+
+
+
+</div>
+</div>    
+
+
+<!--====================================================================-->
+
+# Performance Issues
+<!-- .slide: data-background="#004477" -->
+
+<!--====================================================================-->
+
+## Performance Issues
+- Longest delay determines clock period
+- <!-- .element: class="fragment"-->
+ Some stages of the datapath are idle waiting for others to finish
+- <!-- .element: class="fragment"-->
+ Can improve performance by **pipelining**
+
+<!--====================================================================-->
+
+# Pipelining
+<!-- .slide: data-background="#004477" -->
+
+<!--=====================================================================-->
+
+#### Breaking down instruction execution
+
+- Five stages:
+    1. **IF**: Instruction Fetch 
+     - read it from instruction memory
+    2. **ID**: Instruction Decode and Register Read
+     - split instruction into parts, read register data
+    3. **EX**: Execute
+     - ALU calculates result 
+    4. **MEM**: Memory Access
+     - read from or write to memory
+    5. **WB**: Write back
+     - put new data back into a register
+
+
+<!--====================================================================-->
+
+
+## Pipeline Analogy
+- Suppose you need to do four loads of laundry
+- Each load of laundry needs to be
+    1. Washed via the washing machine
+    2. Dried via the dryer
+    3. Folded
+    4. Put away in the closet
+- For simplicity, assume that each task takes 30 mins
+
+<!---------------------------------->
+
+## Pipeline Analogy
+- How long does it take to complete four loads?
+- <!-- .element: class="fragment"-->
+ One approach uses only one stage at a time and does nothing in parallel:
+    ![nonpipelined_laundry](/Fall2025/CS130/assets/images/COD/unpipelined_laundry.png)
+- <!-- .element: class="fragment"-->
+ Notice that the washer is unused 3/4 of the time
+
+<!---------------------------------->
+
+## Pipeline Analogy
+- Another approach is harnessing parallelism by running independent stages simultaneously
+    ![pipelined_laundry](/Fall2025/CS130/assets/images/COD/pipelined_laundry.png)
+- <!-- .element: class="fragment"-->
+ How much of a speedup does this approach give us?
+    + <!-- .element: class="fragment"-->
+ $8/3.5 = 2.3\times$ speedup
+    + <!-- .element: class="fragment"-->
+ $2n/0.5n = 4\times$ speedup if running continuously
+
+<!--====================================================================-->
+
+## Pipelined Datapath
+
+<img src='/Fall2025/CS130/assets/images/COD/piplined_datapath.png' height='550'>
+
+<!---------------------------------->
+
+## Pipelined Datapath
+- Five stages:
+    1. **IF**: Instruction Fetch
+    2. **ID**: Instruction Decode
+    3. **EX**: Execute
+    4. **MEM**: Memory access
+    5. **WB**: Write back
+
+<!--====================================================================-->
+
+## Pipeline Performance
+- Assume time for stages is:
+    + `$100\text{ps}$` for register read/write
+    + `$200\text{ps}$` for other stages
+
+![Pipeline Performance](/Fall2025/CS130/assets/images/COD/pipeline_performance_table.png)<!-- .element: class="fragment"-->
+
+
+<!---------------------------------->
+
+## Without a Pipeline
+![Pipeline Performance](/Fall2025/CS130/assets/images/COD/nonpipelined_mips_instructions.png)
+
+- Why must the clock be set to `$800\text{ps}$` when some instructions like `beq` could be completed in `$500\text{ps}$`?
+    + <!-- .element: class="fragment"-->
+ Clock speed is limited by **slowest** instruction: `lw`
+
+<!---------------------------------->
+
+## With a Pipeline
+![Pipeline Performance](/Fall2025/CS130/assets/images/COD/pipelined_mips_instructions.png)
+
+- <!-- .element: class="fragment"-->
+ How much of a speedup does this approach give us?
+    + <!-- .element: class="fragment"-->
+ `$2400/1400 = 1.7\times$` speedup
+    + <!-- .element: class="fragment"-->
+ `$800n/200n = 4\times$` if running continuously
+
+<!---------------------------------->
+
+## Pipeline Performance
+- Does using a pipeline increase the efficiency of executing **individual** instructions?
+    + <!-- .element: class="fragment"-->
+ No, it slows them down from `$800\text{ps}$` to `$1000\text{ps}$`
+    + <!-- .element: class="fragment"-->
+ Performance benefits come from increased **throughput** due to the parallelism
+
+<!--====================================================================-->
+
+## Why MIPS is Good for Pipelining
+- All MIPS instructions are the **same length**
+    + Easy to fetch instruction in cycle 1
+    + Easy to decode instruction in cycle 2
+- <!-- .element: class="fragment"-->
+ MIPS has only **a few instruction formats**
+    + Registers will always be in same location
+    + Easy to decode instructions
+
+                    </textarea>
+                </section>
+            </div>
+        </div>
+
+        <script src="../dist/reveal.js"></script>
+        <script src="../plugin/notes/notes.js"></script>
+        <script src="../plugin/markdown/markdown.js"></script>
+        <script src="../plugin/highlight/highlight.js"></script>
+        <script src="../plugin/chalkboard/plugin.js"></script>
+        <script src="../plugin/math/math.js"></script>
+        <script src="../plugin/menu/menu.js"></script>
+        <!--  -->
+        <script>
+            // More info about initialization & config:
+            // - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
+            Reveal.initialize({
+                hash: true,
+                pdfSeparateFragments: false,
+
+                chalkboard: {
+                    chalkWidth: 4,
+                    chalkEffect: 0.5,
+                    toggleChalkboardButton: false,
+                    toggleNotesButton: false,
+                },
+
+                menu: {
+                    hideMissingTitles: true,
+                    themes: true,
+                    themesPath: '../dist/theme/',
+                },
+
+                // Learn about plugins: https://revealjs.com/plugins/
+                plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, 
+                    RevealChalkboard, RevealMath, RevealMenu ]
+            });
+        </script>
+    </body>
+</html>
