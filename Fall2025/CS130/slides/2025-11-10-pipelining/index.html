@@ -40,53 +40,33 @@
 
 ---
 
-CS 130 // 2024-11-05
+CS 130 // 2025-11-10
 
 
 <!--====================================================================-->
 
-# Schedule Update 
-<!-- .slide: data-background="#004477" -->
+## Suggestions on using the RAM unit in your assignment
 
-<!--====================================================================-->
+<div class="twocolumn-alt">
+<div>
+<img src='/Fall2025/CS130/assets/images/logisim_RAM.png' width='700'>
+</div>
+<div>
 
-## Schedule going forward 
+* Use 32 bit data width
 
-* Finish CPU Design this week 
-* Start C programming next week
-* Exam workday is scheduled for Tues, 11/19 - after we've started C
-    - any thoughts about this?
+* Use 16 bit address width, but only use some of the bits coming out of the ALU
 
+</div>
 
 <!--=====================================================================-->
 
 # Review
 <!-- .slide: data-background="#004477" -->
 
-<!--=====================================================================-->
-
-#### Breaking down instruction execution
-
-- Five stages:
-    1. **IF**: Instruction Fetch 
-     - read it from instruction memory
-    2. **ID**: Instruction Decode and Register Read
-     - split instruction into parts, read register data
-    3. **EX**: Execute
-     - ALU calculates result 
-    4. **MEM**: Memory Access
-     - we haven't done this yet!
-    5. **WB**: Write back
-     - put new data back into a register
-
-
 
 
 <!--====================================================================-->
-
-## Branches
-
-Describe what happens for a branch instruction like
 
 ```mips 
 beq $8, $9, 5 #jump ahead 5 instructions
@@ -94,27 +74,28 @@ beq $8, $9, 5 #jump ahead 5 instructions
 
 000100 01000 01001 0000000000000101
 
-<div class="twocolumn">
+<div class="twocolumn-alt">
 
 <div>
 
-<img src='/Fall2025/CS130/assets/images/COD/datapath_with_control.png' width='500'>
+<img src='/Fall2025/CS130/assets/images/COD/datapath_with_control_annotated.png' width='900'>
 
 </div>
 <div>
 
-- IF: 
+ALUop: "sub"</br>
+ALUSrc: 0</br>
+Branch: 1</br>
+MemRead: 0</br>
+MemWrite: 0</br>
+MemtoReg: x</br>
+RegWrite: 0</br>
+RegDst: x
 
-- ID:
 
-- EX:
-
-- MEM: 
-
-- WB:   
 
 </div>
-</div>
+</div>  
 
 <!--====================================================================-->
 
@@ -135,7 +116,26 @@ beq $8, $9, 5 #jump ahead 5 instructions
 # Pipelining
 <!-- .slide: data-background="#004477" -->
 
+<!--=====================================================================-->
+
+#### Breaking down instruction execution
+
+- Five stages:
+    1. **IF**: Instruction Fetch 
+     - read it from instruction memory
+    2. **ID**: Instruction Decode and Register Read
+     - split instruction into parts, read register data
+    3. **EX**: Execute
+     - ALU calculates result 
+    4. **MEM**: Memory Access
+     - read from or write to memory
+    5. **WB**: Write back
+     - put new data back into a register
+
+
 <!--====================================================================-->
+
+
 
 ## Pipeline Analogy
 - Suppose you need to do four loads of laundry
