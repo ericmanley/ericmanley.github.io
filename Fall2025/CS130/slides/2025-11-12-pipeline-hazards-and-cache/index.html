@@ -40,7 +40,7 @@
 
 ---
 
-CS 130 // 2024-11-07
+CS 130 // 2025-11-12
 
 
 <!--====================================================================-->
@@ -50,29 +50,25 @@ CS 130 // 2024-11-07
 
 <!--====================================================================-->
 
-## Installing stuff for C programming 
 
-Before you come to class next week: [install guide](../../resources/installing-visual-studio-code)
-  - install Visual Studio Code (IDE for writing code)
-  - install C/C++ extensions for VSC 
-  - install a C compiler
-  - try compiling a C program
-  - do your best to troubleshoot issues
-  - bring any remaining issues to class 
+## Preparing for C programming
+
+Installing what you need on your own computer</br>
+[install guide](../../resources/installing-visual-studio-code)
 
 
+<b>or</b>
+
+Set up an account on GitHub and use Codespaces:</br>  
+https://github.com/codespaces
 
 <!--=====================================================================-->
 
-## Exam 3 has been posted 
+## Preparing for Exam 3
 
-- Due 11/26/2023 (Tuesday before Thanksgiving)
-- Class on 11/26/2023 is a work day - no class meeting
-- You have an incredibly long time to get this done 
-- The longer you wait to to do it, the harder it will be
-- There will probably be an assignment on C due before then
-
-
+* In class on Wednesday, November 19th
+* You may prepare and use one piece of 8.5"x11" paper with *your* handwritten notes
+* Check the review exercises posted on Blackboard
 
 <!--=====================================================================-->
 
@@ -102,11 +98,11 @@ Before you come to class next week: [install guide](../../resources/installing-v
 - <!-- .element: class="fragment"-->
  What stage does `add` write the result of `$s0` into the register file?
     + <!-- .element: class="fragment"-->
- Stage 5: Write Back
+ Stage 5: Write Back, *happens at time 5*
 - <!-- .element: class="fragment"-->
  What stage does `sub` read from `$s0`?
     + <!-- .element: class="fragment"-->
- Stage 2: Instruction Decode
+ Stage 2: Instruction Decode, *happens at time 3*
 
 <!---------------------------------->
 
@@ -121,24 +117,6 @@ Before you come to class next week: [install guide](../../resources/installing-v
 - One way to avoid some data hazards without stalling is to **forward** the result to the next instruction immediately when it is available
 
 ![Data Hazard Forwarding](/Fall2025/CS130/assets/images/COD/data_hazard_forwarding.png)
-
-<!---------------------------------->
-
-### Discuss: What does this look like on the datapath?
-
-<div class="twocolumn">
-
-<div>
-
-![Data Hazard Forwarding](/Fall2025/CS130/assets/images/COD/data_hazard_forwarding.png) <!-- .element width="400px" -->
-
-</div>
-<div>
-
-<img src='/Fall2025/CS130/assets/images/COD/datapath_with_control.png' width='500'>
-
-</div>
-</div>
 
 <!---------------------------------->
 
@@ -164,30 +142,23 @@ Before you come to class next week: [install guide](../../resources/installing-v
 
 <!--====================================================================-->
 
-## Data Hazard Exercise
-- Consider the following MIPS code:
-    ```mips
-    lw $t0, 40($a3)
-    add $t6, $t0, $t2
-    sw $t6, 40($a3)
-    ```
-- <!-- .element: class="fragment"-->
- Assuming there is no forwarding implemented, are any stalls necessary?
-- <!-- .element: class="fragment"-->
- How many clock cycles are required to execute these three lines of code without forwarding?
+# More on Pipeline Hazards
+<!-- .slide: data-background="#004477" -->
 
-<!---------------------------------->
+<!--====================================================================-->
 
 ## Data Hazard Exercise
-- Consider the following MIPS code:
-    ```mips
-    lw $t0, 40($a3)
-    add $t6, $t0, $t2
-    sw $t6, 40($a3)
-    ```
-- Assuming there IS forwarding implemented, are any stalls necessary?
-- <!-- .element: class="fragment"-->
- How many clock cycles are required to execute these three lines of code with forwarding?
+
+* Consider the following MIPS code:
+```mips
+lw $t0, 40($a3)
+add $t6, $t0, $t2
+sw $t6, 40($a3)
+```
+
+* Draw timing diagrams showing 
+    * how many clock cycles are required when not doing forwarding
+    * how many clock cycles are required with forwarding - show the forwarding lines
 
 <!--====================================================================-->
 
@@ -418,7 +389,11 @@ Before you come to class next week: [install guide](../../resources/installing-v
 
 <!---------------------------------->
 
-<img src='/Fall2025/CS130/assets/images/COD/handling_cache_misses.png' height='550'>
+<img src='/Fall2025/CS130/assets/images/COD/handling_cache_misses.png' height='500'>
+
+
+**Exercise:** show what happens if the next three memory access are to addresses 10110, 00000, and 10111
+<!-- .element: class="fragment"-->
 
 <!--====================================================================-->
 
