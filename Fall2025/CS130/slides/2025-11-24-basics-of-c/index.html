@@ -40,7 +40,7 @@
 
 ---
 
-CS 130 // 2024-11-14
+CS 130 // 2025-11-24
 
 <!--=====================================================================-->
 
@@ -97,16 +97,16 @@ CS 130 // 2024-11-14
 
 ## Random Trivia
 - What language is the Python interpeter written in?
-    + <!-- .element: class="fragment"-->
- C
 - <!-- .element: class="fragment"-->
  What language is the JVM written in?
-    + <!-- .element: class="fragment"-->
- C
 - <!-- .element: class="fragment"-->
  What language is the C compiler written in?
-    + <!-- .element: class="fragment"-->
- C
+
+<!--=====================================================================-->
+
+
+# Review
+<!-- .slide: data-background="#004477" -->
 
 <!--=====================================================================-->
 
@@ -320,15 +320,36 @@ int val = arr[60];     // will happily try to do this
 printf("%d", val);
 ```
 
+<!--=====================================================================-->
 
-**Exercise:** put this in a file (and main function) and run 
-- your compiler *may* give you a warning 
-- you will still be able to run it
-
+# C Functions
+<!-- .slide: data-background="#004477" -->
 
 <!--=====================================================================-->
 
-## Functions
+## Function definitions and calls
+
+```c
+int foo(int bar) {
+    /* do something */
+    return bar * 2;
+}
+
+int main() {
+    foo(1);
+}
+```
+
+instead of `def` in Python functions, you give the function's *return type* - can be any type or `void`
+
+parameters are *variable declarations*
+
+<!--=====================================================================-->
+
+## Arrays as parameters
+
+When passing an array, you can use `[]`, but remember arrays don't know how big they are, so you might also need to pass the length as an `int`
+
 ```c
 #include  "stdio.h"
 
@@ -418,16 +439,160 @@ https://www.cplusplus.com/reference/cstdio/scanf/
 
 <!--=====================================================================-->
 
-## Assignment 8
+## Assignment 7
 
-- [Assignment 8](../../assignments/assignment-8/): write a C program that includes
+- [Assignment 7](../../assignments/assignment-7/): write a C program that includes
  1. An array
  2. A function other than `main`
  3. A call to `scanf` to get user input
  4. A call to `printf` which includes displaying the value from a variable
  5. A `for` loop
-- Due next Tuesday
+- Due tonight
 
+<!--=====================================================================-->
+
+# Address of operator
+<!-- .slide: data-background="#004477" -->
+
+<!--=====================================================================-->
+
+#### Address of operator 
+
+**NB:** The `&` operator means "address of" - read from keyboard and store in a specific address in memory
+
+```c 
+    int a;
+    scanf("%d",&a);
+```
+
+
+
+What do `"%d"` and `"%f"` mean?
+
+<!--=====================================================================-->
+
+
+# Strings
+<!-- .slide: data-background="#004477" -->
+
+<!--=====================================================================-->
+
+## Strings
+- There is no **String** type in C
+- <!-- .element: class="fragment"-->
+ Strings are just arrays of type `char`
+    ```c
+    char str[20] = "abc";
+    printf("The string is %s", str);
+    ```
+- <!-- .element: class="fragment"-->
+ The above code is shorthand for the following:
+    ```c
+    char str[20];
+    str[0] = 'a';
+    str[1] = 'b';
+    str[2] = 'c';
+    str[3] = '\0';   // String terminating character
+    ```
+- <!-- .element: class="fragment"-->
+ The remaining 16 characters are unused
+<!---------------------------------->
+
+## Strings
+- Suppose we forget to include the `'\0'` character
+    ```c
+    char str[20];
+    str[0] = 'a';
+    str[1] = 'b';
+    str[2] = 'c';
+    printf("The string is %s", str);
+    ```
+- What do you think happens?
+- <!-- .element: class="fragment"-->
+ `printf` continues printing characters until it finds some random `'\0'` character in memory
+
+<!---------------------------------->
+
+## Strings
+- Very simple string operations now become complicated...
+- <!-- .element: class="fragment"-->
+ Suppose I want to concatenate two strings:
+    ```c
+    char s1[20] = "hello";
+    char s2[20] = "world";
+    char s3[20] = ??? // how do I concatenate s1 and s2?
+    ```
+- <!-- .element: class="fragment"-->
+ Manually copy all the characters into `s3`...
+
+<!---------------------------------->
+
+## Strings
+```c
+char s1[20] = "hello";
+char s2[20] = "world";
+char s3[20];
+
+int j = 0;   // keeps track of the next spot in s3
+for (int i = 0; s1[i] != '\0'; i++) {
+    s3[j] = s1[i];
+    j++;
+}
+for (int i = 0; s2[i] != '\0'; i++) {
+    s3[j] = s2[i];
+    j++;
+}
+s3[j] = '\0';
+```
+
+<!---------------------------------->
+
+## Strings
+- Luckily, there is a `string.h` library with a few helpful functions that does some of this for us, but they just do the same thing as above
+```c
+#include <string.h>
+char s1[20] = "hello";
+char s2[20] = "world";
+strcat(s1, s2);
+printf("The new string is: %s", s1);
+```
+
+<!---------------------------------->
+
+## Strings
+- Here is a common issue:
+    ```c
+    char s[3] = "abc";
+    int x = 10;
+    printf("The values are %s and %d", s, x);
+    ```
+- <!-- .element: class="fragment"-->
+ We did not allocate enough space in `s` to store the string termination character `'\0'`
+    ```c
+    char s[4] = "abc";
+    int x = 10;
+    printf("The values are %s and %d", s, x);
+    ```
+
+<!---------------------------------->
+
+## Exercise 3
+- Write code that will reverse a string - don't forget to take the null terminator `\0` into account!
+- You might need a `for` loop to figure out the index where the null terminator is
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    char str[20] = "a string to reverse!";
+    char rev_str[20]; //reversed string should be here
+
+    //your code here
+
+    return 0;
+}
+```
 
                     </textarea>
                 </section>
