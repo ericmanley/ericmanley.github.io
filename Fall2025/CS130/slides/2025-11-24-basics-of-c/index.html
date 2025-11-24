@@ -582,7 +582,7 @@ printf("The new string is: %s", s1);
 
 ```c
 #include <stdio.h>
-
+    
 int main()
 {
     char str[20] = "a string to reverse!";
@@ -593,7 +593,40 @@ int main()
     return 0;
 }
 ```
+<!--=====================================================================-->
 
+## 12:30 class: Solution to Exercise 2
+
+```c
+#include <stdio.h>
+
+void reverse(int arr[], int n)
+{
+    int temp;
+    int pos1 = 0;
+    int pos2 = n-1;
+    for(int i = 0; pos1 < pos2; i++)
+    {
+        temp = arr[pos1];
+        arr[pos1] = arr[pos2];
+        arr[pos2] = temp;
+
+        pos1 = pos1 + 1;
+        pos2 = pos2 - 1;
+    }
+}
+
+int main()
+{
+    int arr[5] = {1, 2, 3, 4, 5};
+    reverse(arr, 5);
+    for (int i = 0; i < 5; i++) 
+    {
+        printf("The next value is: %d\n", arr[i]);
+    }
+    return 0;
+}
+```
                     </textarea>
                 </section>
             </div>
