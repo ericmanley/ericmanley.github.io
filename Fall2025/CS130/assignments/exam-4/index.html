@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Assignment 4 - CS 130: Computer Organization</title>
+<!-- begin _includes/seo.html --><title>Exam 4 - CS 130: Computer Organization</title>
 <meta name="description" content="">
 
 
@@ -22,8 +22,8 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="CS 130: Computer Organization">
-<meta property="og:title" content="Assignment 4">
-<meta property="og:url" content="https://ericmanley.github.io/Fall2025/CS130/assignments/assignment-4/">
+<meta property="og:title" content="Exam 4">
+<meta property="og:url" content="https://ericmanley.github.io/Fall2025/CS130/assignments/exam-4/">
 
 
   <meta property="og:description" content="">
@@ -41,7 +41,7 @@
 
 
 
-<link rel="canonical" href="https://ericmanley.github.io/Fall2025/CS130/assignments/assignment-4/">
+<link rel="canonical" href="https://ericmanley.github.io/Fall2025/CS130/assignments/exam-4/">
 
 
 
@@ -406,7 +406,7 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Assignment 4">
+    <meta itemprop="headline" content="Exam 4">
     <meta itemprop="description" content="">
     <meta itemprop="datePublished" content="2025-12-01T16:10:52-06:00">
     
@@ -414,7 +414,7 @@
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Assignment 4
+          <h1 id="page-title" class="page__title" itemprop="headline">Exam 4
 </h1>
           
 
@@ -430,7 +430,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          1 minute read
+          less than 1 minute read
         
       </span>
     
@@ -442,14 +442,6 @@
 
       <section class="page__content" itemprop="text">
         
-          <aside class="sidebar__right ">
-            <nav class="toc">
-              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
-              <ul class="toc__menu"><li><a href="#circuit-specification">Circuit Specification</a></li><li><a href="#assignment">Assignment</a></li><li><a href="#hint">Hint</a></li><li><a href="#grading">Grading</a></li><li><a href="#what-to-turn-in">What to turn in</a></li><li><a href="#where-to-turn-it-in">Where to turn it in</a></li></ul>
-
-            </nav>
-          </aside>
-        
         <!--
 
 <strong>Type:</strong>
@@ -460,59 +452,17 @@ Assignment
 <br>
 -->
 
-<strong>Due:</strong> by the end of the calendar day on Wednesday, October 8, 2025
+<strong>Due:</strong> by the end of the calendar day on Thursday, December 11, 2025
 
 
 
-<h2 id="circuit-specification">Circuit Specification</h2>
+<p>Complete the test marked <strong>Exam 4</strong> on Blackboard.</p>
 
-<p>The following truth table describes the behavior of an <em>exactly two detector</em> circuit with four inputs (A, B, C, and D) and one output (E). If exactly two of the inputs are 1, then this circuit should output a 1. Otherwise, it should output a 0.</p>
+<p>This exam is to be completed individually. You may use the book, course slides, or your notes as reference material. You <strong>may not</strong> use any reference outside of the course materials (this means <strong>no Internet searches</strong> and <strong>no Generative AI</strong>). You <strong>may not</strong> look at the work of other students, whether they are in the class now, have taken it in the past, or have taken a similar course at another school.</p>
 
-<div>
-   <table>
-   <tbody>
-      <tr> <th>A</th> <th>B</th> <th>C</th><th>D</th><th bgcolor="lightgray"></th><th>E</th></tr>
-      <tr> <td>0</td> <td>0</td> <td>0</td><td>0</td><td bgcolor="lightgray"></td><td>0</td></tr>
-      <tr> <td>0</td> <td>0</td> <td>0</td><td>1</td><td bgcolor="lightgray"></td><td>0</td></tr>
-      <tr> <td>0</td> <td>0</td> <td>1</td><td>0</td><td bgcolor="lightgray"></td><td>0</td></tr>
-      <tr> <td>0</td> <td>0</td> <td>1</td><td>1</td><td bgcolor="lightgray"></td><td>1</td></tr>
-      <tr> <td>0</td> <td>1</td> <td>0</td><td>0</td><td bgcolor="lightgray"></td><td>0</td></tr>
-      <tr> <td>0</td> <td>1</td> <td>0</td><td>1</td><td bgcolor="lightgray"></td><td>1</td></tr>
-      <tr> <td>0</td> <td>1</td> <td>1</td><td>0</td><td bgcolor="lightgray"></td><td>1</td></tr>
-      <tr> <td>0</td> <td>1</td> <td>1</td><td>1</td><td bgcolor="lightgray"></td><td>0</td></tr>
-      <tr> <td>1</td> <td>0</td> <td>0</td><td>0</td><td bgcolor="lightgray"></td><td>0</td></tr>
-      <tr> <td>1</td> <td>0</td> <td>0</td><td>1</td><td bgcolor="lightgray"></td><td>1</td></tr>
-      <tr> <td>1</td> <td>0</td> <td>1</td><td>0</td><td bgcolor="lightgray"></td><td>1</td></tr>
-      <tr> <td>1</td> <td>0</td> <td>1</td><td>1</td><td bgcolor="lightgray"></td><td>0</td></tr>
-      <tr> <td>1</td> <td>1</td> <td>0</td><td>0</td><td bgcolor="lightgray"></td><td>1</td></tr>
-      <tr> <td>1</td> <td>1</td> <td>0</td><td>1</td><td bgcolor="lightgray"></td><td>0</td></tr>
-      <tr> <td>1</td> <td>1</td> <td>1</td><td>0</td><td bgcolor="lightgray"></td><td>0</td></tr>
-      <tr> <td>1</td> <td>1</td> <td>1</td><td>1</td><td bgcolor="lightgray"></td><td>0</td></tr>
-   </tbody>
-   </table>
-</div>
+<p>This exam is not timed. You may save your progress and return to finish later, though you may only submit it once. The exam <strong>will not be automatically submitted</strong> when it is due.</p>
 
-<h2 id="assignment">Assignment</h2>
-
-<p>Design a circuit that has the above truth table. Then, implement your design in Logisim and test it with a test vector containing the entire truth table.</p>
-
-<h2 id="hint">Hint</h2>
-
-<p>I suggest starting by working out the boolean algebra symbols for the truth table’s sum-of-products like we did in class. Then, draw the circuit that corresponds to your sum-of-products using one stage of ANDs and another of ORs. You do not have to get the circuit in its most simple form - anything that has this truth table will work.</p>
-
-<h2 id="grading">Grading</h2>
-
-<p>This is a 4-point assignment. See the <a href="../../syllabus//#assignments">rubric</a> from the syllabus.</p>
-
-<h2 id="what-to-turn-in">What to turn in</h2>
-
-<p>Take a screenshot of your Logisim circuit and the test vector window showing the pass/fail status of the circuit for every input from the truth table. Your screenshot should look something like this (except this is a different circuit than the one you will make for the assignment):</p>
-
-<p><img src="/Fall2025/CS130/assets/images/assignment5examplesubmission.png" alt="Example submission screenshot" /></p>
-
-<h2 id="where-to-turn-it-in">Where to turn it in</h2>
-
-<p>Submit your screenshot image file to the <strong>Assignment 4</strong> hand-in form on Blackboard.</p>
+<p>The purpose of the free-response questions is for you to demonstrate that you can explain these concepts from your own understanding. A response that has good ideas and is written in your own voice will be valued much more than technically precise sentences copied from the book or some other source.</p>
 
 
         
