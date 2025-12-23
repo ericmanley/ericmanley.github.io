@@ -39992,9 +39992,2690 @@
           }
         ]
       }
+    },
+    {
+      "week": 16,
+      "matchup_type": "playoff",
+      "team0": {
+        "name": "Buffalo Thurmanators",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/71ef0ec5793e733eb08337a8adad223a64845459de283401287afa1ad8834a57.jpg",
+        "points": 104.01,
+        "optimal_points": 159.25,
+        "roster": [
+          {
+            "name": "Trevor Lawrence",
+            "team": "Jax",
+            "yahoo_player_key": "461.p.33389",
+            "positions": [
+              "QB"
+            ],
+            "points": 42.91,
+            "selected_position": "BN",
+            "optimal_position": "QB",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/.GgjgHZdJhUaY8G4NONC_g--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08202025/33389.png",
+            "keeper": false
+          },
+          {
+            "name": "Chris Olave",
+            "team": "NO",
+            "yahoo_player_key": "461.p.33966",
+            "positions": [
+              "WR"
+            ],
+            "points": 26.87,
+            "selected_position": "BN",
+            "optimal_position": "WR",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/_aMmwS5afEQglZHVYW7UPA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08222025/33966.png",
+            "keeper": false
+          },
+          {
+            "name": "James Cook III",
+            "team": "Buf",
+            "yahoo_player_key": "461.p.34019",
+            "positions": [
+              "RB"
+            ],
+            "points": 25.33,
+            "selected_position": "RB",
+            "optimal_position": "RB",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/phPvtlUh.MceOTZItKh_AA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08282024/34019.png",
+            "keeper": false
+          },
+          {
+            "name": "George Pickens",
+            "team": "Dal",
+            "yahoo_player_key": "461.p.34007",
+            "positions": [
+              "WR"
+            ],
+            "points": 18.17,
+            "selected_position": "WR",
+            "optimal_position": "WR",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/tL4TO41aAirHrtd5rFiVBg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08072025/34007.png",
+            "keeper": false
+          },
+          {
+            "name": "Omarion Hampton",
+            "team": "LAC",
+            "yahoo_player_key": "461.p.41807",
+            "positions": [
+              "RB"
+            ],
+            "points": 15.67,
+            "selected_position": "W/R/T",
+            "optimal_position": "RB",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/kDjxveZsLOmf9KDCIKwBVw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/07292025/41807.png",
+            "keeper": false
+          },
+          {
+            "name": "Jahmyr Gibbs",
+            "team": "Det",
+            "yahoo_player_key": "461.p.40059",
+            "positions": [
+              "RB"
+            ],
+            "points": 15.6,
+            "selected_position": "RB",
+            "optimal_position": "W/R/T",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/q_xspFi6ilnHRI2tC5Dttw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/07312025/40059.1.png",
+            "keeper": false
+          },
+          {
+            "name": "Eddy Pineiro",
+            "team": "SF",
+            "yahoo_player_key": "461.p.31482",
+            "positions": [
+              "K"
+            ],
+            "points": 12.3,
+            "selected_position": "K",
+            "optimal_position": "K",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/ZGzIkU3gxIbHpL6TxYCaLQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/09192025/31482.png",
+            "keeper": false
+          },
+          {
+            "name": "Ja'Marr Chase",
+            "team": "Cin",
+            "yahoo_player_key": "461.p.33393",
+            "positions": [
+              "WR"
+            ],
+            "points": 11.77,
+            "selected_position": "WR",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/QhSGwB6WBoQZvvduJKD7TQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/07232024/33393.png",
+            "keeper": false
+          },
+          {
+            "name": "Michael Wilson",
+            "team": "Ari",
+            "yahoo_player_key": "461.p.40121",
+            "positions": [
+              "WR"
+            ],
+            "points": 10.47,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/yIZoTdqH_cKQFvIjBSWAyw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/07272023/40121.png",
+            "keeper": false
+          },
+          {
+            "name": "Nick Chubb",
+            "team": "Hou",
+            "yahoo_player_key": "461.p.31005",
+            "positions": [
+              "RB"
+            ],
+            "points": 4.4,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/0RSbaYRKkr2T4w4lNyunHg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08192025/31005.png",
+            "keeper": false
+          },
+          {
+            "name": "Jaxson Dart",
+            "team": "NYG",
+            "yahoo_player_key": "461.p.41810",
+            "positions": [
+              "QB"
+            ],
+            "points": 2.77,
+            "selected_position": "QB",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/02HrWiaZs0Bp65OKfDMNUQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/07292025/41810.png",
+            "keeper": false
+          },
+          {
+            "name": "Colby Parkinson",
+            "team": "LAR",
+            "yahoo_player_key": "461.p.32803",
+            "positions": [
+              "TE"
+            ],
+            "points": 2.4,
+            "selected_position": "TE",
+            "optimal_position": "TE",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/FQxKC1SbTwUX062vVJh3_A--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08252025/32803.png",
+            "keeper": false
+          },
+          {
+            "name": "Marvin Harrison Jr.",
+            "team": "Ari",
+            "yahoo_player_key": "461.p.40893",
+            "positions": [
+              "WR"
+            ],
+            "points": 1.43,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/x0pe.JHCWal2xRUxCi9R4w--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/07152024/40893.png",
+            "keeper": false
+          },
+          {
+            "name": "Bam Knight",
+            "team": "Ari",
+            "yahoo_player_key": "461.p.34357",
+            "positions": [
+              "RB"
+            ],
+            "points": 0.0,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/L_YCRD6QXR7qRSJsGGwjlw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/09192025/34357.png",
+            "keeper": false
+          },
+          {
+            "name": "Kaleb Johnson",
+            "team": "Pit",
+            "yahoo_player_key": "461.p.41881",
+            "positions": [
+              "RB"
+            ],
+            "points": 0.0,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/1Jdwxeqovk1teSE0oA6.Vw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08202025/41881.png",
+            "keeper": false
+          },
+          {
+            "name": "Seahawks",
+            "team": "Sea",
+            "yahoo_player_key": "461.p.100026",
+            "positions": [
+              "DEF"
+            ],
+            "points": 0.0,
+            "selected_position": "DEF",
+            "optimal_position": "DEF",
+            "headshot_image": "https://s.yimg.com/lq/i/us/sp/v/nfl/teams/1/50x50w/sea.gif",
+            "keeper": false
+          },
+          {
+            "name": "Daniel Jones",
+            "team": "Ind",
+            "yahoo_player_key": "461.p.31838",
+            "positions": [
+              "QB"
+            ],
+            "points": 0.0,
+            "selected_position": "IR",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/FMPfCJK7bcVl2EhKvuNDIw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08042025/31838.png",
+            "keeper": false
+          },
+          {
+            "name": "Joe Mixon",
+            "team": "Hou",
+            "yahoo_player_key": "461.p.30161",
+            "positions": [
+              "RB"
+            ],
+            "points": 0.0,
+            "selected_position": "IR",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/ApeH8Ka2eA_GqvRnSCzlzQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08192025/30161.png",
+            "keeper": false
+          }
+        ]
+      },
+      "team1": {
+        "name": "More than a Thielen",
+        "logo_image": "https://s.yimg.com/cv/apiv2/default/nfl/nfl_4_b.png",
+        "points": 161.89,
+        "optimal_points": 165.25,
+        "roster": [
+          {
+            "name": "Jared Goff",
+            "team": "Det",
+            "yahoo_player_key": "461.p.29235",
+            "positions": [
+              "QB"
+            ],
+            "points": 40.96,
+            "selected_position": "QB",
+            "optimal_position": "QB",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/Y2qmWgowLFec4xqDsTLBjg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/07312025/29235.png",
+            "keeper": false
+          },
+          {
+            "name": "Puka Nacua",
+            "team": "LAR",
+            "yahoo_player_key": "461.p.40168",
+            "positions": [
+              "WR"
+            ],
+            "points": 33.0,
+            "selected_position": "WR",
+            "optimal_position": "WR",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/NK5NKnYxkZbAn8toUvEs_g--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08252025/40168.png",
+            "keeper": true
+          },
+          {
+            "name": "Ashton Jeanty",
+            "team": "LV",
+            "yahoo_player_key": "461.p.41791",
+            "positions": [
+              "RB"
+            ],
+            "points": 29.3,
+            "selected_position": "RB",
+            "optimal_position": "RB",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/k2bG2c3Hj.AqkE8fsH7VQw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/07282025/41791.png",
+            "keeper": false
+          },
+          {
+            "name": "Aaron Rodgers",
+            "team": "Pit",
+            "yahoo_player_key": "461.p.7200",
+            "positions": [
+              "QB"
+            ],
+            "points": 24.29,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/Oj.vpAoZybhxtVc2aGTr6A--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08202025/7200.png",
+            "keeper": false
+          },
+          {
+            "name": "Vikings",
+            "team": "Min",
+            "yahoo_player_key": "461.p.100016",
+            "positions": [
+              "DEF"
+            ],
+            "points": 15.0,
+            "selected_position": "DEF",
+            "optimal_position": "DEF",
+            "headshot_image": "https://s.yimg.com/xe/ipt/50x50w.6.gif",
+            "keeper": false
+          },
+          {
+            "name": "Jonathan Taylor",
+            "team": "Ind",
+            "yahoo_player_key": "461.p.32711",
+            "positions": [
+              "RB"
+            ],
+            "points": 14.3,
+            "selected_position": "W/R/T",
+            "optimal_position": "RB",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/8eNYEWCS9awvVo_gEdfUqw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08042025/32711.png",
+            "keeper": false
+          },
+          {
+            "name": "Cameron Dicker",
+            "team": "LAC",
+            "yahoo_player_key": "461.p.34344",
+            "positions": [
+              "K"
+            ],
+            "points": 10.4,
+            "selected_position": "K",
+            "optimal_position": "K",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/yj1kLvD0JiGQPUpso1fQMg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/07312025/34344.png",
+            "keeper": false
+          },
+          {
+            "name": "Juwan Johnson",
+            "team": "NO",
+            "yahoo_player_key": "461.p.33113",
+            "positions": [
+              "TE"
+            ],
+            "points": 9.93,
+            "selected_position": "BN",
+            "optimal_position": "W/R/T",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/Or6c7mc_rha5mo.myhNKOA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08222025/33113.png",
+            "keeper": false
+          },
+          {
+            "name": "Dallas Goedert",
+            "team": "Phi",
+            "yahoo_player_key": "461.p.31019",
+            "positions": [
+              "TE"
+            ],
+            "points": 9.63,
+            "selected_position": "TE",
+            "optimal_position": "TE",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/6hTDMmJAKVQIr0FQ_LSsMw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08062025/31019.png",
+            "keeper": false
+          },
+          {
+            "name": "Breece Hall",
+            "team": "NYJ",
+            "yahoo_player_key": "461.p.33991",
+            "positions": [
+              "RB"
+            ],
+            "points": 7.0,
+            "selected_position": "RB",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/CAnbJUe0EXr4MZ7Yu6wcxQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/09182025/33991.png",
+            "keeper": false
+          },
+          {
+            "name": "Rachaad White",
+            "team": "TB",
+            "yahoo_player_key": "461.p.34047",
+            "positions": [
+              "RB"
+            ],
+            "points": 6.5,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/WF93mR6hG_WWxe5P3UMkRw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08282025/34047.png",
+            "keeper": false
+          },
+          {
+            "name": "Jordan Addison",
+            "team": "Min",
+            "yahoo_player_key": "461.p.40042",
+            "positions": [
+              "WR"
+            ],
+            "points": 2.73,
+            "selected_position": "BN",
+            "optimal_position": "WR",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/l88csZOamL0vvBCjlY_2RQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08152025/40042.png",
+            "keeper": false
+          },
+          {
+            "name": "Jerry Jeudy",
+            "team": "Cle",
+            "yahoo_player_key": "461.p.32685",
+            "positions": [
+              "WR"
+            ],
+            "points": 2.3,
+            "selected_position": "WR",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/AT8_cRRiEQZkHBpkg7FpVg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/07232024/32685.png",
+            "keeper": true
+          },
+          {
+            "name": "Davante Adams",
+            "team": "LAR",
+            "yahoo_player_key": "461.p.27581",
+            "positions": [
+              "WR"
+            ],
+            "points": 0.0,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/Lq0buOz6WeFBtJha4zFsjQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08252025/27581.png",
+            "keeper": false
+          },
+          {
+            "name": "Keon Coleman",
+            "team": "Buf",
+            "yahoo_player_key": "461.p.40911",
+            "positions": [
+              "WR"
+            ],
+            "points": 0.0,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/OCm3UIwMaEFLde9z8LKO5Q--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08072024/40911.png",
+            "keeper": false
+          },
+          {
+            "name": "Tucker Kraft",
+            "team": "GB",
+            "yahoo_player_key": "461.p.40102",
+            "positions": [
+              "TE"
+            ],
+            "points": 0.0,
+            "selected_position": "IR",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/YqhW1bbD9IKfifm6HNojRA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08142025/40102.png",
+            "keeper": false
+          }
+        ]
+      }
+    },
+    {
+      "week": 16,
+      "matchup_type": "consolation",
+      "team0": {
+        "name": "Battle Unicorns",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/c5617d4a014c684f3bca794d3429f9c48546467b0725997f3c4eeb9e2be00703.jpg",
+        "points": 88.32,
+        "optimal_points": 103.35,
+        "roster": [
+          {
+            "name": "Caleb Williams",
+            "team": "Chi",
+            "yahoo_player_key": "461.p.40900",
+            "positions": [
+              "QB"
+            ],
+            "points": 29.75,
+            "selected_position": "QB",
+            "optimal_position": "QB",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/bfYvPX2QyI.HTH.3UabvKg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08012025/40900.png",
+            "keeper": false
+          },
+          {
+            "name": "Chase Brown",
+            "team": "Cin",
+            "yahoo_player_key": "461.p.40196",
+            "positions": [
+              "RB"
+            ],
+            "points": 29.47,
+            "selected_position": "RB",
+            "optimal_position": "W/R/T",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/I0YFuJz7Fo4HnV18_QB9lg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08062025/40196.png",
+            "keeper": true
+          },
+          {
+            "name": "C.J. Stroud",
+            "team": "Hou",
+            "yahoo_player_key": "461.p.40030",
+            "positions": [
+              "QB"
+            ],
+            "points": 19.23,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/.DhfBGNzXaH._hH7AZPcNw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08192025/40030.png",
+            "keeper": false
+          },
+          {
+            "name": "Isiah Pacheco",
+            "team": "KC",
+            "yahoo_player_key": "461.p.34207",
+            "positions": [
+              "RB"
+            ],
+            "points": 9.13,
+            "selected_position": "BN",
+            "optimal_position": "RB",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/ajqIZWhQXlFCLO3GGOBiIg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08142025/34207.png",
+            "keeper": false
+          },
+          {
+            "name": "Justin Jefferson",
+            "team": "Min",
+            "yahoo_player_key": "461.p.32692",
+            "positions": [
+              "WR"
+            ],
+            "points": 8.67,
+            "selected_position": "WR",
+            "optimal_position": "WR",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/TGVrwP6dQEajbWwbS1B8Zg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08152025/32692.png",
+            "keeper": false
+          },
+          {
+            "name": "Jaylen Waddle",
+            "team": "Mia",
+            "yahoo_player_key": "461.p.33394",
+            "positions": [
+              "WR"
+            ],
+            "points": 7.3,
+            "selected_position": "BN",
+            "optimal_position": "WR",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/ZFNRgWTtDRNusvINSQ3zng--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08272025/33394.png",
+            "keeper": false
+          },
+          {
+            "name": "Bucky Irving",
+            "team": "TB",
+            "yahoo_player_key": "461.p.40993",
+            "positions": [
+              "RB"
+            ],
+            "points": 7.1,
+            "selected_position": "RB",
+            "optimal_position": "RB",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/lmTfmngY5ud78WogXtURLw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/09022025/40993.png",
+            "keeper": true
+          },
+          {
+            "name": "Chargers",
+            "team": "LAC",
+            "yahoo_player_key": "461.p.100024",
+            "positions": [
+              "DEF"
+            ],
+            "points": 6.0,
+            "selected_position": "DEF",
+            "optimal_position": "DEF",
+            "headshot_image": "https://s.yimg.com/lq/i/us/sp/v/nfl/teams/1/50x50w/sdg3.jpg",
+            "keeper": false
+          },
+          {
+            "name": "Brandon Aubrey",
+            "team": "Dal",
+            "yahoo_player_key": "461.p.40819",
+            "positions": [
+              "K"
+            ],
+            "points": 5.3,
+            "selected_position": "K",
+            "optimal_position": "K",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/Z.vhgJLoJAnQysyTNi.yLQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08072025/40819.png",
+            "keeper": false
+          },
+          {
+            "name": "Patriots",
+            "team": "NE",
+            "yahoo_player_key": "461.p.100017",
+            "positions": [
+              "DEF"
+            ],
+            "points": 5.0,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/lq/i/us/sp/v/nfl/teams/1/50x50w/nwe.gif",
+            "keeper": false
+          },
+          {
+            "name": "David Montgomery",
+            "team": "Det",
+            "yahoo_player_key": "461.p.31905",
+            "positions": [
+              "RB"
+            ],
+            "points": 1.4,
+            "selected_position": "W/R/T",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/1.x4xvpJsWcQq0UJSVSVaQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/07312025/31905.png",
+            "keeper": false
+          },
+          {
+            "name": "T.J. Hockenson",
+            "team": "Min",
+            "yahoo_player_key": "461.p.31840",
+            "positions": [
+              "TE"
+            ],
+            "points": 0.63,
+            "selected_position": "TE",
+            "optimal_position": "TE",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/rQ.dYv.z44ShUr.Z5SPffQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08152025/31840.png",
+            "keeper": true
+          },
+          {
+            "name": "Rome Odunze",
+            "team": "Chi",
+            "yahoo_player_key": "461.p.40901",
+            "positions": [
+              "WR"
+            ],
+            "points": 0.0,
+            "selected_position": "WR",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/g.HKhvFBbBCvb79FKa_zLg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08012025/40901.png",
+            "keeper": false
+          },
+          {
+            "name": "Woody Marks",
+            "team": "Hou",
+            "yahoo_player_key": "461.p.41902",
+            "positions": [
+              "RB"
+            ],
+            "points": 0.0,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/O_SPSIDcaFuRjODc0tc7HQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08192025/41902.png",
+            "keeper": false
+          },
+          {
+            "name": "Bhayshul Tuten",
+            "team": "Jax",
+            "yahoo_player_key": "461.p.41900",
+            "positions": [
+              "RB"
+            ],
+            "points": 0.0,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/wWP9CvRFOTxqY2YN0fUVhg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08202025/41900.png",
+            "keeper": false
+          },
+          {
+            "name": "Garrett Wilson",
+            "team": "NYJ",
+            "yahoo_player_key": "461.p.33965",
+            "positions": [
+              "WR"
+            ],
+            "points": 0.0,
+            "selected_position": "IR",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/V7qa5xpd7lbg5YSXiAyulQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08292025/33965.png",
+            "keeper": false
+          },
+          {
+            "name": "Jayden Daniels",
+            "team": "Was",
+            "yahoo_player_key": "461.p.40896",
+            "positions": [
+              "QB"
+            ],
+            "points": 0.0,
+            "selected_position": "IR",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/BEmzuWPh36wJxSG.3zFw1g--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/09022025/40896.png",
+            "keeper": false
+          }
+        ]
+      },
+      "team1": {
+        "name": "Metallicats",
+        "logo_image": "https://s.yimg.com/cv/apiv2/default/nfl/nfl_6.png",
+        "points": 86.12,
+        "optimal_points": 131.25,
+        "roster": [
+          {
+            "name": "Brock Purdy",
+            "team": "SF",
+            "yahoo_player_key": "461.p.34218",
+            "positions": [
+              "QB"
+            ],
+            "points": 48.15,
+            "selected_position": "BN",
+            "optimal_position": "QB",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/x1u7DOCV2z5df1c8rlyV1A--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08272025/34218.png",
+            "keeper": false
+          },
+          {
+            "name": "Sam Darnold",
+            "team": "Sea",
+            "yahoo_player_key": "461.p.30973",
+            "positions": [
+              "QB"
+            ],
+            "points": 31.0,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/WQOs8nKfBN3uhPbTl7.Ntg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08112025/30973.1.png",
+            "keeper": false
+          },
+          {
+            "name": "Cam Ward",
+            "team": "Ten",
+            "yahoo_player_key": "461.p.41786",
+            "positions": [
+              "QB"
+            ],
+            "points": 27.27,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/kKflsjM9enf_BJU25h3haA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/07282025/41786.png",
+            "keeper": false
+          },
+          {
+            "name": "Saquon Barkley",
+            "team": "Phi",
+            "yahoo_player_key": "461.p.30972",
+            "positions": [
+              "RB"
+            ],
+            "points": 21.2,
+            "selected_position": "RB",
+            "optimal_position": "RB",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/gJ8KBLiyKMA4G7nQ4BDZnw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08062025/30972.png",
+            "keeper": false
+          },
+          {
+            "name": "Jaxon Smith-Njigba",
+            "team": "Sea",
+            "yahoo_player_key": "461.p.40041",
+            "positions": [
+              "WR"
+            ],
+            "points": 16.4,
+            "selected_position": "WR",
+            "optimal_position": "WR",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/pjAcTWxGkVVesoSoIoyIPw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08112025/40041.png",
+            "keeper": false
+          },
+          {
+            "name": "Ladd McConkey",
+            "team": "LAC",
+            "yahoo_player_key": "461.p.40908",
+            "positions": [
+              "WR"
+            ],
+            "points": 10.87,
+            "selected_position": "WR",
+            "optimal_position": "WR",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/y31xmkleRUtS4KTP1.rpWw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/09042024/40908.png",
+            "keeper": true
+          },
+          {
+            "name": "Brock Bowers",
+            "team": "LV",
+            "yahoo_player_key": "461.p.40878",
+            "positions": [
+              "TE"
+            ],
+            "points": 10.7,
+            "selected_position": "TE",
+            "optimal_position": "TE",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/5wVhLYIcCZJlywOkUH1Q7g--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08072025/40878.png",
+            "keeper": true
+          },
+          {
+            "name": "Aaron Jones Sr.",
+            "team": "Min",
+            "yahoo_player_key": "461.p.30295",
+            "positions": [
+              "RB"
+            ],
+            "points": 10.03,
+            "selected_position": "RB",
+            "optimal_position": "RB",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/PghAktupcNVLfkjAyCUacQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08152025/30295.png",
+            "keeper": false
+          },
+          {
+            "name": "Jake Bates",
+            "team": "Det",
+            "yahoo_player_key": "461.p.40835",
+            "positions": [
+              "K"
+            ],
+            "points": 6.6,
+            "selected_position": "K",
+            "optimal_position": "K",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/GC4wHRTXbvQc3RTpbfdk5w--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/07312025/40835.png",
+            "keeper": false
+          },
+          {
+            "name": "Lamar Jackson",
+            "team": "Bal",
+            "yahoo_player_key": "461.p.31002",
+            "positions": [
+              "QB"
+            ],
+            "points": 6.49,
+            "selected_position": "QB",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/cBbyp3XGWSb7ODSLpiINIQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/09052025/31002.png",
+            "keeper": false
+          },
+          {
+            "name": "Sean Tucker",
+            "team": "TB",
+            "yahoo_player_key": "461.p.40742",
+            "positions": [
+              "RB"
+            ],
+            "points": 6.3,
+            "selected_position": "BN",
+            "optimal_position": "W/R/T",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/2ranJvwmbYeAYfrBli6ciw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/09022025/40742.png",
+            "keeper": false
+          },
+          {
+            "name": "Deebo Samuel",
+            "team": "Was",
+            "yahoo_player_key": "461.p.31868",
+            "positions": [
+              "WR"
+            ],
+            "points": 3.83,
+            "selected_position": "W/R/T",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/K6SdCEf1rZIl_V0bHYosdA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/09022025/31868.png",
+            "keeper": false
+          },
+          {
+            "name": "Cedric Tillman",
+            "team": "Cle",
+            "yahoo_player_key": "461.p.40093",
+            "positions": [
+              "WR"
+            ],
+            "points": 1.03,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/eAaOdvIvPX1Uer.y14LRkw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/09192023/40093.png",
+            "keeper": false
+          },
+          {
+            "name": "Commanders",
+            "team": "Was",
+            "yahoo_player_key": "461.p.100028",
+            "positions": [
+              "DEF"
+            ],
+            "points": 1.0,
+            "selected_position": "BN",
+            "optimal_position": "DEF",
+            "headshot_image": "https://s.yimg.com/cv/apiv2/default/nfl/20200909/50x50/cr/washington.gif",
+            "keeper": false
+          },
+          {
+            "name": "Kareem Hunt",
+            "team": "KC",
+            "yahoo_player_key": "461.p.30199",
+            "positions": [
+              "RB"
+            ],
+            "points": 0.2,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/B8GMMmDli7psORcFkdsSzw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08142025/30199.png",
+            "keeper": false
+          },
+          {
+            "name": "Packers",
+            "team": "GB",
+            "yahoo_player_key": "461.p.100009",
+            "positions": [
+              "DEF"
+            ],
+            "points": 0.0,
+            "selected_position": "DEF",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/lq/i/us/sp/v/nfl/teams/1/50x50w/gnb.gif",
+            "keeper": false
+          }
+        ]
+      }
+    },
+    {
+      "week": 16,
+      "matchup_type": "consolation",
+      "team0": {
+        "name": "MajikalHerbs",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/0f83e7f42579cf9eae0d776a874ca7114f07b6c1ef8e62fdad7a74f0a0b4a5b6.jpg",
+        "points": 90.01,
+        "optimal_points": 108.81,
+        "roster": [
+          {
+            "name": "Jaylen Warren",
+            "team": "Pit",
+            "yahoo_player_key": "461.p.34447",
+            "positions": [
+              "RB"
+            ],
+            "points": 27.83,
+            "selected_position": "RB",
+            "optimal_position": "RB",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/_MrfwvbKNE.o9PPBkAwn4Q--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08202025/34447.png",
+            "keeper": false
+          },
+          {
+            "name": "Derrick Henry",
+            "team": "Bal",
+            "yahoo_player_key": "461.p.29279",
+            "positions": [
+              "RB"
+            ],
+            "points": 22.8,
+            "selected_position": "RB",
+            "optimal_position": "RB",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/E0ngmoi1QGLduY.pIBiAEg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/09032025/29279.png",
+            "keeper": false
+          },
+          {
+            "name": "Harold Fannin Jr.",
+            "team": "Cle",
+            "yahoo_player_key": "461.p.41877",
+            "positions": [
+              "TE"
+            ],
+            "points": 16.37,
+            "selected_position": "BN",
+            "optimal_position": "TE",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/JwOZzpNOcx7X.3gWJWdGHg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08062025/41877.png",
+            "keeper": false
+          },
+          {
+            "name": "DeVonta Smith",
+            "team": "Phi",
+            "yahoo_player_key": "461.p.33398",
+            "positions": [
+              "WR"
+            ],
+            "points": 11.8,
+            "selected_position": "WR",
+            "optimal_position": "WR",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/A0okf3pUPopbxHIIbV_xdA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08062025/33398.png",
+            "keeper": false
+          },
+          {
+            "name": "Tee Higgins",
+            "team": "Cin",
+            "yahoo_player_key": "461.p.32703",
+            "positions": [
+              "WR"
+            ],
+            "points": 11.03,
+            "selected_position": "WR",
+            "optimal_position": "WR",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/YUWtCRPt3PMeQ5E.xIhXJQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08052025/32703.png",
+            "keeper": false
+          },
+          {
+            "name": "Emanuel Wilson",
+            "team": "GB",
+            "yahoo_player_key": "461.p.40707",
+            "positions": [
+              "RB"
+            ],
+            "points": 8.2,
+            "selected_position": "BN",
+            "optimal_position": "W/R/T",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/vLevmMWo7ApnSGUjSEexDA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08142025/40707.png",
+            "keeper": false
+          },
+          {
+            "name": "Jordan Love",
+            "team": "GB",
+            "yahoo_player_key": "461.p.32696",
+            "positions": [
+              "QB"
+            ],
+            "points": 5.78,
+            "selected_position": "QB",
+            "optimal_position": "QB",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/OJrOF1iY_UTxBB1DHYaEJw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08142025/32696.png",
+            "keeper": true
+          },
+          {
+            "name": "Ravens",
+            "team": "Bal",
+            "yahoo_player_key": "461.p.100033",
+            "positions": [
+              "DEF"
+            ],
+            "points": 5.0,
+            "selected_position": "DEF",
+            "optimal_position": "DEF",
+            "headshot_image": "https://s.yimg.com/lq/i/us/sp/v/nfl/teams/1/50x50w/bal_2.gif",
+            "keeper": false
+          },
+          {
+            "name": "Jayden Reed",
+            "team": "GB",
+            "yahoo_player_key": "461.p.40063",
+            "positions": [
+              "WR"
+            ],
+            "points": 4.43,
+            "selected_position": "IR",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/rSGKtdJG0JoVbiDx6ACFeg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08142025/40063.png",
+            "keeper": false
+          },
+          {
+            "name": "Wan'Dale Robinson",
+            "team": "NYG",
+            "yahoo_player_key": "461.p.33998",
+            "positions": [
+              "WR"
+            ],
+            "points": 3.07,
+            "selected_position": "W/R/T",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/6MSjd3AS8DpoBvGvlwPzww--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/09082025/33998.png",
+            "keeper": false
+          },
+          {
+            "name": "Mark Andrews",
+            "team": "Bal",
+            "yahoo_player_key": "461.p.31056",
+            "positions": [
+              "TE"
+            ],
+            "points": 2.7,
+            "selected_position": "TE",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/vWFZwM0DAGyemDmJJny64g--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/07252024/31056.png",
+            "keeper": false
+          },
+          {
+            "name": "Darius Slayton",
+            "team": "NYG",
+            "yahoo_player_key": "461.p.32003",
+            "positions": [
+              "WR"
+            ],
+            "points": 1.03,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/WUECjnghgAi4zDjWF.IVJw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/09082025/32003.png",
+            "keeper": false
+          },
+          {
+            "name": "Matthew Golden",
+            "team": "GB",
+            "yahoo_player_key": "461.p.41808",
+            "positions": [
+              "WR"
+            ],
+            "points": 0.4,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/aClPrFjL0foXiNoM2lQe_w--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/07292025/41808.png",
+            "keeper": false
+          },
+          {
+            "name": "Matt Prater",
+            "team": "Buf",
+            "yahoo_player_key": "461.p.8565",
+            "positions": [
+              "K"
+            ],
+            "points": 0.0,
+            "selected_position": "K",
+            "optimal_position": "K",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/0A0dIdoRxUxO24TwNjQSyw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/09172025/8565.png",
+            "keeper": false
+          }
+        ]
+      },
+      "team1": {
+        "name": "The Cincinnati Kid",
+        "logo_image": "https://s.yimg.com/ep/cx/blendr/v2/image-letterman-jacket-png_1721175092760.png",
+        "points": 128.41,
+        "optimal_points": 131.48,
+        "roster": [
+          {
+            "name": "Joe Burrow",
+            "team": "Cin",
+            "yahoo_player_key": "461.p.32671",
+            "positions": [
+              "QB"
+            ],
+            "points": 43.21,
+            "selected_position": "QB",
+            "optimal_position": "QB",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/Wp86PwXx9UwZi0pIREFvbQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08052025/32671.png",
+            "keeper": false
+          },
+          {
+            "name": "Justin Herbert",
+            "team": "LAC",
+            "yahoo_player_key": "461.p.32676",
+            "positions": [
+              "QB"
+            ],
+            "points": 39.95,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/XHEcBJZ_yNFQJIHpQC79sQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/07312025/32676.png",
+            "keeper": false
+          },
+          {
+            "name": "RJ Harvey",
+            "team": "Den",
+            "yahoo_player_key": "461.p.41845",
+            "positions": [
+              "RB"
+            ],
+            "points": 17.73,
+            "selected_position": "RB",
+            "optimal_position": "RB",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/D4xbuFnhggAnMpjzHLiNbQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08122025/41845.png",
+            "keeper": false
+          },
+          {
+            "name": "George Kittle",
+            "team": "SF",
+            "yahoo_player_key": "461.p.30259",
+            "positions": [
+              "TE"
+            ],
+            "points": 17.17,
+            "selected_position": "TE",
+            "optimal_position": "TE",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/ORJrtRHttxkz0R29xfm45w--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08272025/30259.1.png",
+            "keeper": false
+          },
+          {
+            "name": "Tetairoa McMillan",
+            "team": "Car",
+            "yahoo_player_key": "461.p.41793",
+            "positions": [
+              "WR"
+            ],
+            "points": 13.87,
+            "selected_position": "WR",
+            "optimal_position": "WR",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/2vcf3NUsYjm_FWkOjgjO5A--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/07282025/41793.png",
+            "keeper": false
+          },
+          {
+            "name": "Harrison Butker",
+            "team": "KC",
+            "yahoo_player_key": "461.p.30346",
+            "positions": [
+              "K"
+            ],
+            "points": 12.2,
+            "selected_position": "K",
+            "optimal_position": "K",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/xo8zxEpyyxPM6Y1MpDh.IQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08142025/30346.png",
+            "keeper": false
+          },
+          {
+            "name": "Jacory Croskey-Merritt",
+            "team": "Was",
+            "yahoo_player_key": "461.p.42010",
+            "positions": [
+              "RB"
+            ],
+            "points": 8.5,
+            "selected_position": "BN",
+            "optimal_position": "RB",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/gN6myt_DrBP6SDs2CnaArA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/09022025/42010.png",
+            "keeper": false
+          },
+          {
+            "name": "Eagles",
+            "team": "Phi",
+            "yahoo_player_key": "461.p.100021",
+            "positions": [
+              "DEF"
+            ],
+            "points": 7.0,
+            "selected_position": "DEF",
+            "optimal_position": "DEF",
+            "headshot_image": "https://s.yimg.com/lq/i/us/sp/v/nfl/teams/1/50x50w/phi.gif",
+            "keeper": false
+          },
+          {
+            "name": "Tre Tucker",
+            "team": "LV",
+            "yahoo_player_key": "461.p.40114",
+            "positions": [
+              "WR"
+            ],
+            "points": 5.97,
+            "selected_position": "WR",
+            "optimal_position": "WR",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/uK1YtcPV04eqrNEBS1.j9g--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08072025/40114.png",
+            "keeper": false
+          },
+          {
+            "name": "Rico Dowdle",
+            "team": "Car",
+            "yahoo_player_key": "461.p.33100",
+            "positions": [
+              "RB"
+            ],
+            "points": 5.83,
+            "selected_position": "RB",
+            "optimal_position": "W/R/T",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/RIqb5WGIYqbJtVY52AliyA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/07302025/33100.png",
+            "keeper": false
+          },
+          {
+            "name": "Keenan Allen",
+            "team": "LAC",
+            "yahoo_player_key": "461.p.26699",
+            "positions": [
+              "WR"
+            ],
+            "points": 5.43,
+            "selected_position": "W/R/T",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/qeGqoOc2UlAo2GxbeSwXdg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/09112025/26699.png",
+            "keeper": false
+          },
+          {
+            "name": "Devin Singletary",
+            "team": "NYG",
+            "yahoo_player_key": "461.p.31906",
+            "positions": [
+              "RB"
+            ],
+            "points": 5.13,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/bcUYQ53YRhUamLMWtQRWJA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/07172024/31906.png",
+            "keeper": false
+          },
+          {
+            "name": "Jakobi Meyers",
+            "team": "Jax",
+            "yahoo_player_key": "461.p.32231",
+            "positions": [
+              "WR"
+            ],
+            "points": 5.1,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/dv.1_jAv3hpegNxRZ.kSCg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/11132025/32231.png",
+            "keeper": false
+          },
+          {
+            "name": "Devaughn Vele",
+            "team": "NO",
+            "yahoo_player_key": "461.p.41097",
+            "positions": [
+              "WR"
+            ],
+            "points": 0.0,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/NboStstP.DX6akQ23C2fzw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/09192025/41097.png",
+            "keeper": false
+          },
+          {
+            "name": "Zach Ertz",
+            "team": "Was",
+            "yahoo_player_key": "461.p.26658",
+            "positions": [
+              "TE"
+            ],
+            "points": 0.0,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/.9o6aC.Nkx0260CtbrSu7w--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/09022025/26658.png",
+            "keeper": false
+          }
+        ]
+      }
+    },
+    {
+      "week": 16,
+      "matchup_type": "playoff",
+      "team0": {
+        "name": "Orange Crush",
+        "logo_image": "https://s.yimg.com/cv/apiv2/default/nfl/nfl_1.png",
+        "points": 106.75,
+        "optimal_points": 119.35,
+        "roster": [
+          {
+            "name": "Dak Prescott",
+            "team": "Dal",
+            "yahoo_player_key": "461.p.29369",
+            "positions": [
+              "QB"
+            ],
+            "points": 28.41,
+            "selected_position": "QB",
+            "optimal_position": "QB",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/p5dqlaelzumqgU6GLGpA8A--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08072025/29369.png",
+            "keeper": false
+          },
+          {
+            "name": "Saints",
+            "team": "NO",
+            "yahoo_player_key": "461.p.100018",
+            "positions": [
+              "DEF"
+            ],
+            "points": 24.0,
+            "selected_position": "DEF",
+            "optimal_position": "DEF",
+            "headshot_image": "https://s.yimg.com/lq/i/us/sp/v/nfl/teams/1/50x50w/nor.gif",
+            "keeper": false
+          },
+          {
+            "name": "Courtland Sutton",
+            "team": "Den",
+            "yahoo_player_key": "461.p.31010",
+            "positions": [
+              "WR"
+            ],
+            "points": 14.73,
+            "selected_position": "BN",
+            "optimal_position": "WR",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/4rrT3OAWGCDnTvCPG2dvtg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08122025/31010.png",
+            "keeper": true
+          },
+          {
+            "name": "Blake Corum",
+            "team": "LAR",
+            "yahoo_player_key": "461.p.40962",
+            "positions": [
+              "RB"
+            ],
+            "points": 12.17,
+            "selected_position": "RB",
+            "optimal_position": "RB",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/VMUSaW4q_.UehllmRZwFXA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08252025/40962.png",
+            "keeper": false
+          },
+          {
+            "name": "Mike Evans",
+            "team": "TB",
+            "yahoo_player_key": "461.p.27535",
+            "positions": [
+              "WR"
+            ],
+            "points": 10.57,
+            "selected_position": "WR",
+            "optimal_position": "W/R/T",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/TFGdPGL7LjAlrLkihCIFKg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08282025/27535.png",
+            "keeper": false
+          },
+          {
+            "name": "Chris Boswell",
+            "team": "Pit",
+            "yahoo_player_key": "461.p.28188",
+            "positions": [
+              "K"
+            ],
+            "points": 10.2,
+            "selected_position": "K",
+            "optimal_position": "K",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/XfhoiZmk5lzLSSmlVbU94w--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/09202024/28188.png",
+            "keeper": false
+          },
+          {
+            "name": "Kyren Williams",
+            "team": "LAR",
+            "yahoo_player_key": "461.p.34120",
+            "positions": [
+              "RB"
+            ],
+            "points": 9.5,
+            "selected_position": "RB",
+            "optimal_position": "RB",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/4Zm8cAtYPpfXJusJwXTSQg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08252025/34120.png",
+            "keeper": false
+          },
+          {
+            "name": "Jaguars",
+            "team": "Jax",
+            "yahoo_player_key": "461.p.100030",
+            "positions": [
+              "DEF"
+            ],
+            "points": 8.0,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/xe/ipt/50x50w.3.gif",
+            "keeper": false
+          },
+          {
+            "name": "Amon-Ra St. Brown",
+            "team": "Det",
+            "yahoo_player_key": "461.p.33500",
+            "positions": [
+              "WR"
+            ],
+            "points": 5.6,
+            "selected_position": "W/R/T",
+            "optimal_position": "WR",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/LQZl1Mo7u0KUzLXU9RSw2g--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/07312025/33500.png",
+            "keeper": false
+          },
+          {
+            "name": "Darren Waller",
+            "team": "Mia",
+            "yahoo_player_key": "461.p.28592",
+            "positions": [
+              "TE"
+            ],
+            "points": 4.17,
+            "selected_position": "TE",
+            "optimal_position": "TE",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/nd6.1713GM_Jv4gzuuKKdA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/09112025/28592.png",
+            "keeper": false
+          },
+          {
+            "name": "Michael Pittman Jr.",
+            "team": "Ind",
+            "yahoo_player_key": "461.p.32704",
+            "positions": [
+              "WR"
+            ],
+            "points": 4.13,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/IG6PnBOAcSsjRwkIrsCBCw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08042025/32704.png",
+            "keeper": false
+          },
+          {
+            "name": "Christian Watson",
+            "team": "GB",
+            "yahoo_player_key": "461.p.33989",
+            "positions": [
+              "WR"
+            ],
+            "points": 2.13,
+            "selected_position": "WR",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/fKLdDRdrsPRO_5GDCjIz0A--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08142025/33989.png",
+            "keeper": false
+          },
+          {
+            "name": "Broncos",
+            "team": "Den",
+            "yahoo_player_key": "461.p.100007",
+            "positions": [
+              "DEF"
+            ],
+            "points": 2.0,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/lq/i/us/sp/v/nfl/teams/1/50x50w/den.gif",
+            "keeper": false
+          },
+          {
+            "name": "Jordan Mason",
+            "team": "Min",
+            "yahoo_player_key": "461.p.34320",
+            "positions": [
+              "RB"
+            ],
+            "points": 1.4,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/a37o4I_C9NyYX071aOmhtA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08152025/34320.png",
+            "keeper": true
+          },
+          {
+            "name": "Kimani Vidal",
+            "team": "LAC",
+            "yahoo_player_key": "461.p.41052",
+            "positions": [
+              "RB"
+            ],
+            "points": 1.1,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/6I_uTowjpNFCEeO1mosY3Q--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/09042024/41052.png",
+            "keeper": false
+          },
+          {
+            "name": "Isaiah Likely",
+            "team": "Bal",
+            "yahoo_player_key": "461.p.34095",
+            "positions": [
+              "TE"
+            ],
+            "points": 0.0,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/9x.FE.3B46zhtmoUFLD_Ng--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/09042025/34095.png",
+            "keeper": false
+          },
+          {
+            "name": "Cam Skattebo",
+            "team": "NYG",
+            "yahoo_player_key": "461.p.41922",
+            "positions": [
+              "RB"
+            ],
+            "points": 0.0,
+            "selected_position": "IR",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/YzVYo5wT6goEngOzPZBlqg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/07282025/41922.png",
+            "keeper": false
+          }
+        ]
+      },
+      "team1": {
+        "name": "Trump Train",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/bc1a4b41a79d118ca490c23c0d40fb062604e1d5e6f4836b9d857cabcd0dee84.jpg",
+        "points": 60.0,
+        "optimal_points": 69.73,
+        "roster": [
+          {
+            "name": "Romeo Doubs",
+            "team": "GB",
+            "yahoo_player_key": "461.p.34088",
+            "positions": [
+              "WR"
+            ],
+            "points": 14.1,
+            "selected_position": "WR",
+            "optimal_position": "WR",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/XCzO6gKPADfJEVHJYGTv5Q--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08142025/34088.png",
+            "keeper": false
+          },
+          {
+            "name": "Jauan Jennings",
+            "team": "SF",
+            "yahoo_player_key": "461.p.32887",
+            "positions": [
+              "WR"
+            ],
+            "points": 13.23,
+            "selected_position": "W/R/T",
+            "optimal_position": "WR",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/13FxTtRq2tSebP.b.D5wwA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08272025/32887.png",
+            "keeper": true
+          },
+          {
+            "name": "Samaje Perine",
+            "team": "Cin",
+            "yahoo_player_key": "461.p.30227",
+            "positions": [
+              "RB"
+            ],
+            "points": 10.57,
+            "selected_position": "BN",
+            "optimal_position": "RB",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/NZgHj3xmRN0ZQUyq5bNeXQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/09122025/30227.png",
+            "keeper": false
+          },
+          {
+            "name": "Josh Allen",
+            "team": "Buf",
+            "yahoo_player_key": "461.p.30977",
+            "positions": [
+              "QB"
+            ],
+            "points": 9.9,
+            "selected_position": "QB",
+            "optimal_position": "QB",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/0ZvRLHeilzeAD.w4rHrhHQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/07302025/30977.png",
+            "keeper": false
+          },
+          {
+            "name": "Chase McLaughlin",
+            "team": "TB",
+            "yahoo_player_key": "461.p.32417",
+            "positions": [
+              "K"
+            ],
+            "points": 9.3,
+            "selected_position": "K",
+            "optimal_position": "K",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/HwyEN03bq5DDgnRJk6EkDw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08282025/32417.png",
+            "keeper": false
+          },
+          {
+            "name": "Xavier Worthy",
+            "team": "KC",
+            "yahoo_player_key": "461.p.40877",
+            "positions": [
+              "WR"
+            ],
+            "points": 3.73,
+            "selected_position": "BN",
+            "optimal_position": "W/R/T",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/leBgK9KOkbrH91ERzr8ixA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08142025/40877.png",
+            "keeper": false
+          },
+          {
+            "name": "Tyler Warren",
+            "team": "Ind",
+            "yahoo_player_key": "461.p.41799",
+            "positions": [
+              "TE"
+            ],
+            "points": 3.5,
+            "selected_position": "TE",
+            "optimal_position": "TE",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/xBqnY7pk58aTLbN2kQqfAQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08042025/41799.png",
+            "keeper": false
+          },
+          {
+            "name": "Josh Jacobs",
+            "team": "GB",
+            "yahoo_player_key": "461.p.31856",
+            "positions": [
+              "RB"
+            ],
+            "points": 3.4,
+            "selected_position": "RB",
+            "optimal_position": "RB",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/.B.3IGooTxAUn_rkxXmKgA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08142025/31856.png",
+            "keeper": false
+          },
+          {
+            "name": "Emeka Egbuka",
+            "team": "TB",
+            "yahoo_player_key": "461.p.41804",
+            "positions": [
+              "WR"
+            ],
+            "points": 3.17,
+            "selected_position": "WR",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/4zlKzRjiLf8g8.j4JJxvqQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/09022025/41804.png",
+            "keeper": false
+          },
+          {
+            "name": "Jake Ferguson",
+            "team": "Dal",
+            "yahoo_player_key": "461.p.34085",
+            "positions": [
+              "TE"
+            ],
+            "points": 2.77,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/WgloR..6wuzkwcHhhGTfbQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08072025/34085.png",
+            "keeper": false
+          },
+          {
+            "name": "Chiefs",
+            "team": "KC",
+            "yahoo_player_key": "461.p.100012",
+            "positions": [
+              "DEF"
+            ],
+            "points": 2.0,
+            "selected_position": "DEF",
+            "optimal_position": "DEF",
+            "headshot_image": "https://s.yimg.com/lq/i/us/sp/v/nfl/teams/1/50x50w/kan.gif",
+            "keeper": false
+          },
+          {
+            "name": "TreVeyon Henderson",
+            "team": "NE",
+            "yahoo_player_key": "461.p.41823",
+            "positions": [
+              "RB"
+            ],
+            "points": 1.4,
+            "selected_position": "RB",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/6q1ZGd4TA0lcTIkynKsxiw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08212025/41823.png",
+            "keeper": false
+          },
+          {
+            "name": "Chris Brooks",
+            "team": "GB",
+            "yahoo_player_key": "461.p.40625",
+            "positions": [
+              "RB"
+            ],
+            "points": 0.4,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/Uy7t_VSGGVw0eAIm46Ozrg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08142025/40625.png",
+            "keeper": false
+          },
+          {
+            "name": "Rashee Rice",
+            "team": "KC",
+            "yahoo_player_key": "461.p.40084",
+            "positions": [
+              "WR"
+            ],
+            "points": 0.0,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/Vgm1cfNj5TpgewGjcORmyQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08142025/40084.png",
+            "keeper": true
+          },
+          {
+            "name": "Patrick Mahomes",
+            "team": "KC",
+            "yahoo_player_key": "461.p.30123",
+            "positions": [
+              "QB"
+            ],
+            "points": 0.0,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/joOVUCFB8mtbFi4l.axrPg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08142025/30123.png",
+            "keeper": false
+          },
+          {
+            "name": "Trey Benson",
+            "team": "Ari",
+            "yahoo_player_key": "461.p.40958",
+            "positions": [
+              "RB"
+            ],
+            "points": 0.0,
+            "selected_position": "IR",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/0JPAprqVeJZ9mVL5BylkTg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08012025/40958.png",
+            "keeper": false
+          },
+          {
+            "name": "Colts",
+            "team": "Ind",
+            "yahoo_player_key": "461.p.100011",
+            "positions": [
+              "DEF"
+            ],
+            "points": -3.0,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/lq/i/us/sp/v/nfl/teams/1/50x50w/ind.gif",
+            "keeper": false
+          }
+        ]
+      }
+    },
+    {
+      "week": 16,
+      "matchup_type": "consolation",
+      "team0": {
+        "name": "Redheaded Rampage",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/8f8b5768834973181f6ef35c6eaf3762c52d192e1f5269131de3abb94356c6f2.jpg",
+        "points": 118.56,
+        "optimal_points": 132.49,
+        "roster": [
+          {
+            "name": "Matthew Stafford",
+            "team": "LAR",
+            "yahoo_player_key": "461.p.9265",
+            "positions": [
+              "QB"
+            ],
+            "points": 44.13,
+            "selected_position": "QB",
+            "optimal_position": "QB",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/D1yOOqEAShgd8mG3kr3dWA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08252025/9265.png",
+            "keeper": false
+          },
+          {
+            "name": "Bo Nix",
+            "team": "Den",
+            "yahoo_player_key": "461.p.40875",
+            "positions": [
+              "QB"
+            ],
+            "points": 25.18,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/qMXs35kHTL7jk3ZvdA6EPw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08122025/40875.png",
+            "keeper": true
+          },
+          {
+            "name": "Tyjae Spears",
+            "team": "Ten",
+            "yahoo_player_key": "461.p.40119",
+            "positions": [
+              "RB"
+            ],
+            "points": 17.23,
+            "selected_position": "BN",
+            "optimal_position": "RB",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/O04CMW.jmYBHbJQRK10qSg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08122025/40119.png",
+            "keeper": false
+          },
+          {
+            "name": "De'Von Achane",
+            "team": "Mia",
+            "yahoo_player_key": "461.p.40118",
+            "positions": [
+              "RB"
+            ],
+            "points": 16.2,
+            "selected_position": "RB",
+            "optimal_position": "RB",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/obsCencHX.qHUD9wlJ2lFQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08272025/40118.png",
+            "keeper": true
+          },
+          {
+            "name": "Travis Etienne Jr.",
+            "team": "Jax",
+            "yahoo_player_key": "461.p.33413",
+            "positions": [
+              "RB"
+            ],
+            "points": 14.07,
+            "selected_position": "RB",
+            "optimal_position": "W/R/T",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/hCXJJhJgRmhAeKyCscBzGg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08202025/33413.png",
+            "keeper": false
+          },
+          {
+            "name": "Stefon Diggs",
+            "team": "NE",
+            "yahoo_player_key": "461.p.28534",
+            "positions": [
+              "WR"
+            ],
+            "points": 13.7,
+            "selected_position": "W/R/T",
+            "optimal_position": "WR",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/oZVx7yfRRsBI8XSnxgHDug--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/04012025/28534.4.png",
+            "keeper": false
+          },
+          {
+            "name": "Hunter Henry",
+            "team": "NE",
+            "yahoo_player_key": "461.p.29269",
+            "positions": [
+              "TE"
+            ],
+            "points": 11.33,
+            "selected_position": "TE",
+            "optimal_position": "TE",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/By1g7PyapRoG42xmD71pSw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08212025/29269.png",
+            "keeper": false
+          },
+          {
+            "name": "A.J. Brown",
+            "team": "Phi",
+            "yahoo_player_key": "461.p.31883",
+            "positions": [
+              "WR"
+            ],
+            "points": 10.83,
+            "selected_position": "WR",
+            "optimal_position": "WR",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/nab_DadrGarP2qS_Y44i_g--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08062025/31883.png",
+            "keeper": false
+          },
+          {
+            "name": "Khalil Shakir",
+            "team": "Buf",
+            "yahoo_player_key": "461.p.34104",
+            "positions": [
+              "WR"
+            ],
+            "points": 4.27,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/52ZprkmEeaoQx2dw2vj.eQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/07302025/34104.png",
+            "keeper": false
+          },
+          {
+            "name": "Drake London",
+            "team": "Atl",
+            "yahoo_player_key": "461.p.33963",
+            "positions": [
+              "WR"
+            ],
+            "points": 3.3,
+            "selected_position": "WR",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/guCA6dh9uHlDC8FigCAuxw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/07292025/33963.png",
+            "keeper": false
+          },
+          {
+            "name": "Jake Elliott",
+            "team": "Phi",
+            "yahoo_player_key": "461.p.30266",
+            "positions": [
+              "K"
+            ],
+            "points": 3.0,
+            "selected_position": "K",
+            "optimal_position": "K",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/XF2MryI2EyzuX4bvzuZJoA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08062025/30266.png",
+            "keeper": false
+          },
+          {
+            "name": "Jets",
+            "team": "NYJ",
+            "yahoo_player_key": "461.p.100020",
+            "positions": [
+              "DEF"
+            ],
+            "points": 2.0,
+            "selected_position": "DEF",
+            "optimal_position": "DEF",
+            "headshot_image": "https://s.yimg.com/lq/i/us/sp/v/nfl/teams/1/50x50w/nyj.gif",
+            "keeper": false
+          },
+          {
+            "name": "Dalton Kincaid",
+            "team": "Buf",
+            "yahoo_player_key": "461.p.40048",
+            "positions": [
+              "TE"
+            ],
+            "points": 0.0,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/_vIaA6O2PBjRh7H7MmXc2w--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/07302025/40048.png",
+            "keeper": false
+          },
+          {
+            "name": "Alvin Kamara",
+            "team": "NO",
+            "yahoo_player_key": "461.p.30180",
+            "positions": [
+              "RB"
+            ],
+            "points": 0.0,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/IqjWH86bHyYYW1UfdVHLnQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08232023/30180.png",
+            "keeper": false
+          },
+          {
+            "name": "Brandon Aiyuk",
+            "team": "SF",
+            "yahoo_player_key": "461.p.32695",
+            "positions": [
+              "WR"
+            ],
+            "points": 0.0,
+            "selected_position": "IR",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/XFzdvM_ASlVEGhbkzWekUg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08272025/32695.png",
+            "keeper": false
+          },
+          {
+            "name": "J.K. Dobbins",
+            "team": "Den",
+            "yahoo_player_key": "461.p.32725",
+            "positions": [
+              "RB"
+            ],
+            "points": 0.0,
+            "selected_position": "IR",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/0ydtPwLLazQ3kAj6VK9dvA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08122025/32725.png",
+            "keeper": true
+          }
+        ]
+      },
+      "team1": {
+        "name": "Burrowhead Stadium",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/85176392ed36f44924201cf2518de4d4755d2c565fe26b1357aa6338a3e3d00e.jpg",
+        "points": 100.91,
+        "optimal_points": 141.03,
+        "roster": [
+          {
+            "name": "Drake Maye",
+            "team": "NE",
+            "yahoo_player_key": "461.p.40881",
+            "positions": [
+              "QB"
+            ],
+            "points": 36.45,
+            "selected_position": "BN",
+            "optimal_position": "QB",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/JuypA8.cSQ7QsUVykavGSw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08212025/40881.png",
+            "keeper": false
+          },
+          {
+            "name": "Kenneth Walker III",
+            "team": "Sea",
+            "yahoo_player_key": "461.p.33996",
+            "positions": [
+              "RB"
+            ],
+            "points": 21.77,
+            "selected_position": "RB",
+            "optimal_position": "RB",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/P2y_qVCj3vm_QUj_nxpxMA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/09032024/33996.png",
+            "keeper": false
+          },
+          {
+            "name": "Baker Mayfield",
+            "team": "TB",
+            "yahoo_player_key": "461.p.30971",
+            "positions": [
+              "QB"
+            ],
+            "points": 20.2,
+            "selected_position": "QB",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/bvJVbwrTRxHsOXVGqgggag--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08282025/30971.png",
+            "keeper": true
+          },
+          {
+            "name": "DJ Moore",
+            "team": "Chi",
+            "yahoo_player_key": "461.p.30994",
+            "positions": [
+              "WR"
+            ],
+            "points": 16.17,
+            "selected_position": "BN",
+            "optimal_position": "WR",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/1e1Gkw7JV5lOJ7s.loQ3oA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/07312025/30994.png",
+            "keeper": false
+          },
+          {
+            "name": "Zach Charbonnet",
+            "team": "Sea",
+            "yahoo_player_key": "461.p.40075",
+            "positions": [
+              "RB"
+            ],
+            "points": 14.67,
+            "selected_position": "BN",
+            "optimal_position": "RB",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/Y6LWl9xABACdkX6jchfStQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08112025/40075.png",
+            "keeper": false
+          },
+          {
+            "name": "Kyle Pitts Sr.",
+            "team": "Atl",
+            "yahoo_player_key": "461.p.33392",
+            "positions": [
+              "TE"
+            ],
+            "points": 13.3,
+            "selected_position": "TE",
+            "optimal_position": "TE",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/AqBVbknun4hW96b5LJw9hA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/07292025/33392.png",
+            "keeper": false
+          },
+          {
+            "name": "Cam Little",
+            "team": "Jax",
+            "yahoo_player_key": "461.p.41062",
+            "positions": [
+              "K"
+            ],
+            "points": 11.3,
+            "selected_position": "K",
+            "optimal_position": "K",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/vJvD9.hj9yGbFnD956D22w--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08202025/41062.png",
+            "keeper": false
+          },
+          {
+            "name": "Tony Pollard",
+            "team": "Ten",
+            "yahoo_player_key": "461.p.31960",
+            "positions": [
+              "RB"
+            ],
+            "points": 10.2,
+            "selected_position": "BN",
+            "optimal_position": "W/R/T",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/wKlEIFwkEUFIIJeYcBfCQg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08112025/31960.png",
+            "keeper": false
+          },
+          {
+            "name": "Bills",
+            "team": "Buf",
+            "yahoo_player_key": "461.p.100002",
+            "positions": [
+              "DEF"
+            ],
+            "points": 10.0,
+            "selected_position": "DEF",
+            "optimal_position": "DEF",
+            "headshot_image": "https://s.yimg.com/lq/i/us/sp/v/nfl/teams/1/50x50w/buf.gif",
+            "keeper": false
+          },
+          {
+            "name": "Tyrone Tracy Jr.",
+            "team": "NYG",
+            "yahoo_player_key": "461.p.41048",
+            "positions": [
+              "RB"
+            ],
+            "points": 8.57,
+            "selected_position": "RB",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/.ax_cluqS6QCov.NvSPDgQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/09092025/41048.png",
+            "keeper": true
+          },
+          {
+            "name": "Jameson Williams",
+            "team": "Det",
+            "yahoo_player_key": "461.p.33967",
+            "positions": [
+              "WR"
+            ],
+            "points": 7.17,
+            "selected_position": "WR",
+            "optimal_position": "WR",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/3q.ZpkRB9NKEJ.1fIHMADw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/07312025/33967.1.png",
+            "keeper": true
+          },
+          {
+            "name": "CeeDee Lamb",
+            "team": "Dal",
+            "yahoo_player_key": "461.p.32687",
+            "positions": [
+              "WR"
+            ],
+            "points": 6.4,
+            "selected_position": "WR",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/97z.n2rR5JU2bkWcYfVJAg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08072025/32687.png",
+            "keeper": false
+          },
+          {
+            "name": "Troy Franklin",
+            "team": "Den",
+            "yahoo_player_key": "461.p.41009",
+            "positions": [
+              "WR"
+            ],
+            "points": 6.4,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/pzIz4.W7zsBPd1YakQSQQQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08122025/41009.png",
+            "keeper": false
+          },
+          {
+            "name": "Darnell Mooney",
+            "team": "Atl",
+            "yahoo_player_key": "461.p.32843",
+            "positions": [
+              "WR"
+            ],
+            "points": 2.6,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/a6GNhxjFK7ajMCGkXuc0Uw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/07292025/32843.png",
+            "keeper": false
+          },
+          {
+            "name": "Brian Thomas Jr.",
+            "team": "Jax",
+            "yahoo_player_key": "461.p.40883",
+            "positions": [
+              "WR"
+            ],
+            "points": 2.2,
+            "selected_position": "W/R/T",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/DlPTVpS2tEMQGLfyE70LRw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08202025/40883.png",
+            "keeper": false
+          },
+          {
+            "name": "David Njoku",
+            "team": "Cle",
+            "yahoo_player_key": "461.p.30142",
+            "positions": [
+              "TE"
+            ],
+            "points": 0.0,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/N2wB.vSZOxuoEgcezD5NLw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08252023/30142.png",
+            "keeper": false
+          }
+        ]
+      }
+    },
+    {
+      "week": 16,
+      "matchup_type": "playoff",
+      "team0": {
+        "name": "Stochastic Parrots",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/c1d434fa474428fb3c4df753e8865732f7dd7041c455c82b6ecb53d5c1573e89.png",
+        "points": 115.06,
+        "optimal_points": 135.86,
+        "roster": [
+          {
+            "name": "Jalen Hurts",
+            "team": "Phi",
+            "yahoo_player_key": "461.p.32723",
+            "positions": [
+              "QB"
+            ],
+            "points": 28.9,
+            "selected_position": "QB",
+            "optimal_position": "QB",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/DYk4PbeJnvksY9yGq6sSvg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08062025/32723.png",
+            "keeper": false
+          },
+          {
+            "name": "Christian McCaffrey",
+            "team": "SF",
+            "yahoo_player_key": "461.p.30121",
+            "positions": [
+              "RB"
+            ],
+            "points": 28.63,
+            "selected_position": "W/R/T",
+            "optimal_position": "RB",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/NUKES.XtDlZ9FmhqEOqBXQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08272025/30121.png",
+            "keeper": false
+          },
+          {
+            "name": "Kenneth Gainwell",
+            "team": "Pit",
+            "yahoo_player_key": "461.p.33538",
+            "positions": [
+              "RB"
+            ],
+            "points": 18.7,
+            "selected_position": "RB",
+            "optimal_position": "RB",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/dXFvVAuce588aQdbJYKQZQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08202025/33538.png",
+            "keeper": false
+          },
+          {
+            "name": "Rhamondre Stevenson",
+            "team": "NE",
+            "yahoo_player_key": "461.p.33508",
+            "positions": [
+              "RB"
+            ],
+            "points": 15.9,
+            "selected_position": "BN",
+            "optimal_position": "W/R/T",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/ncb3zr__n4xggLQ5LEIDaw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08212025/33508.png",
+            "keeper": false
+          },
+          {
+            "name": "Quentin Johnston",
+            "team": "LAC",
+            "yahoo_player_key": "461.p.40051",
+            "positions": [
+              "WR"
+            ],
+            "points": 14.93,
+            "selected_position": "BN",
+            "optimal_position": "WR",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/b8mxoqsW0Ac1lsta6umDjw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/07312025/40051.png",
+            "keeper": false
+          },
+          {
+            "name": "Zay Flowers",
+            "team": "Bal",
+            "yahoo_player_key": "461.p.40039",
+            "positions": [
+              "WR"
+            ],
+            "points": 14.9,
+            "selected_position": "WR",
+            "optimal_position": "WR",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/bhsObGbo8byRlwVRom5ONA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/09042025/40039.png",
+            "keeper": false
+          },
+          {
+            "name": "Texans",
+            "team": "Hou",
+            "yahoo_player_key": "461.p.100034",
+            "positions": [
+              "DEF"
+            ],
+            "points": 11.0,
+            "selected_position": "DEF",
+            "optimal_position": "DEF",
+            "headshot_image": "https://s.yimg.com/lq/i/us/sp/v/nfl/teams/1/50x50w/hou.gif",
+            "keeper": false
+          },
+          {
+            "name": "Jawhar Jordan",
+            "team": "Hou",
+            "yahoo_player_key": "461.p.41064",
+            "positions": [
+              "RB"
+            ],
+            "points": 8.93,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/7kH9Nt7YH37Mu1h0POI3JA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08192025/41064.png",
+            "keeper": false
+          },
+          {
+            "name": "Steelers",
+            "team": "Pit",
+            "yahoo_player_key": "461.p.100023",
+            "positions": [
+              "DEF"
+            ],
+            "points": 6.0,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/lq/i/us/sp/v/nfl/teams/1/50x50w/pit.gif",
+            "keeper": false
+          },
+          {
+            "name": "Terry McLaurin",
+            "team": "Was",
+            "yahoo_player_key": "461.p.31908",
+            "positions": [
+              "WR"
+            ],
+            "points": 5.03,
+            "selected_position": "WR",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/Mc64uEYTlzffn7fxeBc_VA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/09022025/31908.png",
+            "keeper": false
+          },
+          {
+            "name": "Javonte Williams",
+            "team": "Dal",
+            "yahoo_player_key": "461.p.33423",
+            "positions": [
+              "RB"
+            ],
+            "points": 5.0,
+            "selected_position": "RB",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/vnnZp9u8jIYMVkEzDvjIvw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08072025/33423.png",
+            "keeper": false
+          },
+          {
+            "name": "Chuba Hubbard",
+            "team": "Car",
+            "yahoo_player_key": "461.p.33514",
+            "positions": [
+              "RB"
+            ],
+            "points": 3.67,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/6G48ulmwtJbWoqdVtXlSVQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/07302025/33514.png",
+            "keeper": true
+          },
+          {
+            "name": "Brian Robinson Jr.",
+            "team": "SF",
+            "yahoo_player_key": "461.p.34054",
+            "positions": [
+              "RB"
+            ],
+            "points": 2.0,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/.GEmCv_snus87GNcrs0WAA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/09022025/34054.png",
+            "keeper": false
+          },
+          {
+            "name": "Jason Myers",
+            "team": "Sea",
+            "yahoo_player_key": "461.p.28378",
+            "positions": [
+              "K"
+            ],
+            "points": 2.0,
+            "selected_position": "K",
+            "optimal_position": "K",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/42xWygNfslCMRWD.MqQzlQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/07252023/28378.png",
+            "keeper": false
+          },
+          {
+            "name": "Kayshon Boutte",
+            "team": "NE",
+            "yahoo_player_key": "461.p.40224",
+            "positions": [
+              "WR"
+            ],
+            "points": 1.57,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/keYCee8h2dgGMwcrQ2.zAQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08212025/40224.png",
+            "keeper": false
+          },
+          {
+            "name": "Travis Kelce",
+            "team": "KC",
+            "yahoo_player_key": "461.p.26686",
+            "positions": [
+              "TE"
+            ],
+            "points": 0.9,
+            "selected_position": "TE",
+            "optimal_position": "TE",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/gvUkUI3G0rfQpox4Vyj9rQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08142025/26686.png",
+            "keeper": false
+          },
+          {
+            "name": "Travis Hunter",
+            "team": "Jax",
+            "yahoo_player_key": "461.p.99001",
+            "positions": [
+              "WR"
+            ],
+            "points": 0.0,
+            "selected_position": "IR",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/VMwr0OLB8DWKFXt5Iuqdsg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/07282025/41787.png",
+            "keeper": false
+          }
+        ]
+      },
+      "team1": {
+        "name": "Tecmo Trailblazers",
+        "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/25300526886_ec584552cf.jpg",
+        "points": 91.01,
+        "optimal_points": 107.35,
+        "roster": [
+          {
+            "name": "Bijan Robinson",
+            "team": "Atl",
+            "yahoo_player_key": "461.p.40055",
+            "positions": [
+              "RB"
+            ],
+            "points": 23.23,
+            "selected_position": "W/R/T",
+            "optimal_position": "RB",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/fRK4ZAl9sau01IF3sLGICg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/07292025/40055.png",
+            "keeper": false
+          },
+          {
+            "name": "Jacoby Brissett",
+            "team": "Ari",
+            "yahoo_player_key": "461.p.29325",
+            "positions": [
+              "QB"
+            ],
+            "points": 17.62,
+            "selected_position": "QB",
+            "optimal_position": "QB",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/YPdlveJ1GWInE_x4fxEogQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/07302025/29325.png",
+            "keeper": false
+          },
+          {
+            "name": "Ka'imi Fairbairn",
+            "team": "Hou",
+            "yahoo_player_key": "461.p.29792",
+            "positions": [
+              "K"
+            ],
+            "points": 17.4,
+            "selected_position": "K",
+            "optimal_position": "K",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/.c6NIw1lGRTM_O_gZeDW4w--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08192025/29792.png",
+            "keeper": false
+          },
+          {
+            "name": "Chris Rodriguez Jr.",
+            "team": "Was",
+            "yahoo_player_key": "461.p.40231",
+            "positions": [
+              "RB"
+            ],
+            "points": 13.2,
+            "selected_position": "BN",
+            "optimal_position": "RB",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/91cDvEedAYb2rXG1ayul_A--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/09022025/40231.png",
+            "keeper": false
+          },
+          {
+            "name": "49ers",
+            "team": "SF",
+            "yahoo_player_key": "461.p.100025",
+            "positions": [
+              "DEF"
+            ],
+            "points": 12.0,
+            "selected_position": "BN",
+            "optimal_position": "DEF",
+            "headshot_image": "https://s.yimg.com/lq/i/us/sp/v/nfl/teams/1/50x50w/sfo.gif",
+            "keeper": false
+          },
+          {
+            "name": "Kyle Monangai",
+            "team": "Chi",
+            "yahoo_player_key": "461.p.42025",
+            "positions": [
+              "RB"
+            ],
+            "points": 9.37,
+            "selected_position": "BN",
+            "optimal_position": "W/R/T",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/S0dXKbY33LZ8JJLCdV4biw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08012025/42025.png",
+            "keeper": false
+          },
+          {
+            "name": "Tyler Allgeier",
+            "team": "Atl",
+            "yahoo_player_key": "461.p.34107",
+            "positions": [
+              "RB"
+            ],
+            "points": 8.0,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/3pgu8HXEDfw.Pc8TsCfloQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/07292025/34107.png",
+            "keeper": false
+          },
+          {
+            "name": "D'Andre Swift",
+            "team": "Chi",
+            "yahoo_player_key": "461.p.32705",
+            "positions": [
+              "RB"
+            ],
+            "points": 7.6,
+            "selected_position": "RB",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/sByer7Pig96XvXa_8S8bnQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08012025/32705.png",
+            "keeper": false
+          },
+          {
+            "name": "Quinshon Judkins",
+            "team": "Cle",
+            "yahoo_player_key": "461.p.41821",
+            "positions": [
+              "RB"
+            ],
+            "points": 6.63,
+            "selected_position": "RB",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/iKMDtA9FvYCUnZ6eTkX7Ng--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08272025/41821.png",
+            "keeper": false
+          },
+          {
+            "name": "Michael Carter",
+            "team": "Ari",
+            "yahoo_player_key": "461.p.33495",
+            "positions": [
+              "RB"
+            ],
+            "points": 6.5,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/WSBNS5hpLK859r6XwU3IeA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08012025/33495.png",
+            "keeper": false
+          },
+          {
+            "name": "Nico Collins",
+            "team": "Hou",
+            "yahoo_player_key": "461.p.33477",
+            "positions": [
+              "WR"
+            ],
+            "points": 5.93,
+            "selected_position": "WR",
+            "optimal_position": "WR",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/wGEEKD1bv1VZdmpZ4RvhqQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08192025/33477.png",
+            "keeper": true
+          },
+          {
+            "name": "DK Metcalf",
+            "team": "Pit",
+            "yahoo_player_key": "461.p.31896",
+            "positions": [
+              "WR"
+            ],
+            "points": 4.8,
+            "selected_position": "WR",
+            "optimal_position": "WR",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/JwXvD9.hqF_q7aB8gNFplA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08202025/31896.png",
+            "keeper": false
+          },
+          {
+            "name": "Audric Estime",
+            "team": "NO",
+            "yahoo_player_key": "461.p.41019",
+            "positions": [
+              "RB"
+            ],
+            "points": 4.53,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/C.yU36eYOngnFWFD1U2eHw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/12022025/41019.png",
+            "keeper": false
+          },
+          {
+            "name": "Chris Godwin Jr.",
+            "team": "TB",
+            "yahoo_player_key": "461.p.30197",
+            "positions": [
+              "WR"
+            ],
+            "points": 4.5,
+            "selected_position": "BN",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/aHKek31FKO3SZXCZKXYJpQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08282025/30197.png",
+            "keeper": false
+          },
+          {
+            "name": "Rams",
+            "team": "LAR",
+            "yahoo_player_key": "461.p.100014",
+            "positions": [
+              "DEF"
+            ],
+            "points": 4.0,
+            "selected_position": "DEF",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/lq/i/us/sp/v/nfl/teams/1/50x50w/stl.gif",
+            "keeper": false
+          },
+          {
+            "name": "Trey McBride",
+            "team": "Ari",
+            "yahoo_player_key": "461.p.34010",
+            "positions": [
+              "TE"
+            ],
+            "points": 3.8,
+            "selected_position": "TE",
+            "optimal_position": "TE",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/KsfN9YEltClsF.OKACBQAQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08012025/34010.png",
+            "keeper": false
+          },
+          {
+            "name": "Luther Burden III",
+            "team": "Chi",
+            "yahoo_player_key": "461.p.41824",
+            "positions": [
+              "WR"
+            ],
+            "points": 0.0,
+            "selected_position": "IR",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/4lfKIXNYRwS1HOD6DTfBIA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08012025/41824.png",
+            "keeper": false
+          },
+          {
+            "name": "Najee Harris",
+            "team": "LAC",
+            "yahoo_player_key": "461.p.33412",
+            "positions": [
+              "RB"
+            ],
+            "points": 0.0,
+            "selected_position": "IR",
+            "optimal_position": "BN",
+            "headshot_image": "https://s.yimg.com/iu/api/res/1.2/fJ2wYBVu.MkrWhMXzIjcdg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/07312025/33412.png",
+            "keeper": false
+          }
+        ]
+      }
     }
   ],
-  "weeks": 15,
+  "weeks": 16,
   "ranks": [
     [
       {
@@ -40882,7 +43563,9 @@
       "optimal_points_against": 1582.2,
       "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/71ef0ec5793e733eb08337a8adad223a64845459de283401287afa1ad8834a57.jpg",
       "playoff_weeks_won": [],
-      "playoff_weeks_lost": [],
+      "playoff_weeks_lost": [
+        16
+      ],
       "payout": 80
     },
     "More than a Thielen": {
@@ -40901,7 +43584,8 @@
       "optimal_points_against": 1796.38,
       "logo_image": "https://s.yimg.com/cv/apiv2/default/nfl/nfl_4_b.png",
       "playoff_weeks_won": [
-        15
+        15,
+        16
       ],
       "playoff_weeks_lost": [],
       "payout": 90
@@ -40940,7 +43624,9 @@
       "optimal_points_for": 1795.28,
       "optimal_points_against": 1568.98,
       "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/c1d434fa474428fb3c4df753e8865732f7dd7041c455c82b6ecb53d5c1573e89.png",
-      "playoff_weeks_won": [],
+      "playoff_weeks_won": [
+        16
+      ],
       "playoff_weeks_lost": [],
       "payout": 25
     },
@@ -40981,7 +43667,9 @@
       "playoff_weeks_won": [
         15
       ],
-      "playoff_weeks_lost": [],
+      "playoff_weeks_lost": [
+        16
+      ],
       "payout": 20
     },
     "Metallicats": {
@@ -41037,7 +43725,9 @@
       "optimal_points_for": 1795.37,
       "optimal_points_against": 1621.52,
       "logo_image": "https://s.yimg.com/cv/apiv2/default/nfl/nfl_1.png",
-      "playoff_weeks_won": [],
+      "playoff_weeks_won": [
+        16
+      ],
       "playoff_weeks_lost": [
         15
       ],
@@ -41079,7 +43769,8 @@
       "logo_image": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/bc1a4b41a79d118ca490c23c0d40fb062604e1d5e6f4836b9d857cabcd0dee84.jpg",
       "playoff_weeks_won": [],
       "playoff_weeks_lost": [
-        15
+        15,
+        16
       ],
       "payout": 50
     },
