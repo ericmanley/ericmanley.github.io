@@ -6,10 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Parsons Problems - Eric Manley</title>
+  <title>Overtime Pay Calculator - Eric Manley</title>
   <meta name="description" content="Academic webpage of Eric Manley">
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="https://ericmanley.github.io/parsons/">
+  <link rel="canonical" href="https://ericmanley.github.io/parsons/overtime-pay-calculator/">
   <link rel="shortcut icon" type ="image/x-icon" href="https://ericmanley.github.io/favicon.ico">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
@@ -77,22 +77,67 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <div class="container-fluid flex-grow-1">
         <div class="row">
-          <article class="post">
+          <link rel="stylesheet"
+      href="https://js-parsons.github.io/js/js-parsons/parsons.css">
+<link rel="stylesheet"
+      href="https://js-parsons.github.io/js/js-parsons/lib/prettify.css">
+
+<script src="https://js-parsons.github.io/js/js-parsons/lib/jquery.min.js"></script>
+<script src="https://js-parsons.github.io/js/js-parsons/lib/jquery-ui.min.js"></script>
+<script src="https://js-parsons.github.io/js/jquery.ui.touch-punch.min.js"></script>
+<script src="https://js-parsons.github.io/js/js-parsons/lib/skulpt.js"></script>
+<script src="https://js-parsons.github.io/js/js-parsons/lib/skulpt-stdlib.js"></script>
+<script src="https://js-parsons.github.io/js/js-parsons/lib/underscore-min.js"></script>
+<script src="https://js-parsons.github.io/js/js-parsons/lib/lis.js"></script>
+<script src="https://js-parsons.github.io/js/js-parsons/lib/jquery.sound.js"></script>
+<script src="https://js-parsons.github.io/js/js-parsons/lib/prettify.js"></script>
+<script src="https://js-parsons.github.io/js/js-parsons/parsons.js"></script>
 
   <header class="post-header">
-    <h1 class="post-title">Parsons Problems</h1>
+    <h1 class="post-title">Overtime Pay Calculator</h1>
   </header>
+  
+<p>Here’s a pay calculator program that calculates 50% extra pay for any time worked in excess of 40 hours. Put the program in the right order.</p>
 
-  <div class="post-content">
-    <ul>
-  <li><a href="/parsons/bill-split/">Bill Split</a></li>
-  <li><a href="/parsons/paint-estimator/">Paint Estimator</a></li>
-  <li><a href="/parsons/overtime-pay-calculator/">Overtime Pay Calculator</a></li>
-</ul>
+<div id="sortableTrash" class="sortable-code"></div>
+<div id="sortable" class="sortable-code"></div>
+<div style="clear:both;"></div>
+<p> 
+    <input id="feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="newInstanceLink" value="Reset Problem" type="button" /> 
+</p>
+<script type="text/javascript"> 
+(function(){
+  var initial = "wage = float(input(&quot;Enter your hourly wage: &quot;))\\nhours = float(input(&quot;How many hours did you work? &quot;))\n" +
+    "pay = wage*hours\n" +
+    "if hours &gt; 40:\n" +
+    "    overtime_hours = hours-40\n" +
+    "    pay = pay + (0.5 * wage * overtime_hours)\n" +
+    "print(&quot;Total pay: &quot;,pay)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
 
-  </div>
-
-</article>
 
         </div>
       </div>
