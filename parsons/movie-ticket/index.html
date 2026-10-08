@@ -6,10 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Parsons Problems - Eric Manley</title>
+  <title>Movie Ticket Calculator - Eric Manley</title>
   <meta name="description" content="Academic webpage of Eric Manley">
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="https://ericmanley.github.io/parsons/">
+  <link rel="canonical" href="https://ericmanley.github.io/parsons/movie-ticket/">
   <link rel="shortcut icon" type ="image/x-icon" href="https://ericmanley.github.io/favicon.ico">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
@@ -77,26 +77,81 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <div class="container-fluid flex-grow-1">
         <div class="row">
-          <article class="post">
+          <link rel="stylesheet"
+      href="https://js-parsons.github.io/js/js-parsons/parsons.css">
+<link rel="stylesheet"
+      href="https://js-parsons.github.io/js/js-parsons/lib/prettify.css">
+
+<script src="https://js-parsons.github.io/js/js-parsons/lib/jquery.min.js"></script>
+<script src="https://js-parsons.github.io/js/js-parsons/lib/jquery-ui.min.js"></script>
+<script src="https://js-parsons.github.io/js/jquery.ui.touch-punch.min.js"></script>
+<script src="https://js-parsons.github.io/js/js-parsons/lib/skulpt.js"></script>
+<script src="https://js-parsons.github.io/js/js-parsons/lib/skulpt-stdlib.js"></script>
+<script src="https://js-parsons.github.io/js/js-parsons/lib/underscore-min.js"></script>
+<script src="https://js-parsons.github.io/js/js-parsons/lib/lis.js"></script>
+<script src="https://js-parsons.github.io/js/js-parsons/lib/jquery.sound.js"></script>
+<script src="https://js-parsons.github.io/js/js-parsons/lib/prettify.js"></script>
+<script src="https://js-parsons.github.io/js/js-parsons/parsons.js"></script>
 
   <header class="post-header">
-    <h1 class="post-title">Parsons Problems</h1>
+    <h1 class="post-title">Movie Ticket Calculator</h1>
   </header>
+  
+<p>A movie theater charges <code class="language-plaintext highlighter-rouge">$10</code> for adult tickets. Children under 12 get in for <code class="language-plaintext highlighter-rouge">$6</code>, and seniors at least 65 years old get in for <code class="language-plaintext highlighter-rouge">$7</code>. A 6% sales tax is also added to the ticket price. The following program defines three functions, <code class="language-plaintext highlighter-rouge">ticket_price</code>, <code class="language-plaintext highlighter-rouge">add_tax</code>, and <code class="language-plaintext highlighter-rouge">main</code> (the order these are defined normally doesn’t matter, but this puzzle is expecting them to be defined in that order). Put the code in the right order. You’ll need to think about which function each line of code belongs in as well as what order it goes in within that function.
+</p>
 
-  <div class="post-content">
-    <ul>
-  <li><a href="/parsons/bill-split/">Bill Split</a></li>
-  <li><a href="/parsons/paint-estimator/">Paint Estimator</a></li>
-  <li><a href="/parsons/overtime-pay-calculator/">Overtime Pay Calculator</a></li>
-  <li><a href="/parsons/shipping-cost/">Shipping Cost</a></li>
-  <li><a href="/parsons/guess-my-number/">Guess My Number Game</a></li>
-  <li><a href="/parsons/bill-accumulator/">Bill Accumulator</a></li>
-  <li><a href="/parsons/movie-ticket/">Movie Ticket Calculator</a></li>
-</ul>
+<div id="sortableTrash" class="sortable-code"></div>
+<div id="sortable" class="sortable-code"></div>
+<div style="clear:both;"></div>
+<p> 
+    <input id="feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="newInstanceLink" value="Reset Problem" type="button" /> 
+</p>
+<script type="text/javascript"> 
+(function(){
+  var initial = "def ticket_price(age):\n" +
+    "    if age &lt; 12:\n" +
+    "        price = 6.00\n" +
+    "    elif age &gt;= 65:\n" +
+    "        price = 7.00\n" +
+    "    else:\n" +
+    "        price = 10.00\n" +
+    "    return price\n" +
+    "def add_tax(pre_tax_price):\n" +
+    "    after_tax_price = pre_tax_price * 1.06\n" +
+    "    return after_tax_price\n" +
+    "def main():\n" +
+    "    user_age = int(input(&quot;Enter your age: &quot;))\n" +
+    "    subtotal = ticket_price(user_age)\n" +
+    "    total = add_tax(subtotal)\n" +
+    "    print(f&quot;Your total is ${total:.2f}&quot;)\n" +
+    "    \n" +
+    "main()";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true,
+    "trashId": "sortableTrash"
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
 
-  </div>
-
-</article>
 
         </div>
       </div>
