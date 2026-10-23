@@ -25989,5 +25989,475 @@
     ],
     "complete": true,
     "missing_player_weeks": 0
+  },
+  "keeper_pickup_candidates": {
+    "season": 2026,
+    "status": "open",
+    "roster_week": 6,
+    "source": "completed_week_rosters",
+    "generated_at": "2026-10-20T14:51:16.279770+00:00",
+    "candidates": [
+      {
+        "round": 7,
+        "player": {
+          "name": "Bo Nix",
+          "team": "Den",
+          "yahoo_player_key": "470.p.40875",
+          "positions": [
+            "QB"
+          ],
+          "points": 13.92,
+          "selected_position": "QB",
+          "optimal_position": "QB",
+          "headshot_image": "https://s.yimg.com/iu/api/res/1.2/3YuKds1ZJjg51OHa8OArCg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08132026/40875.1.png",
+          "keeper": false
+        },
+        "draft_status": "Drafted in round 7 by Stochastic Parrots",
+        "tier": "gold",
+        "last_rostered_week": 5,
+        "last_team_name": "Stochastic Parrots"
+      },
+      {
+        "round": 7,
+        "player": {
+          "name": "Brian Thomas Jr.",
+          "team": "Jax",
+          "yahoo_player_key": "470.p.40883",
+          "positions": [
+            "WR"
+          ],
+          "points": 1.03,
+          "selected_position": "BN",
+          "optimal_position": "BN",
+          "headshot_image": "https://s.yimg.com/iu/api/res/1.2/DlPTVpS2tEMQGLfyE70LRw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08202025/40883.png",
+          "keeper": false
+        },
+        "draft_status": "Drafted in round 7 by Burrowhead Stadium",
+        "tier": "gold",
+        "last_rostered_week": 3,
+        "last_team_name": "Burrowhead Stadium"
+      },
+      {
+        "round": 7,
+        "player": {
+          "name": "De'Zhaun Stribling",
+          "team": "SF",
+          "yahoo_player_key": "470.p.42655",
+          "positions": [
+            "WR"
+          ],
+          "points": 0.0,
+          "selected_position": "IR",
+          "optimal_position": "BN",
+          "headshot_image": "https://s.yimg.com/iu/api/res/1.2/e_j0dbRT5a04wE6TzewF5w--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08242026/42655.1.png",
+          "keeper": false
+        },
+        "draft_status": "Drafted in round 7 by Orange Crush",
+        "tier": "gold",
+        "last_rostered_week": 2,
+        "last_team_name": "Orange Crush"
+      },
+      {
+        "round": 8,
+        "player": {
+          "name": "Quentin Johnston",
+          "team": "LAC",
+          "yahoo_player_key": "470.p.40051",
+          "positions": [
+            "WR"
+          ],
+          "points": 3.03,
+          "selected_position": "BN",
+          "optimal_position": "BN",
+          "headshot_image": "https://s.yimg.com/iu/api/res/1.2/9LCk06L.TL66ftWwm8L68g--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/09092026/40051.1.png",
+          "keeper": false
+        },
+        "draft_status": "Drafted in round 8 by Battle Unicorns",
+        "tier": "gold",
+        "last_rostered_week": 4,
+        "last_team_name": "Battle Unicorns"
+      },
+      {
+        "round": 9,
+        "player": {
+          "name": "Michael Pittman Jr.",
+          "team": "Pit",
+          "yahoo_player_key": "470.p.32704",
+          "positions": [
+            "WR"
+          ],
+          "points": 0.0,
+          "selected_position": "BN",
+          "optimal_position": "BN",
+          "headshot_image": "https://s.yimg.com/iu/api/res/1.2/RbfOdQEOZa.kBRGSNDS2OQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/03132026/32704.1.png",
+          "keeper": false
+        },
+        "draft_status": "Drafted in round 9 by Trump Train",
+        "tier": "silver",
+        "last_rostered_week": 5,
+        "last_team_name": "Trump Train"
+      },
+      {
+        "round": 10,
+        "player": {
+          "name": "Kaleb Johnson",
+          "team": "GB",
+          "yahoo_player_key": "470.p.41881",
+          "positions": [
+            "RB"
+          ],
+          "points": 2.6,
+          "selected_position": "BN",
+          "optimal_position": "BN",
+          "headshot_image": "https://s.yimg.com/iu/api/res/1.2/Nubbgl32C9U30RYWqULphg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08242026/41881.1.png",
+          "keeper": false
+        },
+        "draft_status": "Drafted in round 10 by Stochastic Parrots",
+        "tier": "silver",
+        "last_rostered_week": 5,
+        "last_team_name": "Orange Crush"
+      },
+      {
+        "round": 11,
+        "player": {
+          "name": "Chig Okonkwo",
+          "team": "Was",
+          "yahoo_player_key": "470.p.34099",
+          "positions": [
+            "TE"
+          ],
+          "points": 6.0,
+          "selected_position": "BN",
+          "optimal_position": "BN",
+          "headshot_image": "https://s.yimg.com/iu/api/res/1.2/NyDnkRfH0Fi898ttv7a5AQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08252026/34099.1.png",
+          "keeper": false
+        },
+        "draft_status": "Drafted in round 11 by More than a Thielen",
+        "tier": "silver",
+        "last_rostered_week": 5,
+        "last_team_name": "More than a Thielen"
+      },
+      {
+        "round": 12,
+        "player": {
+          "name": "Cameron Dicker",
+          "team": "LAC",
+          "yahoo_player_key": "470.p.34344",
+          "positions": [
+            "K"
+          ],
+          "points": 6.2,
+          "selected_position": "BN",
+          "optimal_position": "K",
+          "headshot_image": "https://s.yimg.com/iu/api/res/1.2/pZX.ilneMov14gFOC.lK.g--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/09092026/34344.1.png",
+          "keeper": false
+        },
+        "draft_status": "Drafted in round 12 by Buffalo Thurmanators",
+        "tier": "silver",
+        "last_rostered_week": 5,
+        "last_team_name": "Buffalo Thurmanators"
+      },
+      {
+        "round": 12,
+        "player": {
+          "name": "Jaxson Dart",
+          "team": "NYG",
+          "yahoo_player_key": "470.p.41810",
+          "positions": [
+            "QB"
+          ],
+          "points": 1.55,
+          "selected_position": "BN",
+          "optimal_position": "BN",
+          "headshot_image": "https://s.yimg.com/iu/api/res/1.2/QJOKptxyTVChDYyVem2K3A--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08202026/41810.1.png",
+          "keeper": false
+        },
+        "draft_status": "Drafted in round 12 by Orange Crush",
+        "tier": "silver",
+        "last_rostered_week": 2,
+        "last_team_name": "Orange Crush"
+      },
+      {
+        "round": 13,
+        "player": {
+          "name": "Caleb Douglas",
+          "team": "Mia",
+          "yahoo_player_key": "470.p.42697",
+          "positions": [
+            "WR"
+          ],
+          "points": 2.27,
+          "selected_position": "BN",
+          "optimal_position": "BN",
+          "headshot_image": "https://s.yimg.com/iu/api/res/1.2/drpU_fdv.iExZvFQnA9v1Q--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08192026/42697.2.png",
+          "keeper": false
+        },
+        "draft_status": "Drafted in round 13 by Tecmo Trailblazers",
+        "tier": "bronze",
+        "last_rostered_week": 2,
+        "last_team_name": "Tecmo Trailblazers"
+      },
+      {
+        "round": 13,
+        "player": {
+          "name": "Tank Bigsby",
+          "team": "Phi",
+          "yahoo_player_key": "470.p.40095",
+          "positions": [
+            "RB"
+          ],
+          "points": -1.17,
+          "selected_position": "BN",
+          "optimal_position": "BN",
+          "headshot_image": "https://s.yimg.com/iu/api/res/1.2/zxaparDLFs_jiXxBIHLFBg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08212026/40095.1.png",
+          "keeper": false
+        },
+        "draft_status": "Drafted in round 13 by Buffalo Thurmanators",
+        "tier": "bronze",
+        "last_rostered_week": 3,
+        "last_team_name": "Buffalo Thurmanators"
+      },
+      {
+        "round": 14,
+        "player": {
+          "name": "Daniel Jones",
+          "team": "Ind",
+          "yahoo_player_key": "470.p.31838",
+          "positions": [
+            "QB"
+          ],
+          "points": 19.9,
+          "selected_position": "BN",
+          "optimal_position": "BN",
+          "headshot_image": "https://s.yimg.com/iu/api/res/1.2/5W3_SkGD4wzKKz3D1FrFPQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08142026/31838.1.png",
+          "keeper": false
+        },
+        "draft_status": "Drafted in round 14 by Tecmo Trailblazers",
+        "tier": "bronze",
+        "last_rostered_week": 2,
+        "last_team_name": "Tecmo Trailblazers"
+      },
+      {
+        "round": 14,
+        "player": {
+          "name": "Harrison Mevis",
+          "team": "LAR",
+          "yahoo_player_key": "470.p.41312",
+          "positions": [
+            "K"
+          ],
+          "points": 4.0,
+          "selected_position": "K",
+          "optimal_position": "BN",
+          "headshot_image": "https://s.yimg.com/iu/api/res/1.2/y3t1lgmXypqtZ__kodxkwA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08192026/41312.2.png",
+          "keeper": false
+        },
+        "draft_status": "Drafted in round 14 by Burrowhead Stadium",
+        "tier": "bronze",
+        "last_rostered_week": 5,
+        "last_team_name": "Buffalo Thurmanators"
+      },
+      {
+        "round": 14,
+        "player": {
+          "name": "Jake Bates",
+          "team": "Det",
+          "yahoo_player_key": "470.p.40835",
+          "positions": [
+            "K"
+          ],
+          "points": 10.6,
+          "selected_position": "K",
+          "optimal_position": "K",
+          "headshot_image": "https://s.yimg.com/iu/api/res/1.2/uFwTZtDOyFLOqpXTnZARAQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08132026/40835.1.png",
+          "keeper": false
+        },
+        "draft_status": "Drafted in round 14 by Metallicats",
+        "tier": "bronze",
+        "last_rostered_week": 5,
+        "last_team_name": "Metallicats"
+      },
+      {
+        "round": 14,
+        "player": {
+          "name": "Kimani Vidal",
+          "team": "LAC",
+          "yahoo_player_key": "470.p.41052",
+          "positions": [
+            "RB"
+          ],
+          "points": 0.0,
+          "selected_position": "BN",
+          "optimal_position": "BN",
+          "headshot_image": "https://s.yimg.com/iu/api/res/1.2/j.XdnsvMjvD5LIwAfwJYew--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/09092026/41052.1.png",
+          "keeper": false
+        },
+        "draft_status": "Drafted in round 14 by Orange Crush",
+        "tier": "bronze",
+        "last_rostered_week": 1,
+        "last_team_name": "Stochastic Parrots"
+      },
+      {
+        "round": 15,
+        "player": {
+          "name": "Antonio Williams",
+          "team": "Was",
+          "yahoo_player_key": "470.p.42693",
+          "positions": [
+            "WR"
+          ],
+          "points": 3.57,
+          "selected_position": "BN",
+          "optimal_position": "BN",
+          "headshot_image": "https://s.yimg.com/iu/api/res/1.2/iMp_n0ptAQqeYqF_mBWLsw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08252026/42693.1.png",
+          "keeper": false
+        },
+        "draft_status": "Drafted in round 15 by Battle Unicorns",
+        "tier": "bronze",
+        "last_rostered_week": 5,
+        "last_team_name": "Battle Unicorns"
+      },
+      {
+        "round": 15,
+        "player": {
+          "name": "Cam Ward",
+          "team": "Ten",
+          "yahoo_player_key": "470.p.41786",
+          "positions": [
+            "QB"
+          ],
+          "points": 18.45,
+          "selected_position": "BN",
+          "optimal_position": "BN",
+          "headshot_image": "https://s.yimg.com/iu/api/res/1.2/N0PoWr99nz6T_G4n46dfeA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08252026/41786.1.png",
+          "keeper": false
+        },
+        "draft_status": "Drafted in round 15 by Redheaded Rampage",
+        "tier": "bronze",
+        "last_rostered_week": 1,
+        "last_team_name": "Redheaded Rampage"
+      },
+      {
+        "round": 15,
+        "player": {
+          "name": "Juwan Johnson",
+          "team": "NO",
+          "yahoo_player_key": "470.p.33113",
+          "positions": [
+            "TE"
+          ],
+          "points": 3.07,
+          "selected_position": "BN",
+          "optimal_position": "BN",
+          "headshot_image": "https://s.yimg.com/iu/api/res/1.2/BKGuH.LGDGTpzRsgfzS9fg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08202026/33113.1.png",
+          "keeper": false
+        },
+        "draft_status": "Drafted in round 15 by Metallicats",
+        "tier": "bronze",
+        "last_rostered_week": 5,
+        "last_team_name": "Tecmo Trailblazers"
+      },
+      {
+        "round": 16,
+        "player": {
+          "name": "Chargers",
+          "team": "LAC",
+          "yahoo_player_key": "470.p.100024",
+          "positions": [
+            "DEF"
+          ],
+          "points": 4.0,
+          "selected_position": "DEF",
+          "optimal_position": "DEF",
+          "headshot_image": "https://s.yimg.com/lq/i/us/sp/v/nfl/teams/1/50x50w/sdg3.jpg",
+          "keeper": false
+        },
+        "draft_status": "Drafted in round 16 by Burrowhead Stadium",
+        "tier": "bronze",
+        "last_rostered_week": 2,
+        "last_team_name": "Burrowhead Stadium"
+      },
+      {
+        "round": 16,
+        "player": {
+          "name": "Justice Hill",
+          "team": "Bal",
+          "yahoo_player_key": "470.p.31945",
+          "positions": [
+            "RB"
+          ],
+          "points": 2.4,
+          "selected_position": "BN",
+          "optimal_position": "BN",
+          "headshot_image": "https://s.yimg.com/iu/api/res/1.2/z2aXSkqLhWvSBNlnxtiLuA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08112026/31945.1.png",
+          "keeper": false
+        },
+        "draft_status": "Drafted in round 16 by Buffalo Thurmanators",
+        "tier": "bronze",
+        "last_rostered_week": 2,
+        "last_team_name": "Buffalo Thurmanators"
+      },
+      {
+        "round": 16,
+        "player": {
+          "name": "Nicholas Singleton",
+          "team": "Ten",
+          "yahoo_player_key": "470.p.42763",
+          "positions": [
+            "RB"
+          ],
+          "points": 0.0,
+          "selected_position": "BN",
+          "optimal_position": "BN",
+          "headshot_image": "https://s.yimg.com/iu/api/res/1.2/x3BBSUzpY30xo10zc7nMYQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08262026/42763.1.png",
+          "keeper": false
+        },
+        "draft_status": "Drafted in round 16 by Metallicats",
+        "tier": "bronze",
+        "last_rostered_week": 5,
+        "last_team_name": "Metallicats"
+      },
+      {
+        "round": 16,
+        "player": {
+          "name": "Tank Dell",
+          "team": "Hou",
+          "yahoo_player_key": "470.p.40097",
+          "positions": [
+            "WR"
+          ],
+          "points": 0.0,
+          "selected_position": "IR",
+          "optimal_position": "BN",
+          "headshot_image": "https://s.yimg.com/iu/api/res/1.2/W3sBTIYx4oYoZfg75QITrw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08142026/40097.2.png",
+          "keeper": false
+        },
+        "draft_status": "Drafted in round 16 by Tecmo Trailblazers",
+        "tier": "bronze",
+        "last_rostered_week": 1,
+        "last_team_name": "Tecmo Trailblazers"
+      },
+      {
+        "round": 16,
+        "player": {
+          "name": "Terrance Ferguson",
+          "team": "LAR",
+          "yahoo_player_key": "470.p.41831",
+          "positions": [
+            "TE"
+          ],
+          "points": 0.0,
+          "selected_position": "BN",
+          "optimal_position": "BN",
+          "headshot_image": "https://s.yimg.com/iu/api/res/1.2/boWAyoel53sfHxhfNed0Jw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MDtkeD04NTc7ZHk9MDtmaT11bGNyb3A7aD02MDtxPTEwMDt3PTQ2/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08192026/41831.2.png",
+          "keeper": false
+        },
+        "draft_status": "Drafted in round 16 by MajikalHerbs",
+        "tier": "bronze",
+        "last_rostered_week": 1,
+        "last_team_name": "MajikalHerbs"
+      }
+    ],
+    "deadline_at": "2026-11-28T06:00:00+00:00"
   }
 }
