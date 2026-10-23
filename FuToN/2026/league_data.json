@@ -24142,5 +24142,1852 @@
         "name": "Tyreek Hill"
       }
     ]
+  },
+  "completed_draft": {
+    "season": 2026,
+    "complete": true,
+    "source": "saved_yahoo_league_draft_results",
+    "picks": [
+      {
+        "yahoo_player_key": "470.p.40059",
+        "round": 1,
+        "pick": 1,
+        "team_key": "470.l.138997.t.5",
+        "team_name": "Metallicats"
+      },
+      {
+        "yahoo_player_key": "470.p.40055",
+        "round": 1,
+        "pick": 2,
+        "team_key": "470.l.138997.t.8",
+        "team_name": "Redheaded Rampage"
+      },
+      {
+        "yahoo_player_key": "470.p.32711",
+        "round": 1,
+        "pick": 3,
+        "team_key": "470.l.138997.t.4",
+        "team_name": "MajikalHerbs"
+      },
+      {
+        "yahoo_player_key": "470.p.33393",
+        "round": 1,
+        "pick": 4,
+        "team_key": "470.l.138997.t.11",
+        "team_name": "The Cincinnati Kid"
+      },
+      {
+        "yahoo_player_key": "470.p.40041",
+        "round": 1,
+        "pick": 5,
+        "team_key": "470.l.138997.t.2",
+        "team_name": "Battle Unicorns"
+      },
+      {
+        "yahoo_player_key": "470.p.30121",
+        "round": 1,
+        "pick": 6,
+        "team_key": "470.l.138997.t.3",
+        "team_name": "Burrowhead Stadium"
+      },
+      {
+        "yahoo_player_key": "470.p.34019",
+        "round": 1,
+        "pick": 7,
+        "team_key": "470.l.138997.t.12",
+        "team_name": "Trump Train"
+      },
+      {
+        "yahoo_player_key": "470.p.33500",
+        "round": 1,
+        "pick": 8,
+        "team_key": "470.l.138997.t.7",
+        "team_name": "Orange Crush"
+      },
+      {
+        "yahoo_player_key": "470.p.30972",
+        "round": 1,
+        "pick": 9,
+        "team_key": "470.l.138997.t.1",
+        "team_name": "Buffalo Thurmanators"
+      },
+      {
+        "yahoo_player_key": "470.p.40168",
+        "round": 1,
+        "pick": 10,
+        "team_key": "470.l.138997.t.6",
+        "team_name": "More than a Thielen"
+      },
+      {
+        "yahoo_player_key": "470.p.32687",
+        "round": 1,
+        "pick": 11,
+        "team_key": "470.l.138997.t.10",
+        "team_name": "Tecmo Trailblazers"
+      },
+      {
+        "yahoo_player_key": "470.p.32692",
+        "round": 1,
+        "pick": 12,
+        "team_key": "470.l.138997.t.9",
+        "team_name": "Stochastic Parrots"
+      },
+      {
+        "yahoo_player_key": "470.p.41807",
+        "round": 2,
+        "pick": 13,
+        "team_key": "470.l.138997.t.9",
+        "team_name": "Stochastic Parrots"
+      },
+      {
+        "yahoo_player_key": "470.p.33996",
+        "round": 2,
+        "pick": 14,
+        "team_key": "470.l.138997.t.10",
+        "team_name": "Tecmo Trailblazers"
+      },
+      {
+        "yahoo_player_key": "470.p.29279",
+        "round": 2,
+        "pick": 15,
+        "team_key": "470.l.138997.t.6",
+        "team_name": "More than a Thielen"
+      },
+      {
+        "yahoo_player_key": "470.p.41791",
+        "round": 2,
+        "pick": 16,
+        "team_key": "470.l.138997.t.1",
+        "team_name": "Buffalo Thurmanators"
+      },
+      {
+        "yahoo_player_key": "470.p.31883",
+        "round": 2,
+        "pick": 17,
+        "team_key": "470.l.138997.t.7",
+        "team_name": "Orange Crush"
+      },
+      {
+        "yahoo_player_key": "470.p.34010",
+        "round": 2,
+        "pick": 18,
+        "team_key": "470.l.138997.t.12",
+        "team_name": "Trump Train"
+      },
+      {
+        "yahoo_player_key": "470.p.33963",
+        "round": 2,
+        "pick": 19,
+        "team_key": "470.l.138997.t.3",
+        "team_name": "Burrowhead Stadium"
+      },
+      {
+        "yahoo_player_key": "470.p.42625",
+        "round": 2,
+        "pick": 20,
+        "team_key": "470.l.138997.t.2",
+        "team_name": "Battle Unicorns"
+      },
+      {
+        "yahoo_player_key": "470.p.34007",
+        "round": 2,
+        "pick": 21,
+        "team_key": "470.l.138997.t.11",
+        "team_name": "The Cincinnati Kid"
+      },
+      {
+        "yahoo_player_key": "470.p.33991",
+        "round": 2,
+        "pick": 22,
+        "team_key": "470.l.138997.t.4",
+        "team_name": "MajikalHerbs"
+      },
+      {
+        "yahoo_player_key": "470.p.30977",
+        "round": 2,
+        "pick": 23,
+        "team_key": "470.l.138997.t.8",
+        "team_name": "Redheaded Rampage"
+      },
+      {
+        "yahoo_player_key": "470.p.34120",
+        "round": 2,
+        "pick": 24,
+        "team_key": "470.l.138997.t.5",
+        "team_name": "Metallicats"
+      },
+      {
+        "yahoo_player_key": "470.p.40899",
+        "round": 3,
+        "pick": 25,
+        "team_key": "470.l.138997.t.5",
+        "team_name": "Metallicats"
+      },
+      {
+        "yahoo_player_key": "470.p.33398",
+        "round": 3,
+        "pick": 26,
+        "team_key": "470.l.138997.t.8",
+        "team_name": "Redheaded Rampage"
+      },
+      {
+        "yahoo_player_key": "470.p.32703",
+        "round": 3,
+        "pick": 27,
+        "team_key": "470.l.138997.t.4",
+        "team_name": "MajikalHerbs"
+      },
+      {
+        "yahoo_player_key": "470.p.33413",
+        "round": 3,
+        "pick": 28,
+        "team_key": "470.l.138997.t.11",
+        "team_name": "The Cincinnati Kid"
+      },
+      {
+        "yahoo_player_key": "470.p.40039",
+        "round": 3,
+        "pick": 29,
+        "team_key": "470.l.138997.t.2",
+        "team_name": "Battle Unicorns"
+      },
+      {
+        "yahoo_player_key": "470.p.32705",
+        "round": 3,
+        "pick": 30,
+        "team_key": "470.l.138997.t.3",
+        "team_name": "Burrowhead Stadium"
+      },
+      {
+        "yahoo_player_key": "470.p.32671",
+        "round": 3,
+        "pick": 31,
+        "team_key": "470.l.138997.t.12",
+        "team_name": "Trump Train"
+      },
+      {
+        "yahoo_player_key": "470.p.41795",
+        "round": 3,
+        "pick": 32,
+        "team_key": "470.l.138997.t.7",
+        "team_name": "Orange Crush"
+      },
+      {
+        "yahoo_player_key": "470.p.31002",
+        "round": 3,
+        "pick": 33,
+        "team_key": "470.l.138997.t.1",
+        "team_name": "Buffalo Thurmanators"
+      },
+      {
+        "yahoo_player_key": "470.p.41900",
+        "round": 3,
+        "pick": 34,
+        "team_key": "470.l.138997.t.6",
+        "team_name": "More than a Thielen"
+      },
+      {
+        "yahoo_player_key": "470.p.33965",
+        "round": 3,
+        "pick": 35,
+        "team_key": "470.l.138997.t.10",
+        "team_name": "Tecmo Trailblazers"
+      },
+      {
+        "yahoo_player_key": "470.p.33394",
+        "round": 3,
+        "pick": 36,
+        "team_key": "470.l.138997.t.9",
+        "team_name": "Stochastic Parrots"
+      },
+      {
+        "yahoo_player_key": "470.p.31856",
+        "round": 4,
+        "pick": 37,
+        "team_key": "470.l.138997.t.9",
+        "team_name": "Stochastic Parrots"
+      },
+      {
+        "yahoo_player_key": "470.p.33477",
+        "round": 4,
+        "pick": 38,
+        "team_key": "470.l.138997.t.10",
+        "team_name": "Tecmo Trailblazers"
+      },
+      {
+        "yahoo_player_key": "470.p.41804",
+        "round": 4,
+        "pick": 39,
+        "team_key": "470.l.138997.t.6",
+        "team_name": "More than a Thielen"
+      },
+      {
+        "yahoo_player_key": "470.p.41799",
+        "round": 4,
+        "pick": 40,
+        "team_key": "470.l.138997.t.1",
+        "team_name": "Buffalo Thurmanators"
+      },
+      {
+        "yahoo_player_key": "470.p.40900",
+        "round": 4,
+        "pick": 41,
+        "team_key": "470.l.138997.t.7",
+        "team_name": "Orange Crush"
+      },
+      {
+        "yahoo_player_key": "470.p.42654",
+        "round": 4,
+        "pick": 42,
+        "team_key": "470.l.138997.t.12",
+        "team_name": "Trump Train"
+      },
+      {
+        "yahoo_player_key": "470.p.41793",
+        "round": 4,
+        "pick": 43,
+        "team_key": "470.l.138997.t.3",
+        "team_name": "Burrowhead Stadium"
+      },
+      {
+        "yahoo_player_key": "470.p.40196",
+        "round": 4,
+        "pick": 44,
+        "team_key": "470.l.138997.t.2",
+        "team_name": "Battle Unicorns"
+      },
+      {
+        "yahoo_player_key": "470.p.31908",
+        "round": 4,
+        "pick": 45,
+        "team_key": "470.l.138997.t.11",
+        "team_name": "The Cincinnati Kid"
+      },
+      {
+        "yahoo_player_key": "470.p.40896",
+        "round": 4,
+        "pick": 46,
+        "team_key": "470.l.138997.t.4",
+        "team_name": "MajikalHerbs"
+      },
+      {
+        "yahoo_player_key": "470.p.40118",
+        "round": 4,
+        "pick": 47,
+        "team_key": "470.l.138997.t.8",
+        "team_name": "Redheaded Rampage"
+      },
+      {
+        "yahoo_player_key": "470.p.40908",
+        "round": 4,
+        "pick": 48,
+        "team_key": "470.l.138997.t.5",
+        "team_name": "Metallicats"
+      },
+      {
+        "yahoo_player_key": "470.p.40901",
+        "round": 5,
+        "pick": 49,
+        "team_key": "470.l.138997.t.5",
+        "team_name": "Metallicats"
+      },
+      {
+        "yahoo_player_key": "470.p.27581",
+        "round": 5,
+        "pick": 50,
+        "team_key": "470.l.138997.t.8",
+        "team_name": "Redheaded Rampage"
+      },
+      {
+        "yahoo_player_key": "470.p.30259",
+        "round": 5,
+        "pick": 51,
+        "team_key": "470.l.138997.t.4",
+        "team_name": "MajikalHerbs"
+      },
+      {
+        "yahoo_player_key": "470.p.31905",
+        "round": 5,
+        "pick": 52,
+        "team_key": "470.l.138997.t.11",
+        "team_name": "The Cincinnati Kid"
+      },
+      {
+        "yahoo_player_key": "470.p.40234",
+        "round": 5,
+        "pick": 53,
+        "team_key": "470.l.138997.t.2",
+        "team_name": "Battle Unicorns"
+      },
+      {
+        "yahoo_player_key": "470.p.30994",
+        "round": 5,
+        "pick": 54,
+        "team_key": "470.l.138997.t.3",
+        "team_name": "Burrowhead Stadium"
+      },
+      {
+        "yahoo_player_key": "470.p.40926",
+        "round": 5,
+        "pick": 55,
+        "team_key": "470.l.138997.t.12",
+        "team_name": "Trump Train"
+      },
+      {
+        "yahoo_player_key": "470.p.41823",
+        "round": 5,
+        "pick": 56,
+        "team_key": "470.l.138997.t.7",
+        "team_name": "Orange Crush"
+      },
+      {
+        "yahoo_player_key": "470.p.33966",
+        "round": 5,
+        "pick": 57,
+        "team_key": "470.l.138997.t.1",
+        "team_name": "Buffalo Thurmanators"
+      },
+      {
+        "yahoo_player_key": "470.p.40102",
+        "round": 5,
+        "pick": 58,
+        "team_key": "470.l.138997.t.6",
+        "team_name": "More than a Thielen"
+      },
+      {
+        "yahoo_player_key": "470.p.29369",
+        "round": 5,
+        "pick": 59,
+        "team_key": "470.l.138997.t.10",
+        "team_name": "Tecmo Trailblazers"
+      },
+      {
+        "yahoo_player_key": "470.p.33967",
+        "round": 5,
+        "pick": 60,
+        "team_key": "470.l.138997.t.9",
+        "team_name": "Stochastic Parrots"
+      },
+      {
+        "yahoo_player_key": "470.p.27535",
+        "round": 6,
+        "pick": 61,
+        "team_key": "470.l.138997.t.9",
+        "team_name": "Stochastic Parrots"
+      },
+      {
+        "yahoo_player_key": "470.p.33508",
+        "round": 6,
+        "pick": 62,
+        "team_key": "470.l.138997.t.10",
+        "team_name": "Tecmo Trailblazers"
+      },
+      {
+        "yahoo_player_key": "470.p.34447",
+        "round": 6,
+        "pick": 63,
+        "team_key": "470.l.138997.t.6",
+        "team_name": "More than a Thielen"
+      },
+      {
+        "yahoo_player_key": "470.p.40893",
+        "round": 6,
+        "pick": 64,
+        "team_key": "470.l.138997.t.1",
+        "team_name": "Buffalo Thurmanators"
+      },
+      {
+        "yahoo_player_key": "470.p.32725",
+        "round": 6,
+        "pick": 65,
+        "team_key": "470.l.138997.t.7",
+        "team_name": "Orange Crush"
+      },
+      {
+        "yahoo_player_key": "470.p.32723",
+        "round": 6,
+        "pick": 66,
+        "team_key": "470.l.138997.t.12",
+        "team_name": "Trump Train"
+      },
+      {
+        "yahoo_player_key": "470.p.31960",
+        "round": 6,
+        "pick": 67,
+        "team_key": "470.l.138997.t.3",
+        "team_name": "Burrowhead Stadium"
+      },
+      {
+        "yahoo_player_key": "470.p.40064",
+        "round": 6,
+        "pick": 68,
+        "team_key": "470.l.138997.t.2",
+        "team_name": "Battle Unicorns"
+      },
+      {
+        "yahoo_player_key": "470.p.31896",
+        "round": 6,
+        "pick": 69,
+        "team_key": "470.l.138997.t.11",
+        "team_name": "The Cincinnati Kid"
+      },
+      {
+        "yahoo_player_key": "470.p.30197",
+        "round": 6,
+        "pick": 70,
+        "team_key": "470.l.138997.t.4",
+        "team_name": "MajikalHerbs"
+      },
+      {
+        "yahoo_player_key": "470.p.42626",
+        "round": 6,
+        "pick": 71,
+        "team_key": "470.l.138997.t.8",
+        "team_name": "Redheaded Rampage"
+      },
+      {
+        "yahoo_player_key": "470.p.40878",
+        "round": 6,
+        "pick": 72,
+        "team_key": "470.l.138997.t.5",
+        "team_name": "Metallicats"
+      },
+      {
+        "yahoo_player_key": "470.p.29235",
+        "round": 7,
+        "pick": 73,
+        "team_key": "470.l.138997.t.5",
+        "team_name": "Metallicats"
+      },
+      {
+        "yahoo_player_key": "470.p.33514",
+        "round": 7,
+        "pick": 74,
+        "team_key": "470.l.138997.t.8",
+        "team_name": "Redheaded Rampage"
+      },
+      {
+        "yahoo_player_key": "470.p.32696",
+        "round": 7,
+        "pick": 75,
+        "team_key": "470.l.138997.t.4",
+        "team_name": "MajikalHerbs"
+      },
+      {
+        "yahoo_player_key": "470.p.41877",
+        "round": 7,
+        "pick": 76,
+        "team_key": "470.l.138997.t.11",
+        "team_name": "The Cincinnati Kid"
+      },
+      {
+        "yahoo_player_key": "470.p.42010",
+        "round": 7,
+        "pick": 77,
+        "team_key": "470.l.138997.t.2",
+        "team_name": "Battle Unicorns"
+      },
+      {
+        "yahoo_player_key": "470.p.40883",
+        "round": 7,
+        "pick": 78,
+        "team_key": "470.l.138997.t.3",
+        "team_name": "Burrowhead Stadium"
+      },
+      {
+        "yahoo_player_key": "470.p.40962",
+        "round": 7,
+        "pick": 79,
+        "team_key": "470.l.138997.t.12",
+        "team_name": "Trump Train"
+      },
+      {
+        "yahoo_player_key": "470.p.42655",
+        "round": 7,
+        "pick": 80,
+        "team_key": "470.l.138997.t.7",
+        "team_name": "Orange Crush"
+      },
+      {
+        "yahoo_player_key": "470.p.42730",
+        "round": 7,
+        "pick": 81,
+        "team_key": "470.l.138997.t.1",
+        "team_name": "Buffalo Thurmanators"
+      },
+      {
+        "yahoo_player_key": "470.p.40063",
+        "round": 7,
+        "pick": 82,
+        "team_key": "470.l.138997.t.6",
+        "team_name": "More than a Thielen"
+      },
+      {
+        "yahoo_player_key": "470.p.34320",
+        "round": 7,
+        "pick": 83,
+        "team_key": "470.l.138997.t.10",
+        "team_name": "Tecmo Trailblazers"
+      },
+      {
+        "yahoo_player_key": "470.p.40875",
+        "round": 7,
+        "pick": 84,
+        "team_key": "470.l.138997.t.9",
+        "team_name": "Stochastic Parrots"
+      },
+      {
+        "yahoo_player_key": "470.p.33423",
+        "round": 8,
+        "pick": 85,
+        "team_key": "470.l.138997.t.9",
+        "team_name": "Stochastic Parrots"
+      },
+      {
+        "yahoo_player_key": "470.p.40971",
+        "round": 8,
+        "pick": 86,
+        "team_key": "470.l.138997.t.10",
+        "team_name": "Tecmo Trailblazers"
+      },
+      {
+        "yahoo_player_key": "470.p.34008",
+        "round": 8,
+        "pick": 87,
+        "team_key": "470.l.138997.t.6",
+        "team_name": "More than a Thielen"
+      },
+      {
+        "yahoo_player_key": "470.p.42796",
+        "round": 8,
+        "pick": 88,
+        "team_key": "470.l.138997.t.1",
+        "team_name": "Buffalo Thurmanators"
+      },
+      {
+        "yahoo_player_key": "470.p.33989",
+        "round": 8,
+        "pick": 89,
+        "team_key": "470.l.138997.t.7",
+        "team_name": "Orange Crush"
+      },
+      {
+        "yahoo_player_key": "470.p.40084",
+        "round": 8,
+        "pick": 90,
+        "team_key": "470.l.138997.t.12",
+        "team_name": "Trump Train"
+      },
+      {
+        "yahoo_player_key": "470.p.40126",
+        "round": 8,
+        "pick": 91,
+        "team_key": "470.l.138997.t.3",
+        "team_name": "Burrowhead Stadium"
+      },
+      {
+        "yahoo_player_key": "470.p.40051",
+        "round": 8,
+        "pick": 92,
+        "team_key": "470.l.138997.t.2",
+        "team_name": "Battle Unicorns"
+      },
+      {
+        "yahoo_player_key": "470.p.31010",
+        "round": 8,
+        "pick": 93,
+        "team_key": "470.l.138997.t.11",
+        "team_name": "The Cincinnati Kid"
+      },
+      {
+        "yahoo_player_key": "470.p.41808",
+        "round": 8,
+        "pick": 94,
+        "team_key": "470.l.138997.t.4",
+        "team_name": "MajikalHerbs"
+      },
+      {
+        "yahoo_player_key": "470.p.42025",
+        "round": 8,
+        "pick": 95,
+        "team_key": "470.l.138997.t.8",
+        "team_name": "Redheaded Rampage"
+      },
+      {
+        "yahoo_player_key": "470.p.28534",
+        "round": 8,
+        "pick": 96,
+        "team_key": "470.l.138997.t.5",
+        "team_name": "Metallicats"
+      },
+      {
+        "yahoo_player_key": "470.p.33389",
+        "round": 9,
+        "pick": 97,
+        "team_key": "470.l.138997.t.5",
+        "team_name": "Metallicats"
+      },
+      {
+        "yahoo_player_key": "470.p.9265",
+        "round": 9,
+        "pick": 98,
+        "team_key": "470.l.138997.t.8",
+        "team_name": "Redheaded Rampage"
+      },
+      {
+        "yahoo_player_key": "470.p.42646",
+        "round": 9,
+        "pick": 99,
+        "team_key": "470.l.138997.t.4",
+        "team_name": "MajikalHerbs"
+      },
+      {
+        "yahoo_player_key": "470.p.41845",
+        "round": 9,
+        "pick": 100,
+        "team_key": "470.l.138997.t.11",
+        "team_name": "The Cincinnati Kid"
+      },
+      {
+        "yahoo_player_key": "470.p.40993",
+        "round": 9,
+        "pick": 101,
+        "team_key": "470.l.138997.t.2",
+        "team_name": "Battle Unicorns"
+      },
+      {
+        "yahoo_player_key": "470.p.42642",
+        "round": 9,
+        "pick": 102,
+        "team_key": "470.l.138997.t.3",
+        "team_name": "Burrowhead Stadium"
+      },
+      {
+        "yahoo_player_key": "470.p.32704",
+        "round": 9,
+        "pick": 103,
+        "team_key": "470.l.138997.t.12",
+        "team_name": "Trump Train"
+      },
+      {
+        "yahoo_player_key": "470.p.41922",
+        "round": 9,
+        "pick": 104,
+        "team_key": "470.l.138997.t.7",
+        "team_name": "Orange Crush"
+      },
+      {
+        "yahoo_player_key": "470.p.40121",
+        "round": 9,
+        "pick": 105,
+        "team_key": "470.l.138997.t.1",
+        "team_name": "Buffalo Thurmanators"
+      },
+      {
+        "yahoo_player_key": "470.p.40042",
+        "round": 9,
+        "pick": 106,
+        "team_key": "470.l.138997.t.6",
+        "team_name": "More than a Thielen"
+      },
+      {
+        "yahoo_player_key": "470.p.40075",
+        "round": 9,
+        "pick": 107,
+        "team_key": "470.l.138997.t.10",
+        "team_name": "Tecmo Trailblazers"
+      },
+      {
+        "yahoo_player_key": "470.p.33538",
+        "round": 9,
+        "pick": 108,
+        "team_key": "470.l.138997.t.9",
+        "team_name": "Stochastic Parrots"
+      },
+      {
+        "yahoo_player_key": "470.p.41881",
+        "round": 10,
+        "pick": 109,
+        "team_key": "470.l.138997.t.9",
+        "team_name": "Stochastic Parrots"
+      },
+      {
+        "yahoo_player_key": "470.p.34095",
+        "round": 10,
+        "pick": 110,
+        "team_key": "470.l.138997.t.10",
+        "team_name": "Tecmo Trailblazers"
+      },
+      {
+        "yahoo_player_key": "470.p.40641",
+        "round": 10,
+        "pick": 111,
+        "team_key": "470.l.138997.t.6",
+        "team_name": "More than a Thielen"
+      },
+      {
+        "yahoo_player_key": "470.p.41293",
+        "round": 10,
+        "pick": 112,
+        "team_key": "470.l.138997.t.1",
+        "team_name": "Buffalo Thurmanators"
+      },
+      {
+        "yahoo_player_key": "470.p.100007",
+        "round": 10,
+        "pick": 113,
+        "team_key": "470.l.138997.t.7",
+        "team_name": "Orange Crush"
+      },
+      {
+        "yahoo_player_key": "470.p.100026",
+        "round": 10,
+        "pick": 114,
+        "team_key": "470.l.138997.t.12",
+        "team_name": "Trump Train"
+      },
+      {
+        "yahoo_player_key": "470.p.40881",
+        "round": 10,
+        "pick": 115,
+        "team_key": "470.l.138997.t.3",
+        "team_name": "Burrowhead Stadium"
+      },
+      {
+        "yahoo_player_key": "470.p.26686",
+        "round": 10,
+        "pick": 116,
+        "team_key": "470.l.138997.t.2",
+        "team_name": "Battle Unicorns"
+      },
+      {
+        "yahoo_player_key": "470.p.100014",
+        "round": 10,
+        "pick": 117,
+        "team_key": "470.l.138997.t.11",
+        "team_name": "The Cincinnati Kid"
+      },
+      {
+        "yahoo_player_key": "470.p.42744",
+        "round": 10,
+        "pick": 118,
+        "team_key": "470.l.138997.t.4",
+        "team_name": "MajikalHerbs"
+      },
+      {
+        "yahoo_player_key": "470.p.40119",
+        "round": 10,
+        "pick": 119,
+        "team_key": "470.l.138997.t.8",
+        "team_name": "Redheaded Rampage"
+      },
+      {
+        "yahoo_player_key": "470.p.33998",
+        "round": 10,
+        "pick": 120,
+        "team_key": "470.l.138997.t.5",
+        "team_name": "Metallicats"
+      },
+      {
+        "yahoo_player_key": "470.p.30295",
+        "round": 11,
+        "pick": 121,
+        "team_key": "470.l.138997.t.5",
+        "team_name": "Metallicats"
+      },
+      {
+        "yahoo_player_key": "470.p.34104",
+        "round": 11,
+        "pick": 122,
+        "team_key": "470.l.138997.t.8",
+        "team_name": "Redheaded Rampage"
+      },
+      {
+        "yahoo_player_key": "470.p.40877",
+        "round": 11,
+        "pick": 123,
+        "team_key": "470.l.138997.t.4",
+        "team_name": "MajikalHerbs"
+      },
+      {
+        "yahoo_player_key": "470.p.32676",
+        "round": 11,
+        "pick": 124,
+        "team_key": "470.l.138997.t.11",
+        "team_name": "The Cincinnati Kid"
+      },
+      {
+        "yahoo_player_key": "470.p.34218",
+        "round": 11,
+        "pick": 125,
+        "team_key": "470.l.138997.t.2",
+        "team_name": "Battle Unicorns"
+      },
+      {
+        "yahoo_player_key": "470.p.40231",
+        "round": 11,
+        "pick": 126,
+        "team_key": "470.l.138997.t.3",
+        "team_name": "Burrowhead Stadium"
+      },
+      {
+        "yahoo_player_key": "470.p.34659",
+        "round": 11,
+        "pick": 127,
+        "team_key": "470.l.138997.t.12",
+        "team_name": "Trump Train"
+      },
+      {
+        "yahoo_player_key": "470.p.34107",
+        "round": 11,
+        "pick": 128,
+        "team_key": "470.l.138997.t.7",
+        "team_name": "Orange Crush"
+      },
+      {
+        "yahoo_player_key": "470.p.30123",
+        "round": 11,
+        "pick": 129,
+        "team_key": "470.l.138997.t.1",
+        "team_name": "Buffalo Thurmanators"
+      },
+      {
+        "yahoo_player_key": "470.p.34099",
+        "round": 11,
+        "pick": 130,
+        "team_key": "470.l.138997.t.6",
+        "team_name": "More than a Thielen"
+      },
+      {
+        "yahoo_player_key": "470.p.41821",
+        "round": 11,
+        "pick": 131,
+        "team_key": "470.l.138997.t.10",
+        "team_name": "Tecmo Trailblazers"
+      },
+      {
+        "yahoo_player_key": "470.p.31019",
+        "round": 11,
+        "pick": 132,
+        "team_key": "470.l.138997.t.9",
+        "team_name": "Stochastic Parrots"
+      },
+      {
+        "yahoo_player_key": "470.p.42630",
+        "round": 12,
+        "pick": 133,
+        "team_key": "470.l.138997.t.9",
+        "team_name": "Stochastic Parrots"
+      },
+      {
+        "yahoo_player_key": "470.p.40819",
+        "round": 12,
+        "pick": 134,
+        "team_key": "470.l.138997.t.10",
+        "team_name": "Tecmo Trailblazers"
+      },
+      {
+        "yahoo_player_key": "470.p.34047",
+        "round": 12,
+        "pick": 135,
+        "team_key": "470.l.138997.t.6",
+        "team_name": "More than a Thielen"
+      },
+      {
+        "yahoo_player_key": "470.p.34344",
+        "round": 12,
+        "pick": 136,
+        "team_key": "470.l.138997.t.1",
+        "team_name": "Buffalo Thurmanators"
+      },
+      {
+        "yahoo_player_key": "470.p.41810",
+        "round": 12,
+        "pick": 137,
+        "team_key": "470.l.138997.t.7",
+        "team_name": "Orange Crush"
+      },
+      {
+        "yahoo_player_key": "470.p.40224",
+        "round": 12,
+        "pick": 138,
+        "team_key": "470.l.138997.t.12",
+        "team_name": "Trump Train"
+      },
+      {
+        "yahoo_player_key": "470.p.30971",
+        "round": 12,
+        "pick": 139,
+        "team_key": "470.l.138997.t.3",
+        "team_name": "Burrowhead Stadium"
+      },
+      {
+        "yahoo_player_key": "470.p.30973",
+        "round": 12,
+        "pick": 140,
+        "team_key": "470.l.138997.t.2",
+        "team_name": "Battle Unicorns"
+      },
+      {
+        "yahoo_player_key": "470.p.28378",
+        "round": 12,
+        "pick": 141,
+        "team_key": "470.l.138997.t.11",
+        "team_name": "The Cincinnati Kid"
+      },
+      {
+        "yahoo_player_key": "470.p.29792",
+        "round": 12,
+        "pick": 142,
+        "team_key": "470.l.138997.t.4",
+        "team_name": "MajikalHerbs"
+      },
+      {
+        "yahoo_player_key": "470.p.100021",
+        "round": 12,
+        "pick": 143,
+        "team_key": "470.l.138997.t.8",
+        "team_name": "Redheaded Rampage"
+      },
+      {
+        "yahoo_player_key": "470.p.32231",
+        "round": 12,
+        "pick": 144,
+        "team_key": "470.l.138997.t.5",
+        "team_name": "Metallicats"
+      },
+      {
+        "yahoo_player_key": "470.p.100023",
+        "round": 13,
+        "pick": 145,
+        "team_key": "470.l.138997.t.5",
+        "team_name": "Metallicats"
+      },
+      {
+        "yahoo_player_key": "470.p.41062",
+        "round": 13,
+        "pick": 146,
+        "team_key": "470.l.138997.t.8",
+        "team_name": "Redheaded Rampage"
+      },
+      {
+        "yahoo_player_key": "470.p.100016",
+        "round": 13,
+        "pick": 147,
+        "team_key": "470.l.138997.t.4",
+        "team_name": "MajikalHerbs"
+      },
+      {
+        "yahoo_player_key": "470.p.41825",
+        "round": 13,
+        "pick": 148,
+        "team_key": "470.l.138997.t.11",
+        "team_name": "The Cincinnati Kid"
+      },
+      {
+        "yahoo_player_key": "470.p.34207",
+        "round": 13,
+        "pick": 149,
+        "team_key": "470.l.138997.t.2",
+        "team_name": "Battle Unicorns"
+      },
+      {
+        "yahoo_player_key": "470.p.31056",
+        "round": 13,
+        "pick": 150,
+        "team_key": "470.l.138997.t.3",
+        "team_name": "Burrowhead Stadium"
+      },
+      {
+        "yahoo_player_key": "470.p.42702",
+        "round": 13,
+        "pick": 151,
+        "team_key": "470.l.138997.t.12",
+        "team_name": "Trump Train"
+      },
+      {
+        "yahoo_player_key": "470.p.42712",
+        "round": 13,
+        "pick": 152,
+        "team_key": "470.l.138997.t.7",
+        "team_name": "Orange Crush"
+      },
+      {
+        "yahoo_player_key": "470.p.40095",
+        "round": 13,
+        "pick": 153,
+        "team_key": "470.l.138997.t.1",
+        "team_name": "Buffalo Thurmanators"
+      },
+      {
+        "yahoo_player_key": "470.p.31833",
+        "round": 13,
+        "pick": 154,
+        "team_key": "470.l.138997.t.6",
+        "team_name": "More than a Thielen"
+      },
+      {
+        "yahoo_player_key": "470.p.42697",
+        "round": 13,
+        "pick": 155,
+        "team_key": "470.l.138997.t.10",
+        "team_name": "Tecmo Trailblazers"
+      },
+      {
+        "yahoo_player_key": "470.p.100034",
+        "round": 13,
+        "pick": 156,
+        "team_key": "470.l.138997.t.9",
+        "team_name": "Stochastic Parrots"
+      },
+      {
+        "yahoo_player_key": "470.p.42773",
+        "round": 14,
+        "pick": 157,
+        "team_key": "470.l.138997.t.9",
+        "team_name": "Stochastic Parrots"
+      },
+      {
+        "yahoo_player_key": "470.p.31838",
+        "round": 14,
+        "pick": 158,
+        "team_key": "470.l.138997.t.10",
+        "team_name": "Tecmo Trailblazers"
+      },
+      {
+        "yahoo_player_key": "470.p.41093",
+        "round": 14,
+        "pick": 159,
+        "team_key": "470.l.138997.t.6",
+        "team_name": "More than a Thielen"
+      },
+      {
+        "yahoo_player_key": "470.p.100030",
+        "round": 14,
+        "pick": 160,
+        "team_key": "470.l.138997.t.1",
+        "team_name": "Buffalo Thurmanators"
+      },
+      {
+        "yahoo_player_key": "470.p.41052",
+        "round": 14,
+        "pick": 161,
+        "team_key": "470.l.138997.t.7",
+        "team_name": "Orange Crush"
+      },
+      {
+        "yahoo_player_key": "470.p.42661",
+        "round": 14,
+        "pick": 162,
+        "team_key": "470.l.138997.t.12",
+        "team_name": "Trump Train"
+      },
+      {
+        "yahoo_player_key": "470.p.41312",
+        "round": 14,
+        "pick": 163,
+        "team_key": "470.l.138997.t.3",
+        "team_name": "Burrowhead Stadium"
+      },
+      {
+        "yahoo_player_key": "470.p.30346",
+        "round": 14,
+        "pick": 164,
+        "team_key": "470.l.138997.t.2",
+        "team_name": "Battle Unicorns"
+      },
+      {
+        "yahoo_player_key": "470.p.33100",
+        "round": 14,
+        "pick": 165,
+        "team_key": "470.l.138997.t.11",
+        "team_name": "The Cincinnati Kid"
+      },
+      {
+        "yahoo_player_key": "470.p.31868",
+        "round": 14,
+        "pick": 166,
+        "team_key": "470.l.138997.t.4",
+        "team_name": "MajikalHerbs"
+      },
+      {
+        "yahoo_player_key": "470.p.34085",
+        "round": 14,
+        "pick": 167,
+        "team_key": "470.l.138997.t.8",
+        "team_name": "Redheaded Rampage"
+      },
+      {
+        "yahoo_player_key": "470.p.40835",
+        "round": 14,
+        "pick": 168,
+        "team_key": "470.l.138997.t.5",
+        "team_name": "Metallicats"
+      },
+      {
+        "yahoo_player_key": "470.p.33113",
+        "round": 15,
+        "pick": 169,
+        "team_key": "470.l.138997.t.5",
+        "team_name": "Metallicats"
+      },
+      {
+        "yahoo_player_key": "470.p.41786",
+        "round": 15,
+        "pick": 170,
+        "team_key": "470.l.138997.t.8",
+        "team_name": "Redheaded Rampage"
+      },
+      {
+        "yahoo_player_key": "470.p.34054",
+        "round": 15,
+        "pick": 171,
+        "team_key": "470.l.138997.t.4",
+        "team_name": "MajikalHerbs"
+      },
+      {
+        "yahoo_player_key": "470.p.31840",
+        "round": 15,
+        "pick": 172,
+        "team_key": "470.l.138997.t.11",
+        "team_name": "The Cincinnati Kid"
+      },
+      {
+        "yahoo_player_key": "470.p.42693",
+        "round": 15,
+        "pick": 173,
+        "team_key": "470.l.138997.t.2",
+        "team_name": "Battle Unicorns"
+      },
+      {
+        "yahoo_player_key": "470.p.33392",
+        "round": 15,
+        "pick": 174,
+        "team_key": "470.l.138997.t.3",
+        "team_name": "Burrowhead Stadium"
+      },
+      {
+        "yahoo_player_key": "470.p.41988",
+        "round": 15,
+        "pick": 175,
+        "team_key": "470.l.138997.t.12",
+        "team_name": "Trump Train"
+      },
+      {
+        "yahoo_player_key": "470.p.33537",
+        "round": 15,
+        "pick": 176,
+        "team_key": "470.l.138997.t.7",
+        "team_name": "Orange Crush"
+      },
+      {
+        "yahoo_player_key": "470.p.34147",
+        "round": 15,
+        "pick": 177,
+        "team_key": "470.l.138997.t.1",
+        "team_name": "Buffalo Thurmanators"
+      },
+      {
+        "yahoo_player_key": "470.p.41087",
+        "round": 15,
+        "pick": 178,
+        "team_key": "470.l.138997.t.6",
+        "team_name": "More than a Thielen"
+      },
+      {
+        "yahoo_player_key": "470.p.41824",
+        "round": 15,
+        "pick": 179,
+        "team_key": "470.l.138997.t.10",
+        "team_name": "Tecmo Trailblazers"
+      },
+      {
+        "yahoo_player_key": "470.p.31482",
+        "round": 15,
+        "pick": 180,
+        "team_key": "470.l.138997.t.9",
+        "team_name": "Stochastic Parrots"
+      },
+      {
+        "yahoo_player_key": "470.p.42716",
+        "round": 16,
+        "pick": 181,
+        "team_key": "470.l.138997.t.9",
+        "team_name": "Stochastic Parrots"
+      },
+      {
+        "yahoo_player_key": "470.p.40097",
+        "round": 16,
+        "pick": 182,
+        "team_key": "470.l.138997.t.10",
+        "team_name": "Tecmo Trailblazers"
+      },
+      {
+        "yahoo_player_key": "470.p.100017",
+        "round": 16,
+        "pick": 183,
+        "team_key": "470.l.138997.t.6",
+        "team_name": "More than a Thielen"
+      },
+      {
+        "yahoo_player_key": "470.p.31945",
+        "round": 16,
+        "pick": 184,
+        "team_key": "470.l.138997.t.1",
+        "team_name": "Buffalo Thurmanators"
+      },
+      {
+        "yahoo_player_key": "470.p.40114",
+        "round": 16,
+        "pick": 185,
+        "team_key": "470.l.138997.t.7",
+        "team_name": "Orange Crush"
+      },
+      {
+        "yahoo_player_key": "470.p.34088",
+        "round": 16,
+        "pick": 186,
+        "team_key": "470.l.138997.t.12",
+        "team_name": "Trump Train"
+      },
+      {
+        "yahoo_player_key": "470.p.100024",
+        "round": 16,
+        "pick": 187,
+        "team_key": "470.l.138997.t.3",
+        "team_name": "Burrowhead Stadium"
+      },
+      {
+        "yahoo_player_key": "470.p.41902",
+        "round": 16,
+        "pick": 188,
+        "team_key": "470.l.138997.t.2",
+        "team_name": "Battle Unicorns"
+      },
+      {
+        "yahoo_player_key": "470.p.30180",
+        "round": 16,
+        "pick": 189,
+        "team_key": "470.l.138997.t.11",
+        "team_name": "The Cincinnati Kid"
+      },
+      {
+        "yahoo_player_key": "470.p.41831",
+        "round": 16,
+        "pick": 190,
+        "team_key": "470.l.138997.t.4",
+        "team_name": "MajikalHerbs"
+      },
+      {
+        "yahoo_player_key": "470.p.40048",
+        "round": 16,
+        "pick": 191,
+        "team_key": "470.l.138997.t.8",
+        "team_name": "Redheaded Rampage"
+      },
+      {
+        "yahoo_player_key": "470.p.42763",
+        "round": 16,
+        "pick": 192,
+        "team_key": "470.l.138997.t.5",
+        "team_name": "Metallicats"
+      }
+    ]
+  },
+  "player_week_points": {
+    "season": 2026,
+    "league_key": "470.l.138997",
+    "points": {
+      "470.p.40029": {
+        "6": 28.84,
+        "1": 44.19
+      },
+      "470.p.40108": {
+        "6": 8.0,
+        "1": 9.0,
+        "2": 0.0,
+        "3": 2.73,
+        "5": 9.0
+      },
+      "470.p.41058": {
+        "5": 7.67,
+        "1": 3.03,
+        "2": 5.27,
+        "3": 6.73
+      },
+      "470.p.31107": {
+        "6": 4.2,
+        "1": 4.33
+      },
+      "470.p.100004": {
+        "6": 0.0,
+        "1": 18.0,
+        "2": 16.0
+      },
+      "470.p.100009": {
+        "1": -1.0,
+        "2": 7.0,
+        "5": 22.0,
+        "6": 13.0
+      },
+      "470.p.100002": {
+        "1": 4.0,
+        "2": 1.0,
+        "3": 7.0,
+        "5": 2.0,
+        "6": -1.0
+      },
+      "470.p.100003": {
+        "1": 6.0,
+        "3": 16.0,
+        "5": -1.0,
+        "6": 11.0
+      },
+      "470.p.100005": {
+        "1": -2.0,
+        "2": 8.0,
+        "3": 8.0
+      },
+      "470.p.100006": {
+        "1": 1.0,
+        "2": 5.0,
+        "3": -3.0,
+        "4": -1.0,
+        "6": 5.0
+      },
+      "470.p.100011": {
+        "1": -2.0,
+        "2": -1.0,
+        "3": 6.0,
+        "4": 12.0,
+        "5": -2.0
+      },
+      "470.p.100019": {
+        "1": 5.0,
+        "2": 2.0,
+        "4": 14.0,
+        "5": 5.0,
+        "6": -1.0
+      },
+      "470.p.100020": {
+        "1": 13.0,
+        "2": 8.0,
+        "3": -1.0,
+        "4": 5.0,
+        "6": 4.0
+      },
+      "470.p.100025": {
+        "1": 12.0,
+        "4": 5.0,
+        "5": 16.0,
+        "6": 7.0
+      },
+      "470.p.100027": {
+        "1": 9.0,
+        "3": 5.0,
+        "4": 7.0,
+        "5": 9.0,
+        "6": 7.0
+      },
+      "470.p.100029": {
+        "1": -2.0,
+        "4": 1.0,
+        "5": 0.0
+      },
+      "470.p.25812": {
+        "1": 27.05,
+        "2": 31.97,
+        "3": 33.72,
+        "4": 35.35
+      },
+      "470.p.26699": {
+        "1": 5.13,
+        "2": 0.83,
+        "3": 13.2
+      },
+      "470.p.28592": {
+        "1": 2.87,
+        "2": 15.7,
+        "3": 5.9,
+        "5": 0.0,
+        "6": 0.0
+      },
+      "470.p.29269": {
+        "1": 3.23,
+        "2": 4.17,
+        "4": 6.63,
+        "5": 10.43,
+        "6": 11.2
+      },
+      "470.p.29325": {
+        "1": 25.23,
+        "2": 13.75,
+        "3": 39.1,
+        "4": 22.69,
+        "6": 13.92
+      },
+      "470.p.29344": {
+        "1": -0.2,
+        "2": 0.0,
+        "3": 14.13,
+        "4": 6.97,
+        "5": 8.03
+      },
+      "470.p.29399": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "470.p.29631": {
+        "1": 9.6,
+        "2": 5.17,
+        "3": 15.0,
+        "5": 1.7,
+        "6": 2.2
+      },
+      "470.p.30180": {
+        "1": 0.0
+      },
+      "470.p.30423": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 4.13,
+        "5": 1.4
+      },
+      "470.p.30551": {
+        "1": 9.0,
+        "2": 1.73,
+        "3": 2.47,
+        "4": 0.0,
+        "5": 7.17
+      },
+      "470.p.31012": {
+        "1": 13.7,
+        "2": 0.0,
+        "3": 9.97,
+        "4": 10.17
+      },
+      "470.p.32858": {
+        "1": 14.3,
+        "2": 4.0,
+        "5": 12.7
+      },
+      "470.p.33412": {
+        "1": 0.0,
+        "2": 0.6,
+        "3": 5.2,
+        "4": 3.0
+      },
+      "470.p.33415": {
+        "1": 0.0,
+        "2": 15.37,
+        "4": 4.07,
+        "5": 6.63,
+        "6": 0.0
+      },
+      "470.p.34063": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 2.27
+      },
+      "470.p.40030": {
+        "1": 26.96,
+        "2": 24.52
+      },
+      "470.p.40078": {
+        "1": 8.53,
+        "2": 2.13,
+        "3": 3.63,
+        "4": 9.83,
+        "5": 8.03
+      },
+      "470.p.40296": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0
+      },
+      "470.p.40399": {
+        "1": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0
+      },
+      "470.p.40625": {
+        "1": 2.9,
+        "4": 3.83,
+        "5": 0.0,
+        "6": 0.0
+      },
+      "470.p.40707": {
+        "1": 0.3,
+        "2": 9.2
+      },
+      "470.p.40911": {
+        "1": 0.57,
+        "2": 7.2,
+        "3": 2.97,
+        "4": 16.73
+      },
+      "470.p.40915": {
+        "1": 5.5,
+        "2": 7.2,
+        "5": 0.0,
+        "6": 0.0
+      },
+      "470.p.40981": {
+        "1": 4.0
+      },
+      "470.p.41002": {
+        "1": 1.43,
+        "2": 3.73,
+        "3": 1.23,
+        "4": 2.3,
+        "6": 0.0
+      },
+      "470.p.41010": {
+        "1": -0.1,
+        "2": 1.1,
+        "3": 0.0,
+        "6": 0.0
+      },
+      "470.p.41097": {
+        "1": 14.1
+      },
+      "470.p.41499": {
+        "1": 6.8,
+        "2": 15.9,
+        "3": 19.7,
+        "4": 17.4
+      },
+      "470.p.41840": {
+        "1": 2.83,
+        "2": 4.03,
+        "3": 8.07,
+        "4": 5.5,
+        "6": 0.0
+      },
+      "470.p.41951": {
+        "1": 3.13,
+        "2": 8.2,
+        "4": 5.1,
+        "5": 0.0,
+        "6": 2.63
+      },
+      "470.p.41969": {
+        "1": 0.0,
+        "2": 0.7,
+        "3": 12.53
+      },
+      "470.p.41980": {
+        "1": 6.0,
+        "2": 9.5,
+        "3": 6.5,
+        "4": 3.0,
+        "5": 8.8
+      },
+      "470.p.42616": {
+        "1": 2.7,
+        "2": 0.0,
+        "3": 3.43,
+        "4": 8.97
+      },
+      "470.p.42638": {
+        "1": 9.2,
+        "3": 16.5
+      },
+      "470.p.42669": {
+        "1": 0.0,
+        "2": 4.33,
+        "3": 1.43,
+        "4": 1.73,
+        "5": 8.73
+      },
+      "470.p.42838": {
+        "1": 12.8,
+        "2": 8.0,
+        "3": 2.0,
+        "4": 7.8,
+        "5": 4.5
+      },
+      "470.p.43370": {
+        "1": 5.5,
+        "2": 9.4,
+        "3": 11.3,
+        "4": 7.0,
+        "6": 7.1
+      },
+      "470.p.100010": {
+        "2": 7.0,
+        "3": 11.0,
+        "4": 2.0,
+        "5": 2.0,
+        "6": 25.0
+      },
+      "470.p.33113": {
+        "2": 6.4,
+        "6": 0.0
+      },
+      "470.p.34610": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0
+      },
+      "470.p.40065": {
+        "2": 3.03,
+        "3": 9.63,
+        "4": 9.47,
+        "5": 0.63,
+        "6": 9.83
+      },
+      "470.p.40095": {
+        "2": 10.63,
+        "4": 5.5,
+        "5": 0.0,
+        "6": 0.0
+      },
+      "470.p.40097": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0
+      },
+      "470.p.40114": {
+        "2": 16.43
+      },
+      "470.p.41052": {
+        "2": 0.0,
+        "3": 2.03,
+        "4": 10.23,
+        "5": 12.13,
+        "6": 4.87
+      },
+      "470.p.41786": {
+        "2": 23.27,
+        "3": 18.19,
+        "4": 23.58,
+        "5": 11.75,
+        "6": 12.53
+      },
+      "470.p.41831": {
+        "2": 12.6,
+        "3": 1.1,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0
+      },
+      "470.p.100024": {
+        "3": 14.0,
+        "4": 2.0,
+        "5": 3.0,
+        "6": 4.0
+      },
+      "470.p.31838": {
+        "3": 16.9,
+        "4": 13.67,
+        "5": 17.08,
+        "6": 23.26
+      },
+      "470.p.31945": {
+        "3": 3.3,
+        "4": 2.77,
+        "5": 8.63,
+        "6": 2.1
+      },
+      "470.p.33998": {
+        "3": 13.3
+      },
+      "470.p.41810": {
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0
+      },
+      "470.p.42655": {
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0
+      },
+      "470.p.42697": {
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0
+      },
+      "470.p.34107": {
+        "4": 11.67
+      },
+      "470.p.40883": {
+        "4": 8.13,
+        "5": 0.0,
+        "6": 0.0
+      },
+      "470.p.30346": {
+        "5": 0.0
+      },
+      "470.p.40051": {
+        "5": 0.0,
+        "6": 4.3
+      },
+      "470.p.40119": {
+        "5": 4.37
+      },
+      "470.p.40971": {
+        "5": 16.0
+      },
+      "470.p.32704": {
+        "6": 0.0
+      },
+      "470.p.34099": {
+        "6": 8.1
+      },
+      "470.p.34344": {
+        "6": 5.3
+      },
+      "470.p.40201": {
+        "6": 2.6
+      },
+      "470.p.40835": {
+        "6": 0.0
+      },
+      "470.p.40875": {
+        "6": 8.73
+      },
+      "470.p.41312": {
+        "6": 0.0
+      },
+      "470.p.41881": {
+        "6": -0.2
+      },
+      "470.p.42693": {
+        "6": 4.83
+      },
+      "470.p.42696": {
+        "6": 2.27
+      },
+      "470.p.42763": {
+        "6": 0.0
+      }
+    },
+    "weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "complete": true,
+    "missing_player_weeks": 0
   }
 }
